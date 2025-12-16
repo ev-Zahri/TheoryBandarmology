@@ -1,13 +1,17 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from service.analyzer import process_broker_data
+from api.service.analyzer import process_broker_data
+from typing import Any, Dict
+import json
 
 app = FastAPI()
 
 origin = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
 ]
 
 app.add_middleware(
@@ -18,30 +22,38 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-class BrokerData(BaseModel):
-    raw_json: str
-
-# Endpoint untuk analisis data
-@app.post("/analyze")
-async def analyze_data(data: BrokerData):
-    # Validasi input kosong
-    if not data.raw_json:
-        raise HTTPException(status_code=400, detail="JSON tidak boleh kosong.")
-
-    # call fungsi analyzer
-    result = process_broker_data(data.raw_json)
+# Endpoint untuk analisis data - menerima JSON langsung
+@app.post("/v1/analyze")
+async def analyze_data(request: Request):
+    try:
+        # Ambil body JSON langsung
+        body = await request.json()
+        
+        if not body:
+            raise HTTPException(status_code=400, detail="JSON tidak boleh kosong.")
+        
+        # Convert dict ke string untuk processor
+        raw_json_str = json.dumps(body)
+        
+        # call fungsi analyzer
+        result = process_broker_data(raw_json_str)
+        
+        # Cek jika ada error logika
+        if isinstance(result, dict) and "error" in result:
+            raise HTTPException(status_code=result.get("status_code", 400), detail=result["error"])
+        
+        # return result
+        return {
+            "message": "Data berhasil di analisis", 
+            "data": result,
+            "status_code": 200
+        }
     
-    #  Cek jika ada error logika
-    if "error" in result:
-        raise HTTPException(status_code=400, detail=result["error"])
-
-    # return result
-    return {"message": "Data berhasil di analisis", "data": result, "status_code": 200}
+    except json.JSONDecodeError as e:
+        raise HTTPException(status_code=400, detail=f"JSON tidak valid: {str(e)}")
 
 # Endpoint untuk Import recent data broker summary
-@app.post("/import-recent-data")
-async def import_recent_data(data: BrokerData):
-    # 1. Parsing JSON dari data.raw_json
+@app.post("/v1/import-recent-data")
+async def import_recent_data(request: Request):
+    body = await request.json()
     return {"message": "Data berhasil di import"}
-
-
