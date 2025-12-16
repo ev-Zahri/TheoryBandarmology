@@ -20,9 +20,18 @@ app.add_middleware(
 class BrokerData(BaseModel):
     raw_json: str
 
+# Endpoint untuk analisis data
 @app.post("/analyze")
 async def analyze_data(data: BrokerData):
-    # 1. Parsing JSON dari data.raw_json
-    # 2. Proses Pandas & Yfinance
-    # 3. Return hasil list of objects
+    # data yang sudah diimport terus di analisa terus di kategorikan
+
+    #  return berupa data yang sudah dianalisa oleh machine learning
     return {"message": "Data berhasil di analisa", "data": result}
+
+# Endpoint untuk Import recent data broker summary
+@app.post("/import-recent-data")
+async def import_recent_data(data: BrokerData):
+    # 1. Parsing JSON dari data.raw_json
+    return {"message": "Data berhasil di import"}
+
+
