@@ -109,3 +109,64 @@ Agar informasinya "daging" semua, tampilkan kolom ini di website:
 4.  Cek apakah tabel muncul, apakah angkanya masuk akal, dan apakah warna indikator Profit/Loss sesuai dengan perhitungan.
 
 ---
+
+### 🎨 Design System (Panduan Gaya Utama)
+Sebelum masuk ke halaman, ini adalah "Aturan Dasar" agar semua halaman terlihat satu gaya:
+*   **Background:** Deep Charcoal / Hampir Hitam (`#0f172a` atau `Slate-900`).
+*   **Card/Container:** Sedikit lebih terang dari background (`#1e293b` atau `Slate-800`) dengan border tipis (`Slate-700`).
+*   **Accent Color:** Electric Blue (`#3b82f6`) untuk tombol utama.
+*   **Semantic Colors:**
+    *   Profit/Win: Neon Green (`#22c55e`).
+    *   Loss/Nyangkut: Soft Red (`#ef4444`).
+    *   Text: Putih bersih untuk heading, abu-abu (`Slate-400`) untuk label.
+*   **Typography:** Kombinasi *Inter* (UI Text) dan *JetBrains Mono* (Angka/Data).
+---
+
+### 1. Halaman Utama: Dashboard Analyzer (Penting/Major)
+Ini adalah halaman inti. User masuk, paste JSON, dan melihat hasil.
+
+**Komponen:**
+*   **Major:**
+    *   **Navbar Sederhana:** Logo di kiri ("BandarDetector"), Menu simpel di kanan.
+    *   **Input Section (Hero):** 2 Kolom input (Kode Broker & Tanggal) + 1 Area besar (Textarea) untuk Paste JSON + Tombol "Analyze".
+    *   **Result Table:** Tabel data saham dengan kolom: Stock, Broker Avg, Current Price, Value, dan Status (Badge).
+*   **Minor:**
+    *   **Summary Cards:** 3 Kartu kecil di atas tabel (Total Value, Total Saham Profit, Total Saham Loss).
+    *   **Loading State:** Skeleton loader saat data sedang diproses.
+---
+
+### 2. Halaman Visualisasi / Chart (Opsional/Major)
+Halaman ini muncul jika user ingin melihat representasi visual dari data tabel (misal: tombol "View Chart" diklik).
+
+**Komponen:**
+*   **Major:**
+    *   **Bar Chart Besar:** Menunjukkan "Buying Power" per saham (Top 5 Saham dengan Value terbesar).
+    *   **Pie Chart:** Proporsi Win vs Loss.
+*   **Minor:**
+    *   **Back Button:** Tombol kembali ke tabel.
+    *   **Filter:** Dropdown kecil untuk filter (Top 10, All, Only Profit).
+---
+
+### 3. Halaman Panduan / How-to (Opsional/Minor)
+Karena cara mengambil JSON dari Stockbit itu agak "tricky" (via Network Tab), user butuh panduan.
+
+**Komponen:**
+*   **Major:**
+    *   **Step-by-step List:** Teks instruksi.
+    *   **Screenshot Placeholders:** Tempat menaruh gambar contoh Network Tab.
+*   **Minor:**
+    *   **Code Snippet Box:** Menampilkan contoh bentuk JSON yang benar agar user tidak bingung.
+    *   **FAQ Accordion:** Pertanyaan umum (Misal: "Kenapa error?", "Token expired?").
+---
+
+### 4. Halaman Error / Empty State (Minor tapi Penting)
+Tampilan ketika user belum memasukkan data atau data JSON salah.
+
+**Komponen:**
+*   **Major:**
+    *   **Illustration:** Ikon atau ilustrasi sederhana (misal: kaca pembesar atau robot bingung).
+    *   **Message:** "Belum ada data dianalisa" atau "Format JSON Salah".
+*   **Minor:**
+    *   **Action Button:** Tombol "Coba Lagi" atau "Lihat Panduan".
+
+---

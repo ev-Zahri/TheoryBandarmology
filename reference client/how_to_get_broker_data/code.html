@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>How to Get Broker Data - StockPro</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3c83f6",
+                        "primary-hover": "#2563eb",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f172a", /* Slate-900 per request */
+                        "card-dark": "#1e293b", /* Slate-800 */
+                        "border-dark": "#334155", /* Slate-700 */
+                        "text-secondary": "#94a3b8", /* Slate-400 */
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-border-dark bg-white dark:bg-[#0f172a] px-4 md:px-10 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="size-8 flex items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-2xl">ssid_chart</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">StockPro</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8">
+<div class="hidden md:flex gap-2">
+<button class="flex size-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-slate-100 dark:bg-card-dark text-slate-600 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<button class="flex size-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-slate-100 dark:bg-card-dark text-slate-600 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-10 border border-slate-200 dark:border-slate-700" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAn0Svri6ZKk_9BmAsUb8WscJIZ8ixPKSNUVXXYMk9aLvyQZYutCnUWRe9Rki1I7ShQEsUjOYrywMk-d6kNshBpmZZXm3-UhKMgSFQE-lMI__sj8SIvQz_ykuP8FhXzGaXovoln8606VhUJcyrJvmqefyJb-s6tJFTaOoEMshvs2GhKB4MgAZQ-c8eEkYnECz6YWYOvbg5NpQxwXpEkBTCbI0W35M-8jALos17YPqyQEJf2C1IP0gEJWGWoBhMsdtd1N67tplaMMeY");'></div>
+</div>
+</header>
+<div class="flex flex-1">
+<!-- Side Navigation (Desktop) -->
+<aside class="hidden lg:flex w-64 flex-col border-r border-slate-200 dark:border-border-dark bg-white dark:bg-[#0f172a] p-4 fixed h-[calc(100vh-64px)] overflow-y-auto">
+<div class="flex flex-col gap-6">
+<div>
+<p class="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-4 px-3">Main Menu</p>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 text-text-secondary hover:text-primary hover:bg-primary/10 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-primary transition-colors">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-text-secondary hover:text-primary hover:bg-primary/10 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-primary transition-colors">ssid_chart</span>
+<span class="text-sm font-medium">Analysis</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-text-secondary hover:text-primary hover:bg-primary/10 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-primary transition-colors">work</span>
+<span class="text-sm font-medium">Portfolio</span>
+</a>
+</nav>
+</div>
+<div>
+<p class="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-4 px-3">Support</p>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 text-text-secondary hover:text-primary hover:bg-primary/10 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-primary transition-colors">description</span>
+<span class="text-sm font-medium">Reports</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 bg-primary/10 text-primary rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined text-[20px] fill">help</span>
+<span class="text-sm font-medium">Help Center</span>
+</a>
+</nav>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 lg:ml-64 p-4 md:p-8 lg:p-12 flex justify-center">
+<div class="w-full max-w-[800px] flex flex-col gap-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-sm">
+<a class="text-text-secondary hover:text-primary transition-colors" href="#">Help Center</a>
+<span class="text-text-secondary/50 material-symbols-outlined text-sm">chevron_right</span>
+<a class="text-text-secondary hover:text-primary transition-colors" href="#">Data Import</a>
+<span class="text-text-secondary/50 material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-slate-900 dark:text-white font-medium">Broker Data</span>
+</nav>
+<!-- Page Heading -->
+<div class="flex flex-col gap-3 pb-6 border-b border-slate-200 dark:border-border-dark">
+<h1 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] text-slate-900 dark:text-white">
+                            How to Get Broker Data
+                        </h1>
+<p class="text-text-secondary text-lg font-normal leading-relaxed max-w-2xl">
+                            Follow this step-by-step guide to extract your transaction history JSON directly from your broker's dashboard for accurate analysis.
+                        </p>
+</div>
+<!-- Timeline / Steps -->
+<div class="flex flex-col gap-10">
+<!-- Step 1 -->
+<div class="flex gap-4 md:gap-6">
+<div class="flex flex-col items-center">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold font-mono">
+                                    01
+                                </div>
+<div class="w-px h-full bg-slate-200 dark:bg-border-dark my-2"></div>
+</div>
+<div class="flex flex-col gap-4 flex-1 pb-4">
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Log in to Broker Dashboard</h3>
+<p class="text-text-secondary leading-relaxed">Navigate to your broker's website and log in to your account. Go to the main dashboard or "Account Overview" page where your portfolio summary is visible.</p>
+</div>
+<div class="w-full aspect-video rounded-xl bg-slate-200 dark:bg-card-dark border border-slate-300 dark:border-border-dark flex items-center justify-center overflow-hidden group cursor-pointer hover:border-primary transition-colors">
+<div class="bg-center bg-no-repeat bg-cover w-full h-full opacity-60 group-hover:opacity-80 transition-opacity" data-alt="Abstract representation of a login screen dashboard" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkBRtmjPqUYhuoVYUlLGDhTBQ9-HTby_99NjV37s3_ieksUdtIFpZDk6U0Xjqca_3IxxonDyeJb0ij9ngiGkXNsYX7hOjWWEAKmzM4KCqUWYXzFcGy8w4AXn4xyA5ZNVBQyhtXeV-GcEieABFrufJH7O8yJhMavgKu4_hs3hMbjeBwXUOhuEmQ83iIXH3oDBzYdVJYL212faK_l_xP9PAfQP10dGL-E4OW2rAf8ovT_lc_u6mas3Ok2KkHoXpA2ExcxFWa_CukNKc");'></div>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-4 md:gap-6">
+<div class="flex flex-col items-center">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold font-mono">
+                                    02
+                                </div>
+<div class="w-px h-full bg-slate-200 dark:bg-border-dark my-2"></div>
+</div>
+<div class="flex flex-col gap-4 flex-1 pb-4">
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Open Network Tab</h3>
+<p class="text-text-secondary leading-relaxed">
+                                        Right-click anywhere on the page and select <strong class="text-slate-900 dark:text-white">Inspect</strong>, or press <kbd class="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-border-dark text-xs font-mono text-slate-700 dark:text-slate-300">F12</kbd>. In the Developer Tools window, click on the <strong class="text-slate-900 dark:text-white">Network</strong> tab.
+                                    </p>
+</div>
+<div class="w-full aspect-video rounded-xl bg-slate-200 dark:bg-card-dark border border-slate-300 dark:border-border-dark flex items-center justify-center overflow-hidden group cursor-pointer hover:border-primary transition-colors">
+<div class="bg-center bg-no-repeat bg-cover w-full h-full opacity-60 group-hover:opacity-80 transition-opacity" data-alt="Browser developer tools highlighting the network tab" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4KwkHBwXnBrU1FyqP2Iq5mVU_AAkuc2piUuEe4WfyX4GNqxZG6xNpiflLbyTJplyxFuqi3tJ3BQThz8YgoLQn0J_hDLMNZZrYjN4Yu4L9OIXwNF3sXsXJtXuyEmf5uL5ih0itfXiA97g4ds_WoIxZaByecrXS6d0h65r8udVqcpuQbNVL4Nqq02iRUCLWqXjCqgAtokAjGpQ59Q3MgvGCqIHSBYQ8T0tO5cvc6dAKwtPj-lvYJ26V6ykuR1EO2UqpFs1nEMQa0cI");'></div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-4 md:gap-6">
+<div class="flex flex-col items-center">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold font-mono">
+                                    03
+                                </div>
+<div class="w-px h-full bg-slate-200 dark:bg-border-dark my-2"></div>
+</div>
+<div class="flex flex-col gap-4 flex-1 pb-4">
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Filter and Refresh</h3>
+<p class="text-text-secondary leading-relaxed">
+                                        In the Network tab filter box, type <code class="text-primary bg-primary/10 px-1 rounded font-mono text-sm">history</code> or <code class="text-primary bg-primary/10 px-1 rounded font-mono text-sm">json</code>. Refresh the page (<kbd class="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-border-dark text-xs font-mono text-slate-700 dark:text-slate-300">F5</kbd>). You should see a request appear in the list.
+                                    </p>
+</div>
+<div class="w-full aspect-video rounded-xl bg-slate-200 dark:bg-card-dark border border-slate-300 dark:border-border-dark flex items-center justify-center overflow-hidden group cursor-pointer hover:border-primary transition-colors">
+<div class="bg-center bg-no-repeat bg-cover w-full h-full opacity-60 group-hover:opacity-80 transition-opacity" data-alt="Network tab filtered by XHR requests showing list of items" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGNpxwTrrQYQ4wKGePjrHdLTWEma2p4lynFTfUWNKVY9bUFoDJ5MJ1fnCzNA4SgVcy7QY77wHdHIK9YP1j1rRECeYMjAL2QliDeTQBvRqdq94I7R09Gn07Z9COl6GgKY8Ze-vA7h3a2B2KKAn4pk1ZNvbb_RCS3QBRJMPLmFPVFqVOz1mRxKY3kQm-ZYWLOuJP38zjoIWpdx4gGYaZoZ4IGmQIPHHvtnSMUwrUduv4SUKma8EjW9_u8dxmoTWejXSus37Z05kQvkY");'></div>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex gap-4 md:gap-6">
+<div class="flex flex-col items-center">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold font-mono">
+                                    04
+                                </div>
+<!-- No vertical line for last item -->
+</div>
+<div class="flex flex-col gap-4 flex-1 pb-4">
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Verify and Copy Response</h3>
+<p class="text-text-secondary leading-relaxed">
+                                        Click on the request name, then select the <strong class="text-slate-900 dark:text-white">Response</strong> tab. Ensure the data structure looks like the example below, then copy the entire JSON object.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Code Snippet Container -->
+<div class="rounded-xl border border-slate-300 dark:border-border-dark bg-slate-100 dark:bg-card-dark overflow-hidden mt-2 shadow-sm">
+<div class="flex items-center justify-between px-4 py-3 border-b border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-[#151e2d]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-text-secondary text-sm">code</span>
+<span class="text-xs font-bold text-text-secondary uppercase tracking-wider">Expected JSON Format</span>
+</div>
+<button class="flex items-center gap-1.5 px-2 py-1 rounded hover:bg-slate-200 dark:hover:bg-slate-700 text-text-secondary hover:text-primary transition-all text-xs font-medium">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+                                Copy
+                            </button>
+</div>
+<div class="p-4 overflow-x-auto">
+<pre class="font-mono text-sm leading-6"><span class="text-slate-500 dark:text-slate-500">{</span>
+  <span class="text-purple-600 dark:text-purple-400">"account_id"</span>: <span class="text-green-600 dark:text-green-400">"882910-X"</span>,
+  <span class="text-purple-600 dark:text-purple-400">"history"</span>: <span class="text-slate-500 dark:text-slate-500">[</span>
+    <span class="text-slate-500 dark:text-slate-500">{</span>
+      <span class="text-purple-600 dark:text-purple-400">"symbol"</span>: <span class="text-green-600 dark:text-green-400">"AAPL"</span>,
+      <span class="text-purple-600 dark:text-purple-400">"order_type"</span>: <span class="text-green-600 dark:text-green-400">"BUY"</span>,
+      <span class="text-purple-600 dark:text-purple-400">"quantity"</span>: <span class="text-blue-600 dark:text-blue-400">150</span>,
+      <span class="text-purple-600 dark:text-purple-400">"price"</span>: <span class="text-blue-600 dark:text-blue-400">142.50</span>,
+      <span class="text-purple-600 dark:text-purple-400">"timestamp"</span>: <span class="text-green-600 dark:text-green-400">"2023-10-24T14:30:00Z"</span>,
+      <span class="text-purple-600 dark:text-purple-400">"status"</span>: <span class="text-green-600 dark:text-green-400">"FILLED"</span>
+    <span class="text-slate-500 dark:text-slate-500">}</span>,
+    <span class="text-slate-500 dark:text-slate-500">{</span>
+      <span class="text-purple-600 dark:text-purple-400">"symbol"</span>: <span class="text-green-600 dark:text-green-400">"TSLA"</span>,
+      <span class="text-purple-600 dark:text-purple-400">"order_type"</span>: <span class="text-green-600 dark:text-green-400">"SELL"</span>,
+      <span class="text-purple-600 dark:text-purple-400">"quantity"</span>: <span class="text-blue-600 dark:text-blue-400">50</span>,
+      <span class="text-purple-600 dark:text-purple-400">"price"</span>: <span class="text-blue-600 dark:text-blue-400">210.25</span>,
+      <span class="text-purple-600 dark:text-purple-400">"timestamp"</span>: <span class="text-green-600 dark:text-green-400">"2023-10-25T09:45:00Z"</span>,
+      <span class="text-purple-600 dark:text-purple-400">"status"</span>: <span class="text-green-600 dark:text-green-400">"FILLED"</span>
+    <span class="text-slate-500 dark:text-slate-500">}</span>
+  <span class="text-slate-500 dark:text-slate-500">]</span>
+<span class="text-slate-500 dark:text-slate-500">}</span>
+</pre>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="pt-8 pb-20 flex flex-col items-center gap-4">
+<p class="text-text-secondary text-center">Once you have verified the data matches the format above, proceed to import.</p>
+<button class="flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-primary/20 transition-all w-full md:w-auto">
+<span>I have my data, Import JSON</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
