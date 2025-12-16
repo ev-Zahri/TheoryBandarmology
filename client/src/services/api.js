@@ -1,7 +1,6 @@
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
 export const analyzeData = async (rawJson) => {
-    // Parse the JSON string first, then send as object
     let jsonData;
     try {
         jsonData = JSON.parse(rawJson);

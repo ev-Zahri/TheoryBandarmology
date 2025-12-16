@@ -1,6 +1,24 @@
 import json
 import pandas as pd
 import yfinance as yf
+import math
+
+def safe_float(value, default=0):
+    """Safely convert value to float, handling NaN and Infinity"""
+    if value is None:
+        return default
+    try:
+        val = float(value)
+        if math.isnan(val) or math.isinf(val):
+            return default
+        return val
+    except (ValueError, TypeError):
+        return default
+
+def safe_round(value, decimals=0, default=0):
+    """Safely round a value, handling NaN and Infinity"""
+    val = safe_float(value, default)
+    return round(val, decimals)
 
 # fungsi untuk mengolah raw json dari stockbit menjadi data matang
 def process_broker_data(raw_json_str: str):
@@ -46,39 +64,41 @@ def process_broker_data(raw_json_str: str):
         tickers_jk = [f"{ticker}.JK" for ticker in stock_list]
 
         # Download harga dengan thread true agar cepat
+        current_price = {}
         try:
             market_data = yf.download(tickers_jk, period="1d", progress=False)["Close"]
+            
+            if market_data is not None and not market_data.empty:
+                if len(stock_list) == 1:  # Jika hanya 1 stock
+                    try:
+                        val = safe_float(market_data.iloc[-1].item())
+                        current_price[stock_list[0]] = val
+                    except:
+                        current_price[stock_list[0]] = 0
+                else:  # Jika lebih dari 1 stock
+                    last_row = market_data.iloc[-1]
+                    for ticker in tickers_jk:
+                        stock_code = ticker.replace('.JK', '')
+                        try: 
+                            current_price[stock_code] = safe_float(last_row[ticker].item())
+                        except: 
+                            current_price[stock_code] = 0
         except Exception as e:
-            # Jika gagal fetch, set semua current_price ke 0
-            market_data = None
-
-        # Handling format yfinance
-        current_price = {}
-        if market_data is not None and not market_data.empty:
-            if len(stock_list) == 1:  # Jika hanya 1 stock
-                try:
-                    val = market_data.iloc[-1].item()
-                    current_price[stock_list[0]] = val
-                except:
-                    current_price[stock_list[0]] = 0
-            else:  # Jika lebih dari 1 stock
-                last_row = market_data.iloc[-1]
-                for ticker in tickers_jk:
-                    stock_code = ticker.replace('.JK', '')
-                    try: 
-                        current_price[stock_code] = last_row[ticker].item()
-                    except: 
-                        current_price[stock_code] = 0
+            # Jika gagal fetch, set semua ke 0
+            for stock in stock_list:
+                current_price[stock] = 0
 
         # Hitung logika bandarmologi (profit dan loss)
         result = []
         for index, row in df_clean.iterrows():
             stock = row["Stock"]
-            avg_price = row["AvgPrice"]
-            curr = current_price.get(stock, 0)
+            avg_price = safe_float(row["AvgPrice"])
+            total_value = safe_float(row["TotalValue"])
+            total_lot = safe_float(row["TotalLot"])
+            curr = safe_float(current_price.get(stock, 0))
             
-            # Skip jika avg_price atau current_price tidak valid
-            if pd.isna(avg_price) or avg_price <= 0:
+            # Skip jika avg_price tidak valid
+            if avg_price <= 0:
                 continue
             
             # hitung presentase gain/loss
@@ -94,13 +114,13 @@ def process_broker_data(raw_json_str: str):
 
             result.append({
                 "stock": stock,
-                "broker_avg": round(avg_price, 0),
-                "current_price": round(curr, 0) if curr else 0,
-                "value": round(row["TotalValue"], 0),
-                "lot": round(row["TotalLot"], 0),
-                "diff_pct": round(diff_pct, 2),
+                "broker_avg": safe_round(avg_price),
+                "current_price": safe_round(curr),
+                "value": safe_round(total_value),
+                "lot": safe_round(total_lot),
+                "diff_pct": safe_round(diff_pct, 2),
                 "status": status,
-                "type": row["Type"]
+                "type": row["Type"] if isinstance(row["Type"], str) else "Unknown"
             })
         
         # sorting result berdasarkan value (descending)

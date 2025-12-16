@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { Header, SummaryCard, InputSection, AnalysisTable } from './components';
-import { analyzeData } from './services/api';
+import { Header, SummaryCard, InputSection, AnalysisTable } from './dashboard';
+import { analyzeData } from '../../services/api';
 
 function App() {
   const [analysisResult, setAnalysisResult] = useState(null);
