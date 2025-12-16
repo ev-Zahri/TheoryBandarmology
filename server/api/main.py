@@ -1,6 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from service.analyzer import process_broker_data
 
 app = FastAPI()
 
@@ -23,10 +24,19 @@ class BrokerData(BaseModel):
 # Endpoint untuk analisis data
 @app.post("/analyze")
 async def analyze_data(data: BrokerData):
-    # data yang sudah diimport terus di analisa terus di kategorikan
+    # Validasi input kosong
+    if not data.raw_json:
+        raise HTTPException(status_code=400, detail="JSON tidak boleh kosong.")
 
-    #  return berupa data yang sudah dianalisa oleh machine learning
-    return {"message": "Data berhasil di analisa", "data": result}
+    # call fungsi analyzer
+    result = process_broker_data(data.raw_json)
+    
+    #  Cek jika ada error logika
+    if "error" in result:
+        raise HTTPException(status_code=400, detail=result["error"])
+
+    # return result
+    return {"message": "Data berhasil di analisis", "data": result, "status_code": 200}
 
 # Endpoint untuk Import recent data broker summary
 @app.post("/import-recent-data")
