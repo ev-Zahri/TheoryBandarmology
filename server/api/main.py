@@ -4,6 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.service.analyzer import process_broker_data
 from api.service.technical import calculate_advanced_technical
 from api.service.quant_thechnical import calculate_quant_metrics
+from api.service.financial_health import analyze_financial_health
+from api.service.news_narrative import analyze_news_narrative
 from typing import Any, Dict, List
 import json
 
@@ -85,6 +87,45 @@ async def analyze_quant(request: StockAnalysisRequest):
 
         return {
             "message": "Analisis kuantitatif berhasil", 
+            "data": data,
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
+
+
+@app.post('/v1/analyze/financials')
+async def get_financial(request: StockAnalysisRequest):
+    try:
+        if not request.stocks:
+            raise HTTPException(status_code=400, detail="List saham tidak boleh kosong")
+        
+        data = analyze_financial_health(payload.stocks)
+
+        if not data:
+            raise HTTPException(status_code=400, detail="Data kesehatan finansial tidak ditemukan untuk saham tersebut")
+        
+        return {
+            "message": "Analisis kuantitatif berhasil", 
+            "data": data,
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
+
+@app.post('/v1/analyze/news')
+async def analyze_news(request: StockAnalysisRequest):
+    try:
+        if not request.stocks:
+            raise HTTPException(status_code=400, detail="List saham tidak boleh kosong")
+        
+        data = analyze_news_narrative(request.stocks)
+
+        if not data:
+            raise HTTPException(status_code=404, detail="Data narasi berita tidak ditemukan untuk saham tersebut")
+        
+        return {
+            "message": "Analisis narasi berita berhasil", 
             "data": data,
             "status_code": 200
         }

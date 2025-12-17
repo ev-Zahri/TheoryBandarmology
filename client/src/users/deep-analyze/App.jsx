@@ -63,7 +63,7 @@ function DeepAnalyzePage() {
                         {/* Page Heading */}
                         <div className="flex items-center gap-4">
                             <button
-                                onClick={() => navigate(-1)}
+                                onClick={() => navigate('/')}
                                 className="flex items-center justify-center w-10 h-10 rounded-full bg-surface-dark border border-border-dark hover:bg-primary hover:border-primary text-white transition-all"
                             >
                                 <span className="material-symbols-outlined text-[20px]">arrow_back</span>

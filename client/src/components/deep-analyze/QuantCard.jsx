@@ -95,14 +95,14 @@ const QuantCard = ({ data, isLoading }) => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-3">
-                        <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-3">
+                        <div className="bg-green-500/10 border border-green-500/20 rounded-md p-3">
                             <p className="text-xs text-green-600 dark:text-green-400 font-medium mb-1">Support (S1)</p>
                             <p className="font-mono text-lg font-bold text-green-700 dark:text-green-300">
                                 Rp {data.algo_support_s1?.toLocaleString('id-ID') || 0}
                             </p>
                         </div>
 
-                        <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-3">
+                        <div className="bg-red-500/10 border border-red-500/20 rounded-md p-3">
                             <p className="text-xs text-red-600 dark:text-red-400 font-medium mb-1">Resistance (R1)</p>
                             <p className="font-mono text-lg font-bold text-red-700 dark:text-red-300">
                                 Rp {data.algo_resistance_r1?.toLocaleString('id-ID') || 0}
