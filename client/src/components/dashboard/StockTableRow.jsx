@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const StockTableRow = ({
     rowId,
@@ -111,11 +112,11 @@ const StockTableRow = ({
                     <div className="absolute right-6 top-12 z-20 w-44 text-left bg-white dark:bg-card-dark border rounded-md border-slate-200 dark:border-border-dark shadow-lg overflow-hidden">
                         <button className="w-full py-2.5 px-3 text-left hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2">
                             <span className="material-symbols-outlined text-[16px] text-primary">analytics</span>
-                            <span className="text-sm dark:text-white">Deep Analysis</span>
+                            <Link to={`/deep-analyze/${stock}`}><span className="text-sm dark:text-white">Deep Analysis</span></Link>
                         </button>
                         <button className="w-full py-2.5 px-3 text-left hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2">
                             <span className="material-symbols-outlined text-[16px] text-primary">lightbulb</span>
-                            <span className="text-sm dark:text-white">Get Insight</span>
+                            <Link to={`/insight/${stock}`}><span className="text-sm dark:text-white">Get Insight</span></Link>
                         </button>
                     </div>
                 )}

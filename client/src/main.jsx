@@ -6,6 +6,7 @@ import DashboardApp from './users/dashboard/App.jsx';
 import VisualizationApp from './users/visualization/App.jsx';
 import FaqPage from './users/faq/FaqPage.jsx';
 import NotFoundPage from './users/errors/NotFoundPage.jsx';
+import DeepAnalyzeApp from './users/deep-analyze/App.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Routes>
                 <Route path="/" element={<DashboardApp />} />
                 <Route path="/visualization" element={<VisualizationApp />} />
+                <Route path="/deep-analyze/:stock" element={<DeepAnalyzeApp />} />
                 <Route path="/faq" element={<FaqPage />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>

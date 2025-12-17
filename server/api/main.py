@@ -2,7 +2,9 @@ from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from api.service.analyzer import process_broker_data
-from typing import Any, Dict
+from api.service.technical import calculate_advanced_technical
+from api.service.quant_thechnical import calculate_quant_metrics
+from typing import Any, Dict, List
 import json
 
 app = FastAPI()
@@ -22,27 +24,25 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Endpoint untuk analisis data - menerima JSON langsung
+# Request model for stock analysis
+class StockAnalysisRequest(BaseModel):
+    stocks: List[str]
+
+# Endpoint untuk analisis data broker - menerima JSON langsung
 @app.post("/v1/analyze")
 async def analyze_data(request: Request):
     try:
-        # Ambil body JSON langsung
         body = await request.json()
         
         if not body:
             raise HTTPException(status_code=400, detail="JSON tidak boleh kosong.")
         
-        # Convert dict ke string untuk processor
         raw_json_str = json.dumps(body)
-        
-        # call fungsi analyzer
         result = process_broker_data(raw_json_str)
         
-        # Cek jika ada error logika
         if isinstance(result, dict) and "error" in result:
             raise HTTPException(status_code=result.get("status_code", 400), detail=result["error"])
         
-        # return result
         return {
             "message": "Data berhasil di analisis", 
             "data": result,
@@ -51,6 +51,45 @@ async def analyze_data(request: Request):
     
     except json.JSONDecodeError as e:
         raise HTTPException(status_code=400, detail=f"JSON tidak valid: {str(e)}")
+
+@app.post('/v1/analyze/technical')
+async def analyze_technical(request: StockAnalysisRequest):
+    try: 
+        if not request.stocks:
+            raise HTTPException(status_code=400, detail="List saham tidak boleh kosong")
+        
+        data = calculate_advanced_technical(request.stocks)
+
+        if not data:
+            raise HTTPException(status_code=404, detail="Data teknikal tidak ditemukan untuk saham tersebut")
+
+        return {
+            "message": "Analisis teknikal berhasil", 
+            "data": data,
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
+
+# Endpoint untuk analisis kuantitatif (Z-Score, ATR, Pivot Points)
+@app.post('/v1/analyze/quant')
+async def analyze_quant(request: StockAnalysisRequest):
+    try: 
+        if not request.stocks:
+            raise HTTPException(status_code=400, detail="List saham tidak boleh kosong")
+        
+        data = calculate_quant_metrics(request.stocks)
+
+        if not data:
+            raise HTTPException(status_code=404, detail="Data kuantitatif tidak ditemukan untuk saham tersebut")
+
+        return {
+            "message": "Analisis kuantitatif berhasil", 
+            "data": data,
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
 
 # Endpoint untuk Import recent data broker summary
 @app.post("/v1/import-recent-data")

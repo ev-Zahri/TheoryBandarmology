@@ -24,6 +24,40 @@ export const analyzeData = async (rawJson) => {
     return response.json();
 };
 
+export const analyzeQuant = async (stock) => {
+    const response = await fetch(`${API_BASE_URL}/v1/analyze/quant`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ stocks: [stock] }),
+    });
+
+    if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.detail || 'Terjadi kesalahan saat menganalisis kuantitatif');
+    }
+
+    return response.json();
+};
+
+export const analyzeTechnical = async (stock) => {
+    const response = await fetch(`${API_BASE_URL}/v1/analyze/technical`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ stocks: [stock] }),
+    });
+
+    if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.detail || 'Terjadi kesalahan saat menganalisis teknikal');
+    }
+
+    return response.json();
+};
+
 export const importRecentData = async (rawJson) => {
     let jsonData;
     try {

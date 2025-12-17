@@ -22,13 +22,24 @@ def calculate_quant_metrics(stock_list: list):
             # --- 0. Data Preparation ---
             # Handling yfinance multi-index
             if len(stock_list) > 1:
-                df = data[f"{stock}.JK"].copy()
+                # Multiple stocks: data is multi-indexed
+                ticker_key = f"{stock}.JK"
+                if ticker_key not in data.columns.get_level_values(0):
+                    continue
+                df = data[ticker_key].copy()
             else:
+                # Single stock: yfinance returns MultiIndex columns
+                # Need to flatten by selecting the ticker column
                 df = data.copy()
+                # If columns are MultiIndex, flatten them
+                if isinstance(df.columns, pd.MultiIndex):
+                    # Take the second level (price data)
+                    df.columns = df.columns.get_level_values(1)
             
-            # Drop NaN dan pastikan kolom numerik
-            df.dropna(inplace=True)
-            if df.empty: continue
+            # Clean data
+            df = df.dropna()
+            if df.empty: 
+                continue
 
             # Pastikan kolom High, Low, Close tipe datanya float
             df['High'] = df['High'].astype(float)
