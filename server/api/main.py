@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from api.service.analyzer import process_broker_data
 from api.service.technical import calculate_advanced_technical
-from api.service.quant_thechnical import calculate_quant_metrics
+from api.service.quant_technical import calculate_quant_metrics
 from api.service.financial_health import analyze_financial_health
 from api.service.news_narrative import analyze_news_narrative
 from typing import Any, Dict, List

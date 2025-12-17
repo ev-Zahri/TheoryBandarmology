@@ -57,7 +57,7 @@ const FaqPage = () => {
                             {faqs.map((faq, index) => (
                                 <div
                                     key={index}
-                                    className="rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-border-dark overflow-hidden"
+                                    className="rounded-md bg-white dark:bg-background-dark border border-slate-200 dark:border-border-dark overflow-hidden"
                                 >
                                     <button
                                         className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 dark:hover:bg-background-dark/50 transition-colors"
@@ -71,7 +71,7 @@ const FaqPage = () => {
                                         </span>
                                     </button>
                                     {openIndex === index && (
-                                        <div className="px-6 pb-4 text-slate-600 dark:text-text-muted leading-relaxed">
+                                        <div className="px-6 pb-4 text-slate-600 dark:text-text-muted dark:text-white leading-relaxed">
                                             {faq.answer}
                                         </div>
                                     )}

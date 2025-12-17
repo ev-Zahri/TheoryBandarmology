@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Header, Error, TechnicalCard, QuantCard } from './deep-analyze';
+import { Header, Error, TechnicalCard, QuantCard, FooterCard } from './deep-analyze';
 import { analyzeTechnical, analyzeQuant } from '../../services/api';
 
 function DeepAnalyzePage() {
@@ -89,23 +89,7 @@ function DeepAnalyzePage() {
                             <QuantCard data={quantData} isLoading={isLoadingQuant} />
                         </div>
 
-                        {/* Info Footer */}
-                        <div className="bg-white dark:bg-card-dark rounded-2xl border border-slate-200 dark:border-border-dark p-6">
-                            <div className="flex items-start gap-3">
-                                <span className="material-symbols-outlined text-primary text-[24px]">info</span>
-                                <div>
-                                    <h4 className="font-bold text-slate-900 dark:text-white mb-2">About This Analysis</h4>
-                                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                                        <strong>Technical Analysis</strong> menggunakan Ichimoku Cloud untuk trend detection, Stochastic RSI untuk momentum,
-                                        dan OBV Divergence untuk volume analysis. <strong>Quantitative Analysis</strong> menggunakan Z-Score untuk statistical pricing,
-                                        ATR untuk volatility measurement, dan Pivot Points untuk support/resistance levels.
-                                    </p>
-                                    <p className="text-xs text-slate-500 dark:text-slate-500 mt-3">
-                                        Data diambil dari Yahoo Finance dengan periode 1 tahun untuk perhitungan yang akurat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <FooterCard />
                     </div>
                 </div>
             </div>
