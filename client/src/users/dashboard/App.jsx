@@ -9,7 +9,7 @@ function App() {
 
   // Extract stocks array from result
   const stocks = useMemo(() => {
-    return analysisResult?.stocks || [];
+    return analysisResult?.data || [];
   }, [analysisResult]);
 
   // Extract broker info
@@ -27,7 +27,7 @@ function App() {
       };
     }
 
-    const totalValue = stocks.reduce((sum, item) => sum + (item.value || 0), 0);
+    const totalValue = stocks.reduce((sum, item) => sum + (item.value_raw || 0), 0);
     const winningStocks = stocks.filter(item => item.diff_pct > 0).length;
     const losingStocks = stocks.filter(item => item.diff_pct < 0).length;
 
@@ -87,7 +87,7 @@ function App() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
                   <span className="material-symbols-outlined text-[16px]">calendar_today</span>
-                  {brokerInfo.from_date} → {brokerInfo.to_date}
+                  {brokerInfo.date_start} → {brokerInfo.date_end}
                 </div>
               </div>
             )}

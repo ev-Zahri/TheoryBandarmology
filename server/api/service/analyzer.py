@@ -2,137 +2,170 @@ import json
 import pandas as pd
 import yfinance as yf
 import math
+import numpy as np
+from ..helper.safe_float import safe_float
+from ..helper.safe_int import safe_int
 
-def safe_float(value, default=0):
-    """Safely convert value to float, handling NaN and Infinity"""
-    if value is None:
-        return default
-    try:
-        val = float(value)
-        if math.isnan(val) or math.isinf(val):
-            return default
-        return val
-    except (ValueError, TypeError):
-        return default
-
-def safe_round(value, decimals=0, default=0):
-    """Safely round a value, handling NaN and Infinity"""
-    val = safe_float(value, default)
-    return round(val, decimals)
-
-# fungsi untuk mengolah raw json dari stockbit menjadi data matang
 def process_broker_data(raw_json_str: str):
     try:
-        # Parse JSON
+        # 1. Parse JSON
         parsed_data = json.loads(raw_json_str)
         
-        # Ekstrak metadata broker
+        # 2. Ekstrak Metadata
+        broker_data = parsed_data.get("data", {})
         broker_info = {
-            "broker_code": parsed_data.get("data", {}).get("broker_code", ""),
-            "broker_name": parsed_data.get("data", {}).get("broker_name", ""),
-            "from_date": parsed_data.get("data", {}).get("from", ""),
-            "to_date": parsed_data.get("data", {}).get("to", "")
+            "broker_code": broker_data.get("broker_code", "UNKNOWN"),
+            "broker_name": broker_data.get("broker_name", "Unknown Broker"),
+            "date_start": broker_data.get("from", ""),
+            "date_end": broker_data.get("to", "")
         }
         
+        # 3. Validasi & Ekstrak Item
         try:
-            items = parsed_data["data"]["broker_summary"]["brokers_buy"]
-        except KeyError as e:
-            return {"error": "Struktur JSON tidak valid. Pastikan copy dari Network Tab Stockbit dengan benar.", "status_code": 400}
+            items = broker_data["broker_summary"]["brokers_buy"]
+        except KeyError:
+            return {"error": "Struktur JSON salah. Pastikan copy JSON dari Network Tab 'broker/summary' di Stockbit.", "status_code": 400}
         
         if not items:
-            return {"error": "Tidak ada data pembelian broker ditemukan.", "status_code": 404}
+            return {"error": "Tidak ada data pembelian (Net Buy) pada periode ini.", "status_code": 404}
 
+        # 4. Pandas Processing
         df = pd.DataFrame(items)
         
-        # Filter hanya kolom yang dibutuhkan
+        # Konversi Tipe Data
         df["Stock"] = df["netbs_stock_code"]
-        df["AvgPrice"] = pd.to_numeric(df["netbs_buy_avg_price"], errors="coerce")
-        df["TotalValue"] = pd.to_numeric(df["bval"], errors="coerce")
-        df["TotalLot"] = pd.to_numeric(df["blot"], errors="coerce")
-        df["Type"] = df.get("type", "Unknown")
-
-        df_clean = df[["Stock", "AvgPrice", "TotalValue", "TotalLot", "Type"]].copy()
+        df["AvgPrice"] = df["netbs_buy_avg_price"].apply(lambda x: safe_float(x))
+        df["TotalValue"] = df["bval"].apply(lambda x: safe_float(x))
+        df["TotalLot"] = df["blot"].apply(lambda x: safe_int(x)) # Stockbit kadang string
         
-        # Filter stock yang valid (tidak mengandung suffix warrant/right issue, panjang ticker <= 4)
-        df_clean = df_clean[df_clean["Stock"].str.len() <= 4]
+        # Bersihkan data: Hapus yang value 0 atau AvgPrice 0
+        df = df[(df["TotalValue"] > 0) & (df["AvgPrice"] > 0)].copy()
 
-        if df_clean.empty:
-            return {"error": "Tidak ada saham valid ditemukan setelah filter.", "status_code": 404}
+        # Filter: Hanya saham valid (Max 4 huruf, hindari Warrant -W)
+        # Regex: Hanya huruf A-Z, panjang 4 digit. Tapi simple len <= 4 juga oke untuk MVP.
+        df = df[df["Stock"].str.len() <= 4]
+        
+        if df.empty:
+            return {"error": "Tidak ada saham valid setelah filter.", "status_code": 404}
 
-        # Ambil harga pasar saat ini
-        stock_list = df_clean["Stock"].unique().tolist()
+        # 5. Hitung 'Weight' (Alokasi Dana Broker)
+        # Ini fitur penting: Berapa persen uang broker lari ke saham ini?
+        total_portfolio_value = df["TotalValue"].sum()
+        df["Weight"] = (df["TotalValue"] / total_portfolio_value) * 100
+
+        # 6. Fetch Harga YFinance
+        stock_list = df["Stock"].unique().tolist()
         tickers_jk = [f"{ticker}.JK" for ticker in stock_list]
-
-        # Download harga dengan thread true agar cepat
-        current_price = {}
-        try:
-            market_data = yf.download(tickers_jk, period="1d", progress=False)["Close"]
-            
-            if market_data is not None and not market_data.empty:
-                if len(stock_list) == 1:  # Jika hanya 1 stock
-                    try:
-                        val = safe_float(market_data.iloc[-1].item())
-                        current_price[stock_list[0]] = val
-                    except:
-                        current_price[stock_list[0]] = 0
-                else:  # Jika lebih dari 1 stock
-                    last_row = market_data.iloc[-1]
-                    for ticker in tickers_jk:
-                        stock_code = ticker.replace('.JK', '')
-                        try: 
-                            current_price[stock_code] = safe_float(last_row[ticker].item())
-                        except: 
-                            current_price[stock_code] = 0
-        except Exception as e:
-            # Jika gagal fetch, set semua ke 0
-            for stock in stock_list:
-                current_price[stock] = 0
-
-        # Hitung logika bandarmologi (profit dan loss)
-        result = []
-        for index, row in df_clean.iterrows():
-            stock = row["Stock"]
-            avg_price = safe_float(row["AvgPrice"])
-            total_value = safe_float(row["TotalValue"])
-            total_lot = safe_float(row["TotalLot"])
-            curr = safe_float(current_price.get(stock, 0))
-            
-            # Skip jika avg_price tidak valid
-            if avg_price <= 0:
-                continue
-            
-            # hitung presentase gain/loss
-            if avg_price > 0 and curr > 0:
-                diff_pct = ((curr - avg_price) / avg_price) * 100
-            else:
-                diff_pct = 0
-
-            # definisi status
-            status = "NEUTRAL"
-            if diff_pct > 0: status = "PROFIT"
-            elif diff_pct < 0: status = "LOSS"
-
-            result.append({
-                "stock": stock,
-                "broker_avg": safe_round(avg_price),
-                "current_price": safe_round(curr),
-                "value": safe_round(total_value),
-                "lot": safe_round(total_lot),
-                "diff_pct": safe_round(diff_pct, 2),
-                "status": status,
-                "type": row["Type"] if isinstance(row["Type"], str) else "Unknown"
-            })
         
-        # sorting result berdasarkan value (descending)
-        result = sorted(result, key=lambda x: x["value"], reverse=True)
+        current_prices = {}
+        
+        if stock_list:
+            try:
+                # Download batch agar cepat
+                market_data = yf.download(tickers_jk, period="1d", progress=False)["Close"]
+                
+                # Handling jika data cuma 1 baris (Series) atau Tabel (DataFrame)
+                if not market_data.empty:
+                    last_prices = market_data.iloc[-1] # Ambil baris terakhir (Latest Close/Live)
+                    
+                    if len(stock_list) == 1:
+                        # Case cuma 1 saham
+                        code = stock_list[0]
+                        current_prices[code] = safe_float(last_prices.item())
+                    else:
+                        # Case banyak saham
+                        for ticker in tickers_jk:
+                            clean_code = ticker.replace(".JK", "")
+                            try:
+                                # Handle jika ticker tidak ada di YFinance (return NaN)
+                                price = last_prices[ticker]
+                                current_prices[clean_code] = safe_float(price)
+                            except:
+                                current_prices[clean_code] = 0
+            except Exception as e:
+                print(f"YFinance Error: {e}") 
+                # Lanjut saja, harga nanti jadi 0
 
+        # 7. Final Logic Loop (Classification)
+        result_list = []
+        
+        # Statistik Ringkasan
+        stats_win = 0
+        stats_loss = 0
+        stats_potential_pnl = 0
+
+        for index, row in df.iterrows():
+            stock = row["Stock"]
+            avg_price = row["AvgPrice"]
+            curr_price = current_prices.get(stock, 0)
+            
+            # Hitung % Perubahan
+            diff_pct = 0
+            floating_pnl = 0 # Rupiah
+            
+            if curr_price > 0:
+                diff_pct = ((curr_price - avg_price) / avg_price) * 100
+                # Hitung Estimasi Cuan/Rugi Rupiah (Lot * 100 lembar * Selisih Harga)
+                floating_pnl = (curr_price - avg_price) * row["TotalLot"] * 100
+            
+            # Update Global Stats
+            stats_potential_pnl += floating_pnl
+            if diff_pct > 0.5: stats_win += 1
+            elif diff_pct < -0.5: stats_loss += 1
+
+            # Klasifikasi Status (Lebih Detail)
+            # Toleransi BEP di angka 0.5% (Karena fee beli+jual biasanya 0.4%-0.5%)
+            status = "NEUTRAL" # BEP
+            status_color = "gray" # Untuk frontend hint
+            
+            if diff_pct >= 5.0:
+                status = "BIG PROFIT"
+                status_color = "green"
+            elif diff_pct > 0.5:
+                status = "PROFIT"
+                status_color = "green"
+            elif diff_pct <= -5.0:
+                status = "DEEP LOSS" # Nyangkut parah
+                status_color = "red"
+            elif diff_pct < -0.5:
+                status = "LOSS"
+                status_color = "red"
+
+            result_list.append({
+                "stock": stock,
+                "broker_avg": round(avg_price, 0),
+                "current_price": round(curr_price, 0),
+                "value_bn": round(row["TotalValue"] / 1_000_000_000, 2), # Dalam Milyar (Billion)
+                "value_raw": row["TotalValue"],
+                "lot": int(row["TotalLot"]),
+                "weight_pct": round(row["Weight"], 1), # % Alokasi
+                "diff_pct": round(diff_pct, 2),
+                "floating_pnl": round(floating_pnl, 0), # Estimasi Rupiah
+                "status": status,
+                "status_color": status_color
+            })
+
+        # 8. Sorting
+        # Sort utama berdasarkan Value (Uang yang dipertaruhkan)
+        result_list = sorted(result_list, key=lambda x: x["value_raw"], reverse=True)
+
+        # 9. Return Final Structure
         return {
+            "status": "success",
             "broker_info": broker_info,
-            "stocks": result,
-            "total_stocks": len(result)
+            "summary": {
+                "total_value": total_portfolio_value,
+                "total_stocks": len(result_list),
+                "win_vs_loss": f"{stats_win} - {stats_loss}",
+                "potential_pnl_total": stats_potential_pnl
+            },
+            "data": result_list
         }
 
-    except json.JSONDecodeError as e:
-        return {"error": f"JSON tidak valid: {str(e)}", "status_code": 400}
+    except json.JSONDecodeError:
+        return {"error": "Format JSON tidak valid.", "status_code": 400}
     except Exception as e:
-        return {"error": f"Terjadi kesalahan: {str(e)}", "status_code": 500}
+        # Print error log di terminal server untuk debugging
+        import traceback
+        traceback.print_exc() 
+        return {"error": f"Server Error: {str(e)}", "status_code": 500}

@@ -3,6 +3,7 @@ numpy
 scikit-learn
 yfinance
 joblib
+pandas_ta
 fastapi
 uvicorn
 pydantic

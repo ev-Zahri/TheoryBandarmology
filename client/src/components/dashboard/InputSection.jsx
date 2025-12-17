@@ -17,7 +17,7 @@ const InputSection = ({ onAnalyze, isLoading }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-white dark:bg-card-dark p-6 rounded-3xl border border-slate-200 dark:border-border-dark shadow-sm">
             {/* Left Inputs */}
             <div className="lg:col-span-8 flex flex-col gap-6">
-                <div className="flex flex-wrap gap-4">
+                {/* <div className="flex flex-wrap gap-4">
                     <label className="flex flex-col min-w-[200px] flex-1">
                         <span className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-2">Broker Code</span>
                         <input
@@ -39,11 +39,11 @@ const InputSection = ({ onAnalyze, isLoading }) => {
                             />
                         </div>
                     </label>
-                </div>
-                <label className="flex flex-col flex-1">
+                </div> */}
+                <label className="flex flex-col flex-1 h-full">
                     <span className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-2">Raw Data (JSON)</span>
                     <textarea
-                        className="form-textarea w-full rounded-3xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900/50 text-slate-900 dark:text-white p-5 min-h-[140px] focus:ring-2 focus:ring-primary focus:border-transparent transition-all font-mono text-sm leading-relaxed resize-none"
+                        className="form-textarea w-full rounded-3xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900/50 text-slate-900 dark:text-white p-5 min-h-[140px] focus:ring-2 focus:ring-primary focus:border-transparent transition-all font-mono text-sm leading-relaxed resize-none overflow-y-scroll scrollbar-hide"
                         placeholder="Paste your broker JSON export here..."
                         value={rawJson}
                         onChange={(e) => setRawJson(e.target.value)}
