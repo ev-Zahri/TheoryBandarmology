@@ -38,6 +38,22 @@ const FooterCard = () => {
         {
             question: "What is pivot points?",
             answer: "Pivot Points adalah teknik analisis teknis yang menggunakan garis garis untuk mengidentifikasi support/resistance levels."
+        },
+        {
+            question: "What is VWAP?",
+            answer: "VWAP adalah teknik analisis teknis yang menggunakan garis garis untuk mengidentifikasi volume-weighted average price. Institusi diukur performanya berdasarkan apakah mereka beli di bawah VWAP atau tidak"
+        },
+        {
+            question: "What is Volatility Squeeze?",
+            answer: "Volatility Squeeze adalah teknik analisis teknis untuk mendeteksi ledakan harga sebelum terjadi. Menggunakan perbandingan Bollinger Bands dan Keltner Channels."
+        },
+        {
+            question: "What is Price Action Pattern?",
+            answer: "Price Action Pattern adalah teknik analisis teknis yang menggunakan garis garis untuk mengidentifikasi price action. Mendeteksi Bullish Engulfing atau Hammer secara algoritmik secara matematis."
+        },
+        {
+            question: "What is Composite Technical Score?",
+            answer: "Composite Technical Score adalah teknik analisis teknis yang menggunakan garis garis untuk mengidentifikasi price action. Menggabungkan semua sinyal menjadi satu angka (0-100). Jika Skor > 75, probabilitas menang tinggi."
         }
     ]
 

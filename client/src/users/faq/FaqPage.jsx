@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Header } from '../dashboard/dashboard';
+import Header from '../../components/common/Header';
 
 const FaqPage = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -41,7 +41,7 @@ const FaqPage = () => {
                 <Header />
 
                 <div className="flex flex-1 justify-center py-8 px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col max-w-[900px] flex-1 gap-8">
+                    <div className="flex flex-col max-w-[1280px] flex-1 gap-8">
                         {/* Page Heading */}
                         <div className="flex flex-col gap-2">
                             <h1 className="text-3xl md:text-4xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">

@@ -89,7 +89,7 @@ function DeepAnalyzePage() {
                             <QuantCard data={quantData} isLoading={isLoadingQuant} />
                         </div>
 
-                        <FooterCard />
+                        {/* <FooterCard /> */}
                     </div>
                 </div>
             </div>
