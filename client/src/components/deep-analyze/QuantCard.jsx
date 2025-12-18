@@ -34,12 +34,21 @@ const QuantCard = ({ data, isLoading }) => {
 
     return (
         <div className="bg-white dark:bg-card-dark rounded-2xl border border-slate-200 dark:border-border-dark overflow-hidden">
-            <div className="p-4 border-b border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-slate-800/50">
-                <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary">functions</span>
-                    <h3 className="text-lg font-bold text-slate-900 dark:text-white">Quantitative Analysis</h3>
+            <div className="flex justify-between p-4 border-b border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-slate-800/50">
+                <div className="flex flex-col">
+                    <div className="flex items-center gap-2">
+                        <span className="material-symbols-outlined text-primary">functions</span>
+                        <h3 className="text-lg font-bold text-slate-900 dark:text-white">Quantitative Analysis</h3>
+                    </div>
+                    <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Z-Score, ATR, Pivot Points</p>
                 </div>
-                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Z-Score, ATR, Pivot Points</p>
+                {/* Current Price */}
+                <div>
+                    <span className="text-sm font-medium text-slate-500 dark:text-white">Price: </span>
+                    <span className="text-sm font-medium text-slate-500 dark:text-white">
+                        Rp {data.last_price?.toLocaleString('id-ID') || 0}
+                    </span>
+                </div>
             </div>
 
             <div className="p-6 space-y-6">
@@ -77,13 +86,12 @@ const QuantCard = ({ data, isLoading }) => {
                 {/* Volatility (ATR) */}
                 <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                        <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Volatility (ATR)</span>
+                        <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Volatility Average True Range (ATR) 14-day</span>
                         <span className="material-symbols-outlined text-[18px] text-slate-400">timeline</span>
                     </div>
-                    <p className="font-mono text-2xl font-bold text-slate-900 dark:text-white">
+                    <p className="font-mono text-slate-900 dark:text-white">
                         Rp {data.volatility_atr?.toLocaleString('id-ID') || 0}
                     </p>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">Average True Range (14-day)</p>
                 </div>
 
                 {/* Support & Resistance */}
@@ -119,16 +127,6 @@ const QuantCard = ({ data, isLoading }) => {
                     <p className={`font-bold ${getBiasColor(data.technical_bias)}`}>
                         {data.technical_bias}
                     </p>
-                </div>
-
-                {/* Current Price */}
-                <div className="pt-4 border-t border-slate-200 dark:border-border-dark">
-                    <div className="flex items-center justify-between">
-                        <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Price</span>
-                        <span className="font-mono text-xl font-bold text-slate-900 dark:text-white">
-                            Rp {data.last_price?.toLocaleString('id-ID') || 0}
-                        </span>
-                    </div>
                 </div>
             </div>
         </div>

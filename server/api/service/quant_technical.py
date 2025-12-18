@@ -6,6 +6,9 @@ def calculate_quant_metrics(stock_list: list):
     results = []
     tickers = [f"{s}.JK" for s in stock_list]
     
+    market_ticker = "^JKSE"
+    all_tickers = tickers + [market_ticker]
+    
     if not tickers:
         return []
 
@@ -103,7 +106,20 @@ def calculate_quant_metrics(stock_list: list):
             if is_squeeze:
                 squeeze_status = "⚠️ SQUEEZE (Ready to Explode)"
 
-            # --- FINAL RESULT ---
+            # Ambil data IHSG untuk quant beta, VaR dan KER
+            try:
+                if len(all_tickers) > 1:
+                    market_df = data[market_ticker].copy()
+                else:
+                    # Fallback jarang terjadi
+                    market_df = data.copy()
+                    
+                market_df = market_df.dropna()
+                # Menghitung % Return Harian IHSG
+                market_returns = market_df['Close'].pct_change().dropna()
+            except:
+                market_returns = pd.Series()
+
             results.append({
                 "stock": stock,
                 "last_price": int(close),

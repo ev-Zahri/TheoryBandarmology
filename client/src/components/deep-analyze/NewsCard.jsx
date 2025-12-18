@@ -62,14 +62,8 @@ const NewsCard = ({ data, isLoading }) => {
                     <div className="space-y-3">
                         <h4 className="text-sm font-bold text-slate-700 dark:text-slate-300">📰 Headlines</h4>
                         {data.headlines.map((news, idx) => (
-                            <a
-                                key={idx}
-                                href={news.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors border border-transparent hover:border-primary"
-                            >
-                                <div className="flex items-start gap-3">
+                            <>
+                                <div className="flex items-start gap-3 block p-4 bg-slate-50 dark:bg-slate-800 rounded-md hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">
                                     <span className="material-symbols-outlined text-primary mt-1">article</span>
                                     <div className="flex-1">
                                         <p className="font-medium text-slate-900 dark:text-white mb-2 line-clamp-2">
@@ -89,9 +83,16 @@ const NewsCard = ({ data, isLoading }) => {
                                             )}
                                         </div>
                                     </div>
-                                    <span className="material-symbols-outlined text-[18px] text-slate-400">open_in_new</span>
+                                    <a
+                                        key={idx}
+                                        href={news.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <span className="material-symbols-outlined text-[24px] text-slate-400">open_in_new</span>
+                                    </a>
                                 </div>
-                            </a>
+                            </>
                         ))}
                     </div>
                 ) : (

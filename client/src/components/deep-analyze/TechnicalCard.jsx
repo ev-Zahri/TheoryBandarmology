@@ -39,14 +39,35 @@ const TechnicalCard = ({ data, isLoading }) => {
         return 'text-slate-400';
     };
 
+    const getVwapColor = (status) => {
+        if (status.includes('Bullish Control')) return 'text-green-500';
+        if (status.includes('Bearish Control')) return 'text-red-500';
+        return 'text-slate-400';
+    };
+
+    const getCandlestickColor = (pattern) => {
+        if (pattern.includes('Buy')) return 'text-green-500';
+        if (pattern.includes('Sell')) return 'text-red-500';
+        if (pattern.includes('Neutral')) return 'text-slate-400';
+    }
+
     return (
         <div className="bg-white dark:bg-card-dark rounded-2xl border border-slate-200 dark:border-border-dark overflow-hidden">
-            <div className="p-4 border-b border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-slate-800/50">
-                <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary">candlestick_chart</span>
-                    <h3 className="text-lg font-bold text-slate-900 dark:text-white">Technical Analysis</h3>
+            <div className="flex justify-between p-4 border-b border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-slate-800/50">
+                <div className="flex flex-col">
+                    <div className="flex items-center gap-2">
+                        <span className="material-symbols-outlined text-primary">candlestick_chart</span>
+                        <h3 className="text-lg font-bold text-slate-900 dark:text-white">Technical Analysis</h3>
+                    </div>
+                    <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Ichimoku, StochRSI, OBV</p>
                 </div>
-                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Ichimoku, StochRSI, OBV</p>
+                {/* Current Price */}
+                <div>
+                    <span className="text-sm font-medium text-slate-500 dark:text-white">Price: </span>
+                    <span className="text-sm font-medium text-slate-500 dark:text-white">
+                        Rp {data.price?.toLocaleString('id-ID') || 0}
+                    </span>
+                </div>
             </div>
 
             <div className="p-6 space-y-6">
@@ -88,19 +109,31 @@ const TechnicalCard = ({ data, isLoading }) => {
                         <span className="text-sm font-medium text-slate-500 dark:text-slate-400">OBV Divergence</span>
                         <span className="material-symbols-outlined text-[18px] text-slate-400">show_chart</span>
                     </div>
-                    <p className={`font-bold ${getDivergenceColor(data.obv_divergence)}`}>
-                        {data.obv_divergence}
+                    <p className={`${getDivergenceColor(data.obv_divergence)}`}>
+                        OBV Divergence: {data.obv_divergence}
                     </p>
                 </div>
 
-                {/* Current Price */}
-                <div className="pt-4 border-t border-slate-200 dark:border-border-dark">
+                {/* vwap */}
+                <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                        <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Price</span>
-                        <span className="font-mono text-xl font-bold text-slate-900 dark:text-white">
-                            Rp {data.price?.toLocaleString('id-ID') || 0}
-                        </span>
+                        <div className="flex flex-col">
+                            <span className="text-sm font-medium text-slate-500 dark:text-slate-400">VWAP</span>
+                            <span className="mt-2 text-slate-500 dark:text-slate-400">VWAP Price: {data.vwap_price}</span>
+                        </div>
+                        <span className={`${getVwapColor(data.vwap_status)}`}>{data.vwap_status}</span>
                     </div>
+                </div>
+
+                {/* Candlestick pattern */}
+                <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                        <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Candlestick Pattern</span>
+                        <span className="material-symbols-outlined text-[18px] text-slate-400">show_chart</span>
+                    </div>
+                    <p className={`${getCandlestickColor(data.candlestick_pattern)}`}>
+                        {data.candlestick_pattern}
+                    </p>
                 </div>
             </div>
         </div>

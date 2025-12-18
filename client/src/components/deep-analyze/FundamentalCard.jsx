@@ -77,25 +77,25 @@ const FundamentalCard = ({ data, isLoading }) => {
                 <div className="space-y-3">
                     <h4 className="text-sm font-bold text-slate-700 dark:text-slate-300">💪 Company Health</h4>
                     <div className="grid grid-cols-2 gap-3">
-                        <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-3">
+                        <div className="bg-green-500/10 border border-green-500/20 rounded-md p-3">
                             <p className="text-xs text-green-600 dark:text-green-400 font-medium mb-1">ROE</p>
                             <p className="font-mono text-lg font-bold text-green-700 dark:text-green-300">
                                 {data.health?.roe || 0}%
                             </p>
                         </div>
-                        <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-3">
+                        <div className="bg-blue-500/10 border border-blue-500/20 rounded-md p-3">
                             <p className="text-xs text-blue-600 dark:text-blue-400 font-medium mb-1">NPM</p>
                             <p className="font-mono text-lg font-bold text-blue-700 dark:text-blue-300">
                                 {data.health?.npm || 0}%
                             </p>
                         </div>
-                        <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-3">
+                        <div className="bg-red-500/10 border border-red-500/20 rounded-md p-3">
                             <p className="text-xs text-red-600 dark:text-red-400 font-medium mb-1">DER</p>
                             <p className="font-mono text-lg font-bold text-red-700 dark:text-red-300">
                                 {data.health?.der || 0}%
                             </p>
                         </div>
-                        <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-3">
+                        <div className="bg-purple-500/10 border border-purple-500/20 rounded-md p-3">
                             <p className="text-xs text-purple-600 dark:text-purple-400 font-medium mb-1">Rev Growth</p>
                             <p className="font-mono text-lg font-bold text-purple-700 dark:text-purple-300">
                                 {data.health?.rev_growth || 0}%

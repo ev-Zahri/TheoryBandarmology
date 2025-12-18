@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from api.service.analyzer import process_broker_data
-from api.service.technical import calculate_advanced_technical
+from api.service.technical_analyze import calculate_advanced_technical
 from api.service.quant_technical import calculate_quant_metrics
 from api.service.financial_health import analyze_financial_health
 from api.service.news_narrative import analyze_news_narrative
@@ -44,7 +44,7 @@ async def analyze_data(request: Request):
         
         if isinstance(result, dict) and "error" in result:
             raise HTTPException(status_code=result.get("status_code", 400), detail=result["error"])
-        
+
         return {
             "message": "Data berhasil di analisis", 
             "data": result,
@@ -64,6 +64,8 @@ async def analyze_technical(request: StockAnalysisRequest):
 
         if not data:
             raise HTTPException(status_code=404, detail="Data teknikal tidak ditemukan untuk saham tersebut")
+
+        print(f"Response technical {data}")
 
         return {
             "message": "Analisis teknikal berhasil", 
