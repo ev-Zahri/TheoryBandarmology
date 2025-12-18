@@ -9,7 +9,6 @@ def calculate_advanced_technical(stock_list: list):
     if not tickers:
         return []
 
-    # Kita butuh data cukup panjang (1 tahun) untuk Ichimoku (52 periode)
     try:
         data = yf.download(tickers, period="1y", group_by='ticker', progress=False)
     except Exception as e:
@@ -18,59 +17,47 @@ def calculate_advanced_technical(stock_list: list):
 
     for stock in stock_list:
         try:
-            # 0. Persiapan Data
+            # --- 0. Persiapan Data (KODE LAMA ANDA TETAP SAMA) ---
             if len(stock_list) > 1:
-                # Multiple stocks: data is multi-indexed
                 ticker_key = f"{stock}.JK"
                 if ticker_key not in data.columns.get_level_values(0):
                     continue
                 df = data[ticker_key].copy()
             else:
-                # Single stock: yfinance returns MultiIndex columns
-                # Need to flatten by selecting the ticker column
                 df = data.copy()
-                # If columns are MultiIndex, flatten them
                 if isinstance(df.columns, pd.MultiIndex):
-                    # Take the second level (price data)
                     df.columns = df.columns.get_level_values(1)
             
-            # Clean data
             df = df.dropna()
             if df.empty: 
                 continue
 
             # Pastikan tipe data float
+            open_price = df['Open'].astype(float) # Butuh ini untuk Price Action
             high = df['High'].astype(float)
             low = df['Low'].astype(float)
             close = df['Close'].astype(float)
             volume = df['Volume'].astype(float)
 
-            # --- 1. ADVANCED: ICHIMOKU KINKO HYO (The Cloud) ---
-            # Tenkan-sen (Conversion Line): (9-period high + 9-period low)/2
+            # --- 1. ADVANCED: ICHIMOKU KINKO HYO ---
             period9_high = high.rolling(window=9).max()
             period9_low = low.rolling(window=9).min()
             tenkan_sen = (period9_high + period9_low) / 2
 
-            # Kijun-sen (Base Line): (26-period high + 26-period low)/2
             period26_high = high.rolling(window=26).max()
             period26_low = low.rolling(window=26).min()
             kijun_sen = (period26_high + period26_low) / 2
 
-            # Senkou Span A (Leading Span A): (Tenkan + Kijun)/2
-            # Shifted future 26 periods (tapi untuk analisa skrg, kita lihat nilai historical)
             senkou_span_a = ((tenkan_sen + kijun_sen) / 2).shift(26)
 
-            # Senkou Span B (Leading Span B): (52-period high + 52-period low)/2
             period52_high = high.rolling(window=52).max()
             period52_low = low.rolling(window=52).min()
             senkou_span_b = ((period52_high + period52_low) / 2).shift(26)
 
-            # Ambil nilai terakhir yang valid
             last_close = close.iloc[-1]
             last_span_a = senkou_span_a.iloc[-1]
             last_span_b = senkou_span_b.iloc[-1]
             
-            # Ichimoku Status
             ichimoku_status = "Neutral"
             if last_close > last_span_a and last_close > last_span_b:
                 ichimoku_status = "STRONG BULLISH (Above Cloud)"
@@ -79,8 +66,7 @@ def calculate_advanced_technical(stock_list: list):
             else:
                 ichimoku_status = "Consolidation (Inside Cloud)"
 
-            # --- 2. ADVANCED: STOCHASTIC RSI (Fast Momentum) ---
-            # Lebih sensitif daripada RSI biasa
+            # --- 2. ADVANCED: STOCHASTIC RSI ---
             rsi_period = 14
             delta = close.diff()
             gain = (delta.where(delta > 0, 0)).rolling(window=rsi_period).mean()
@@ -89,42 +75,81 @@ def calculate_advanced_technical(stock_list: list):
             rs = gain / loss
             rsi = 100 - (100 / (1 + rs))
             
-            # Calculate StochRSI
             stoch_period = 14
             min_rsi = rsi.rolling(window=stoch_period).min()
             max_rsi = rsi.rolling(window=stoch_period).max()
             stoch_rsi = (rsi - min_rsi) / (max_rsi - min_rsi)
             
-            current_stoch = round(stoch_rsi.iloc[-1], 2) # Range 0 - 1
+            current_stoch = round(stoch_rsi.iloc[-1], 2)
             
             momentum_signal = "Hold"
             if current_stoch < 0.2: momentum_signal = "Oversold (Golden Cross Potential)"
             elif current_stoch > 0.8: momentum_signal = "Overbought (Death Cross Potential)"
 
-            # --- 3. ADVANCED: OBV TREND (Money Flow) ---
-            # Mendeteksi apakah kenaikan harga didukung volume
-            # Rumus manual OBV
+            # --- 3. ADVANCED: OBV TREND ---
             obv_change = np.where(close > close.shift(1), volume, 
                          np.where(close < close.shift(1), -volume, 0))
             obv = pd.Series(obv_change).cumsum()
             
-            # Cek Tren OBV 5 hari terakhir (Slope)
             obv_slope = obv.iloc[-1] - obv.iloc[-5]
             price_slope = close.iloc[-1] - close.iloc[-5]
             
             divergence_status = "Sync"
             if price_slope > 0 and obv_slope < 0:
-                divergence_status = "BEARISH DIVERGENCE (Price Up, Vol Down)" # Bahaya
+                divergence_status = "BEARISH DIVERGENCE (Price Up, Vol Down)"
             elif price_slope < 0 and obv_slope > 0:
-                divergence_status = "BULLISH DIVERGENCE (Price Down, Vol Up)" # Potensi Rebound
+                divergence_status = "BULLISH DIVERGENCE (Price Down, Vol Up)"
 
+            # --- 4. INSTITUTIONAL: ANCHORED VWAP (Rolling 20 Days) ---
+            # Menentukan apakah Institusi sedang untung atau rugi bulan ini
+            vwap_period = 20
+            typical_price = (high + low + close) / 3
+            # Rumus VWAP: Sum(Price*Vol) / Sum(Vol)
+            rolling_pv = (typical_price * volume).rolling(window=vwap_period).sum()
+            rolling_vol = volume.rolling(window=vwap_period).sum()
+            vwap = rolling_pv / rolling_vol
+            
+            curr_vwap = vwap.iloc[-1]
+            
+            vwap_status = "Bearish Control"
+            if last_close > curr_vwap:
+                vwap_status = "Bullish Control (Inst. Buying)"
+
+            # --- 5. PRICE ACTION: CANDLESTICK PATTERN ---
+            # Menggunakan logika matematika candle
+            last_o = open_price.iloc[-1]
+            last_c = close.iloc[-1]
+            last_h = high.iloc[-1]
+            last_l = low.iloc[-1]
+            
+            prev_o = open_price.iloc[-2]
+            prev_c = close.iloc[-2]
+            
+            body = abs(last_c - last_o)
+            upper_wick = last_h - max(last_c, last_o)
+            lower_wick = min(last_c, last_o) - last_l
+            
+            pa_signal = "Neutral"
+            
+            # Deteksi Hammer (Reversal Bullish)
+            if (lower_wick > 2 * body) and (upper_wick < body):
+                pa_signal = "Hammer (Potential Reversal)"
+            
+            # Deteksi Bullish Engulfing (Kuat)
+            if (prev_c < prev_o) and (last_c > last_o) and (last_c > prev_o) and (last_o < prev_c):
+                pa_signal = "Bullish Engulfing (Strong Buy)"
+
+            # --- FINAL RESULT ---
             results.append({
                 "stock": stock,
                 "price": int(last_close),
                 "ichimoku_status": ichimoku_status,
                 "stoch_rsi": current_stoch,
                 "momentum_signal": momentum_signal,
-                "obv_divergence": divergence_status
+                "obv_divergence": divergence_status,
+                "vwap_price": int(curr_vwap),
+                "vwap_status": vwap_status,
+                "candle_pattern": pa_signal
             })
 
         except Exception as e:
