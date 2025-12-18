@@ -94,13 +94,13 @@ async def analyze_quant(request: StockAnalysisRequest):
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
 
 
-@app.post('/v1/analyze/financials')
+@app.post('/v1/analyze/fundamental')
 async def get_financial(request: StockAnalysisRequest):
     try:
         if not request.stocks:
             raise HTTPException(status_code=400, detail="List saham tidak boleh kosong")
         
-        data = analyze_financial_health(payload.stocks)
+        data = analyze_financial_health(request.stocks)
 
         if not data:
             raise HTTPException(status_code=400, detail="Data kesehatan finansial tidak ditemukan untuk saham tersebut")

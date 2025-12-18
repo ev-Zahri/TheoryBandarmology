@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Header, Error, TechnicalCard, QuantCard, FooterCard } from './deep-analyze';
-import { analyzeTechnical, analyzeQuant } from '../../services/api';
+import { Header, Error, TechnicalCard, QuantCard, FundamentalCard, NewsCard } from './deep-analyze';
+import { analyzeTechnical, analyzeQuant, analyzeFundamental, analyzeNews } from '../../services/api';
 
 function DeepAnalyzePage() {
     const { stock } = useParams();
@@ -9,8 +9,12 @@ function DeepAnalyzePage() {
 
     const [technicalData, setTechnicalData] = useState(null);
     const [quantData, setQuantData] = useState(null);
+    const [fundamentalData, setFundamentalData] = useState(null);
+    const [newsData, setNewsData] = useState(null);
     const [isLoadingTechnical, setIsLoadingTechnical] = useState(true);
     const [isLoadingQuant, setIsLoadingQuant] = useState(true);
+    const [isLoadingFundamental, setIsLoadingFundamental] = useState(true);
+    const [isLoadingNews, setIsLoadingNews] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
@@ -49,8 +53,38 @@ function DeepAnalyzePage() {
             }
         };
 
+        // Fetch fundamental analysis
+        const fetchFundamental = async () => {
+            try {
+                setIsLoadingFundamental(true);
+                const response = await analyzeFundamental(stock);
+                setFundamentalData(response.data?.[0] || null);
+            } catch (err) {
+                console.error('Fundamental analysis error:', err);
+                setError(err.message);
+            } finally {
+                setIsLoadingFundamental(false);
+            }
+        };
+
+        // Fetch news analysis
+        const fetchNews = async () => {
+            try {
+                setIsLoadingNews(true);
+                const response = await analyzeNews(stock);
+                setNewsData(response.data?.[0] || null);
+            } catch (err) {
+                console.error('News analysis error:', err);
+                setError(err.message);
+            } finally {
+                setIsLoadingNews(false);
+            }
+        };
+
         fetchTechnical();
         fetchQuant();
+        fetchFundamental();
+        fetchNews();
     }, [stock, navigate]);
 
     return (
@@ -73,7 +107,7 @@ function DeepAnalyzePage() {
                                     Deep Analysis: <span className="text-primary">{stock}</span>
                                 </h1>
                                 <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg font-normal">
-                                    Technical & Quantitative Analysis
+                                    Technical, Quantitative, Fundamental & News Analysis
                                 </p>
                             </div>
                         </div>
@@ -88,6 +122,12 @@ function DeepAnalyzePage() {
                             <TechnicalCard data={technicalData} isLoading={isLoadingTechnical} />
                             <QuantCard data={quantData} isLoading={isLoadingQuant} />
                         </div>
+
+                        {/* Fundamental card */}
+                        <FundamentalCard data={fundamentalData} isLoading={isLoadingFundamental} />
+
+                        {/* News card */}
+                        <NewsCard data={newsData} isLoading={isLoadingNews} />
 
                         {/* <FooterCard /> */}
                     </div>

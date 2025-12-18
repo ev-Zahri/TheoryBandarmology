@@ -1,4 +1,5 @@
 import React from 'react';
+import Error from '../common/Error';
 
 const QuantCard = ({ data, isLoading }) => {
     if (isLoading) {
@@ -15,9 +16,7 @@ const QuantCard = ({ data, isLoading }) => {
 
     if (!data) {
         return (
-            <div className="bg-white dark:bg-card-dark rounded-2xl border border-slate-200 dark:border-border-dark p-6">
-                <p className="text-slate-500 dark:text-slate-400">Data kuantitatif tidak tersedia</p>
-            </div>
+            <Error message="Data kuantitatif tidak tersedia" />
         );
     }
 

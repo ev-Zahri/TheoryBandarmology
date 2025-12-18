@@ -3,3 +3,5 @@ export { default as Error } from '../../components/common/Error';
 export { default as TechnicalCard } from '../../components/deep-analyze/TechnicalCard';
 export { default as QuantCard } from '../../components/deep-analyze/QuantCard';
 export { default as FooterCard } from '../../components/deep-analyze/FooterCard';
+export { default as FundamentalCard } from '../../components/deep-analyze/FundamentalCard';
+export { default as NewsCard } from '../../components/deep-analyze/NewsCard';

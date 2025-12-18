@@ -12,7 +12,6 @@ def calculate_advanced_technical(stock_list: list):
     # Kita butuh data cukup panjang (1 tahun) untuk Ichimoku (52 periode)
     try:
         data = yf.download(tickers, period="1y", group_by='ticker', progress=False)
-        print(f"Data fetched: {data}")
     except Exception as e:
         print(f"Error fetching yfinance: {e}")
         return []
