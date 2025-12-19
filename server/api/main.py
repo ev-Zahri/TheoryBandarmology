@@ -6,6 +6,7 @@ from api.service.technical_analyze import calculate_advanced_technical
 from api.service.quant_technical import calculate_quant_metrics
 from api.service.financial_health import analyze_financial_health
 from api.service.news_narrative import analyze_news_narrative
+from api.service.company_profile import get_company_profile
 from typing import Any, Dict, List
 import json
 
@@ -128,6 +129,26 @@ async def analyze_news(request: StockAnalysisRequest):
         
         return {
             "message": "Analisis narasi berita berhasil", 
+            "data": data,
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
+
+@app.get('/v1/company-profile/{stock_code}')
+def get_insight(stock_code: str):
+    try:
+        if not stock_code:
+            raise HTTPException(status_code=400, detail="Kode saham tidak boleh kosong")
+        
+        data = get_company_profile(stock_code)
+        print(f"Stock code: {stock_code}")
+        print(f"Response company profile {data}")
+        if not data:
+            raise HTTPException(status_code=404, detail="Data profil tidak ditemukan untuk saham tersebut")
+        
+        return {
+            "message": "Profil Perusahaan berhasil diambil", 
             "data": data,
             "status_code": 200
         }

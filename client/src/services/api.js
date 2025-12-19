@@ -92,6 +92,23 @@ export const analyzeNews = async (stock) => {
     return response.json();
 }
 
+export const getCompanyProfile = async (stock_code) => {
+    const response = await fetch(`${API_BASE_URL}/v1/company-profile/${stock_code}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+    console.log("getCompanyProfile: ", response);
+
+    if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.detail || 'Terjadi kesalahan saat menganalisis news');
+    }
+
+    return response.json();
+}
+
 export const importRecentData = async (rawJson) => {
     let jsonData;
     try {

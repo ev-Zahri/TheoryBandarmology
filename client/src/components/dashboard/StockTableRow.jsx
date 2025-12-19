@@ -116,7 +116,7 @@ const StockTableRow = ({
                         </button>
                         <button className="w-full py-2.5 px-3 text-left hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2">
                             <span className="material-symbols-outlined text-[16px] text-primary">lightbulb</span>
-                            <Link to={`/insight/${stock}`}><span className="text-sm dark:text-white">Get Insight</span></Link>
+                            <Link to={`/company-profile/${stock}`}><span className="text-sm dark:text-white">Get Insight</span></Link>
                         </button>
                     </div>
                 )}
