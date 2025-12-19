@@ -1,4 +1,5 @@
 import yfinance as yf
+from api.helper.idx_data import get_competitors
 
 def get_company_profile(stock_code: str):
     ticker_code = f"{stock_code}.JK"
@@ -62,7 +63,33 @@ def get_company_profile(stock_code: str):
 
     # --- 4. DATA TAMBAHAN (Timeline/History) ---
     # Karena tidak ada timeline spesifik, kita return tahun IPO/Berdiri jika ada
-    info.get('governanceEpochDate')
+    ipo = info.get('governanceEpochDate')
+
+    # --- 5. COMPETITORS ---
+    competitors = get_competitors(sector, stock_code)
+    competitors_data = []
+    for comp in competitors:
+        competitors_data.append{
+            "ticker": comp,
+            "name": f"Competitor {comp}",
+            "sector": sector
+        }
+
+    # --- 6. DIVIDEND ---
+    dividends_data = []
+    try:
+        divs = ticker.dividends
+        if not divs.empty:
+            recent_divs = div.sort_index(ascending=False).head(5)
+            for date, value in recent_divs.items():
+                dividends_data.append({
+                    "date": date.strftime("%Y-%m-%d"),
+                    "amount": value,
+                    "year": date.year
+                })
+    except Exception as e:
+        print(f"⚠️ Error mengambil data dividen: {e}")
+        pass
     
     return {
         "status": "success",
@@ -73,7 +100,9 @@ def get_company_profile(stock_code: str):
             "industry": industry,
             "website": website,
             "employees": employees,
-            "description": summary
+            "description": summary,
+            "address": f"{info.get('address1', '')}, {info.get('city', '')}"
+            "ipo": ipo,
         },
         "business_model": {
             "revenue_stream_desc": f"Perusahaan ini beroperasi di sektor {sector}, industri {industry}.",
@@ -81,6 +110,8 @@ def get_company_profile(stock_code: str):
         },
         "management": management_team,
         "shareholders": shareholders,
+        "competitors": competitors_data,
+        "dividends": dividends_data,
         "history": {
             "founded_summary": f"Data historis spesifik tidak tersedia via API publik, namun perusahaan ini terdaftar aktif di sektor {sector}."
         }
