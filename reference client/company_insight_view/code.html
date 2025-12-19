@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Company Insight View</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#21c45d", // Neon Green
+                        "primary-hover": "#16a34a",
+                        "danger": "#ef4444", // Soft Red
+                        "background-dark": "#0B1221", // Deep Indigo-Black
+                        "card-dark": "#161F32", // Card Background
+                        "border-dark": "#1e293b", // Slate 800
+                        "text-muted": "#94a3b8", // Slate 400
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"],
+                    },
+                    boxShadow: {
+                        "glow": "0 0 10px rgba(33, 196, 93, 0.1)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0B1221;
+            color: #ffffff;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B1221; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155; 
+        }
+    </style>
+</head>
+<body class="font-display antialiased selection:bg-primary selection:text-white">
+<div class="min-h-screen flex flex-col">
+<header class="sticky top-0 z-50 border-b border-border-dark bg-[#0B1221]/95 backdrop-blur-sm">
+<div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rotate-45 rounded flex items-center justify-center shadow-glow">
+<div class="size-4 bg-[#0B1221] rounded-sm"></div>
+</div>
+<span class="text-lg font-bold tracking-tight text-white ml-2 hidden sm:block">Theory Bandarmology</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-lg text-text-muted hover:text-white hover:bg-white/5 transition-colors" title="Toggle Theme">
+<span class="material-symbols-outlined text-[20px]">dark_mode</span>
+</button>
+<button class="p-2 rounded-lg text-text-muted hover:text-white hover:bg-white/5 transition-colors" title="Settings">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<div class="h-6 w-px bg-border-dark mx-1"></div>
+<button class="flex items-center gap-2 pl-2 rounded-lg hover:bg-white/5 transition-colors group">
+<div class="size-8 rounded-full bg-cover bg-center ring-2 ring-border-dark group-hover:ring-primary/50 transition-all" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9M0M4ZL7ng-JKwnF9SNOnYcHKWJ7p9XXPKkCO1SQnUf3Y5Oc7jCPh24nFBW_yDfengGRsVH3B-QdA8_Bb1J2iSy7--sRNbYsq994Xf_7xt3UMNNhvLSUQwBQ6zxr7NBtW1hpMGShqOcY97JjUFSec-ez4UlK8CSHhV-6CIQdVqdU6iisu6_J-au0vB96O6w7OItOTLaEh__zQ-U9Fxw1txaORmWP4ZrDSkYJRX8tM5M2aIGUdZO1f0Ya9lMV8ACEiU5SnIBIPXBM')"></div>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto w-full">
+<div class="flex items-center gap-2 text-sm text-text-muted mb-6">
+<a class="hover:text-primary transition-colors" href="#">Stocks</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Consumer Non-Cyclicals</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-white font-medium">ICBP</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
+<div class="lg:col-span-8 bg-card-dark border border-border-dark rounded-xl p-6 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
+<div class="flex flex-col sm:flex-row gap-6 relative z-10">
+<div class="size-24 rounded-xl bg-white p-2 flex-shrink-0 flex items-center justify-center border border-border-dark">
+<img alt="Company Logo ICBP Indofood" class="w-full h-auto object-contain" data-alt="ICBP company logo placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZNicLyxruXGQWZQVqH3WKflcjug4dMoWR7JeAlWfcd0I-f5HZDLeLDzkRGSaQFTvD4nF2RPcJWdYtS-_CwgX0NhhPL6cvZFjnhJdtgg0UAbPtUjLBABq6C4WpBWOjVUypkMLN7kXgY0A1i1rJixhBdcUIUqBzSlgdNioEsHJq7BI3zHo6A-NeLbaz91v66oGzKa53KcFeAaGW-MdhYDBUamuDQnR9bHuBgfeR5MXlA47cQUyWB9z-iE_7wBrmD1MyJMJCatnMaTk"/>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center gap-3 mb-1">
+<h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">ICBP</h1>
+<span class="px-2 py-0.5 rounded text-xs font-mono font-medium bg-white/10 text-white border border-white/10">IDX:ICBP</span>
+</div>
+<h2 class="text-lg text-text-muted font-medium mb-3">Indofood CBP Sukses Makmur Tbk</h2>
+<p class="text-sm text-text-muted leading-relaxed max-w-2xl line-clamp-2">
+                                    A market-leading producer of packaged food products including noodles, dairy, snack foods, food seasonings, nutrition and special foods, and beverages. The company operates vertically integrated production.
+                                </p>
+</div>
+<div class="flex items-center gap-4 mt-4">
+<span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">Consumer Goods</span>
+<span class="px-3 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">Large Cap</span>
+<span class="px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                                    Sharia Compliant
+                                </span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 bg-card-dark border border-border-dark rounded-xl p-6 flex flex-col justify-center relative">
+<div class="absolute top-4 right-4 text-text-muted">
+<span class="material-symbols-outlined cursor-pointer hover:text-white">star</span>
+</div>
+<p class="text-sm text-text-muted font-medium mb-1">Current Price</p>
+<div class="flex items-baseline gap-3 mb-2">
+<span class="text-4xl font-bold text-white font-mono tracking-tighter">Rp 11,200</span>
+</div>
+<div class="flex items-center gap-3 mb-6">
+<span class="flex items-center text-primary font-mono font-bold text-sm bg-primary/10 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] mr-1">trending_up</span>
+                            +275 (2.51%)
+                        </span>
+<span class="text-xs text-text-muted">Today</span>
+</div>
+<div class="grid grid-cols-2 gap-4 border-t border-border-dark pt-4">
+<div>
+<p class="text-xs text-text-muted mb-1">Market Cap</p>
+<p class="text-sm font-mono font-medium text-white">130.6T</p>
+</div>
+<div>
+<p class="text-xs text-text-muted mb-1">PE Ratio</p>
+<p class="text-sm font-mono font-medium text-white">14.2x</p>
+</div>
+<div>
+<p class="text-xs text-text-muted mb-1">Vol (Avg)</p>
+<p class="text-sm font-mono font-medium text-white">8.2M</p>
+</div>
+<div>
+<p class="text-xs text-text-muted mb-1">Bandar Vol</p>
+<p class="text-sm font-mono font-medium text-primary">High Acc.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<div class="lg:col-span-8 flex flex-col gap-6">
+<section class="bg-card-dark border border-border-dark rounded-xl p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-lg font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">pie_chart</span>
+                                Revenue Segments
+                            </h3>
+<button class="text-xs text-primary font-medium hover:underline">View Full Report</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-[#0B1221] border border-border-dark rounded-lg p-4 hover:border-primary/30 transition-colors">
+<div class="flex justify-between items-end mb-2">
+<span class="text-sm font-medium text-white">Noodles</span>
+<span class="text-lg font-mono font-bold text-primary">65.2%</span>
+</div>
+<div class="w-full bg-gray-800 rounded-full h-2 mb-2">
+<div class="bg-primary h-2 rounded-full" style="width: 65.2%"></div>
+</div>
+<p class="text-xs text-text-muted">Main contributor, stable growth YoY.</p>
+</div>
+<div class="bg-[#0B1221] border border-border-dark rounded-lg p-4 hover:border-primary/30 transition-colors">
+<div class="flex justify-between items-end mb-2">
+<span class="text-sm font-medium text-white">Dairy</span>
+<span class="text-lg font-mono font-bold text-primary">15.8%</span>
+</div>
+<div class="w-full bg-gray-800 rounded-full h-2 mb-2">
+<div class="bg-primary h-2 rounded-full" style="width: 15.8%"></div>
+</div>
+<p class="text-xs text-text-muted">Indomilk brand, high margin products.</p>
+</div>
+<div class="bg-[#0B1221] border border-border-dark rounded-lg p-4 hover:border-primary/30 transition-colors">
+<div class="flex justify-between items-end mb-2">
+<span class="text-sm font-medium text-white">Snack Foods</span>
+<span class="text-lg font-mono font-bold text-primary">8.4%</span>
+</div>
+<div class="w-full bg-gray-800 rounded-full h-2 mb-2">
+<div class="bg-primary h-2 rounded-full" style="width: 8.4%"></div>
+</div>
+<p class="text-xs text-text-muted">Chitato, Qtela. Improving market share.</p>
+</div>
+<div class="bg-[#0B1221] border border-border-dark rounded-lg p-4 hover:border-primary/30 transition-colors">
+<div class="flex justify-between items-end mb-2">
+<span class="text-sm font-medium text-white">Food Seasonings</span>
+<span class="text-lg font-mono font-bold text-primary">4.1%</span>
+</div>
+<div class="w-full bg-gray-800 rounded-full h-2 mb-2">
+<div class="bg-primary h-2 rounded-full" style="width: 4.1%"></div>
+</div>
+<p class="text-xs text-text-muted">Sambal Indofood, Bumbu Racik.</p>
+</div>
+</div>
+</section>
+<section class="bg-card-dark border border-border-dark rounded-xl p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-lg font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">hub</span>
+                                Competitor Landscape
+                            </h3>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="flex flex-col items-center justify-center p-6 bg-[#0B1221] border border-border-dark rounded-lg group hover:border-primary/50 transition-all cursor-pointer">
+<div class="size-12 bg-white rounded-full flex items-center justify-center mb-3 grayscale group-hover:grayscale-0 transition-all">
+<img alt="Mayora Logo" class="w-8 h-8 object-contain" data-alt="Mayora Indah logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgXwMQ8wBxz8WijFgaGQClxus-38DrAraYlAwcLUGDb6nCDg5xBDHSgOkExP-WIiLKEZTZVSomyCS2iaTfEwvb0YsB3Nmf1RT-q9m1OI5mmq4mgx8gRDX7aRxniX3UIPIZhbqV7_eYK-2tHZHbwpOi_5KlaIk_Xzk5dRoU4R4nb-0GQOHWiB96CU2Ak44rSA4TepSH41fojiBUJVIiGOLQS4LkCB7QFaOvGeTIuUVpc9c5aDtEbhnIJtxHVEk3sn4xpSsEcTXUJRE"/>
+</div>
+<span class="text-sm font-bold text-white">MYOR</span>
+<span class="text-xs text-text-muted mt-1 font-mono">Mayora</span>
+</div>
+<div class="flex flex-col items-center justify-center p-6 bg-[#0B1221] border border-border-dark rounded-lg group hover:border-primary/50 transition-all cursor-pointer">
+<div class="size-12 bg-white rounded-full flex items-center justify-center mb-3 grayscale group-hover:grayscale-0 transition-all">
+<img alt="Unilever Logo" class="w-8 h-8 object-contain" data-alt="Unilever Indonesia logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhu6dvxiK2J5Hteh4gHXo4As5cwfJA2ZUmHFLJpXjxorVLvDlEeESi2ZSMYzMWehG4SCN4kU65CxaE2vHXJVEwY29m--gIYahNnMYdithmTI3SSa_WjVrC59LH9j8PhiRN3Pybj0ZnVyWaeC3zvo0kGEFo9uQWnQz71sMsDXUWnx4qPqbGZxA6-EJIWupKeFdq52k-oBUoQLos1LjvwAGBPkLTtis08uQVsnTZ3Qxa2V4V0jjGxFi7goyzwuTGLtgxRddIpQpr7XA"/>
+</div>
+<span class="text-sm font-bold text-white">UNVR</span>
+<span class="text-xs text-text-muted mt-1 font-mono">Unilever</span>
+</div>
+<div class="flex flex-col items-center justify-center p-6 bg-[#0B1221] border border-border-dark rounded-lg group hover:border-primary/50 transition-all cursor-pointer">
+<div class="size-12 bg-white rounded-full flex items-center justify-center mb-3 grayscale group-hover:grayscale-0 transition-all">
+<img alt="Wings Logo" class="w-8 h-8 object-contain" data-alt="Wings Group logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfbrkqT7wcrdZI9G6-rMJfJdT2xal8MHobZKx4gw1iYLzDx8yLW2BbdmKzFH55NoBNNvuXZkyvTalMwniF-cBn4_MuZ2N9nO7z_Wm3_zpEoEkJXPIo2ooXNDyUmp8_iA9L1XAjijomZLVahn6CrPuZPqQXP6lc7hYO3FyXN77O85Pywy_2MG1UDmNb03OG2mVJQhPw8ABBUMsTwigDfax2eq-F-CjzunQBH7Tut0REgpzjFehq-7F7kRea9Zw849n9NmuwxSeuw-I"/>
+</div>
+<span class="text-sm font-bold text-white">Wings</span>
+<span class="text-xs text-text-muted mt-1 font-mono">Wings Food</span>
+</div>
+<div class="flex flex-col items-center justify-center p-6 bg-[#0B1221] border border-border-dark rounded-lg group hover:border-primary/50 transition-all cursor-pointer">
+<div class="size-12 bg-white rounded-full flex items-center justify-center mb-3 grayscale group-hover:grayscale-0 transition-all">
+<img alt="Indofood Logo" class="w-8 h-8 object-contain" data-alt="Indofood logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd0UDNQa0yVcQqMZ_h2IwIIn7t0EGkzlMNAC-F80ePcOi5io1acnStrikmGXig8xr-PPqsuwEAnrOXyFkUabD_-YPXo5cQwBISeVdRclCMqNcV5K56GYzh_QDnz-45Xa_uRSwWmVufw5_tLnu5Rtl3PpZ8tIY2VrXj7l3TXKijKGOC7JDs9bCtJbyD01h0T2s-LVw0mZNblluUYiuTIJ_yuYKp0RrjK3RgIzTpDEU-SMMYI5TYre5ISvUTj53TyyUOTMTCeaN-Vpk"/>
+</div>
+<span class="text-sm font-bold text-white">INDF</span>
+<span class="text-xs text-text-muted mt-1 font-mono">Parent Co.</span>
+</div>
+</div>
+</section>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-6">
+<section class="bg-card-dark border border-border-dark rounded-xl p-6 h-fit">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-lg font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">donut_small</span>
+                                Ownership
+                            </h3>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary text-[#0B1221] uppercase tracking-wide">Big Accumulation</span>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex h-4 w-full rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 80%"></div>
+<div class="h-full bg-slate-600" style="width: 20%"></div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-3">
+<div class="mt-1 size-3 rounded-full bg-primary shadow-glow"></div>
+<div class="flex-1">
+<p class="text-sm font-medium text-white">First Pacific Co.</p>
+<p class="text-xs text-text-muted">Controlling Entity (Bandar)</p>
+</div>
+<p class="text-sm font-mono font-bold text-white">80.53%</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="mt-1 size-3 rounded-full bg-slate-600"></div>
+<div class="flex-1">
+<p class="text-sm font-medium text-white">Public (Masyarakat)</p>
+<p class="text-xs text-text-muted">&lt; 5% Ownership</p>
+</div>
+<p class="text-sm font-mono font-bold text-white">19.47%</p>
+</div>
+</div>
+<div class="mt-2 p-3 bg-[#0B1221] border border-border-dark rounded-lg">
+<p class="text-xs text-text-muted leading-relaxed">
+<span class="text-primary font-bold">Insight:</span> Strong controlling ownership indicates stability, but lower liquidity for retail traders.
+                                </p>
+</div>
+</div>
+</section>
+<section class="bg-card-dark border border-border-dark rounded-xl p-6 h-fit">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-lg font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">groups</span>
+                                Management
+                            </h3>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 p-3 rounded-lg hover:bg-[#0B1221] transition-colors border border-transparent hover:border-border-dark">
+<div class="size-10 rounded-full bg-cover bg-center" data-alt="Anthoni Salim portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJUhx5iK8JHbSSCYftDaWF_G1mZCKGKUL8KzmqG-dLEU9dp22tu-OpcoBPLqKbUvcgZ3hhWa1Af1jkifuvWfIHkRh0UbFyDj9dUXWCHpdF7hogcxVntf_G6TIfD0xIkoY4cw9g6dB3FuzxVO4LmV09MsUkRGSf5U7OIrdM-YeG3UCCdams3tMEMD-iF8kZOItBUHqhNDpnGPyj84SFVw4J_zVSu8f5kLrCOcfy0vkI9gCtM_pqm4ig4J9oE7g9RYRaiZy-3_2Hfig')"></div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-bold text-white truncate">Anthoni Salim</p>
+<p class="text-xs text-text-muted truncate">President Director (CEO)</p>
+</div>
+<a class="text-text-muted hover:text-white" href="#">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</a>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg hover:bg-[#0B1221] transition-colors border border-transparent hover:border-border-dark">
+<div class="size-10 rounded-full bg-cover bg-center" data-alt="Taufik Wiraatmadja portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDLnLCm3Mgvj7N-RMymHkfu_8RXxIf-hSnsmmn-fWT910TRu6tN60ZVRWwMFX3fKRgv3tDPN6JODRCwKJZwEAHVvbKAgfKThRTG-1SvmKbeCMMEP7w0-jSjXwoyBcPg_GnQr5YfHOE-Na81y37heL0jUe9uAsxYgh7oYCiG0mQTSEyB5jhg0hNB-JLDjlb8BXGw6D70wLQdxb4Efs5U0LO0D5jD_VkRxUGPIDCnV1k8Kt8COM8iSBXey-Qk58Y2UnnkcQdSWgZYG_4')"></div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-bold text-white truncate">Taufik Wiraatmadja</p>
+<p class="text-xs text-text-muted truncate">Director</p>
+</div>
+<a class="text-text-muted hover:text-white" href="#">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</a>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg hover:bg-[#0B1221] transition-colors border border-transparent hover:border-border-dark">
+<div class="size-10 rounded-full bg-cover bg-center" data-alt="Axton Salim portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9M9pxBtiV578S-5coIaeV4p56KUAgIa-f0P6SRAfAQ8w5cgd9ir9EQC_7k2KjbqFzaTvKB8OSGr3atdlxSIqT2X8qAjYfYN8k7ndNsxXey4vqASUfeyD_T55RfOmZZXT5KBJ-kaX4ulwq4qsagOWuMkfJWiVnVXM2ubNvqnOpOCzj6THChjvsEAk3KR1neYV7hxdc3Witmvb5eTqwN11I__x0-tcYq7x2olsugovbkR6YryHU0BE4DknUNmFLgOkYlaEDADzQnWI')"></div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-bold text-white truncate">Axton Salim</p>
+<p class="text-xs text-text-muted truncate">Director</p>
+</div>
+<a class="text-text-muted hover:text-white" href="#">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</a>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg hover:bg-[#0B1221] transition-colors border border-transparent hover:border-border-dark">
+<div class="size-10 rounded-full bg-cover bg-center" data-alt="Mark Julian Wakeford portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtI35r1gJPHqNfAcPt-iQ2hQ6y6ixNu4NWvEC0k_P0WX2-IX0UqBYAsnKWHjskS0pzC5uNIBivrIu66OZxcwl0nNIzTXk6YN1-kF6tgW8VEQRmCcg0u5eKhyUlGJ71zR_TSKQD0B5KYozxhf4FWjWz6_hXKKwZHI-6BuW1PX4hxSkwcAeagK1lbCl-Sv8ehcVVY_jjCp1SZMpQYr8NDTa96LE7aJS_AbeEsagddJOHKVuNjg7-qSM75n0SG8lQUJNqtUyLGXLYu0c')"></div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-bold text-white truncate">Mark Julian Wakeford</p>
+<p class="text-xs text-text-muted truncate">Director (Investor Relations)</p>
+</div>
+<a class="text-text-muted hover:text-white" href="#">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-border-dark text-center">
+<button class="text-xs font-medium text-text-muted hover:text-white transition-colors">View All Board Members</button>
+</div>
+</section>
+</div>
+</div>
+<footer class="mt-12 border-t border-border-dark pt-8 pb-8 text-center text-xs text-text-muted">
+<p>© 2023 Theory Bandarmology. All rights reserved. Market data delayed by 15 minutes.</p>
+</footer>
+</main>
+</div>
+</body></html>

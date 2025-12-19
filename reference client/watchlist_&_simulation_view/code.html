@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Watchlist &amp; Simulation View</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "bg-main": "#0B1221",
+                        "bg-card": "#161F32",
+                        "border-dark": "#1e293b",
+                        "primary": "#22c55e",
+                        "primary-hover": "#16a34a",
+                        "danger": "#ef4444",
+                        "text-main": "#FFFFFF",
+                        "text-muted": "#94a3b8",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"],
+                    },
+                    boxShadow: {
+                        "glow": "0 0 10px rgba(34, 197, 94, 0.2)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B1221;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="bg-bg-main text-text-main font-sans h-screen flex flex-col overflow-hidden">
+<nav class="h-16 shrink-0 bg-bg-card border-b border-border-dark flex items-center justify-between px-6 z-50">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary flex items-center justify-center shadow-glow">
+<span class="material-symbols-outlined text-bg-main font-bold">water_ec</span>
+</div>
+<div>
+<h1 class="font-bold text-sm tracking-wide text-white uppercase">Theory Bandarmology</h1>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg text-text-muted hover:text-white hover:bg-white/5 transition-colors" title="Theme">
+<span class="material-symbols-outlined">light_mode</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg text-text-muted hover:text-white hover:bg-white/5 transition-colors" title="Settings">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="h-6 w-px bg-border-dark mx-1"></div>
+<button class="w-9 h-9 rounded-full bg-slate-700 border border-slate-600 flex items-center justify-center overflow-hidden hover:border-primary transition-colors focus:ring-2 focus:ring-primary/20" title="User Profile">
+<span class="material-symbols-outlined text-gray-300 text-xl">person</span>
+</button>
+</div>
+</nav>
+<main class="flex-1 flex flex-col overflow-hidden relative w-full">
+<header class="h-auto shrink-0 px-8 py-6 bg-bg-main z-10">
+<div class="flex flex-col gap-6 max-w-[1400px] mx-auto">
+<div class="flex flex-wrap justify-between items-end gap-4">
+<div class="flex flex-col gap-1">
+<h2 class="text-3xl font-black tracking-tight text-white">High Conviction Watchlist</h2>
+<div class="flex items-center gap-2 text-text-muted text-sm font-medium">
+<span class="text-primary">12 Stocks</span>
+<span>•</span>
+<span>4 Near Buy Zone</span>
+<span>•</span>
+<span>$142,000 Simulation Value</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="h-10 px-4 rounded-lg bg-bg-card border border-border-dark text-text-muted hover:text-white hover:border-text-muted/50 transition-colors text-sm font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">edit</span>
+                            Edit Watchlist
+                        </button>
+<button class="h-10 px-4 rounded-lg bg-primary hover:bg-primary-hover text-bg-main text-sm font-bold shadow-glow flex items-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-lg font-bold">add</span>
+                            Add Stock
+                        </button>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-4 p-1">
+<div class="flex items-center gap-2 flex-1 min-w-[200px] max-w-md relative">
+<span class="material-symbols-outlined absolute left-3 text-text-muted">search</span>
+<input class="w-full h-10 bg-bg-card border border-border-dark rounded-lg pl-10 pr-4 text-sm text-white focus:ring-1 focus:ring-primary focus:border-primary placeholder-text-muted/60 transition-all" placeholder="Search ticker or company..." type="text"/>
+</div>
+<div class="flex items-center gap-2">
+<button class="h-10 w-10 flex items-center justify-center rounded-lg bg-bg-card border border-border-dark text-text-muted hover:text-white hover:bg-white/5 transition-colors" title="Filter">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+<button class="h-10 w-10 flex items-center justify-center rounded-lg bg-bg-card border border-border-dark text-text-muted hover:text-white hover:bg-white/5 transition-colors" title="Sort">
+<span class="material-symbols-outlined">sort</span>
+</button>
+<div class="h-6 w-px bg-border-dark mx-1"></div>
+<div class="flex bg-bg-card rounded-lg p-1 border border-border-dark">
+<button class="h-8 px-3 rounded text-xs font-medium bg-[#2a374a] text-white">Table</button>
+<button class="h-8 px-3 rounded text-xs font-medium text-text-muted hover:text-white">Cards</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="flex-1 overflow-auto px-8 pb-8">
+<div class="max-w-[1400px] mx-auto h-full flex flex-col">
+<div class="bg-bg-card border border-border-dark rounded-xl overflow-hidden shadow-xl flex-1 flex flex-col">
+<div class="grid grid-cols-12 gap-4 px-6 py-4 bg-[#1a2438] border-b border-border-dark sticky top-0 z-10 text-xs font-semibold text-text-muted uppercase tracking-wider">
+<div class="col-span-3">Stock / Trend (7d)</div>
+<div class="col-span-2 text-right">Last Price</div>
+<div class="col-span-3 pl-4">My Target</div>
+<div class="col-span-2 pl-2">Distance</div>
+<div class="col-span-1 text-center">Notes</div>
+<div class="col-span-1 text-right">Actions</div>
+</div>
+<div class="divide-y divide-border-dark overflow-y-auto flex-1">
+<div class="grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-[#1E293B] group transition-colors duration-150">
+<div class="col-span-3 flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-white font-mono">NV</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-white font-mono text-base">NVDA</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-primary/20 text-primary font-bold">BUY</span>
+</div>
+<p class="text-xs text-text-muted truncate">NVIDIA Corporation</p>
+</div>
+</div>
+<div aria-hidden="true" class="h-6 w-24 mt-1 opacity-80">
+<svg class="w-full h-full stroke-primary fill-none stroke-2" viewBox="0 0 100 25">
+<path d="M0 20 C10 20, 15 10, 25 15 C35 20, 40 5, 50 10 C60 15, 65 8, 75 12 C85 16, 90 2, 100 5" vector-effect="non-scaling-stroke"></path>
+</svg>
+</div>
+</div>
+<div class="col-span-2 text-right font-mono">
+<div class="text-lg text-white font-medium">$850.22</div>
+<div class="text-xs text-primary flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+                                    +1.24%
+                                </div>
+</div>
+<div class="col-span-3 pl-4">
+<label class="flex items-center gap-2 bg-[#0B1221] border border-border-dark rounded-lg px-3 py-2 w-full max-w-[200px] focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all cursor-text group/input">
+<span class="text-text-muted text-xs select-none">$</span>
+<input class="bg-transparent border-none p-0 w-full text-sm font-mono text-white focus:ring-0 placeholder-text-muted/50" type="text" value="840.00"/>
+<span class="material-symbols-outlined text-text-muted text-[16px] opacity-0 group-hover/input:opacity-100 transition-opacity cursor-pointer">edit</span>
+</label>
+</div>
+<div class="col-span-2 pl-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 text-xs font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+                                    1.2% Away
+                                </span>
+</div>
+<div class="col-span-1 flex justify-center">
+<button class="text-text-muted hover:text-primary transition-colors relative group/tooltip">
+<span class="material-symbols-outlined">sticky_note_2</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-800 text-xs text-white rounded-lg shadow-xl border border-gray-700 opacity-0 group-hover/tooltip:opacity-100 pointer-events-none transition-opacity z-50">
+                                        "Waiting for pullback to EMA 20 on the 4h chart."
+                                    </div>
+</button>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="h-8 w-8 flex items-center justify-center rounded text-text-muted hover:bg-white/10 hover:text-white transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-[#1E293B] group transition-colors duration-150">
+<div class="col-span-3 flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-white font-mono">AM</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-white font-mono text-base">AMD</span>
+</div>
+<p class="text-xs text-text-muted truncate">Advanced Micro Devices</p>
+</div>
+</div>
+<div aria-hidden="true" class="h-6 w-24 mt-1 opacity-80">
+<svg class="w-full h-full stroke-danger fill-none stroke-2" viewBox="0 0 100 25">
+<path d="M0 5 C10 8, 15 15, 25 12 C35 10, 40 18, 50 15 C60 12, 65 20, 75 18 C85 15, 90 22, 100 20" vector-effect="non-scaling-stroke"></path>
+</svg>
+</div>
+</div>
+<div class="col-span-2 text-right font-mono">
+<div class="text-lg text-white font-medium">$178.00</div>
+<div class="text-xs text-danger flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+                                    -0.50%
+                                </div>
+</div>
+<div class="col-span-3 pl-4">
+<label class="flex items-center gap-2 bg-[#0B1221] border border-border-dark rounded-lg px-3 py-2 w-full max-w-[200px] focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all cursor-text group/input">
+<span class="text-text-muted text-xs select-none">$</span>
+<input class="bg-transparent border-none p-0 w-full text-sm font-mono text-white focus:ring-0 placeholder-text-muted/50" type="text" value="170.00"/>
+<span class="material-symbols-outlined text-text-muted text-[16px] opacity-0 group-hover/input:opacity-100 transition-opacity cursor-pointer">edit</span>
+</label>
+</div>
+<div class="col-span-2 pl-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700 text-xs font-medium">
+                                    4.7% Away
+                                </span>
+</div>
+<div class="col-span-1 flex justify-center">
+<button class="text-text-muted/40 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">note_add</span>
+</button>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="h-8 w-8 flex items-center justify-center rounded text-text-muted hover:bg-white/10 hover:text-white transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-[#1E293B] group transition-colors duration-150">
+<div class="col-span-3 flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-white font-mono">TS</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-white font-mono text-base">TSLA</span>
+</div>
+<p class="text-xs text-text-muted truncate">Tesla Inc</p>
+</div>
+</div>
+<div aria-hidden="true" class="h-6 w-24 mt-1 opacity-80">
+<svg class="w-full h-full stroke-primary fill-none stroke-2" viewBox="0 0 100 25">
+<path d="M0 18 C10 18, 15 15, 25 10 C35 15, 40 5, 50 8 C60 12, 65 5, 75 8 C85 10, 90 2, 100 0" vector-effect="non-scaling-stroke"></path>
+</svg>
+</div>
+</div>
+<div class="col-span-2 text-right font-mono">
+<div class="text-lg text-white font-medium">$175.30</div>
+<div class="text-xs text-primary flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+                                    +3.10%
+                                </div>
+</div>
+<div class="col-span-3 pl-4">
+<label class="flex items-center gap-2 bg-[#0B1221] border border-border-dark rounded-lg px-3 py-2 w-full max-w-[200px] focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all cursor-text group/input">
+<span class="text-text-muted text-xs select-none">$</span>
+<input class="bg-transparent border-none p-0 w-full text-sm font-mono text-white focus:ring-0 placeholder-text-muted/50" type="text" value="165.00"/>
+<span class="material-symbols-outlined text-text-muted text-[16px] opacity-0 group-hover/input:opacity-100 transition-opacity cursor-pointer">edit</span>
+</label>
+</div>
+<div class="col-span-2 pl-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700 text-xs font-medium">
+                                    6.2% Away
+                                </span>
+</div>
+<div class="col-span-1 flex justify-center">
+<button class="text-text-muted hover:text-primary transition-colors">
+<span class="material-symbols-outlined">sticky_note_2</span>
+</button>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="h-8 w-8 flex items-center justify-center rounded text-text-muted hover:bg-white/10 hover:text-white transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-[#1E293B] group transition-colors duration-150">
+<div class="col-span-3 flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-white font-mono">PL</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-white font-mono text-base">PLTR</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-primary/20 text-primary font-bold">ACCUM</span>
+</div>
+<p class="text-xs text-text-muted truncate">Palantir Technologies</p>
+</div>
+</div>
+<div aria-hidden="true" class="h-6 w-24 mt-1 opacity-80">
+<svg class="w-full h-full stroke-primary fill-none stroke-2" viewBox="0 0 100 25">
+<path d="M0 12 C20 12, 30 14, 50 12 C70 10, 80 12, 100 8" vector-effect="non-scaling-stroke"></path>
+</svg>
+</div>
+</div>
+<div class="col-span-2 text-right font-mono">
+<div class="text-lg text-white font-medium">$24.50</div>
+<div class="text-xs text-primary flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+                                    +0.20%
+                                </div>
+</div>
+<div class="col-span-3 pl-4">
+<label class="flex items-center gap-2 bg-[#0B1221] border border-border-dark rounded-lg px-3 py-2 w-full max-w-[200px] focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all cursor-text group/input">
+<span class="text-text-muted text-xs select-none">$</span>
+<input class="bg-transparent border-none p-0 w-full text-sm font-mono text-white focus:ring-0 placeholder-text-muted/50" type="text" value="22.00"/>
+<span class="material-symbols-outlined text-text-muted text-[16px] opacity-0 group-hover/input:opacity-100 transition-opacity cursor-pointer">edit</span>
+</label>
+</div>
+<div class="col-span-2 pl-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700 text-xs font-medium">
+                                    11.3% Away
+                                </span>
+</div>
+<div class="col-span-1 flex justify-center">
+<button class="text-text-muted hover:text-primary transition-colors relative group/tooltip">
+<span class="material-symbols-outlined">sticky_note_2</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-800 text-xs text-white rounded-lg shadow-xl border border-gray-700 opacity-0 group-hover/tooltip:opacity-100 pointer-events-none transition-opacity z-50">
+                                        "Earnings play possibility. Watch volume."
+                                    </div>
+</button>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="h-8 w-8 flex items-center justify-center rounded text-text-muted hover:bg-white/10 hover:text-white transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 items-center hover:bg-[#1E293B] group transition-colors duration-150">
+<div class="col-span-3 flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-white font-mono">AA</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-white font-mono text-base">AAPL</span>
+</div>
+<p class="text-xs text-text-muted truncate">Apple Inc</p>
+</div>
+</div>
+<div aria-hidden="true" class="h-6 w-24 mt-1 opacity-80">
+<svg class="w-full h-full stroke-danger fill-none stroke-2" viewBox="0 0 100 25">
+<path d="M0 5 C10 10, 15 5, 25 10 C35 15, 40 10, 50 12 C60 18, 65 20, 75 22 C85 24, 90 20, 100 25" vector-effect="non-scaling-stroke"></path>
+</svg>
+</div>
+</div>
+<div class="col-span-2 text-right font-mono">
+<div class="text-lg text-white font-medium">$169.50</div>
+<div class="text-xs text-danger flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+                                    -1.10%
+                                </div>
+</div>
+<div class="col-span-3 pl-4">
+<label class="flex items-center gap-2 bg-[#0B1221] border border-border-dark rounded-lg px-3 py-2 w-full max-w-[200px] focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all cursor-text group/input">
+<span class="text-text-muted text-xs select-none">$</span>
+<input class="bg-transparent border-none p-0 w-full text-sm font-mono text-white focus:ring-0 placeholder-text-muted/50" type="text" value="160.00"/>
+<span class="material-symbols-outlined text-text-muted text-[16px] opacity-0 group-hover/input:opacity-100 transition-opacity cursor-pointer">edit</span>
+</label>
+</div>
+<div class="col-span-2 pl-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                                    5.9% Away
+                                </span>
+</div>
+<div class="col-span-1 flex justify-center">
+<button class="text-text-muted/40 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">note_add</span>
+</button>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="h-8 w-8 flex items-center justify-center rounded text-text-muted hover:bg-white/10 hover:text-white transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-6 py-3 border-t border-border-dark bg-[#1a2438] flex items-center justify-between text-xs text-text-muted">
+<span>Showing 5 of 12 stocks</span>
+<div class="flex gap-2">
+<button class="px-3 py-1 rounded bg-bg-card border border-border-dark hover:bg-white/5 disabled:opacity-50">Previous</button>
+<button class="px-3 py-1 rounded bg-bg-card border border-border-dark hover:bg-white/5">Next</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

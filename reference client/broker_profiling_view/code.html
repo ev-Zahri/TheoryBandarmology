@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Broker Profiling View</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#22c55e",
+                        "danger": "#ef4444",
+                        "background-dark": "#0B1221",
+                        "surface-dark": "#161F32",
+                        "border-dark": "#1e293b", // slate-800
+                        "text-secondary": "#94a3b8", // slate-400
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.375rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B1221; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155; 
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-white min-h-screen flex flex-col overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-dark bg-background-dark px-6 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-tight font-display">Theory Bandarmology</h2>
+</div>
+<div class="flex flex-1 justify-end gap-6">
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center rounded-lg size-10 text-text-secondary hover:text-white transition-all hover:bg-surface-dark">
+<span class="material-symbols-outlined">light_mode</span>
+</button>
+<button class="flex items-center justify-center rounded-lg size-10 text-text-secondary hover:text-white transition-all hover:bg-surface-dark">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="flex items-center justify-center rounded-lg size-10 text-text-secondary hover:text-white transition-all hover:bg-surface-dark">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 flex justify-center py-8 px-4 md:px-10">
+<div class="w-full max-w-[1200px] flex flex-col gap-8">
+<section class="flex flex-col gap-2">
+<label class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-text-secondary group-focus-within:text-primary transition-colors">search</span>
+</div>
+<input class="w-full h-16 bg-surface-dark border border-border-dark rounded-lg pl-12 pr-4 text-lg font-mono text-white placeholder-text-secondary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-lg" placeholder="SEARCH BROKER CODE (e.g., YP, MG, BK)..." type="text" value="MG"/>
+<div class="absolute inset-y-0 right-0 pr-4 flex items-center">
+<kbd class="hidden sm:inline-flex items-center gap-1 px-2 py-1 text-xs font-mono font-medium text-text-secondary bg-[#0B1221] border border-border-dark rounded">CMD + K</kbd>
+</div>
+</label>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-surface-dark border border-border-dark rounded-xl p-6 shadow-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-9xl">fingerprint</span>
+</div>
+<div class="lg:col-span-3 flex flex-col items-center justify-center border-b lg:border-b-0 lg:border-r border-border-dark pb-6 lg:pb-0 lg:pr-6 gap-4">
+<div class="relative">
+<div class="size-24 rounded-full bg-background-dark border-2 border-primary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-5xl text-primary">domain</span>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-background-dark p-1 rounded-full">
+<span class="material-symbols-outlined text-primary fill-1" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="text-center">
+<h1 class="text-5xl font-bold font-mono tracking-tighter text-white">MG</h1>
+<p class="text-sm text-text-secondary uppercase tracking-widest mt-1 font-mono">CODE: 002</p>
+</div>
+</div>
+<div class="lg:col-span-9 flex flex-col justify-center gap-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h2 class="text-3xl font-bold text-white mb-1">Semesta Indovest Sekuritas</h2>
+<p class="text-text-secondary flex items-center gap-2">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                                Status: Active Market Maker
+                                <span class="text-border-dark mx-2">|</span>
+                                Type: Domestic Retail &amp; Scalper
+                            </p>
+</div>
+<div class="flex items-center gap-3">
+<button class="h-10 px-4 bg-primary text-background-dark font-bold rounded-lg hover:bg-green-400 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">visibility</span>
+                                Watch
+                            </button>
+<button class="h-10 w-10 flex items-center justify-center border border-border-dark rounded-lg hover:bg-background-dark hover:text-white text-text-secondary transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded bg-primary/10 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-sm">flash_on</span>
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Scalper King</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded bg-blue-500/10 border border-blue-500/20">
+<span class="material-symbols-outlined text-blue-400 text-sm">trending_up</span>
+<span class="text-blue-400 text-xs font-bold uppercase tracking-wider">High Frequency</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded bg-purple-500/10 border border-purple-500/20">
+<span class="material-symbols-outlined text-purple-400 text-sm">groups</span>
+<span class="text-purple-400 text-xs font-bold uppercase tracking-wider">Retail Favorite</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded bg-orange-500/10 border border-orange-500/20">
+<span class="material-symbols-outlined text-orange-400 text-sm">warning</span>
+<span class="text-orange-400 text-xs font-bold uppercase tracking-wider">High Risk</span>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-dark border border-border-dark rounded-xl p-6 flex flex-col justify-between relative overflow-hidden group">
+<div class="flex justify-between items-start z-10">
+<h3 class="text-text-secondary text-sm font-medium uppercase tracking-wider">Aggressiveness</h3>
+<span class="material-symbols-outlined text-danger">speed</span>
+</div>
+<div class="mt-6 flex flex-col items-center z-10">
+<div class="relative w-full h-4 bg-background-dark rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-[85%] bg-gradient-to-r from-blue-500 via-primary to-danger rounded-full"></div>
+</div>
+<div class="flex justify-between w-full mt-2 text-xs font-mono text-text-secondary">
+<span>PASSIVE</span>
+<span class="text-white font-bold">85/100</span>
+<span>AGGRESSIVE</span>
+</div>
+</div>
+<div class="absolute -bottom-10 -right-10 w-32 h-32 bg-danger/10 rounded-full blur-3xl group-hover:bg-danger/20 transition-all"></div>
+</div>
+<div class="bg-surface-dark border border-border-dark rounded-xl p-6 flex flex-col justify-between group">
+<div class="flex justify-between items-start">
+<h3 class="text-text-secondary text-sm font-medium uppercase tracking-wider">Avg. Holding Period</h3>
+<span class="material-symbols-outlined text-blue-400">timelapse</span>
+</div>
+<div class="mt-4">
+<p class="text-4xl font-mono font-bold text-white group-hover:text-blue-400 transition-colors">1-3 Days</p>
+<p class="text-xs text-text-secondary mt-2">Short-term swing &amp; intraday focus</p>
+</div>
+</div>
+<div class="bg-surface-dark border border-border-dark rounded-xl p-6 flex flex-col justify-between group">
+<div class="flex justify-between items-start">
+<h3 class="text-text-secondary text-sm font-medium uppercase tracking-wider">Tx Value (YTD)</h3>
+<span class="material-symbols-outlined text-primary">payments</span>
+</div>
+<div class="mt-4">
+<p class="text-4xl font-mono font-bold text-white group-hover:text-primary transition-colors">Rp 14.5 T</p>
+<p class="text-xs text-primary mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">arrow_upward</span>
+                            +12.4% vs Market Avg
+                        </p>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">pie_chart</span>
+                        Top Accumulation Portfolio
+                    </h3>
+<button class="text-sm text-primary hover:text-green-400 font-medium flex items-center gap-1">
+                        View Full History
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="bg-surface-dark border border-border-dark rounded-xl overflow-hidden shadow-lg">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-[#0f1623] text-text-secondary text-xs uppercase tracking-wider border-b border-border-dark">
+<th class="p-4 font-medium">Stock Code</th>
+<th class="p-4 font-medium text-right">Volume (Lot)</th>
+<th class="p-4 font-medium text-right">Avg Price</th>
+<th class="p-4 font-medium text-right">Current Price</th>
+<th class="p-4 font-medium text-right">Value (IDR)</th>
+<th class="p-4 font-medium text-right">Floating PnL</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-dark font-mono text-sm">
+<tr class="group hover:bg-background-dark/50 transition-colors">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-white p-1" data-alt="Company logo for BUMI" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKEHzMcB00Mh9topc21a-lNa7QyIfXzEd7YR6xJD3glOM2vfgwe9bitp5qOELHuPeQDQfIZXCeiMh-KrUveThbwnbZ5xRWe7G7mULI7GUx3cZf-GevHoWuuVv9VfaBFTEO0XR8Lfd1axub0il8TUkBfjwp1-86QqEwrDSSgfliFPfeZS9F7kPbTWRl9EW-6M6y5GvyIkRMx37a4AoOTV7nrc6P9LNGdzS5DRjPyQYjoMrn_H1XC4R0HlVvB4izQQ5IIdrs6e_Flh0'); background-size: cover;"></div>
+<div>
+<span class="font-bold text-white block">BUMI</span>
+<span class="text-[10px] text-text-secondary font-sans">Bumi Resources Tbk</span>
+</div>
+</div>
+</td>
+<td class="p-4 text-right text-text-secondary">45,200,500</td>
+<td class="p-4 text-right text-white">124</td>
+<td class="p-4 text-right text-white">136</td>
+<td class="p-4 text-right text-text-secondary">5.6 B</td>
+<td class="p-4 text-right font-bold text-primary">+9.67%</td>
+</tr>
+<tr class="group hover:bg-background-dark/50 transition-colors">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-white p-1" data-alt="Company logo for GOTO" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiC8uvUZFQ8EJO3DsE90pWcm2fOD6ohIQQnfb8hEQM2JNE5Rd_R67f6i8GIqNyphN-NjXebisaJKfOdGj5KlVEBBWe0Uy9GTAkbmKBwRSpnNzhmIZqCdiGeeCR6qo_M1q_UYQeKSfm6InIIQldrU-bXQsy1osUsJ7AimijZUCSGSjljDO80oS7tY1g8NYy47Sbpa6w9VUP46RVKPPoOCGBju-dxZdN-Wr70a2S2sN8EmIzj3TX6cjMg-DlG5imMPmDETePIIjZCQs'); background-size: cover;"></div>
+<div>
+<span class="font-bold text-white block">GOTO</span>
+<span class="text-[10px] text-text-secondary font-sans">GoTo Gojek Tokopedia</span>
+</div>
+</div>
+</td>
+<td class="p-4 text-right text-text-secondary">12,850,000</td>
+<td class="p-4 text-right text-white">84</td>
+<td class="p-4 text-right text-white">81</td>
+<td class="p-4 text-right text-text-secondary">1.1 B</td>
+<td class="p-4 text-right font-bold text-danger">-3.57%</td>
+</tr>
+<tr class="group hover:bg-background-dark/50 transition-colors">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-white p-1" data-alt="Company logo for BRPT" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkEAG7wf485q5rTCYmj-2jDRF8X5ybV9_1Qtu5awwAnZa5wkOahpcH54dRkqvG0IemuQ4JfwjLdgB1vDpFFzYPU4Xv7aB3crD2d6w1PPAMbVyH1vewH0JiHe-j0LGUoM7qhgNycdEOR9Lgr45ZdFeYhl418G67qREhnjWghJo4ibssft7SXD7vI5ES2bhRc-s5wMk4c8Ld9K8xdNt3mHfghzjVI14C7i7fY4HN2ht8xt3G_EooW_GUuY0jFHjbBVoi7TfLvrULmig'); background-size: cover;"></div>
+<div>
+<span class="font-bold text-white block">BRPT</span>
+<span class="text-[10px] text-text-secondary font-sans">Barito Pacific Tbk</span>
+</div>
+</div>
+</td>
+<td class="p-4 text-right text-text-secondary">8,420,100</td>
+<td class="p-4 text-right text-white">1,020</td>
+<td class="p-4 text-right text-white">1,150</td>
+<td class="p-4 text-right text-text-secondary">8.9 B</td>
+<td class="p-4 text-right font-bold text-primary">+12.74%</td>
+</tr>
+<tr class="group hover:bg-background-dark/50 transition-colors">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-white p-1" data-alt="Company logo for ANTM" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCn9_fKtFCBRJXbyzt5N0drItPmAtN6Vo57etS7w9pnZ2Nks1-CkGUE7Fx7PIm8dX6mplBR0pGTQtGAvqWOjtiA3UHk6tRHHHJmIaA-JBdGmT_NJrIleIXpkGzFlws35d3GjwRcxNwA61643LPUvmPufTuiRUPRcMDQqzJlZduNMwuuLRn42OKSmgiYwY5GZDwkWQjBXZAM-O09AOtZpFh1wok64f3ZnFK9lIfj9MsfZs58pMU5bDmVpPlhn3mdKNgsNxwjtuwGLoA'); background-size: cover;"></div>
+<div>
+<span class="font-bold text-white block">ANTM</span>
+<span class="text-[10px] text-text-secondary font-sans">Aneka Tambang Tbk</span>
+</div>
+</div>
+</td>
+<td class="p-4 text-right text-text-secondary">2,100,500</td>
+<td class="p-4 text-right text-white">1,650</td>
+<td class="p-4 text-right text-white">1,620</td>
+<td class="p-4 text-right text-text-secondary">3.4 B</td>
+<td class="p-4 text-right font-bold text-danger">-1.81%</td>
+</tr>
+<tr class="group hover:bg-background-dark/50 transition-colors">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-white p-1" data-alt="Company logo for BBRI" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDU7aLNckg9Za3MyVQZ8zN0_-R-vWpqUDtxf0EkSFfN-P7uXe3phDQbP2i-MA7swo_udZMpdiRbQgdjIl8fDzme-xbEvps3_xe9qdaunSkn7XZL1vq_CitPOEtGz9v4QXbrdectVnThtchWDXrq9hNjYbkEgDuUjdmm4xiR7ruX6xio7KmkMJXexClDH9_9Lb2-4hTGDRnuDitm-LzD1ZSQHtrkh801rd6dl0KfIgrCFCIHhmu95rWuxj9UloLDUygpqgohjd4VZhM'); background-size: cover;"></div>
+<div>
+<span class="font-bold text-white block">BBRI</span>
+<span class="text-[10px] text-text-secondary font-sans">Bank Rakyat Indonesia</span>
+</div>
+</div>
+</td>
+<td class="p-4 text-right text-text-secondary">540,000</td>
+<td class="p-4 text-right text-white">5,450</td>
+<td class="p-4 text-right text-white">5,575</td>
+<td class="p-4 text-right text-text-secondary">2.9 B</td>
+<td class="p-4 text-right font-bold text-primary">+2.29%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between px-4 py-3 border-t border-border-dark bg-[#0f1623]">
+<p class="text-xs text-text-secondary">Showing 5 of 24 stocks</p>
+<div class="flex gap-2">
+<button class="px-2 py-1 text-xs font-medium rounded border border-border-dark text-text-secondary hover:text-white hover:bg-border-dark transition-colors disabled:opacity-50" disabled="">Previous</button>
+<button class="px-2 py-1 text-xs font-medium rounded border border-border-dark text-text-secondary hover:text-white hover:bg-border-dark transition-colors">Next</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+</body></html>
