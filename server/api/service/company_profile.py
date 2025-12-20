@@ -69,24 +69,25 @@ def get_company_profile(stock_code: str):
     competitors = get_competitors(sector, stock_code)
     competitors_data = []
     for comp in competitors:
-        competitors_data.append{
+        competitors_data.append({
             "ticker": comp,
             "name": f"Competitor {comp}",
             "sector": sector
-        }
+        })
 
     # --- 6. DIVIDEND ---
     dividends_data = []
     try:
         divs = ticker.dividends
         if not divs.empty:
-            recent_divs = div.sort_index(ascending=False).head(5)
+            recent_divs = divs.sort_index(ascending=False).head(5)
             for date, value in recent_divs.items():
                 dividends_data.append({
                     "date": date.strftime("%Y-%m-%d"),
                     "amount": value,
                     "year": date.year
                 })
+
     except Exception as e:
         print(f"⚠️ Error mengambil data dividen: {e}")
         pass
@@ -101,7 +102,7 @@ def get_company_profile(stock_code: str):
             "website": website,
             "employees": employees,
             "description": summary,
-            "address": f"{info.get('address1', '')}, {info.get('city', '')}"
+            "address": f"{info.get('address1', '')}, {info.get('city', '')}",
             "ipo": ipo,
         },
         "business_model": {

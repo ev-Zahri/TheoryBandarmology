@@ -142,8 +142,6 @@ def get_insight(stock_code: str):
             raise HTTPException(status_code=400, detail="Kode saham tidak boleh kosong")
         
         data = get_company_profile(stock_code)
-        print(f"Stock code: {stock_code}")
-        print(f"Response company profile {data}")
         if not data:
             raise HTTPException(status_code=404, detail="Data profil tidak ditemukan untuk saham tersebut")
         
