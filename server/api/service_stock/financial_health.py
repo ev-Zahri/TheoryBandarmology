@@ -11,7 +11,6 @@ def analyze_financial_health(stock_list: list):
     for stock in stock_list:
         try:
             ticker_obj = yf.Ticker(f"{stock}.JK")
-            # Fetch info (ini memakan waktu network)
             info = ticker_obj.info
             
             # 1. VALUATION (Murah/Mahal)

@@ -1,13 +1,14 @@
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from api.service.analyzer import process_broker_data
-from api.service.technical_analyze import calculate_advanced_technical
-from api.service.quant_technical import calculate_quant_metrics
-from api.service.financial_health import analyze_financial_health
-from api.service.news_narrative import analyze_news_narrative
-from api.service.company_profile import get_company_profile
-from typing import Any, Dict, List
+from api.service_stock.analyzer import process_broker_data
+from api.service_stock.technical_analyze import calculate_advanced_technical
+from api.service_stock.quant_technical import calculate_quant_metrics
+from api.service_stock.financial_health import analyze_financial_health
+from api.service_stock.news_narrative import analyze_news_narrative
+from api.service_stock.company_profile import get_company_profile
+from api.service_comm_forex.news_narrative import fetch_tradingview_news
+from typing import Dict, List
 import json
 
 app = FastAPI()

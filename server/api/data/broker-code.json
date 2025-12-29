@@ -1,9 +1,524 @@
 {
-    "status": "success",
-    "message": "",
-    "data": {
-        "discounts": {
-            
+    "brokers_buy": [
+        {
+            "blot": "141376",
+            "blotv": "1.276893e+08",
+            "bval": "2.0368167e+09",
+            "bvalv": "1.6525231e+10",
+            "netbs_broker_code": "XL",
+            "netbs_buy_avg_price": "129.4175079666033",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "31446",
+            "blotv": "3.27852e+07",
+            "bval": "2.68068e+08",
+            "bvalv": "3.9708864e+09",
+            "netbs_broker_code": "PD",
+            "netbs_buy_avg_price": "121.11826067859889",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "19601",
+            "blotv": "9.9649e+06",
+            "bval": "2.59744e+08",
+            "bvalv": "1.32847e+09",
+            "netbs_broker_code": "OD",
+            "netbs_buy_avg_price": "133.3149354233359",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Pemerintah"
+        },
+        {
+            "blot": "22564",
+            "blotv": "1.23246e+07",
+            "bval": "2.424812e+08",
+            "bvalv": "1.4761882e+09",
+            "netbs_broker_code": "KK",
+            "netbs_buy_avg_price": "119.77574931437937",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Asing"
+        },
+        {
+            "blot": "17614",
+            "blotv": "5.4911e+06",
+            "bval": "2.124885e+08",
+            "bvalv": "7.243617e+08",
+            "netbs_broker_code": "EP",
+            "netbs_buy_avg_price": "131.9155906831054",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "14164",
+            "blotv": "2.24969e+07",
+            "bval": "1.741122e+08",
+            "bvalv": "2.8911785e+09",
+            "netbs_broker_code": "XC",
+            "netbs_buy_avg_price": "128.51452866839432",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "17997",
+            "blotv": "1.44231e+07",
+            "bval": "1.605489e+08",
+            "bvalv": "1.9264915e+09",
+            "netbs_broker_code": "CP",
+            "netbs_buy_avg_price": "133.56986362155155",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Asing"
+        },
+        {
+            "blot": "8726",
+            "blotv": "4.5366e+06",
+            "bval": "1.349706e+08",
+            "bvalv": "5.877611e+08",
+            "netbs_broker_code": "SQ",
+            "netbs_buy_avg_price": "129.55982453820042",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "9156",
+            "blotv": "1.7162e+06",
+            "bval": "1.127679e+08",
+            "bvalv": "2.26343e+08",
+            "netbs_broker_code": "YU",
+            "netbs_buy_avg_price": "131.8861438060832",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Asing"
+        },
+        {
+            "blot": "15123",
+            "blotv": "3.57038e+07",
+            "bval": "1.006066e+08",
+            "bvalv": "4.7147942e+09",
+            "netbs_broker_code": "YP",
+            "netbs_buy_avg_price": "132.05300836325546",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Asing"
+        },
+        {
+            "blot": "7430",
+            "blotv": "2.0306e+06",
+            "bval": "9.25168e+07",
+            "bvalv": "2.584644e+08",
+            "netbs_broker_code": "XA",
+            "netbs_buy_avg_price": "127.2847434255885",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Asing"
+        },
+        {
+            "blot": "6364",
+            "blotv": "1.2128e+06",
+            "bval": "7.9744e+07",
+            "bvalv": "1.612517e+08",
+            "netbs_broker_code": "ZP",
+            "netbs_buy_avg_price": "132.95819591029024",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Asing"
+        },
+        {
+            "blot": "4581",
+            "blotv": "4.0616e+06",
+            "bval": "5.50536e+07",
+            "bvalv": "5.17929e+08",
+            "netbs_broker_code": "AZ",
+            "netbs_buy_avg_price": "127.51846562930865",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "3428",
+            "blotv": "4.6025e+06",
+            "bval": "4.47445e+07",
+            "bvalv": "5.213913e+08",
+            "netbs_broker_code": "YB",
+            "netbs_buy_avg_price": "113.28436719174361",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "3239",
+            "blotv": "671500",
+            "bval": "4.06644e+07",
+            "bvalv": "8.19283e+07",
+            "netbs_broker_code": "AT",
+            "netbs_buy_avg_price": "122.0078927773641",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "2049",
+            "blotv": "1.2411e+06",
+            "bval": "2.79703e+07",
+            "bvalv": "1.542784e+08",
+            "netbs_broker_code": "DH",
+            "netbs_buy_avg_price": "124.30779147530417",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "1693",
+            "blotv": "172400",
+            "bval": "2.14773e+07",
+            "bvalv": "2.19609e+07",
+            "netbs_broker_code": "QA",
+            "netbs_buy_avg_price": "127.38341067285383",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "1070",
+            "blotv": "156300",
+            "bval": "1.38991e+07",
+            "bvalv": "1.90883e+07",
+            "netbs_broker_code": "IF",
+            "netbs_buy_avg_price": "122.12603966730646",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "0",
+            "blotv": "609100",
+            "bval": "8.5191e+06",
+            "bvalv": "9.98924e+07",
+            "netbs_broker_code": "BR",
+            "netbs_buy_avg_price": "164",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "200",
+            "blotv": "20000",
+            "bval": "2.93e+06",
+            "bvalv": "2.93e+06",
+            "netbs_broker_code": "JB",
+            "netbs_buy_avg_price": "146.5",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "200",
+            "blotv": "31500",
+            "bval": "2.5783e+06",
+            "bvalv": "3.9888e+06",
+            "netbs_broker_code": "AO",
+            "netbs_buy_avg_price": "126.62857142857143",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "0",
+            "blotv": "541900",
+            "bval": "1.3279e+06",
+            "bvalv": "7.41655e+07",
+            "netbs_broker_code": "HD",
+            "netbs_buy_avg_price": "136.8619671526112",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Asing"
+        },
+        {
+            "blot": "-21",
+            "blotv": "2.5789e+06",
+            "bval": "1.1575e+06",
+            "bvalv": "3.234017e+08",
+            "netbs_broker_code": "HP",
+            "netbs_buy_avg_price": "125.40296250339291",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "65",
+            "blotv": "10000",
+            "bval": "960000",
+            "bvalv": "1.31e+06",
+            "netbs_broker_code": "SF",
+            "netbs_buy_avg_price": "131",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
+        },
+        {
+            "blot": "0",
+            "blotv": "117500",
+            "bval": "500000",
+            "bvalv": "1.4645e+07",
+            "netbs_broker_code": "YJ",
+            "netbs_buy_avg_price": "124.63829787234043",
+            "netbs_date": "20251001",
+            "netbs_stock_code": "SEMA",
+            "type": "Lokal"
         }
-    }
+    ],
+    "brokers_sell": [
+        {
+            "netbs_broker_code": "FS",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "127.6785580882132",
+            "netbs_stock_code": "SEMA",
+            "slot": "-232756",
+            "slotv": "2.32913e+07",
+            "sval": "-2.9717299e+09",
+            "svalv": "2.9737996e+09",
+            "type": "Asing"
+        },
+        {
+            "netbs_broker_code": "GR",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "106.76455398491865",
+            "netbs_stock_code": "SEMA",
+            "slot": "-50392",
+            "slotv": "1.64972e+07",
+            "sval": "-5.061734e+08",
+            "svalv": "1.7613162e+09",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "TP",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "119.14817546752289",
+            "netbs_stock_code": "SEMA",
+            "slot": "-21838",
+            "slotv": "2.3047e+06",
+            "sval": "-2.594867e+08",
+            "svalv": "2.746008e+08",
+            "type": "Asing"
+        },
+        {
+            "netbs_broker_code": "NI",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "124.51965654185744",
+            "netbs_stock_code": "SEMA",
+            "slot": "-8273",
+            "slotv": "8.2339e+06",
+            "sval": "-1.223459e+08",
+            "svalv": "1.0252824e+09",
+            "type": "Pemerintah"
+        },
+        {
+            "netbs_broker_code": "CC",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "131.20937748361843",
+            "netbs_stock_code": "SEMA",
+            "slot": "-7914",
+            "slotv": "3.03237e+07",
+            "sval": "-9.22864e+07",
+            "svalv": "3.9787538e+09",
+            "type": "Pemerintah"
+        },
+        {
+            "netbs_broker_code": "AG",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "144.30479314499934",
+            "netbs_stock_code": "SEMA",
+            "slot": "-1853",
+            "slotv": "1.4938e+06",
+            "sval": "-3.93396e+07",
+            "svalv": "2.155625e+08",
+            "type": "Asing"
+        },
+        {
+            "netbs_broker_code": "MG",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "140.6978478585127",
+            "netbs_stock_code": "SEMA",
+            "slot": "-233",
+            "slotv": "3.7544e+06",
+            "sval": "-2.91135e+07",
+            "svalv": "5.28236e+08",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "BQ",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "130.6264533258804",
+            "netbs_stock_code": "SEMA",
+            "slot": "-1285",
+            "slotv": "7.156e+06",
+            "sval": "-1.70125e+07",
+            "svalv": "9.347629e+08",
+            "type": "Asing"
+        },
+        {
+            "netbs_broker_code": "DU",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "126.36962701549479",
+            "netbs_stock_code": "SEMA",
+            "slot": "2116",
+            "slotv": "1.74833e+07",
+            "sval": "-1.5771e+07",
+            "svalv": "2.2093581e+09",
+            "type": "Asing"
+        },
+        {
+            "netbs_broker_code": "AI",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "124.17103404989801",
+            "netbs_stock_code": "SEMA",
+            "slot": "-1211",
+            "slotv": "637300",
+            "sval": "-1.30709e+07",
+            "svalv": "7.91342e+07",
+            "type": "Asing"
+        },
+        {
+            "netbs_broker_code": "LG",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "127.97340669417699",
+            "netbs_stock_code": "SEMA",
+            "slot": "-1204",
+            "slotv": "872400",
+            "sval": "-1.01787e+07",
+            "svalv": "1.11644e+08",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "LS",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "133.33333333333334",
+            "netbs_stock_code": "SEMA",
+            "slot": "-600",
+            "slotv": "60000",
+            "sval": "-8e+06",
+            "svalv": "8e+06",
+            "type": "Asing"
+        },
+        {
+            "netbs_broker_code": "KI",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "121.70977309802758",
+            "netbs_stock_code": "SEMA",
+            "slot": "-633",
+            "slotv": "674300",
+            "sval": "-3.3961e+06",
+            "svalv": "8.20689e+07",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "DR",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "127.36479529296396",
+            "netbs_stock_code": "SEMA",
+            "slot": "-1582",
+            "slotv": "2.4474e+06",
+            "sval": "-3.387e+06",
+            "svalv": "3.117126e+08",
+            "type": "Asing"
+        },
+        {
+            "netbs_broker_code": "FZ",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "101.11783439490446",
+            "netbs_stock_code": "SEMA",
+            "slot": "-300",
+            "slotv": "31400",
+            "sval": "-3.0323e+06",
+            "svalv": "3.1751e+06",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "CD",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "114.18435754189944",
+            "netbs_stock_code": "SEMA",
+            "slot": "-122",
+            "slotv": "53700",
+            "sval": "-1.9157e+06",
+            "svalv": "6.1317e+06",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "MU",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "140",
+            "netbs_stock_code": "SEMA",
+            "slot": "0",
+            "slotv": "200000",
+            "sval": "-800000",
+            "svalv": "2.8e+07",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "IN",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "131.51048951048952",
+            "netbs_stock_code": "SEMA",
+            "slot": "0",
+            "slotv": "28600",
+            "sval": "-69500",
+            "svalv": "3.7612e+06",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "GI",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "101.88888888888889",
+            "netbs_stock_code": "SEMA",
+            "slot": "-6",
+            "slotv": "900",
+            "sval": "-61200",
+            "svalv": "91700",
+            "type": "Asing"
+        },
+        {
+            "netbs_broker_code": "IU",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "137.3846153846154",
+            "netbs_stock_code": "SEMA",
+            "slot": "0",
+            "slotv": "32500",
+            "sval": "-50000",
+            "svalv": "4.465e+06",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "ZR",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "122",
+            "netbs_stock_code": "SEMA",
+            "slot": "0",
+            "slotv": "2000",
+            "sval": "-40000",
+            "svalv": "244000",
+            "type": "Lokal"
+        },
+        {
+            "netbs_broker_code": "AK",
+            "netbs_date": "20251001",
+            "netbs_sell_avg_price": "124.31918505942275",
+            "netbs_stock_code": "SEMA",
+            "slot": "0",
+            "slotv": "58900",
+            "sval": "-4200",
+            "svalv": "7.3224e+06",
+            "type": "Asing"
+        }
+    ],
+    "symbol": "SEMA"
 }

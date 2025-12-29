@@ -1,0 +1,48 @@
+{
+    "items": [
+        {
+            "id": "tradingview:f5d34a38c094b:0",
+            "title": "XAU/USD: Gold Prints Record Above $4,500 as Demand Hits Fever Pitch",
+            "published": 1766730206,
+            "urgency": 2,
+            "link": "https://www.tradingview.com",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:XAUUSD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "FX:XAGUSD",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/tradingview:f5d34a38c094b:0-xau-usd-gold-prints-record-above-4-500-as-demand-hits-fever-pitch/",
+            "provider": {
+                "id": "tradingview",
+                "name": "TradingView",
+                "logo_id": "tradingview-snaps"
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": "earnings",
+            "title": "Earnings"
+        },
+        {
+            "id": "mergers_and_acquisitions",
+            "title": "Mergers and acquisitions"
+        },
+        {
+            "id": "recommendation",
+            "title": "Analysts"
+        }
+    ],
+    "streaming": {
+        "channel": "f5ea649ebb72e84ae3e49f5b7eab"
+    }
+}
