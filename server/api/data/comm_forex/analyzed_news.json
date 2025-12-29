@@ -1,0 +1,326 @@
+{
+  "analyzed_at": "2025-12-29T10:07:15.350135",
+  "total_news": 10,
+  "market_sentiment": {
+    "overall_sentiment": "NEUTRAL",
+    "weighted_score": 0.15,
+    "news_count": 10,
+    "breakdown": {
+      "bullish": 2,
+      "bearish": 0,
+      "neutral": 8
+    },
+    "percentages": {
+      "bullish": 20.0,
+      "bearish": 0.0,
+      "neutral": 80.0
+    }
+  },
+  "news_items": [
+    {
+      "id": "moneycontrol:4fac10f29094b:0",
+      "title": "BSE SmallCap turns one of 2025’s weakest global assets; Gold, Silver stand out",
+      "published": 1766975017,
+      "published_str": "2025-12-29 09:23:37",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.55,
+      "link": "https://www.moneycontrol.com/news/business/earnings/bse-smallcap-turns-one-of-2025-s-weakest-global-assets-gold-silver-stand-out-13745849.html",
+      "provider": {
+        "id": "moneycontrol",
+        "name": "Moneycontrol",
+        "credibility": 0.5
+      },
+      "related_symbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "NEUTRAL",
+        "score": 1.0,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "DJN_DN20251228000898:0",
+      "title": "Gold Falls; Prices Likely to Remain Elevated — Market Talk",
+      "published": 1766971860,
+      "published_str": "2025-12-29 08:31:00",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.6,
+      "link": null,
+      "provider": {
+        "id": "dow-jones",
+        "name": "Dow Jones Newswires",
+        "credibility": 1.0
+      },
+      "related_symbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "NEUTRAL",
+        "score": 0.0,
+        "confidence": 0.7
+      }
+    },
+    {
+      "id": "tag:reuters.com,2025:newsml_L1N3XZ00F:0",
+      "title": "Commodities intraday targets/key levels",
+      "published": 1766969977,
+      "published_str": "2025-12-29 07:59:37",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.6,
+      "link": null,
+      "provider": {
+        "id": "reuters",
+        "name": "Reuters",
+        "credibility": 1.0
+      },
+      "related_symbols": [
+        {
+          "symbol": "TVC:UKOIL",
+          "ticker": "UKOIL",
+          "exchange": "TVC"
+        },
+        {
+          "symbol": "MYX:FCPO1!",
+          "ticker": "FCPO1!",
+          "exchange": "MYX"
+        },
+        {
+          "symbol": "NYMEX:CL1!",
+          "ticker": "CL1!",
+          "exchange": "NYMEX"
+        },
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "NEUTRAL",
+        "score": 0.0,
+        "confidence": 0.0
+      }
+    },
+    {
+      "id": "te_news:512748:0",
+      "title": "Gold Pulls Back Slightly",
+      "published": 1766969609,
+      "published_str": "2025-12-29 07:53:29",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.57,
+      "link": "https://tradingeconomics.com/commodity/gold",
+      "provider": {
+        "id": "trading-economics",
+        "name": "Trading Economics",
+        "credibility": 0.7
+      },
+      "related_symbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "NEUTRAL",
+        "score": 0.1,
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "DJN_DN20251226002191:0",
+      "title": "Comex Gold Ends the Week 3.85% Higher at $4529.10 — Data Talk",
+      "published": 1766775240,
+      "published_str": "2025-12-27 01:54:00",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.6,
+      "link": null,
+      "provider": {
+        "id": "dow-jones",
+        "name": "Dow Jones Newswires",
+        "credibility": 1.0
+      },
+      "related_symbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "NEUTRAL",
+        "score": 0.1,
+        "confidence": 0.2
+      }
+    },
+    {
+      "id": "DJN_DN20251226001681:0",
+      "title": "Comex Gold Delivery Intentions Breakdown - Dec 26",
+      "published": 1766758800,
+      "published_str": "2025-12-26 21:20:00",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.6,
+      "link": null,
+      "provider": {
+        "id": "dow-jones",
+        "name": "Dow Jones Newswires",
+        "credibility": 1.0
+      },
+      "related_symbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "NEUTRAL",
+        "score": 0.1,
+        "confidence": 0.2
+      }
+    },
+    {
+      "id": "DJN_DN20251226000722:0",
+      "title": "Comex Gold Futures' Strong Bullish Momentum in Play, Chart Shows — Market Talk",
+      "published": 1766733720,
+      "published_str": "2025-12-26 14:22:00",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.6,
+      "link": null,
+      "provider": {
+        "id": "dow-jones",
+        "name": "Dow Jones Newswires",
+        "credibility": 1.0
+      },
+      "related_symbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "BULLISH",
+        "score": 1.0,
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "moneycontrol:6d7448c88094b:0",
+      "title": "Birth of Gold Hydride: Scientists accidently formed a new compound, proving gold can be \"reactive\"",
+      "published": 1766730994,
+      "published_str": "2025-12-26 13:36:34",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.55,
+      "link": "https://www.moneycontrol.com/science/birth-of-gold-hydride-scientists-accidently-formed-a-new-compound-proving-gold-can-be-reactive-article-13743039.html",
+      "provider": {
+        "id": "moneycontrol",
+        "name": "Moneycontrol",
+        "credibility": 0.5
+      },
+      "related_symbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "NEUTRAL",
+        "score": -0.2,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "tradingview:f5d34a38c094b:0",
+      "title": "XAU/USD: Gold Prints Record Above $4,500 as Demand Hits Fever Pitch",
+      "published": 1766730206,
+      "published_str": "2025-12-26 13:23:26",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.57,
+      "link": "https://www.tradingview.com",
+      "provider": {
+        "id": "tradingview",
+        "name": "TradingView",
+        "credibility": 0.7
+      },
+      "related_symbols": [
+        {
+          "symbol": "FX:XAUUSD",
+          "ticker": "XAUUSD",
+          "exchange": "FX"
+        },
+        {
+          "symbol": "FX:XAGUSD",
+          "ticker": "XAGUSD",
+          "exchange": "FX"
+        },
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "NEUTRAL",
+        "score": 0.1,
+        "confidence": 0.2
+      }
+    },
+    {
+      "id": "te_news:512540:0",
+      "title": "Gold Near Record High",
+      "published": 1766713943,
+      "published_str": "2025-12-26 08:52:23",
+      "urgency": 2,
+      "is_flash": false,
+      "is_high_priority": false,
+      "importance_score": 0.57,
+      "link": "https://tradingeconomics.com/commodity/gold",
+      "provider": {
+        "id": "trading-economics",
+        "name": "Trading Economics",
+        "credibility": 0.7
+      },
+      "related_symbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "ticker": "GOLD",
+          "exchange": "TVC"
+        }
+      ],
+      "sentiment": {
+        "label": "BULLISH",
+        "score": 1.0,
+        "confidence": 1.0
+      }
+    }
+  ]
+}

@@ -7,7 +7,8 @@ from api.service_stock.quant_technical import calculate_quant_metrics
 from api.service_stock.financial_health import analyze_financial_health
 from api.service_stock.news_narrative import analyze_news_narrative
 from api.service_stock.company_profile import get_company_profile
-from api.service_comm_forex.news_narrative import fetch_tradingview_news
+from api.service_comm_forex.complete_news_analyzer import CompleteNewsAnalyzer
+from api.service_comm_forex.tradingview_news_fetcher import TradingViewNewsFetcher
 from typing import Dict, List
 import json
 
@@ -33,7 +34,7 @@ class StockAnalysisRequest(BaseModel):
     stocks: List[str]
 
 # Endpoint untuk analisis data broker - menerima JSON langsung
-@app.post("/v1/analyze")
+@app.post("/v1/stock/analyze")
 async def analyze_data(request: Request):
     try:
         body = await request.json()
@@ -56,7 +57,7 @@ async def analyze_data(request: Request):
     except json.JSONDecodeError as e:
         raise HTTPException(status_code=400, detail=f"JSON tidak valid: {str(e)}")
 
-@app.post('/v1/analyze/technical')
+@app.post('/v1/stock/analyze/technical')
 async def analyze_technical(request: StockAnalysisRequest):
     try: 
         if not request.stocks:
@@ -78,7 +79,7 @@ async def analyze_technical(request: StockAnalysisRequest):
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
 
 # Endpoint untuk analisis kuantitatif (Z-Score, ATR, Pivot Points)
-@app.post('/v1/analyze/quant')
+@app.post('/v1/stock/analyze/quant')
 async def analyze_quant(request: StockAnalysisRequest):
     try: 
         if not request.stocks:
@@ -98,7 +99,7 @@ async def analyze_quant(request: StockAnalysisRequest):
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
 
 
-@app.post('/v1/analyze/fundamental')
+@app.post('/v1/stock/analyze/fundamental')
 async def get_financial(request: StockAnalysisRequest):
     try:
         if not request.stocks:
@@ -117,7 +118,7 @@ async def get_financial(request: StockAnalysisRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
 
-@app.post('/v1/analyze/news')
+@app.post('/v1/stock/analyze/news')
 async def analyze_news(request: StockAnalysisRequest):
     try:
         if not request.stocks:
@@ -136,7 +137,7 @@ async def analyze_news(request: StockAnalysisRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
 
-@app.get('/v1/company-profile/{stock_code}')
+@app.get('/v1/stock/company-profile/{stock_code}')
 def get_insight(stock_code: str):
     try:
         if not stock_code:
@@ -155,7 +156,87 @@ def get_insight(stock_code: str):
         raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
 
 # Endpoint untuk Import recent data broker summary
-@app.post("/v1/import-recent-data")
+@app.post("/v1/stock/import-recent-data")
 async def import_recent_data(request: Request):
     body = await request.json()
     return {"message": "Data berhasil di import"}
+
+
+# =============== API untuk FOREX dan COMMODITY ====================
+@app.get("/v1/{symbol}/get-news")
+async def get_all_news(symbol: str, limit: int = 20, type: str = "forex"):
+    try:
+        if not symbol:
+            raise HTTPException(status_code=400, detail="Simbol tidak boleh kosong")
+        
+        fetcher = TradingViewNewsFetcher()
+        news_data = fetcher.fetch_news_with_content(
+            symbol=symbol,
+            limit=limit,
+            type=type,
+            delay=0.5
+        )
+        
+        if not news_data:
+            raise HTTPException(status_code=404, detail=f"Daftar berita tidak ditemukan untuk simbol {symbol}")
+        
+        return {
+            "message": "Daftar berita berhasil diambil", 
+            "symbol": symbol,
+            "type": type,
+            "total_items": len(news_data),
+            "data": news_data,
+            "status_code": 200
+        }
+    except HTTPException:
+        raise HTTPException(status_code=400, detail="Terjadi kesalahan pada server") 
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
+
+
+@app.get("/v1/{symbol}/news-sentiment")
+async def get_news_sentiment(symbol: str, limit: int = 20, type: str = "forex"):
+    try:
+        if not symbol:
+            raise HTTPException(status_code=400, detail="Simbol tidak boleh kosong")
+        
+        analyzer = CompleteNewsAnalyzer()
+        collection = analyzer.analyze_from_tradingview(
+            symbol=symbol,
+            limit=limit,
+            type=type,
+            fetch_delay=0.5
+        )
+        
+        if len(collection) == 0:
+            raise HTTPException(status_code=404, detail=f"Data sentimen berita tidak ditemukan untuk simbol {symbol}")
+        
+        market_sentiment = analyzer.get_market_sentiment()
+        top_news = analyzer.get_top_news(limit=10)
+        
+        return {
+            "message": "Data sentimen berita berhasil diambil", 
+            "symbol": symbol,
+            "type": type,
+            "market_sentiment": market_sentiment,
+            "top_news": [
+                {
+                    "id": news.id,
+                    "title": news.title,
+                    "published": news.published_str,
+                    "sentiment": news.sentiment,
+                    "sentiment_score": news.sentiment_score,
+                    "sentiment_confidence": news.sentiment_confidence,
+                    "importance_score": news.importance_score,
+                    "is_high_priority": news.is_high_priority,
+                    "provider": news.provider.name,
+                    "urgency": news.urgency
+                }
+                for news in top_news
+            ],
+            "status_code": 200
+        }
+    except HTTPException:
+        raise HTTPException(status_code=400, detail="Terjadi kesalahan pada server")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")

@@ -1,0 +1,910 @@
+{
+  "fetched_at": "2025-12-29T09:57:21.396183",
+  "total_items": 3,
+  "items": [
+    {
+      "id": "moneycontrol:4fac10f29094b:0",
+      "title": "BSE SmallCap turns one of 2025’s weakest global assets; Gold, Silver stand out",
+      "published": 1766975017,
+      "urgency": 2,
+      "link": "https://www.moneycontrol.com/news/business/earnings/bse-smallcap-turns-one-of-2025-s-weakest-global-assets-gold-silver-stand-out-13745849.html",
+      "relatedSymbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "logoid": "metal/gold"
+        }
+      ],
+      "storyPath": "/news/moneycontrol:4fac10f29094b:0-bse-smallcap-turns-one-of-2025-s-weakest-global-assets-gold-silver-stand-out/",
+      "provider": {
+        "id": "moneycontrol",
+        "name": "Moneycontrol",
+        "logo_id": "moneycontrol"
+      },
+      "full_content": "India's BSE SmallCap index, has underperformed all major global asset classes in 2025, including equities, commodities and cryptocurrencies, as stretched valuations, weaker earnings and thin liquidity continued to weigh on the segment. Once a favorite among investors, the index has fallen more than 11 percent in dollar terms so far in 2025, marking its steepest decline in three years. The drop followed sharp gains of more than 47 percent in 2023 and 26 percent in 2024. India’s benchmark Sensex and Nifty delivered muted returns with gains of around 5 percent each during 2025. The correction in smallcap stocks coincided with the weakening rupee, concerns over India’s trade negotiations with the US, and persistent foreign fund outflows, which triggered a sharp risk-off reaction in the broader market. A risk-off global environment and a busy initial public offering pipeline further diverted liquidity toward large-cap stocks and other asset classes. Experts expect the underperformance of India’s small-cap stocks to persist in 2026, as these shares have struggled to recover even while large-cap indices have touched record highs. Nearly 90 percent of the stocks in the BSE SmallCap index remain below their 52-week highs. About 10 percent of the index constituents are down between 50-90 percent from their peaks, while 81 percent are lower by 10-50 percent. Apart from small-caps, the Philippine's PSEi index and Bitcoin were among the biggest global losers in 2025, declining more than 9 percent and 5 percent, respectively. Other laggards included the BSE MidCap and Jakarta Composite Index, which slipped 4 percent and 0.4 percent. Precious metals, meanwhile, have outperformed all asset classes globally in 2025 as escalating geopolitical tensions and expectations of further rate cuts lifted demand. Silver surged 142 percent, while gold jumped 72 percent, putting both metals on track for their best annual performance since 1979. The rally has been supported by elevated central bank purchases and steady inflows into exchange-traded funds. Total holdings in gold-backed ETFs have risen in every month this year except May, according to World Gold Council data. President Donald Trump’s aggressive approach to reshaping global trade and his criticism of the Federal Reserve’s independence also added momentum to the rally in Gold and Silver. The surge in silver was even more pronounced than gold, fueled by speculative inflows and lingering supply disruptions across trading hubs following a historic short squeeze in October. Looking ahead, both gold and silver are expected to extend their gains. Goldman Sachs has raised its 2026 year-end gold price target to $4,900 per ounce, citing strong central bank demand and ETF inflows. Deutsche Bank has upgraded its outlook as well, projecting gold prices at $4,450 per ounce in 2026. For silver, experts say strong industrial demand, limited supply and supportive global trends could drive gains of another 15 to 20 percent next year. Interestingly, Gold and silver have overshadowed Bitcoin, which had dominated performance tables for much of the past decade. Bitcoin has historically underperformed only in 2014, 2018 and 2022, while outperforming in other years. Its weakness in 2025 has been linked to heavy ETF redemptions and increased investor focus on AI-related stocks. Beyond commodities and crypto, global equities also rallied strongly in 2025. Brazil’s Ibovespa Index was the top performer, gaining around 50 percent, followed by Pakistan’s KSE100, which rose 48 percent, and Germany’s DAX, which advanced 39 percent. Other major gainers included the FTSE 100 in the United Kingdom and Hong Kong’s Hang Seng, up 30 percent and 29 percent, while Japan’s Nikkei and France’s CAC 40 climbed 25 percent. In the US, the Nasdaq Composite index gained 22 percent, the S&P 500 rose 18 percent and the Dow Jones advanced 15 percent. In a recent note, Morgan Stanley said it expects US stocks to outperform global peers in 2026 and expressed a preference for equities over credit and government bonds, supported by rising artificial intelligence–related capital expenditure and a favorable policy backdrop. The firm forecasts the S&P 500 to reach 7,800 by the end of 2026, implying about a 16 percent upside from current levels, driven by earnings growth and AI-led efficiency gains. Morgan Stanley also expects small-cap stocks in the US to outperform large caps, and cyclical sectors to do better than defensive ones, citing the Federal Reserve’s dovish stance. It added that European equities may benefit from spillover effects of a broader US recovery in 2026, despite domestic fiscal constraints and increasing competition from China.",
+      "detail": {
+        "short_description": "India's BSE SmallCap index, has underperformed all major global asset classes in 2025, including equities, commodities and cryptocurrencies, as stretched valuations, weaker earnings and thin liquidity continued to weigh on the segment.Once a favorite among investors, the index has fallen more than…",
+        "ast_description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "p",
+              "children": [
+                "India's BSE SmallCap index, has underperformed all major global asset classes in 2025, including equities, commodities and cryptocurrencies, as stretched valuations, weaker earnings and thin liquidity continued to weigh on the segment."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "Once a favorite among investors, the index has fallen more than 11 percent in dollar terms so far in 2025, marking its steepest decline in three years. The drop followed sharp gains of more than 47 percent in 2023 and 26 percent in 2024. India’s benchmark Sensex and Nifty delivered muted returns with gains of around 5 percent each during 2025."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "The correction in smallcap stocks coincided with the weakening rupee, concerns over India’s trade negotiations with the US, and persistent foreign fund outflows, which triggered a sharp risk-off reaction in the broader market. A risk-off global environment and a busy initial public offering pipeline further diverted liquidity toward large-cap stocks and other asset classes."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "Experts expect the underperformance of India’s small-cap stocks to persist in 2026, as these shares have struggled to recover even while large-cap indices have touched record highs. Nearly 90 percent of the stocks in the BSE SmallCap index remain below their 52-week highs. About 10 percent of the index constituents are down between 50-90 percent from their peaks, while 81 percent are lower by 10-50 percent."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "Apart from small-caps, the Philippine's PSEi index and Bitcoin were among the biggest global losers in 2025, declining more than 9 percent and 5 percent, respectively. Other laggards included the BSE MidCap and Jakarta Composite Index, which slipped 4 percent and 0.4 percent."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                {
+                  "type": "news-image",
+                  "params": {
+                    "image": {
+                      "id": "moneycontrol:4fac10f29094b-25f20061ae9cc9c40ef0bc45fb92e12d",
+                      "alt": "smallcap",
+                      "source-width": 700,
+                      "source-height": 1166,
+                      "bg-color": "#1e3248"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                {
+                  "type": "b",
+                  "children": [
+                    "Precious metals dominate 2025 performance"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "Precious metals, meanwhile, have outperformed all asset classes globally in 2025 as escalating geopolitical tensions and expectations of further rate cuts lifted demand. Silver surged 142 percent, while gold jumped 72 percent, putting both metals on track for their best annual performance since 1979. The rally has been supported by elevated central bank purchases and steady inflows into exchange-traded funds. Total holdings in gold-backed ETFs have risen in every month this year except May, according to World Gold Council data."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "President Donald Trump’s aggressive approach to reshaping global trade and his criticism of the Federal Reserve’s independence also added momentum to the rally in Gold and Silver. The surge in silver was even more pronounced than gold, fueled by speculative inflows and lingering supply disruptions across trading hubs following a historic short squeeze in October."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "Looking ahead, both gold and silver are expected to extend their gains. Goldman Sachs has raised its 2026 year-end gold price target to $4,900 per ounce, citing strong central bank demand and ETF inflows. Deutsche Bank has upgraded its outlook as well, projecting gold prices at $4,450 per ounce in 2026. For silver, experts say strong industrial demand, limited supply and supportive global trends could drive gains of another 15 to 20 percent next year."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "Interestingly, Gold and silver have overshadowed Bitcoin, which had dominated performance tables for much of the past decade. Bitcoin has historically underperformed only in 2014, 2018 and 2022, while outperforming in other years. Its weakness in 2025 has been linked to heavy ETF redemptions and increased investor focus on AI-related stocks."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                {
+                  "type": "b",
+                  "children": [
+                    "Global equities deliver strong year"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "Beyond commodities and crypto, global equities also rallied strongly in 2025. Brazil’s Ibovespa Index was the top performer, gaining around 50 percent, followed by Pakistan’s KSE100, which rose 48 percent, and Germany’s DAX, which advanced 39 percent."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "Other major gainers included the FTSE 100 in the United Kingdom and Hong Kong’s Hang Seng, up 30 percent and 29 percent, while Japan’s Nikkei and France’s CAC 40 climbed 25 percent. In the US, the Nasdaq Composite index gained 22 percent, the S&P 500 rose 18 percent and the Dow Jones advanced 15 percent."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "In a recent note, Morgan Stanley said it expects US stocks to outperform global peers in 2026 and expressed a preference for equities over credit and government bonds, supported by rising artificial intelligence–related capital expenditure and a favorable policy backdrop. The firm forecasts the S&P 500 to reach 7,800 by the end of 2026, implying about a 16 percent upside from current levels, driven by earnings growth and AI-led efficiency gains."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "Morgan Stanley also expects small-cap stocks in the US to outperform large caps, and cyclical sectors to do better than defensive ones, citing the Federal Reserve’s dovish stance. It added that European equities may benefit from spillover effects of a broader US recovery in 2026, despite domestic fiscal constraints and increasing competition from China."
+              ]
+            }
+          ]
+        },
+        "language": "en",
+        "tags": [
+          {
+            "title": "Futures",
+            "args": [
+              {
+                "id": "market",
+                "value": "futures"
+              }
+            ]
+          },
+          {
+            "title": "Moneycontrol",
+            "args": [
+              {
+                "id": "provider",
+                "value": "moneycontrol"
+              }
+            ]
+          }
+        ],
+        "id": "moneycontrol:4fac10f29094b:0",
+        "title": "BSE SmallCap turns one of 2025’s weakest global assets; Gold, Silver stand out",
+        "published": 1766975017,
+        "urgency": 2,
+        "link": "https://www.moneycontrol.com/news/business/earnings/bse-smallcap-turns-one-of-2025-s-weakest-global-assets-gold-silver-stand-out-13745849.html",
+        "related_symbols": [
+          {
+            "symbol": "TVC:GOLD",
+            "logoid": "metal/gold"
+          }
+        ],
+        "story_path": "/news/moneycontrol:4fac10f29094b:0-bse-smallcap-turns-one-of-2025-s-weakest-global-assets-gold-silver-stand-out/",
+        "read_time": 178,
+        "provider": {
+          "id": "moneycontrol",
+          "name": "Moneycontrol",
+          "logo_id": "moneycontrol"
+        }
+      }
+    },
+    {
+      "id": "DJN_DN20251228000898:0",
+      "title": "Gold Falls; Prices Likely to Remain Elevated — Market Talk",
+      "published": 1766971860,
+      "urgency": 2,
+      "permission": "provider",
+      "relatedSymbols": [
+        {
+          "symbol": "TVC:GOLD",
+          "logoid": "metal/gold"
+        }
+      ],
+      "storyPath": "/news/DJN_DN20251228000898:0/",
+      "provider": {
+        "id": "dow-jones",
+        "name": "Dow Jones Newswires",
+        "logo_id": "dow-jones-newswires"
+      },
+      "full_content": "Gold falls in early Asian trade but remains above $4,500/oz. Prices are likely to continue being elevated by safe-haven demand as intensifying geopolitical tensions continue, and expectations of a more accommodative U.S. monetary policy, Daniel Takieddine of Sky Links Capital Group writes in a note. The possibility of a more dovish Fed leadership after Jerome Powell's term ends could serve as a tailwind for gold, Takieddine adds. Spot gold is 0.5% lower at $4,508.03/oz. (kimberley.kao@wsj.com)",
+      "detail": {
+        "short_description": "Gold falls in early Asian trade but remains above $4,500/oz. Prices are likely to continue being elevated by safe-haven demand as intensifying geopolitical tensions continue, and expectations of a more accommodative U.S. monetary policy, Daniel Takieddine of Sky Links Capital Group writes in a note…",
+        "ast_description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "p",
+              "children": [
+                "Gold falls in early Asian trade but remains above $4,500/oz. Prices are likely to continue being elevated by safe-haven demand as intensifying geopolitical tensions continue, and expectations of a more accommodative U.S. monetary policy, Daniel Takieddine of Sky Links Capital Group writes in a note. The possibility of a more dovish Fed leadership after Jerome Powell's term ends could serve as a tailwind for gold, Takieddine adds. Spot gold is 0.5% lower at $4,508.03/oz. (kimberley.kao@wsj.com)"
+              ]
+            }
+          ]
+        },
+        "language": "en",
+        "tags": [
+          {
+            "title": "Dow Jones Newswires",
+            "args": [
+              {
+                "id": "provider",
+                "value": "dow-jones"
+              }
+            ]
+          },
+          {
+            "title": "Futures",
+            "args": [
+              {
+                "id": "market",
+                "value": "futures"
+              }
+            ]
+          }
+        ],
+        "robots": [
+          "noindex"
+        ],
+        "copyright": "2025 Dow Jones & Company, Inc. All rights reserved.",
+        "id": "DJN_DN20251228000898:0",
+        "title": "Gold Falls; Prices Likely to Remain Elevated — Market Talk",
+        "published": 1766971860,
+        "urgency": 2,
+        "permission": "provider",
+        "related_symbols": [
+          {
+            "symbol": "TVC:GOLD",
+            "logoid": "metal/gold"
+          }
+        ],
+        "story_path": "/news/DJN_DN20251228000898:0/",
+        "read_time": 18,
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      }
+    },
+    {
+      "id": "tag:reuters.com,2025:newsml_L1N3XZ00F:0",
+      "title": "Commodities intraday targets/key levels",
+      "published": 1766969977,
+      "urgency": 2,
+      "permission": "headline",
+      "relatedSymbols": [
+        {
+          "symbol": "TVC:UKOIL",
+          "logoid": "crude-oil"
+        },
+        {
+          "symbol": "MYX:FCPO1!",
+          "logoid": "commodity/palm-oil"
+        },
+        {
+          "symbol": "NYMEX:CL1!",
+          "logoid": "crude-oil"
+        },
+        {
+          "symbol": "TVC:GOLD",
+          "logoid": "metal/gold"
+        }
+      ],
+      "storyPath": "/news/reuters.com,2025:newsml_L1N3XZ00F:0-commodities-intraday-targets-key-levels/",
+      "provider": {
+        "id": "reuters",
+        "name": "Reuters",
+        "logo_id": "reuters"
+      },
+      "full_content": ", * Prices are delayed. ** Wang Tao is a Reuters market analyst for commodities and energy technicals. The views expressed are his own. No information in this analysis should be considered business, financial or legal advice. Each reader should consult his or her own professional or other advisers for business, financial or legal advice regarding the products mentioned in the analyses.    If you have a query or comment on this story, send an email to   or wang.tao@tr.com.",
+      "detail": {
+        "short_description": ",* Prices are delayed.** Wang Tao is a Reuters market analyst for commodities and energy technicals. The views expressed are his own. No information in this analysis should be considered business, financial or legal advice. Each reader should consult his or her own professional or other advisers fo…",
+        "ast_description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "table",
+              "children": [
+                {
+                  "type": "table-body",
+                  "children": [
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "Contract "
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "Target  "
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "Support/Resistance       "
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "Brent oil (1st month)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "$61.34/$61.62"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "sup $60.89/$60.61/$60.16"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "Palm oil (3rd month)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "4,123 ringgit"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "sup 4,078/4,042 ringgit"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "WTI* (1st month)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "$57.35/$57.55"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "sup $57.06/$56.82/$56.58"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "Spot gold"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "$4,478/$4,446"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "res $4,510/$4,530/$4,561"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "LME copper (3rd month)*"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "$12,185/$12,214"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "sup $12,073/$12,031"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "LME aluminium (3rd month)*    "
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "$2,970/$3,006"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "sup $2,948/$2,930/$2,913"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "CBOT soybeans (March)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "$10.63-1/2"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "res $10.78-3/4, $10.92-1/4"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "CBOT corn (March)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "$4.45-3/4"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "res $4.51-1/2, $4.53-3/4"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "CBOT wheat (March)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "$5.16-1/4, $5.12"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "res $5.23, $5.27-1/4"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "N.Y. coffee (March)*"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "$3.5260/$3.5815"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "sup $3.45/$3.4110"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "children": [
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "N.Y. cocoa (March)* "
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "-"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-data-cell",
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                "res $5,991/$6,130"
+                              ]
+                            },
+                            {
+                              "type": "p",
+                              "children": [
+                                "sup $5,874/$5,766"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                ","
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "* Prices are delayed."
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "** Wang Tao is a Reuters market analyst for commodities and energy technicals. The views expressed are his own. No information in this analysis should be considered business, financial or legal advice. Each reader should consult his or her own professional or other advisers for business, financial or legal advice regarding the products mentioned in the analyses.   "
+              ]
+            },
+            {
+              "type": "p",
+              "children": [
+                "If you have a query or comment on this story, send an email to ",
+                {
+                  "type": "url",
+                  "params": {
+                    "url": "http://mailto:refinitivnewssupport@thomsonreuters.com",
+                    "linkText": "refinitivnewssupport@thomsonreuters.com"
+                  }
+                },
+                " or wang.tao@tr.com."
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "type": "root",
+          "children": [
+            {
+              "type": "list",
+              "children": [
+                {
+                  "type": "*",
+                  "children": [
+                    "For more technical analyses, clickTECH/C"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "language": "en",
+        "tags": [
+          {
+            "title": "Chinese stocks",
+            "args": [
+              {
+                "id": "market",
+                "value": "stock"
+              },
+              {
+                "id": "market_country",
+                "value": "CN"
+              }
+            ]
+          },
+          {
+            "title": "Futures",
+            "args": [
+              {
+                "id": "market",
+                "value": "futures"
+              }
+            ]
+          },
+          {
+            "title": "Malaysian stocks",
+            "args": [
+              {
+                "id": "market",
+                "value": "stock"
+              },
+              {
+                "id": "market_country",
+                "value": "MY"
+              }
+            ]
+          },
+          {
+            "title": "Reuters",
+            "args": [
+              {
+                "id": "provider",
+                "value": "reuters"
+              }
+            ]
+          }
+        ],
+        "copyright": "Copyright Thomson Reuters 2025. Click For Restrictions - https://agency.reuters.com/en/copyright.html",
+        "id": "tag:reuters.com,2025:newsml_L1N3XZ00F:0",
+        "title": "Commodities intraday targets/key levels",
+        "published": 1766969977,
+        "urgency": 2,
+        "permission": "headline",
+        "related_symbols": [
+          {
+            "symbol": "TVC:UKOIL",
+            "logoid": "crude-oil"
+          },
+          {
+            "symbol": "MYX:FCPO1!",
+            "logoid": "commodity/palm-oil"
+          },
+          {
+            "symbol": "NYMEX:CL1!",
+            "logoid": "crude-oil"
+          },
+          {
+            "symbol": "TVC:GOLD",
+            "logoid": "metal/gold"
+          }
+        ],
+        "story_path": "/news/reuters.com,2025:newsml_L1N3XZ00F:0-commodities-intraday-targets-key-levels/",
+        "read_time": 37,
+        "provider": {
+          "id": "reuters",
+          "name": "Reuters",
+          "logo_id": "reuters"
+        },
+        "distributor": {
+          "id": "refinitiv",
+          "name": "Refinitiv",
+          "logo_id": "refinitiv"
+        }
+      }
+    }
+  ]
+}

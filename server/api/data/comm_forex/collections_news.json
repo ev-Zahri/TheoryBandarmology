@@ -1,0 +1,4968 @@
+{
+    "items": [
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XZ00F:0",
+            "title": "Commodities intraday targets/key levels",
+            "published": 1766969977,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "MYX:FCPO1!",
+                    "logoid": "commodity/palm-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XZ00F:0-commodities-intraday-targets-key-levels/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "te_news:512748:0",
+            "title": "Gold Pulls Back Slightly",
+            "published": 1766969609,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:512748:0-gold-pulls-back-slightly/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251226002191:0",
+            "title": "Comex Gold Ends the Week 3.85% Higher at $4529.10 — Data Talk",
+            "published": 1766775240,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251226002191:0-comex-gold-ends-the-week-3-85-higher-at-4529-10-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251226001681:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 26",
+            "published": 1766758800,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251226001681:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251226000722:0",
+            "title": "Comex Gold Futures' Strong Bullish Momentum in Play, Chart Shows — Market Talk",
+            "published": 1766733720,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251226000722:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "moneycontrol:6d7448c88094b:0",
+            "title": "Birth of Gold Hydride: Scientists accidently formed a new compound, proving gold can be \"reactive\"",
+            "published": 1766730994,
+            "urgency": 2,
+            "link": "https://www.moneycontrol.com/science/birth-of-gold-hydride-scientists-accidently-formed-a-new-compound-proving-gold-can-be-reactive-article-13743039.html",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/moneycontrol:6d7448c88094b:0-birth-of-gold-hydride-scientists-accidently-formed-a-new-compound-proving-gold-can-be-reactive/",
+            "provider": {
+                "id": "moneycontrol",
+                "name": "Moneycontrol",
+                "logo_id": "moneycontrol"
+            }
+        },
+        {
+            "id": "tradingview:f5d34a38c094b:0",
+            "title": "XAU/USD: Gold Prints Record Above $4,500 as Demand Hits Fever Pitch",
+            "published": 1766730206,
+            "urgency": 2,
+            "link": "https://www.tradingview.com",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:XAUUSD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "FX:XAGUSD",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/tradingview:f5d34a38c094b:0-xau-usd-gold-prints-record-above-4-500-as-demand-hits-fever-pitch/",
+            "provider": {
+                "id": "tradingview",
+                "name": "TradingView",
+                "logo_id": "tradingview-snaps"
+            }
+        },
+        {
+            "id": "te_news:512540:0",
+            "title": "Gold Near Record High",
+            "published": 1766713943,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:512540:0-gold-near-record-high/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251225000992_20251225000993:0",
+            "title": "Spot Gold Rises 0.6% to $4,507.84/oz",
+            "published": 1766709900,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251225000992_20251225000993:0/",
+            "is_flash": true,
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251225000992_20251225000992:0",
+            "title": "Spot Gold Extends Gains After Trump Discloses Christmas Day Strike Against ISIS",
+            "published": 1766709840,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251225000992_20251225000992:0/",
+            "is_flash": true,
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:512506:0",
+            "title": "Gold traded above 4500 USD/t.oz",
+            "published": 1766707666,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:512506:0-gold-traded-above-4500-usd-t-oz/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251225000937:0",
+            "title": "Gold Edges Higher Amid Geopolitical Risks — Market Talk",
+            "published": 1766706000,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251225000937:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "moneycontrol:b8ba84441094b:0",
+            "title": "Gold steadies as traders book profits after rally to record",
+            "published": 1766632485,
+            "urgency": 2,
+            "link": "https://www.moneycontrol.com/news/business/commodities/gold-steadies-as-traders-book-profits-after-rally-to-record-13742174.html",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/moneycontrol:b8ba84441094b:0-gold-steadies-as-traders-book-profits-after-rally-to-record/",
+            "provider": {
+                "id": "moneycontrol",
+                "name": "Moneycontrol",
+                "logo_id": "moneycontrol"
+            }
+        },
+        {
+            "id": "DJN_DN20251224003154:0",
+            "title": "Comex Gold Settles 0.05% Lower at $4480.60 — Data Talk",
+            "published": 1766603220,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251224003154:0-comex-gold-settles-0-05-lower-at-4480-60-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251224002345:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 24",
+            "published": 1766586720,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251224002345:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251224002075:0",
+            "title": "Forget the Bond Vigilantes. It's the Gold Vigilantes You Need to Worry About. — Barrons.com",
+            "published": 1766582040,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251224002075:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251224001504:0",
+            "title": "South African Rand Rises Sharply as Gold Prices Rally — Market Talk",
+            "published": 1766572740,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251224001504:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251224001139:0",
+            "title": "Gold Prices Continue Upward Trend Amid Rate-Cut Hopes, Geopolitical Uncertainty — Market Talk",
+            "published": 1766567100,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251224001139:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251224001051:0",
+            "title": "Swiss Franc Lifted as Gold Prices Hit Fresh Record Highs — Market Talk",
+            "published": 1766565420,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251224001051:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:512242:0",
+            "title": "Gold Scales $4,500 to Fresh Record",
+            "published": 1766537834,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:512242:0-gold-scales-4-500-to-fresh-record/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251223006596:0",
+            "title": "Gold Climbs Above $4,500/oz for First Time Amid Rising Geopolitical Tensions — Market Talk",
+            "published": 1766534040,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223006596:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251223006584_20251223006586:0",
+            "title": "Spot Gold Rises 0.5% to $4,506.33/oz; Touched $4,508.73/oz Earlier",
+            "published": 1766533440,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223006584_20251223006586:0/",
+            "is_flash": true,
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251223006584_20251223006584:0",
+            "title": "Spot Gold Rises Above $4,500/oz for First Time, Touches Fresh Record High, ICE Data Show",
+            "published": 1766533320,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223006584_20251223006584:0/",
+            "is_flash": true,
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_P8N3SC0E2:0",
+            "title": "Safe-haven gold ventures beyond $4,500/oz for the first time",
+            "published": 1766532984,
+            "urgency": 1,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XPDUSD1!",
+                    "logoid": "metal/palladium"
+                },
+                {
+                    "symbol": "NYMEX:PL1!",
+                    "logoid": "metal/platinum"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_P8N3SC0E2:0-safe-haven-gold-ventures-beyond-4-500-oz-for-the-first-time/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251223005023:0",
+            "title": "CFTC Commitments: Comex Gold Futures/Options - Dec 23",
+            "published": 1766522040,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223005023:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251223004994:0",
+            "title": "CFTC Disaggregated Commitments: Comex Gold Futs/Opts",
+            "published": 1766521980,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223004994:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251223004963:0",
+            "title": "CFTC Disaggregated Commitments: Comex Gold Futures",
+            "published": 1766521860,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223004963:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251223004949:0",
+            "title": "CFTC Commitments: Comex Gold Futures - Dec 23",
+            "published": 1766521800,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223004949:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251223004581:0",
+            "title": "Gold Has Another Record-Setting Day — Market Talk",
+            "published": 1766516280,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223004581:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251223004565:0",
+            "title": "Comex Gold Settles 0.86% Higher at $4482.80 — Data Talk",
+            "published": 1766515860,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223004565:0-comex-gold-settles-0-86-higher-at-4482-80-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251223002983:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 23",
+            "published": 1766499600,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223002983:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:512160:0",
+            "title": "Gold Pares Some Gains After Strong GDP",
+            "published": 1766499164,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:512160:0-gold-pares-some-gains-after-strong-gdp/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251223000898:0",
+            "title": "Gold Prices Continue Gains — Market Talk",
+            "published": 1766481180,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223000898:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251223000210:0",
+            "title": "Market Appears Comfortable With Gold's Higher Prices — Market Talk",
+            "published": 1766471040,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251223000210:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:511939:0",
+            "title": "Gold Scales New All-Time Peak",
+            "published": 1766455935,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:511939:0-gold-scales-new-all-time-peak/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251222007565:0",
+            "title": "Gold Hits Record High Amid Rising Geopolitical Risks — Market Talk",
+            "published": 1766446920,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251222007565:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251222007546_20251222007548:0",
+            "title": "Spot Gold Rises 0.3% to $4,455.58/oz; Touched $4,459.59/oz Earlier",
+            "published": 1766446500,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251222007546_20251222007548:0/",
+            "is_flash": true,
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251222007546_20251222007546:0",
+            "title": "Spot Gold Rises to Fresh Record High, ICE Data Show",
+            "published": 1766446440,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251222007546_20251222007546:0/",
+            "is_flash": true,
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251222005485:0",
+            "title": "Comex Gold Settles 1.91% Higher at $4444.60 — Data Talk",
+            "published": 1766429820,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251222005485:0-comex-gold-settles-1-91-higher-at-4444-60-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251222004625:0",
+            "title": "Gold Powered by Fed Rate-Cut Hopes, Safe-Haven Appeal — Market Talk",
+            "published": 1766421960,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251222004625:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:511864:0",
+            "title": "Gold is up by 2.03%",
+            "published": 1766418329,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:511864:0-gold-is-up-by-2-03/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251222003762:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 22",
+            "published": 1766412900,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251222003762:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "moneycontrol:be0ae0f31094b:0",
+            "title": "Customer bought 22 iPhone 17s, gold coins, eggs worth over Rs 22 lakh on Instamart: 'Top spender'",
+            "published": 1766399962,
+            "urgency": 2,
+            "link": "https://www.moneycontrol.com/news/trends/instamart-s-top-spender-of-2025-paid-over-rs-22-lakh-for-22-iphone-17s-24k-gold-coins-and-eggs-13737493.html",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/moneycontrol:be0ae0f31094b:0-customer-bought-22-iphone-17s-gold-coins-eggs-worth-over-rs-22-lakh-on-instamart-top-spender/",
+            "provider": {
+                "id": "moneycontrol",
+                "name": "Moneycontrol",
+                "logo_id": "moneycontrol"
+            }
+        },
+        {
+            "id": "DJN_DN20251222001220:0",
+            "title": "Gold Rockets to Record High on U.S. Rate-Cut Hopes, Haven Demand",
+            "published": 1766395620,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251222001220:0-gold-rockets-to-record-high-on-u-s-rate-cut-hopes-haven-demand/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251222000830_20251222000830:0",
+            "title": "Gold Futures Rise 1.3% to $4,444.20 a Troy Ounce",
+            "published": 1766391360,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251222000830_20251222000830:0/",
+            "is_flash": true,
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tradingview:cac3aa7ae094b:0",
+            "title": "XAU/USD: Gold Punches Through $4,400 for New All-Time High. It’s Up 70% in 2025.",
+            "published": 1766389141,
+            "urgency": 2,
+            "link": "https://www.tradingview.com",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:XAUUSD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "FX:XAGUSD",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "FX:BTCUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "crypto/XTVCBTC"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/tradingview:cac3aa7ae094b:0-xau-usd-gold-punches-through-4-400-for-new-all-time-high-it-s-up-70-in-2025/",
+            "provider": {
+                "id": "tradingview",
+                "name": "TradingView",
+                "logo_id": "tradingview-snaps"
+            }
+        },
+        {
+            "id": "DJN_DN20251222000299:0",
+            "title": "Gold, Silver Hit Record Highs Amid Growing Geopolitical Tensions",
+            "published": 1766386620,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251222000299:0-gold-silver-hit-record-highs-amid-growing-geopolitical-tensions/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "moneycontrol:f7a180b69094b:0",
+            "title": "Gold in West Bengal: GSI identifies 9 key sites in several districts of West Bengal",
+            "published": 1766383632,
+            "urgency": 2,
+            "link": "https://www.moneycontrol.com/science/gold-in-west-bengal-gsi-identifies-9-key-sites-in-several-districts-of-west-bengal-article-13736525.html",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/moneycontrol:f7a180b69094b:0-gold-in-west-bengal-gsi-identifies-9-key-sites-in-several-districts-of-west-bengal/",
+            "provider": {
+                "id": "moneycontrol",
+                "name": "Moneycontrol",
+                "logo_id": "moneycontrol"
+            }
+        },
+        {
+            "id": "DJN_DN20251221001030_20251221001031:0",
+            "title": "Spot Gold Rises 1.4% to $4,399.33/oz; Touched $4,401.07/oz Earlier",
+            "published": 1766379300,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251221001030_20251221001031:0/",
+            "is_flash": true,
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251221001030_20251221001030:0",
+            "title": "Spot Gold Rises to Record High, ICE Data Show",
+            "published": 1766379240,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251221001030_20251221001030:0/",
+            "is_flash": true,
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:511611:0",
+            "title": "Gold Hits Record High",
+            "published": 1766369056,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:511611:0-gold-hits-record-high/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251221000720:0",
+            "title": "Gold Edges Higher Amid Geopolitical Tensions — Market Talk",
+            "published": 1766360100,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251221000720:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251219008006:0",
+            "title": "Gold and Silver Are Finishing a Record-Setting Year With...More Records — WSJ",
+            "published": 1766182920,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251219008006:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251219006657:0",
+            "title": "CFTC Commitments: Comex Gold Futures/Options - Dec 19",
+            "published": 1766176500,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251219006657:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251219006640:0",
+            "title": "CFTC Commitments: Comex Gold Futures - Dec 19",
+            "published": 1766176440,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251219006640:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251219006084:0",
+            "title": "Comex Gold Ends the Week 1.43% Higher at $4361.40 — Data Talk",
+            "published": 1766170320,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251219006084:0-comex-gold-ends-the-week-1-43-higher-at-4361-40-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251219004114:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 19",
+            "published": 1766153640,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251219004114:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L4N3XP0GG:0",
+            "title": "Gold rally hits demand as India's discounts widen, China's reach five‑year high",
+            "published": 1766139096,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L4N3XP0GG:0-gold-rally-hits-demand-as-india-s-discounts-widen-china-s-reach-five-year-high/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251219001683:0",
+            "title": "Gold Headed for Weekly Gain on U.S. Rate-Cut Bets — Market Talk",
+            "published": 1766135520,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251219001683:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:511261:0",
+            "title": "Gold on Track for Weekly Rise",
+            "published": 1766108044,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:511261:0-gold-on-track-for-weekly-rise/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251218010125:0",
+            "title": "Gold Steady, Supported by Fed Rate-Cut Prospects — Market Talk",
+            "published": 1766101500,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251218010125:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XO0VX:0",
+            "title": "Stocks rise, Treasury yields edge down as US inflation softens",
+            "published": 1766088999,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:GBPUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/GB"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XO0VX:0-stocks-rise-treasury-yields-edge-down-as-us-inflation-softens/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251218007482:0",
+            "title": "Comex Gold Settles 0.18% Lower at $4339.50 — Data Talk",
+            "published": 1766083860,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251218007482:0-comex-gold-settles-0-18-lower-at-4339-50-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251218007076:0",
+            "title": "Goldman Sachs Projects Gold Upside in 2026 — Market Talk",
+            "published": 1766078700,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251218007076:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:511181:0",
+            "title": "Gold Nears Another Record High",
+            "published": 1766076288,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:511181:0-gold-nears-another-record-high/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "te_news:511174:0",
+            "title": "Gold Hits 8-week High",
+            "published": 1766074281,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:511174:0-gold-hits-8-week-high/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XO0UV:0",
+            "title": "Stocks recover from AI-led bruising; US inflation softens",
+            "published": 1766067644,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:GBPUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/GB"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "CME_MINI:ES1!",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "CME_MINI:NQ1!",
+                    "logoid": "indices/nasdaq-100"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XO0UV:0-stocks-recover-from-ai-led-bruising-us-inflation-softens/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251218005474:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 18",
+            "published": 1766067540,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251218005474:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:511121:0",
+            "title": "Gold Stable After CPI",
+            "published": 1766066794,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:511121:0-gold-stable-after-cpi/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "moneycontrol:45fd18b93094b:0",
+            "title": "India keeps dairy, key agri goods, gold out of Oman trade deal",
+            "published": 1766056913,
+            "urgency": 2,
+            "link": "https://www.moneycontrol.com/news/business/india-keeps-dairy-key-agri-goods-gold-out-of-oman-trade-deal-13732496.html",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/moneycontrol:45fd18b93094b:0-india-keeps-dairy-key-agri-goods-gold-out-of-oman-trade-deal/",
+            "provider": {
+                "id": "moneycontrol",
+                "name": "Moneycontrol",
+                "logo_id": "moneycontrol"
+            }
+        },
+        {
+            "id": "te_news:510869:0",
+            "title": "Gold Remains Close to Record Highs",
+            "published": 1766022642,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:510869:0-gold-remains-close-to-record-highs/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251217009699:0",
+            "title": "Gold Edges Higher, Supported by Some Tailwinds — Market Talk",
+            "published": 1766015580,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251217009699:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251217007138:0",
+            "title": "CFTC Commitments: Comex Gold Futures/Options - Dec 17",
+            "published": 1766003640,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251217007138:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251217007132:0",
+            "title": "CFTC Commitments: Comex Gold Futures - Dec 17",
+            "published": 1766003580,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251217007132:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:510824:0",
+            "title": "Gold Nears Record Highs",
+            "published": 1766000417,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:510824:0-gold-nears-record-highs/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251217006528:0",
+            "title": "Comex Gold Settles 1.00% Higher at $4347.50, Record High — Data Talk",
+            "published": 1765997400,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251217006528:0-comex-gold-settles-1-00-higher-at-4347-50-record-high-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251217004422:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 17",
+            "published": 1765980720,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251217004422:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251217001502:0",
+            "title": "Gold Rises on Rate-Cut Hopes, Geopolitical Risks — Market Talk",
+            "published": 1765961820,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251217001502:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "moneycontrol:23709c045094b:0",
+            "title": "Gold imports sink 73% MoM in November, analysts say demand intact",
+            "published": 1765961427,
+            "urgency": 2,
+            "link": "https://www.moneycontrol.com/news/business/markets/gold-imports-sink-73-mom-in-november-analysts-say-demand-intact-13729926.html",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/moneycontrol:23709c045094b:0-gold-imports-sink-73-mom-in-november-analysts-say-demand-intact/",
+            "provider": {
+                "id": "moneycontrol",
+                "name": "Moneycontrol",
+                "logo_id": "moneycontrol"
+            }
+        },
+        {
+            "id": "DJN_DN20251217000751:0",
+            "title": "Comex Gold Futures' Bullish Setup Remains Intact, Daily Chart Shows — Market Talk",
+            "published": 1765953960,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251217000751:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XN06R:0",
+            "title": "Silver tops $65 for first time; gold firms as US unemployment rate climbs",
+            "published": 1765953371,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "NYMEX:PL1!",
+                    "logoid": "metal/platinum"
+                },
+                {
+                    "symbol": "BIST:XPDUSD1!",
+                    "logoid": "metal/palladium"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XN06R:0-silver-tops-65-for-first-time-gold-firms-as-us-unemployment-rate-climbs/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "te_news:510525:0",
+            "title": "Gold Tests Record Highs",
+            "published": 1765935695,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:510525:0-gold-tests-record-highs/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251216008582:0",
+            "title": "Gold Edges Higher, Aided by Fed Rate-Cut Prospects — Market Talk",
+            "published": 1765928760,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251216008582:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251216005948:0",
+            "title": "Comex Gold Settles 0.05% Lower at $4304.50 — Data Talk",
+            "published": 1765911000,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251216005948:0-comex-gold-settles-0-05-lower-at-4304-50-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251216004268:0",
+            "title": "Gold Rises as Traders Assess Latest U.S. Data — Market Talk",
+            "published": 1765896300,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251216004268:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:510392:0",
+            "title": "Gold Rebounds After Jobs Data",
+            "published": 1765894565,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:510392:0-gold-rebounds-after-jobs-data/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251216004064:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 16",
+            "published": 1765894560,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251216004064:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L4N3XM0RG:0",
+            "title": "Baltic index edges up on stronger rates across larger vessels",
+            "published": 1765892753,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "INDEX:BDI"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XPDUSD1!",
+                    "logoid": "metal/palladium"
+                },
+                {
+                    "symbol": "NYMEX:PL1!",
+                    "logoid": "metal/platinum"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L4N3XM0RG:0-baltic-index-edges-up-on-stronger-rates-across-larger-vessels/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XM0P4:0",
+            "title": "European stocks fall as traders wait for US jobs data, Wall Street futures down",
+            "published": 1765888540,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "XETR:DAX",
+                    "logoid": "indices/dax"
+                },
+                {
+                    "symbol": "CME_MINI:NQ1!",
+                    "logoid": "indices/nasdaq-100"
+                },
+                {
+                    "symbol": "CME_MINI:ES1!",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XM0P4:0-european-stocks-fall-as-traders-wait-for-us-jobs-data-wall-street-futures-down/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "te_news:510123:0",
+            "title": "Gold Hovers Near Record High",
+            "published": 1765851911,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:510123:0-gold-hovers-near-record-high/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251215008857:0",
+            "title": "Gold Steady Ahead of U.S. Employment Report — Market Talk",
+            "published": 1765842240,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251215008857:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251215006442:0",
+            "title": "CFTC Commitments: Comex Gold Futures/Options - Dec 15",
+            "published": 1765831080,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251215006442:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251215006435:0",
+            "title": "CFTC Commitments: Comex Gold Futures - Dec 15",
+            "published": 1765831020,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251215006435:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251215005949:0",
+            "title": "Gold and Silver Gain to Start Week — Market Talk",
+            "published": 1765826520,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251215005949:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251215005785:0",
+            "title": "Comex Gold Settles 0.15% Higher at $4306.70 — Data Talk",
+            "published": 1765824780,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251215005785:0-comex-gold-settles-0-15-higher-at-4306-70-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XL0VE:0",
+            "title": "London stocks climb as BoE rate cut looms",
+            "published": 1765820566,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "FTSE:MCX",
+                    "logoid": "indices/ftse-250-esg-risk-adjusted"
+                },
+                {
+                    "symbol": "LSE:PRU",
+                    "logoid": "prudential-plc"
+                },
+                {
+                    "symbol": "NSE:ICICIAMC"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "LSE:TTG",
+                    "logoid": "tt-electronics-plc"
+                },
+                {
+                    "symbol": "SIX:CICN",
+                    "logoid": "cicor-tech-n"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XL0VE:0-london-stocks-climb-as-boe-rate-cut-looms/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XL0LL:0",
+            "title": "Global stock index close to flat ahead of key central bank decisions, US data",
+            "published": 1765818568,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDCNH",
+                    "currency-logoid": "country/CN",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "KRX:KOSPI",
+                    "logoid": "indices/korea-composite-index"
+                },
+                {
+                    "symbol": "SZSE:000002",
+                    "logoid": "china-vanke-co"
+                },
+                {
+                    "symbol": "TSE:TOPIX",
+                    "logoid": "indices/topix-small"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XL0LL:0-global-stock-index-close-to-flat-ahead-of-key-central-bank-decisions-us-data/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251215003956:0",
+            "title": "Gold Prices Are Back in Record Territory — WSJ",
+            "published": 1765809420,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251215003956:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251215003776:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 15",
+            "published": 1765807920,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251215003776:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L4N3XL0W6:0",
+            "title": "Baltic index edges lower on weaker panamax rates",
+            "published": 1765806746,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "INDEX:BDI"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XPDUSD1!",
+                    "logoid": "metal/palladium"
+                },
+                {
+                    "symbol": "NYMEX:PL1!",
+                    "logoid": "metal/platinum"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L4N3XL0W6:0-baltic-index-edges-lower-on-weaker-panamax-rates/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251215002829:0",
+            "title": "Gold Bolstered by U.S. Rate Cut Prospects, Haven Demand — Market Talk",
+            "published": 1765803660,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251215002829:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tradingview:6ce90889f094b:0",
+            "title": "XAU/USD: Gold Climbs to $4,350 as Traders Chase Fresh Record High Before End of Year",
+            "published": 1765788491,
+            "urgency": 2,
+            "link": "https://www.tradingview.com",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:XAUUSD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/tradingview:6ce90889f094b:0-xau-usd-gold-climbs-to-4-350-as-traders-chase-fresh-record-high-before-end-of-year/",
+            "provider": {
+                "id": "tradingview",
+                "name": "TradingView",
+                "logo_id": "tradingview-snaps"
+            }
+        },
+        {
+            "id": "DJN_DN20251215000657:0",
+            "title": "Comex Gold Futures Seeking to Test Resistance at $4,400/Ounce, Chart Shows — Market Talk",
+            "published": 1765784100,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251215000657:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XL044:0",
+            "title": "Gold rises on softer dollar, yields as markets eye US jobs data",
+            "published": 1765783001,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "NYMEX:PL1!",
+                    "logoid": "metal/platinum"
+                },
+                {
+                    "symbol": "BIST:XPDUSD1!",
+                    "logoid": "metal/palladium"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XL044:0-gold-rises-on-softer-dollar-yields-as-markets-eye-us-jobs-data/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XL01S:0",
+            "title": "Gold rises on softer dollar, yields as markets eye US jobs data; silver steadies",
+            "published": 1765770324,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "NYMEX:PL1!",
+                    "logoid": "metal/platinum"
+                },
+                {
+                    "symbol": "BIST:XPDUSD1!",
+                    "logoid": "metal/palladium"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XL01S:0-gold-rises-on-softer-dollar-yields-as-markets-eye-us-jobs-data-silver-steadies/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "te_news:509752:0",
+            "title": "Gold Nears Record High",
+            "published": 1765767094,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:509752:0-gold-nears-record-high/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251214001052:0",
+            "title": "Gold Edges Higher Amid Some Tailwinds — Market Talk",
+            "published": 1765755960,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251214001052:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XI12D:0",
+            "title": "Stocks drop as AI exuberance worries linger; US yields jump",
+            "published": 1765581227,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "SP:S5INFT",
+                    "logoid": "sector/information-technology"
+                },
+                {
+                    "symbol": "NYSE:ORCL",
+                    "logoid": "oracle"
+                },
+                {
+                    "symbol": "NASDAQ:AVGO",
+                    "logoid": "broadcom"
+                },
+                {
+                    "symbol": "NASDAQ:NVDA",
+                    "logoid": "nvidia"
+                },
+                {
+                    "symbol": "DJ:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:IXIC",
+                    "logoid": "indices/nasdaq-composite"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "FX:GBPUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/GB"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "COMEX:HG1!",
+                    "logoid": "metal/copper"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XI12D:0-stocks-drop-as-ai-exuberance-worries-linger-us-yields-jump/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XI107:0",
+            "title": "Stocks drop as AI exuberance worries linger; US yields jump ",
+            "published": 1765572404,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "NASDAQ:AVGO",
+                    "logoid": "broadcom"
+                },
+                {
+                    "symbol": "SP:S5INFT",
+                    "logoid": "sector/information-technology"
+                },
+                {
+                    "symbol": "NASDAQ:NVDA",
+                    "logoid": "nvidia"
+                },
+                {
+                    "symbol": "DJ:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:IXIC",
+                    "logoid": "indices/nasdaq-composite"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "FX:GBPUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/GB"
+                },
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "COMEX:HG1!",
+                    "logoid": "metal/copper"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XI107:0-stocks-drop-as-ai-exuberance-worries-linger-us-yields-jump/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251212006399:0",
+            "title": "CFTC Commitments: Comex Gold Futures/Options - Dec 12",
+            "published": 1765571520,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251212006399:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251212006365:0",
+            "title": "CFTC Commitments: Comex Gold Futures - Dec 12",
+            "published": 1765571460,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251212006365:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251212005884:0",
+            "title": "Comex Gold Ends the Week 2.07% Higher at $4300.10 — Data Talk",
+            "published": 1765565580,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251212005884:0-comex-gold-ends-the-week-2-07-higher-at-4300-10-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XI0WG:0",
+            "title": "Stocks fall as tech fears stay; dollar up, but on track for third weekly drop",
+            "published": 1765563311,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "NASDAQ:AVGO",
+                    "logoid": "broadcom"
+                },
+                {
+                    "symbol": "SP:S5INFT",
+                    "logoid": "sector/information-technology"
+                },
+                {
+                    "symbol": "NASDAQ:NVDA",
+                    "logoid": "nvidia"
+                },
+                {
+                    "symbol": "DJ:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:IXIC",
+                    "logoid": "indices/nasdaq-composite"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "FX:GBPUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/GB"
+                },
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "COMEX:HG1!",
+                    "logoid": "metal/copper"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XI0WG:0-stocks-fall-as-tech-fears-stay-dollar-up-but-on-track-for-third-weekly-drop/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251212003879:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 12",
+            "published": 1765548600,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251212003879:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251212001608:0",
+            "title": "Gold Poised for Weekly Gains as Traders Hope for More Fed Rate Cuts — Market Talk",
+            "published": 1765528500,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251212001608:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tradingview:510480dc9094b:0",
+            "title": "XAU/USD: Gold Prices Chase $4,300 in 2-Month High. What’s Opportunity Cost?",
+            "published": 1765525965,
+            "urgency": 2,
+            "link": "https://www.tradingview.com",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:XAUUSD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/tradingview:510480dc9094b:0-xau-usd-gold-prices-chase-4-300-in-2-month-high-what-s-opportunity-cost/",
+            "provider": {
+                "id": "tradingview",
+                "name": "TradingView",
+                "logo_id": "tradingview-snaps"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L4N3XI0BZ:0",
+            "title": "India gold discounts widen as prices hit record high; China demand muted",
+            "published": 1765522740,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L4N3XI0BZ:0-india-gold-discounts-widen-as-prices-hit-record-high-china-demand-muted/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251212001045:0",
+            "title": "Comex Gold Futures' Bullish Momentum Growing Stronger, Daily Chart Shows — Market Talk",
+            "published": 1765522380,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251212001045:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XI04O:0",
+            "title": "No technical reports from Wang Tao December 15-19",
+            "published": 1765521245,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "COMEX:HG1!",
+                    "logoid": "metal/copper"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "MYX:FCPO1!",
+                    "logoid": "commodity/palm-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XI04O:0-no-technical-reports-from-wang-tao-december-15-19/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "te_news:509411:0",
+            "title": "Gold Heads for Weekly Gain",
+            "published": 1765505074,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:509411:0-gold-heads-for-weekly-gain/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251211009751:0",
+            "title": "Gold Steady, Underpinned by Dollar's Weakness — Market Talk",
+            "published": 1765496220,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251211009751:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251211006853:0",
+            "title": "Comex Gold Settles 2.12% Higher at $4285.50 — Data Talk",
+            "published": 1765479960,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251211006853:0-comex-gold-settles-2-12-higher-at-4285-50-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:509288:0",
+            "title": "Gold Pares Losses",
+            "published": 1765463553,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:509288:0-gold-pares-losses/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251211004872:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 11",
+            "published": 1765462560,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251211004872:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L4N3XH0Y6:0",
+            "title": "Baltic index extends losses to near three-week low on falling vessel rates",
+            "published": 1765460056,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "INDEX:BDI"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XPDUSD1!",
+                    "logoid": "metal/palladium"
+                },
+                {
+                    "symbol": "NYMEX:PL1!",
+                    "logoid": "metal/platinum"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L4N3XH0Y6:0-baltic-index-extends-losses-to-near-three-week-low-on-falling-vessel-rates/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "te_news:509163:0",
+            "title": "South Africa Gold Production Slips in October",
+            "published": 1765444506,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/south-africa/gold-production",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "ECONOMICS:ZAGP",
+                    "logoid": "country/ZA"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "RUS:GD1!",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:509163:0-south-africa-gold-production-slips-in-october/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251211001682:0",
+            "title": "Gold Rises After Fed Cuts Rates; Silver Hits Record — Market Talk",
+            "published": 1765442760,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251211001682:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XH043:0",
+            "title": "Oracle knocks stocks as Fed's message drags on dollar",
+            "published": 1765429745,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "NYSE:ORCL",
+                    "logoid": "oracle"
+                },
+                {
+                    "symbol": "CME_MINI:ES1!",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "CME_MINI:NQ1!",
+                    "logoid": "indices/nasdaq-100"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                },
+                {
+                    "symbol": "TSE:9984",
+                    "logoid": "softbank"
+                },
+                {
+                    "symbol": "HSI:HSI",
+                    "logoid": "indices/hang-seng"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "CBOE:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XH043:0-oracle-knocks-stocks-as-fed-s-message-drags-on-dollar/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XH023:0",
+            "title": "Oracle knocks stocks as Fed's message weighs on dollar",
+            "published": 1765419467,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "NYSE:ORCL",
+                    "logoid": "oracle"
+                },
+                {
+                    "symbol": "CME_MINI:ES1!",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "CME_MINI:NQ1!",
+                    "logoid": "indices/nasdaq-100"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                },
+                {
+                    "symbol": "TSE:9984",
+                    "logoid": "softbank"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:GBPUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/GB"
+                },
+                {
+                    "symbol": "FX:AUDUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/AU"
+                },
+                {
+                    "symbol": "FX:NZDUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/NZ"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "CBOE:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XH023:0-oracle-knocks-stocks-as-fed-s-message-weighs-on-dollar/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "te_news:509046:0",
+            "title": "Gold Rises for Third Session",
+            "published": 1765418580,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:509046:0-gold-rises-for-third-session/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251210011364:0",
+            "title": "Gold and Silver Rise, Boosted by Fed's Rate Cut — Market Talk",
+            "published": 1765414320,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251210011364:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251210011119:0",
+            "title": "Gold Consolidates as Traders Digest FOMC Decision — Market Talk",
+            "published": 1765409760,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251210011119:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251210008602:0",
+            "title": "Gold, Silver Climb After Fed Decision — Market Talk",
+            "published": 1765399020,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251210008602:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251210008558:0",
+            "title": "CFTC Commitments: Comex Gold Futures/Options - Dec 10",
+            "published": 1765398720,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251210008558:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XG0YO:0",
+            "title": "Stocks add to gains, yields extend declines as Fed cuts rates ",
+            "published": 1765398697,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "DJ:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:IXIC",
+                    "logoid": "indices/nasdaq-composite"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XG0YO:0-stocks-add-to-gains-yields-extend-declines-as-fed-cuts-rates/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251210008469:0",
+            "title": "CFTC Commitments: Comex Gold Futures - Dec 10",
+            "published": 1765398600,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251210008469:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:508987:0",
+            "title": "Gold Turns Positive After Powell's Remarks",
+            "published": 1765398252,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:508987:0-gold-turns-positive-after-powell-s-remarks/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "te_news:508953:0",
+            "title": "Gold Holds Steady After Fed",
+            "published": 1765394489,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:508953:0-gold-holds-steady-after-fed/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251210007737:0",
+            "title": "Comex Gold Settles 0.24% Lower at $4196.40 — Data Talk",
+            "published": 1765392720,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251210007737:0-comex-gold-settles-0-24-lower-at-4196-40-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251210005666:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 10",
+            "published": 1765375740,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251210005666:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251210002638:0",
+            "title": "Gold Slips Ahead of Powell's Remarks — Market Talk",
+            "published": 1765356300,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:SILVER",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "COMEX:SI1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "MCX:SILVER1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "BIST:XAGUSD1!",
+                    "logoid": "metal/silver"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251210002638:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "moneycontrol:bb094bc85094b:0",
+            "title": "Budget FY27: Gold import duty unlikely to be changed amid stable CAD outlook",
+            "published": 1765353334,
+            "urgency": 2,
+            "link": "https://www.moneycontrol.com/news/business/fy27-budget-gold-import-duty-unlikely-to-be-changed-amid-stable-cad-outlook-13719329.html",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/moneycontrol:bb094bc85094b:0-budget-fy27-gold-import-duty-unlikely-to-be-changed-amid-stable-cad-outlook/",
+            "provider": {
+                "id": "moneycontrol",
+                "name": "Moneycontrol",
+                "logo_id": "moneycontrol"
+            }
+        },
+        {
+            "id": "DJN_DN20251210001198:0",
+            "title": "Comex Gold Futures Extending Consolidation Phase, Chart Shows — Market Talk",
+            "published": 1765350840,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251210001198:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:508624:0",
+            "title": "Gold Steady Ahead of FOMC Decision",
+            "published": 1765331681,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:508624:0-gold-steady-ahead-of-fomc-decision/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XF18K:0",
+            "title": "Stocks slip ahead of Fed announcement; yields, dollar up slightly",
+            "published": 1765323617,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:AUDUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/AU"
+                },
+                {
+                    "symbol": "NASDAQ:NVDA",
+                    "logoid": "nvidia"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XF18K:0-stocks-slip-ahead-of-fed-announcement-yields-dollar-up-slightly/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251209009739:0",
+            "title": "Gold Edges Higher Ahead of FOMC Decision — Market Talk",
+            "published": 1765323300,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251209009739:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XF15M:0",
+            "title": "Stocks near flat a day ahead of Fed announcement; yields, dollar up slightly",
+            "published": 1765313916,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "NASDAQ:NVDA",
+                    "logoid": "nvidia"
+                },
+                {
+                    "symbol": "FX:AUDUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/AU"
+                },
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "DJ:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:IXIC",
+                    "logoid": "indices/nasdaq-composite"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XF15M:0-stocks-near-flat-a-day-ahead-of-fed-announcement-yields-dollar-up-slightly/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251209007447:0",
+            "title": "CFTC Commitments: Comex Gold Futures/Options - Dec 09",
+            "published": 1765312380,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251209007447:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251209007376:0",
+            "title": "CFTC Commitments: Comex Gold Futures - Dec 09",
+            "published": 1765312200,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251209007376:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251209006946:0",
+            "title": "Comex Gold Settles 0.47% Higher at $4206.70 — Data Talk",
+            "published": 1765306260,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251209006946:0-comex-gold-settles-0-47-higher-at-4206-70-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XF0XH:0",
+            "title": "Stocks, dollar inch higher a day ahead of Fed announcement; yields steady ",
+            "published": 1765304889,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "NASDAQ:NVDA",
+                    "logoid": "nvidia"
+                },
+                {
+                    "symbol": "FX:AUDUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/AU"
+                },
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "DJ:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:IXIC",
+                    "logoid": "indices/nasdaq-composite"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XF0XH:0-stocks-dollar-inch-higher-a-day-ahead-of-fed-announcement-yields-steady/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251209005601:0",
+            "title": "Gold Rises as Traders Await Fed Rate Outlook — Market Talk",
+            "published": 1765295340,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251209005601:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:508548:0",
+            "title": "Gold Holds Strong After Job Data",
+            "published": 1765294451,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:508548:0-gold-holds-strong-after-job-data/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251209004850:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 9",
+            "published": 1765289520,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251209004850:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XF0GF:0",
+            "title": "Global government bonds steady after selloff while Fed meeting looms large",
+            "published": 1765287024,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:AUDUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/AU"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "CME_MINI:ES1!",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "NASDAQ:NVDA",
+                    "logoid": "nvidia"
+                },
+                {
+                    "symbol": "HSI:HSTECH"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:GBPUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/GB"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XF0GF:0-global-government-bonds-steady-after-selloff-while-fed-meeting-looms-large/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "moneycontrol:da451d19a094b:0",
+            "title": "Gold steady as investors focus on US rate policy next year",
+            "published": 1765282861,
+            "urgency": 2,
+            "link": "https://www.moneycontrol.com/news/business/commodities/gold-steady-as-investors-focus-on-us-rate-policy-next-year-13718109.html",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/moneycontrol:da451d19a094b:0-gold-steady-as-investors-focus-on-us-rate-policy-next-year/",
+            "provider": {
+                "id": "moneycontrol",
+                "name": "Moneycontrol",
+                "logo_id": "moneycontrol"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L1N3XF075:0",
+            "title": "Global government bonds steady after selloff, big Fed meeting looms large",
+            "published": 1765276111,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:AUDUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/AU"
+                },
+                {
+                    "symbol": "TVC:US10Y",
+                    "logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "CME_MINI:ES1!",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "NASDAQ:NVDA",
+                    "logoid": "nvidia"
+                },
+                {
+                    "symbol": "HSI:HSTECH"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:GBPUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/GB"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L1N3XF075:0-global-government-bonds-steady-after-selloff-big-fed-meeting-looms-large/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251209001344:0",
+            "title": "Gold Flat as Investors Await Fed Signals on 2026 Rate Path — Market Talk",
+            "published": 1765270500,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251209001344:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XF05M:0",
+            "title": "Stocks dip as nervy markets wait for Fed verdict, rates outlook",
+            "published": 1765261206,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "FX:AUDUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/AU"
+                },
+                {
+                    "symbol": "EUREX:FESX1!",
+                    "logoid": "indices/euro-stoxx-50"
+                },
+                {
+                    "symbol": "NASDAQ:NVDA",
+                    "logoid": "nvidia"
+                },
+                {
+                    "symbol": "SZSE:399300"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:GBPUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/GB"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XF05M:0-stocks-dip-as-nervy-markets-wait-for-fed-verdict-rates-outlook/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251208009372:0",
+            "title": "Gold Ascent Likely to Moderate in 2026 — Market Talk",
+            "published": 1765248600,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251208009372:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:508295:0",
+            "title": "Gold Steady with Eyes on Fed Meeting",
+            "published": 1765246340,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:508295:0-gold-steady-with-eyes-on-fed-meeting/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251208009116:0",
+            "title": "Gold Edges Higher; Focus on Fed Rate Decision — Market Talk",
+            "published": 1765240380,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251208009116:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XE14H:0",
+            "title": "US yields, dollar edge up; investors eye Fed rate cut this week",
+            "published": 1765234646,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "AMEX:EWJ",
+                    "logoid": "ishares"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "SP:S5INFT",
+                    "logoid": "sector/information-technology"
+                },
+                {
+                    "symbol": "DJ:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:IXIC",
+                    "logoid": "indices/nasdaq-composite"
+                },
+                {
+                    "symbol": "NASDAQ:PSKY",
+                    "logoid": "viacomcbs"
+                },
+                {
+                    "symbol": "NASDAQ:WBD",
+                    "logoid": "warner-bros-discovery"
+                },
+                {
+                    "symbol": "NASDAQ:NFLX",
+                    "logoid": "netflix"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "TVC:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "CBOE:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XE14H:0-us-yields-dollar-edge-up-investors-eye-fed-rate-cut-this-week/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XE116:0",
+            "title": "US yields, dollar edge up after Japan quake; investors eye Fed rate cut this week",
+            "published": 1765224534,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "AMEX:EWJ",
+                    "logoid": "ishares"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "SP:S5INFT",
+                    "logoid": "sector/information-technology"
+                },
+                {
+                    "symbol": "DJ:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:IXIC",
+                    "logoid": "indices/nasdaq-composite"
+                },
+                {
+                    "symbol": "NASDAQ:PSKY",
+                    "logoid": "viacomcbs"
+                },
+                {
+                    "symbol": "NASDAQ:WBD",
+                    "logoid": "warner-bros-discovery"
+                },
+                {
+                    "symbol": "NASDAQ:NFLX",
+                    "logoid": "netflix"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "TVC:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "CBOE:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XE116:0-us-yields-dollar-edge-up-after-japan-quake-investors-eye-fed-rate-cut-this-week/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251208006316:0",
+            "title": "Comex Gold Settles 0.61% Lower at $4187.20 — Data Talk",
+            "published": 1765219860,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251208006316:0-comex-gold-settles-0-61-lower-at-4187-20-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "tag:reuters.com,2025:newsml_L6N3XE0W3:0",
+            "title": "US yields, dollar rise after Japan earthquake; investors eye Fed rate cut this week",
+            "published": 1765215082,
+            "urgency": 2,
+            "permission": "headline",
+            "relatedSymbols": [
+                {
+                    "symbol": "AMEX:EWJ",
+                    "logoid": "ishares"
+                },
+                {
+                    "symbol": "FX_IDC:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "DJ:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "SP:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "TVC:IXIC",
+                    "logoid": "indices/nasdaq-composite"
+                },
+                {
+                    "symbol": "TVC:SXXP",
+                    "logoid": "indices/stoxx-600"
+                },
+                {
+                    "symbol": "TVC:NI225",
+                    "logoid": "indices/nikkei-225"
+                },
+                {
+                    "symbol": "NYMEX:CL1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "ICEEUR:BRN1!",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "TVC:DJI",
+                    "logoid": "indices/dow-30"
+                },
+                {
+                    "symbol": "FX:EURUSD",
+                    "currency-logoid": "country/US",
+                    "base-currency-logoid": "country/EU"
+                },
+                {
+                    "symbol": "FX:USDJPY",
+                    "currency-logoid": "country/JP",
+                    "base-currency-logoid": "country/US"
+                },
+                {
+                    "symbol": "TVC:UKOIL",
+                    "logoid": "crude-oil"
+                },
+                {
+                    "symbol": "CBOE:SPX",
+                    "logoid": "indices/s-and-p-500"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                },
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/reuters.com,2025:newsml_L6N3XE0W3:0-us-yields-dollar-rise-after-japan-earthquake-investors-eye-fed-rate-cut-this-week/",
+            "provider": {
+                "id": "reuters",
+                "name": "Reuters",
+                "logo_id": "reuters"
+            }
+        },
+        {
+            "id": "DJN_DN20251208005445:0",
+            "title": "Comex Gold Delivery Intentions Breakdown - Dec 8",
+            "published": 1765212360,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251208005445:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251208004041:0",
+            "title": "Gold Inches Lower, With Eyes on Fed Meeting — Market Talk",
+            "published": 1765202160,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251208004041:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251208001661:0",
+            "title": "Geoeconomic Uncertainty Likely to Shape Gold Performance in 2026 — Market Talk",
+            "published": 1765186980,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251208001661:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251208001496:0",
+            "title": "Gold Inches Lower But Remains Supported by Fed Rate-Cut Expectations — Market Talk",
+            "published": 1765185000,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                },
+                {
+                    "symbol": "ICEUS:DXY",
+                    "logoid": "indices/u-s-dollar-index"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251208001496:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "moneycontrol:94e012300094b:0",
+            "title": "Gold jewellery a poor investment, financial gold shines brighter: Kotak",
+            "published": 1765170713,
+            "urgency": 2,
+            "link": "https://www.moneycontrol.com/news/business/markets/gold-jewellery-a-poor-investment-financial-gold-shines-brighter-kotak-13714889.html",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/moneycontrol:94e012300094b:0-gold-jewellery-a-poor-investment-financial-gold-shines-brighter-kotak/",
+            "provider": {
+                "id": "moneycontrol",
+                "name": "Moneycontrol",
+                "logo_id": "moneycontrol"
+            }
+        },
+        {
+            "id": "te_news:507968:0",
+            "title": "Gold Steady Ahead of Fed Meeting",
+            "published": 1765159851,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:507968:0-gold-steady-ahead-of-fed-meeting/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251207000860:0",
+            "title": "Gold Gains on Fed Rate Cut Expectations — Market Talk",
+            "published": 1765153200,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251207000860:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251205006519:0",
+            "title": "CFTC Commitments: Comex Gold Futures/Options - Dec 5",
+            "published": 1764967200,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251205006519:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "DJN_DN20251205006509:0",
+            "title": "CFTC Commitments: Comex Gold Futures - Dec 5",
+            "published": 1764967140,
+            "urgency": 2,
+            "permission": "provider",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251205006509:0/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        },
+        {
+            "id": "te_news:507883:0",
+            "title": "Gold Pares Gains",
+            "published": 1764964717,
+            "urgency": 2,
+            "link": "https://tradingeconomics.com/commodity/gold",
+            "permission": "preview",
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/te_news:507883:0-gold-pares-gains/",
+            "provider": {
+                "id": "trading-economics",
+                "name": "Trading Economics",
+                "logo_id": "te"
+            }
+        },
+        {
+            "id": "DJN_DN20251205005947:0",
+            "title": "Comex Gold Ends the Week 0.13% Lower at $4212.90 — Data Talk",
+            "published": 1764960720,
+            "urgency": 2,
+            "relatedSymbols": [
+                {
+                    "symbol": "TVC:GOLD",
+                    "logoid": "metal/gold"
+                }
+            ],
+            "storyPath": "/news/DJN_DN20251205005947:0-comex-gold-ends-the-week-0-13-lower-at-4212-90-data-talk/",
+            "provider": {
+                "id": "dow-jones",
+                "name": "Dow Jones Newswires",
+                "logo_id": "dow-jones-newswires"
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": "earnings",
+            "title": "Earnings"
+        },
+        {
+            "id": "mergers_and_acquisitions",
+            "title": "Mergers and acquisitions"
+        },
+        {
+            "id": "recommendation",
+            "title": "Analysts"
+        }
+    ],
+    "streaming": {
+        "channel": "f5ea649ebb72e84ae3e49f5b7eab"
+    }
+}

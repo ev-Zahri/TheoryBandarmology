@@ -1,7 +1,7 @@
 import requests
 import json
 import sys
-from .analyze_sentiment import analyze_sentiment
+from analyze_sentiment import analyze_sentiment
 
 def define_params(type, symbol):
     if type == "forex":
@@ -31,6 +31,8 @@ def fetch_tradingview_news(symbol):
         "Referer": "https://www.tradingview.com/"
     }
 
+    print(f"Menghubungkan ke TradingView untuk {symbol}...")
+
     try:
         response = session.get(url, params=params, headers=headers, stream=True, timeout=60)
         
@@ -38,11 +40,12 @@ def fetch_tradingview_news(symbol):
             print(f"Gagal koneksi. Status: {response.status_code}")
             return
 
+        print("Koneksi Berhasil! Memproses data...\n")
+
         for line in response.iter_lines(decode_unicode=True):
             if line:
                 if line.startswith("data:"):
                     raw_json = line[5:].strip()
-                # 2. Menangani baris yang merupakan JSON langsung (Data awal/History)
                 elif line.startswith("{"):
                     raw_json = line.strip()
                 else:
@@ -51,7 +54,6 @@ def fetch_tradingview_news(symbol):
                 try:
                     data = json.loads(raw_json)
                     
-                    # Cek jika ada key 'items' dalam JSON
                     if "items" in data:
                         for item in data["items"]:
                             title = item.get("title")
@@ -59,8 +61,8 @@ def fetch_tradingview_news(symbol):
                             source = item.get("provider", {}).get("name", "TV")
                             
                             sentiment = analyze_sentiment(title)
+                            print(f"[{published}] {source}: {title}: {sentiment}")
 
-                    # Jika hanya update streaming channel (bukan berita)
                     elif "streaming" in data:
                         print(f"--- Channel Stream Aktif: {data['streaming'].get('channel')} ---")
 
@@ -68,6 +70,15 @@ def fetch_tradingview_news(symbol):
                     continue
 
     except requests.exceptions.ChunkedEncodingError:
+        print("\nKoneksi terputus dari server (ChunkedEncodingError). Mencoba menyambung kembali...")
         fetch_tradingview_news(symbol)
     except Exception as e:
         print(f"Terjadi kesalahan: {e}")
+
+if __name__ == "__main__":
+    try:
+        symbol = define_params("forex", "XAUUSD")
+        fetch_tradingview_news(symbol)
+    except KeyboardInterrupt:
+        print("\nMonitoring dihentikan.")
+        sys.exit()
