@@ -14,3 +14,10 @@ Kondisi: (venv) PS D:\Code Programs\Tech Stack\TheoryBandarmologi\ml>
 
 cmd deactivate
 ```
+
+Untuk menjalankan kode di server, pastikan sudah aktif virtual environment
+
+```bash
+uvicorn api.main:app --reload --port 8000
+```
+

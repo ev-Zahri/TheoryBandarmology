@@ -8,6 +8,7 @@ import FaqPage from './users/faq/FaqPage.jsx';
 import NotFoundPage from './users/errors/NotFoundPage.jsx';
 import DeepAnalyzeApp from './users/deep-analyze/App.jsx';
 import CompanyInsightApp from './users/company-insight/App.jsx';
+import ForexCommoditiesApp from './users/forex-commodities/App.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/visualization" element={<VisualizationApp />} />
                 <Route path="/deep-analyze/:stock" element={<DeepAnalyzeApp />} />
                 <Route path="/company-profile/:stock_code" element={<CompanyInsightApp />} />
+                <Route path='/forex-commodities' element={<ForexCommoditiesApp />} />
                 <Route path="/faq" element={<FaqPage />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>

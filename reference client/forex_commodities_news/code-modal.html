@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Broker Profiling View</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#22c55e",
+                        "danger": "#ef4444",
+                        "background-dark": "#0B1221",
+                        "surface-dark": "#161F32",
+                        "border-dark": "#1e293b", // slate-800
+                        "text-secondary": "#94a3b8", // slate-400
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.375rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B1221; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155; 
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-white min-h-screen flex flex-col overflow-x-hidden relative">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-dark bg-background-dark px-6 py-4 sticky top-0 z-40">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-tight font-display">Theory Bandarmology</h2>
+</div>
+<div class="flex flex-1 justify-end gap-6">
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center rounded-lg size-10 text-text-secondary hover:text-white transition-all hover:bg-surface-dark">
+<span class="material-symbols-outlined">light_mode</span>
+</button>
+<button class="flex items-center justify-center rounded-lg size-10 text-text-secondary hover:text-white transition-all hover:bg-surface-dark">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="flex items-center justify-center rounded-lg size-10 text-text-secondary hover:text-white transition-all hover:bg-surface-dark">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 flex justify-center py-8 px-4 md:px-10">
+<div aria-hidden="true" class="w-full max-w-[1200px] flex flex-col gap-8 opacity-40 pointer-events-none filter blur-sm select-none">
+<section class="flex flex-col gap-2">
+<label class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-text-secondary group-focus-within:text-primary transition-colors">search</span>
+</div>
+<input class="w-full h-16 bg-surface-dark border border-border-dark rounded-lg pl-12 pr-4 text-lg font-mono text-white placeholder-text-secondary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-lg" placeholder="SEARCH BROKER CODE (e.g., YP, MG, BK)..." type="text" value="MG"/>
+</label>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-surface-dark border border-border-dark rounded-xl p-6 shadow-xl relative overflow-hidden">
+<div class="lg:col-span-3 flex flex-col items-center justify-center border-b lg:border-b-0 lg:border-r border-border-dark pb-6 lg:pb-0 lg:pr-6 gap-4">
+<div class="relative">
+<div class="size-24 rounded-full bg-background-dark border-2 border-primary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-5xl text-primary">domain</span>
+</div>
+</div>
+<div class="text-center">
+<h1 class="text-5xl font-bold font-mono tracking-tighter text-white">MG</h1>
+<p class="text-sm text-text-secondary uppercase tracking-widest mt-1 font-mono">CODE: 002</p>
+</div>
+</div>
+<div class="lg:col-span-9 flex flex-col justify-center gap-6">
+<div>
+<h2 class="text-3xl font-bold text-white mb-1">Semesta Indovest Sekuritas</h2>
+</div>
+</div>
+</section>
+</div>
+</main>
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4">
+<div class="absolute inset-0 bg-black/70 backdrop-blur-md"></div>
+<div class="relative w-full max-w-2xl bg-[#0B1221] border border-border-dark rounded-2xl shadow-2xl flex flex-col max-h-[90vh] animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between px-6 py-4 border-b border-border-dark bg-surface-dark/50">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded bg-primary/10 border border-primary/20 text-primary">
+<span class="material-symbols-outlined text-lg">newspaper</span>
+</div>
+<div>
+<h3 class="text-white font-bold text-sm tracking-wide font-display">NEWS DETAIL</h3>
+<p class="text-[10px] text-text-secondary font-mono uppercase">ID: NEWS-2023-XAU-882</p>
+</div>
+</div>
+<button class="size-8 flex items-center justify-center rounded-lg text-text-secondary hover:text-white hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto custom-scrollbar p-6">
+<div class="mb-8 relative overflow-hidden rounded-xl border border-primary/30 bg-surface-dark group">
+<div class="absolute top-0 right-0 w-64 h-full bg-gradient-to-l from-primary/10 to-transparent pointer-events-none"></div>
+<div class="p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 relative z-10">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-lg bg-background-dark border border-border-dark flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-primary text-2xl">currency_exchange</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-bold text-xl text-white font-display">XAU/USD</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-border-dark text-text-secondary uppercase border border-border-dark tracking-wider">Commodity</span>
+</div>
+<div class="text-xs text-text-secondary font-medium uppercase tracking-wider">Market Sentiment</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-2 text-primary mb-1">
+<span class="material-symbols-outlined text-xl fill-1" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+<span class="text-2xl font-bold font-mono tracking-tight">BULLISH</span>
+</div>
+<div class="flex items-center gap-1.5">
+<div class="flex gap-0.5">
+<div class="w-1.5 h-3 bg-primary rounded-[1px]"></div>
+<div class="w-1.5 h-3 bg-primary rounded-[1px]"></div>
+<div class="w-1.5 h-3 bg-primary rounded-[1px]"></div>
+<div class="w-1.5 h-3 bg-primary/30 rounded-[1px]"></div>
+<div class="w-1.5 h-3 bg-border-dark rounded-[1px]"></div>
+</div>
+<span class="text-[10px] text-primary/80 font-mono font-medium">STRONG MOMENTUM</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-5 mb-8">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-1 rounded bg-red-500/10 text-red-400 border border-red-500/20 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">bolt</span>
+                            Urgency: Immediate
+                        </span>
+<span class="px-2 py-1 rounded bg-orange-500/10 text-orange-400 border border-orange-500/20 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">priority_high</span>
+                            High Priority
+                        </span>
+<span class="px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+                            Positive
+                        </span>
+</div>
+<h1 class="text-2xl md:text-3xl font-bold text-white leading-tight font-display">
+                        Gold Breaks Key Resistance Level as Safe-Haven Demand Surges Amid Global Uncertainty
+                    </h1>
+<div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-sm text-text-secondary font-mono border-b border-border-dark pb-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary">feed</span>
+<span class="text-white">Reuters</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">calendar_today</span>
+<span>Oct 24, 2023</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">schedule</span>
+<span>14:30 GMT</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+<div class="bg-surface-dark border border-border-dark rounded-lg p-4 flex flex-col items-center justify-center text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2 opacity-5">
+<span class="material-symbols-outlined text-4xl">psychology</span>
+</div>
+<span class="text-[10px] text-text-secondary uppercase tracking-wider mb-3 font-bold">Sentiment Score</span>
+<div class="relative size-14 mb-2 flex items-center justify-center">
+<svg class="size-full -rotate-90 transform" viewBox="0 0 36 36">
+<path class="text-border-dark" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="89, 100" stroke-width="3"></path>
+</svg>
+<span class="absolute text-sm font-bold text-white font-mono">0.89</span>
+</div>
+<span class="text-xs text-primary font-bold">Very Positive</span>
+</div>
+<div class="bg-surface-dark border border-border-dark rounded-lg p-4 flex flex-col items-center justify-center text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2 opacity-5">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+</div>
+<span class="text-[10px] text-text-secondary uppercase tracking-wider mb-3 font-bold">AI Confidence</span>
+<div class="flex items-end gap-1 mb-2">
+<span class="text-3xl font-bold text-white font-mono leading-none">95</span>
+<span class="text-sm text-text-secondary font-mono mb-0.5">%</span>
+</div>
+<div class="w-24 bg-background-dark h-1.5 rounded-full overflow-hidden mb-1">
+<div class="bg-blue-400 h-full rounded-full" style="width: 95%"></div>
+</div>
+<span class="text-xs text-blue-400 font-bold">High Reliability</span>
+</div>
+<div class="bg-surface-dark border border-border-dark rounded-lg p-4 flex flex-col items-center justify-center text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2 opacity-5">
+<span class="material-symbols-outlined text-4xl">notification_important</span>
+</div>
+<span class="text-[10px] text-text-secondary uppercase tracking-wider mb-3 font-bold">Impact Score</span>
+<div class="flex items-end gap-1 mb-2">
+<span class="text-3xl font-bold text-white font-mono leading-none">92</span>
+<span class="text-sm text-text-secondary font-mono mb-0.5">/100</span>
+</div>
+<div class="flex gap-1 mt-1">
+<div class="w-1.5 h-3 bg-danger rounded-[1px]"></div>
+<div class="w-1.5 h-3 bg-danger rounded-[1px]"></div>
+<div class="w-1.5 h-3 bg-danger rounded-[1px]"></div>
+<div class="w-1.5 h-3 bg-danger rounded-[1px]"></div>
+<div class="w-1.5 h-3 bg-danger/30 rounded-[1px]"></div>
+</div>
+<span class="text-xs text-danger font-bold mt-1">Market Mover</span>
+</div>
+</div>
+<div class="bg-surface-dark/50 border border-border-dark rounded-lg p-5">
+<h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">auto_awesome</span>
+                        AI Key Takeaway
+                    </h4>
+<p class="text-text-secondary leading-relaxed text-sm">
+                        Gold prices have surged past the critical $1,980 resistance level, driven by renewed central bank purchases and escalating geopolitical tensions. Analysts suggest a short-term bullish continuation targeting $2,000. Institutional volume analysis confirms strong accumulation in the last 4 hours.
+                    </p>
+</div>
+</div>
+<div class="p-4 border-t border-border-dark bg-surface-dark/50 flex justify-end gap-3 rounded-b-2xl">
+<button class="px-4 py-2 rounded-lg border border-border-dark text-text-secondary hover:text-white hover:bg-surface-dark transition-colors text-sm font-medium">
+                    Dismiss
+                </button>
+<button class="px-5 py-2 rounded-lg bg-primary text-background-dark hover:bg-green-400 transition-colors text-sm font-bold flex items-center gap-2 shadow-[0_0_15px_rgba(34,197,94,0.3)]">
+                    View Related Assets <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+
+</body></html>

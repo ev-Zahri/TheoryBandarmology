@@ -167,7 +167,8 @@ class TradingViewNewsFetcher:
         symbol: str = "XAUUSD", 
         limit: int = 20,
         type: str = "forex",
-        delay: float = 0.5
+        delay: float = 0.2,  # Reduced delay
+        max_workers: int = 5  # Parallel workers
     ) -> List[Dict]:
         """
         Fetch berita dengan konten lengkap
@@ -181,22 +182,27 @@ class TradingViewNewsFetcher:
         Returns:
             List of news items dengan konten lengkap
         """
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        
         print(f"\n🔍 Fetching news for {symbol}...")
         
         # Step 1: Get news list
         news_list = self.fetch_news_list(symbol, limit, type)
         print(f"Found {len(news_list)} news items")
         
-        # Step 2: Fetch detail untuk setiap berita
-        news_with_content = []
+        if not news_list:
+            return []
         
-        for i, news_item in enumerate(news_list, 1):
+        # Step 2: Fetch detail secara PARALLEL
+        news_with_content = []
+        fetch_count = 0
+        
+        def fetch_single_news(item_data):
+            """Helper function to fetch single news detail"""
+            news_item, index, total = item_data
             news_id = news_item.get('id')
-            title = news_item.get('title', '')
             
-            print(f"[{i}/{len(news_list)}] Fetching: {title[:60]}...")
-            
-            # Fetch detail
+            # Fetch detail (no print per item to speed up)
             detail = self.fetch_news_detail(news_id)
             
             if detail:
@@ -207,16 +213,39 @@ class TradingViewNewsFetcher:
                 news_item['full_content'] = content
                 news_item['detail'] = detail
                 
-                news_with_content.append(news_item)
-                print(f"  ✅ Got {len(content)} chars")
+                return news_item
             else:
-                print(f"  ❌ Failed to fetch detail")
-            
-            # Delay to avoid rate limiting
-            if i < len(news_list):
-                time.sleep(delay)
+                return None
         
-        print(f"\n✅ Successfully fetched {len(news_with_content)} news with content")
+        # Prepare data for parallel processing
+        items_with_index = [
+            (news_item, i+1, len(news_list)) 
+            for i, news_item in enumerate(news_list)
+        ]
+        
+        # Use ThreadPoolExecutor for parallel fetching
+        print(f"⚡ Fetching {len(news_list)} news details in parallel...")
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            # Submit all tasks
+            future_to_news = {
+                executor.submit(fetch_single_news, item): item 
+                for item in items_with_index
+            }
+            
+            # Collect results as they complete
+            for future in as_completed(future_to_news):
+                try:
+                    result = future.result()
+                    if result:
+                        news_with_content.append(result)
+                        fetch_count += 1
+                    
+                    # Small delay to avoid overwhelming the server
+                    time.sleep(delay)
+                except Exception as e:
+                    print(f"  ⚠️  Error fetching news: {e}")
+        
+        print(f"✅ Successfully fetched {len(news_with_content)}/{len(news_list)} news with content")
         return news_with_content
     
     def save_to_file(self, news_data: List[Dict], filepath: str):

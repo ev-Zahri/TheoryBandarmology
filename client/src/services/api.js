@@ -133,7 +133,7 @@ export const importRecentData = async (rawJson) => {
     return response.json();
 };
 
-export const getNewsSymbol = async (symbol, limit = 20, type = "forex") => {
+export const getNewsSymbol = async (symbol = "XAUUSD", limit = 20, type = "forex") => {
     const response = await fetch(`${API_BASE_URL}/v1/${symbol}/get-news?limit=${limit}&type=${type}`, {
         method: 'GET',
         headers: {
