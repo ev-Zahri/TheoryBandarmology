@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request, UploadFile, File
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from api.service_stock.analyzer import process_broker_data
@@ -10,6 +10,7 @@ from api.service_stock.company_profile import get_company_profile
 from api.service_comm_forex.complete_news_analyzer import CompleteNewsAnalyzer
 from api.service_comm_forex.tradingview_news_fetcher import TradingViewNewsFetcher
 from api.service_comm_forex.news_cache import news_cache
+from api.service_stock.broker_summary.broker_summary import parse_xhr_response, validate_json_structure
 from typing import Dict, List
 import json
 
@@ -161,6 +162,61 @@ def get_insight(stock_code: str):
 async def import_recent_data(request: Request):
     body = await request.json()
     return {"message": "Data berhasil di import"}
+
+
+# Endpoint untuk upload broker summary file (XHR intercepted data)
+@app.post("/v1/stock/broker-summary/upload")
+async def upload_broker_summary(file: UploadFile = File(...)):
+    try:
+        # Validate file type
+        if not file.filename.endswith('.json'):
+            raise HTTPException(
+                status_code=400, 
+                detail="File harus berformat JSON (.json)"
+            )
+        
+        # Read file content
+        content = await file.read()
+        
+        # Validate file size (max 10MB)
+        if len(content) > 10 * 1024 * 1024:
+            raise HTTPException(
+                status_code=400,
+                detail="Ukuran file terlalu besar. Maksimal 10MB"
+            )
+        
+        # Parse JSON
+        try:
+            json_data = json.loads(content)
+        except json.JSONDecodeError as e:
+            raise HTTPException(
+                status_code=400,
+                detail=f"File JSON tidak valid: {str(e)}"
+            )
+        
+        # Validate structure
+        if not validate_json_structure(json_data):
+            raise HTTPException(
+                status_code=400,
+                detail="Struktur JSON tidak sesuai. Pastikan file berisi data XHR dari Stockbit broker summary."
+            )
+        
+        # Process data
+        result = parse_xhr_response(json_data)
+        
+        return {
+            "message": "File broker summary berhasil diproses",
+            "data": result,
+            "status_code": 200
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Server error: {str(e)}"
+        )
 
 
 # =============== API untuk FOREX dan COMMODITY ====================

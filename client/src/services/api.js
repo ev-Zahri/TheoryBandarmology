@@ -164,3 +164,20 @@ export const getSentimentSymbol = async (symbol, limit = 20, type = "forex") => 
 
     return response.json();
 };
+
+export const uploadBrokerSummary = async (file) => {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const response = await fetch(`${API_BASE_URL}/v1/stock/broker-summary/upload`, {
+        method: 'POST',
+        body: formData,
+    });
+
+    if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.detail || 'Terjadi kesalahan saat mengupload file broker summary');
+    }
+
+    return response.json();
+};

@@ -1,0 +1,942 @@
+No,Kode,Nama perusahaan,Tanggal pencatatan,Jumlah Saham,Papan pencatatan,Sektor
+1,BEI: AALI,Astra Agro Lestari Tbk.,9 Desember 1997,1.924.688.333,Utama,Consumer Non-Cyclicals
+2,BEI: ABBA,Mahaka Media Tbk.,3 April 2002,3.935.892.857,Pemantauan Khusus,Consumer Cyclicals
+3,BEI: ABDA,Asuransi Bina Dana Arta Tbk.,6 Juli 1989,620.806.680,Pemantauan Khusus,Financials
+4,BEI: ABMM,ABM Investama Tbk.,6 Desember 2011,2.753.165.000,Utama,Energy
+5,BEI: ACES,Aspirasi Hidup Indonesia Tbk.,6 November 2007,17.120.389.700,Utama,Consumer Cyclicals
+6,BEI: ACRO,Samcro Hyosung Adilestari Tbk.,11 Januari 2024,3.469.157.288,Pengembangan,Consumer Cyclicals
+7,BEI: ACST,Acset Indonusa Tbk.,24 Juni 2013,12.675.160.000,Pengembangan,Infrastructure
+8,BEI: ADCP,Adhi Commuter Properti Tbk.,21 Mei 2021,22.222.222.200,Pengembangan,Properties & Real Estate
+9,BEI: ADES,Akasha Wira International Tbk.,13 Juni 1994,589.896.800,Pengembangan,Consumer Non-Cyclicals
+10,BEI: ADHI,Adhi Karya (Persero) Tbk.,18 Maret 2004,8.407.608.979,Utama,Infrastructure
+11,BEI: ADMF,Adira Dinamika Multi Finance T,31 Maret 2004,1.000.000.000,Pengembangan,Financials
+12,BEI: ADMG,Polychem Indonesia Tbk,20 Oktober 1993,3.889.179.559,Pengembangan,Basic Materials
+13,BEI: ADMR,Adaro Minerals Indonesia Tbk.,3 Januari 2022,40.882.331.500,Utama,Energy
+14,BEI: ADRO,Alamtri Resources Indonesia Tb,16 Juli 2008,30.758.665.900,Utama,Energy
+15,BEI: AEGS,Anugerah Spareparts Sejahtera,11 September 2023,1.006.080.721,Akselerasi,Consumer Cyclicals
+16,BEI: AGAR,Asia Sejahtera Mina Tbk.,2 Desember 2019,1.000.000.000,Pengembangan,Consumer Non-Cyclicals
+17,BEI: AGII,Samator Indo Gas Tbk.,28 September 2016,3.066.660.000,Pengembangan,Basic Materials
+18,BEI: AGRO,Bank Raya Indonesia Tbk.,8 Agustus 2003,24.493.093.216,Utama,Financials
+19,BEI: AGRS,Bank IBK Indonesia Tbk.,22 Desember 2014,47.367.057.874,Pengembangan,Financials
+20,BEI: AHAP,Asuransi Harta Aman Pratama Tbk.,14 September 1990,4.900.000.000,Pengembangan,Financials
+21,BEI: AIMS,Artha Mahiya Investama Tbk.,20 Juli 2001,220.000.000,Pengembangan,Energy
+22,BEI: AISA,FKS Food Sejahtera Tbk.,11 Juni 1997,9.311.800.000,Utama,Consumer Non-Cyclicals
+23,BEI: AKKU,Anugerah Kagum Karya Utama Tbk,1 November 2004,6.449.463.636,Pemantauan Khusus,Consumer Cyclicals
+24,BEI: AKPI,Argha Karya Prima Industry Tbk,18 Desember 1992,612.248.000,Pengembangan,Basic Materials
+25,BEI: AKRA,AKR Corporindo Tbk.,3 Oktober 1994,20.073.474.600,Utama,Energy
+26,BEI: AKSI,Mineral Sumberdaya Mandiri Tbk,13 Juli 2001,720.000.000,Pengembangan,Transportation & Logistics
+27,BEI: ALDO,Alkindo Naratama Tbk.,12 Juli 2011,2.700.713.744,Pengembangan,Basic Materials
+28,BEI: ALII,Ancara Logistics Indonesia Tbk,7 Februari 2024,15.825.800.000,Utama,Energy
+29,BEI: ALKA,Alakasa Industrindo Tbk,12 Juli 1990,507.665.055,Pengembangan,Basic Materials
+30,BEI: ALMI,Alumindo Light Metal Industry,2 Januari 1997,3.816.000.000,Pemantauan Khusus,Basic Materials
+31,BEI: ALTO,Tri Banyan Tirta Tbk.,10 Juli 2012,2.191.870.558,Pemantauan Khusus,Consumer Non-Cyclicals
+32,BEI: AMAG,Asuransi Multi Artha Guna Tbk.,23 Desember 2005,5.001.552.516,Pengembangan,Financials
+33,BEI: AMAN,Makmur Berkah Amanda Tbk.,13 Maret 2020,3.873.500.000,Pengembangan,Properties & Real Estate
+34,BEI: AMAR,Bank Amar Indonesia Tbk.,9 Januari 2020,18.197.283.760,Pengembangan,Financials
+35,BEI: AMFG,Asahimas Flat Glass Tbk.,8 November 1995,434.000.000,Utama,Industrials
+36,BEI: AMIN,Ateliers Mecaniques D Indonesi,10 Desember 2015,1.080.000.000,Pengembangan,Industrials
+37,BEI: AMMN,Amman Mineral Internasional Tb,7 Juli 2023,72.518.217.656,Utama,Basic Materials
+38,BEI: AMMS,Agung Menjangan Mas Tbk.,4 Agustus 2022,1.200.056.021,Akselerasi,Consumer Non-Cyclicals
+39,BEI: AMOR,Ashmore Asset Management Indon,14 Januari 2020,2.222.222.400,Pengembangan,Financials
+40,BEI: AMRT,Sumber Alfaria Trijaya Tbk.,15 Januari 2009,41.524.501.700,Utama,Consumer Non-Cyclicals
+41,BEI: ANDI,Andira Agro Tbk.,16 Agustus 2018,9.350.000.000,Pemantauan Khusus,Consumer Non-Cyclicals
+42,BEI: ANJT,Austindo Nusantara Jaya Tbk.,8 Mei 2013,3.354.175.000,Pengembangan,Consumer Non-Cyclicals
+43,BEI: ANTM,Aneka Tambang Tbk.,27 November 1997,24.030.764.725,Utama,Basic Materials
+44,BEI: APEX,Apexindo Pratama Duta Tbk.,5 Juni 2013,3.546.466.661,Pengembangan,Energy
+45,BEI: APIC,Pacific Strategic Financial Tb,18 Desember 2002,11.766.313.488,Pengembangan,Financials
+46,BEI: APII,Arita Prima Indonesia Tbk.,29 Oktober 2013,1.075.760.000,Pengembangan,Industrials
+47,BEI: APLI,Asiaplast Industries Tbk.,1 Mei 2000,1.362.671.400,Pengembangan,Basic Materials
+48,BEI: APLN,Agung Podomoro Land Tbk.,11 November 2010,22.699.326.779,Utama,Properties & Real Estate
+49,BEI: ARCI,Archi Indonesia Tbk.,28 Juni 2021,24.835.000.000,Pengembangan,Basic Materials
+50,BEI: AREA,Dunia Virtual Online Tbk.,1 April 2024,2.539.601.000,Pengembangan,Technology
+51,BEI: ARGO,Argo Pantes Tbk,7 Januari 1991,3.174.339.029,Pengembangan,Consumer Cyclicals
+52,BEI: ARII,Atlas Resources Tbk.,8 November 2011,3.431.000.000,Pengembangan,Energy
+53,BEI: ARKA,Arkha Jayanti Persada Tbk.,10 Juli 2019,2.000.000.000,Pemantauan Khusus,Industrials
+54,BEI: ARKO,Arkora Hydro Tbk.,8 Juli 2022,2.928.495.000,Pengembangan,Infrastructure
+55,BEI: ARMY,Armidian Karyatama Tbk.,21 Juni 2017,9.006.250.000,Pemantauan Khusus,Properties & Real Estate
+56,BEI: ARNA,Arwana Citramulia Tbk.,17 Juli 2001,7.341.430.976,Utama,Industrials
+57,BEI: ARTA,Arthavest Tbk,5 November 2002,446.674.175,Pemantauan Khusus,Consumer Cyclicals
+58,BEI: ARTI,Ratu Prabu Energi Tbk,30 April 2003,7.840.000.000,Pemantauan Khusus,Energy
+59,BEI: ARTO,Bank Jago Tbk.,12 Januari 2016,13.718.448.700,Utama,Financials
+60,BEI: ASBI,Asuransi Bintang Tbk.,29 November 1989,348.386.472,Pengembangan,Financials
+61,BEI: ASDM,Asuransi Dayin Mitra Tbk.,15 Desember 1989,384.000.000,Pengembangan,Financials
+62,BEI: ASGR,Astra Graphia Tbk.,15 November 1989,1.348.780.500,Utama,Industrials
+63,BEI: ASHA,Cilacap Samudera Fishing Indus,27 Mei 2022,5.000.000.000,Pemantauan Khusus,Consumer Non-Cyclicals
+64,BEI: ASII,Astra International Tbk.,4 April 1990,40.483.553.140,Utama,Industrials
+65,BEI: ASJT,Asuransi Jasa Tania Tbk.,23 Desember 2003,1.400.000.000,Pengembangan,Financials
+66,BEI: ASLC,Autopedia Sukses Lestari Tbk.,25 Januari 2022,12.746.354.780,Pengembangan,Consumer Cyclicals
+67,BEI: ASLI,Asri Karya Lestari Tbk.,5 Januari 2024,6.250.000.000,Pengembangan,Infrastructure
+68,BEI: ASMI,Asuransi Maximus Graha Persada,16 Januari 2014,8.958.380.460,Pemantauan Khusus,Financials
+69,BEI: ASPI,Andalan Sakti Primaindo Tbk.,17 Februari 2020,681.823.317,Pengembangan,Properties & Real Estate
+70,BEI: ASRI,Alam Sutera Realty Tbk.,18 Desember 2007,19.649.411.888,Utama,Properties & Real Estate
+71,BEI: ASRM,Asuransi Ramayana Tbk.,19 Maret 1990,1.217.135.360,Pengembangan,Financials
+72,BEI: ASSA,Adi Sarana Armada Tbk.,12 November 2012,3.691.137.517,Utama,Transportation & Logistics
+73,BEI: ATAP,Trimitra Prawara Goldland Tbk.,11 Desember 2020,1.250.000.000,Pemantauan Khusus,Properties & Real Estate
+74,BEI: ATIC,Anabatic Technologies Tbk.,8 Juli 2015,2.315.361.355,Pengembangan,Technology
+75,BEI: ATLA,Atlantis Subsea Indonesia Tbk.,16 April 2024,6.199.526.452,Pengembangan,Energy
+76,BEI: AUTO,Astra Otoparts Tbk.,15 Juni 1998,4.819.733.000,Utama,Consumer Cyclicals
+77,BEI: AVIA,Avia Avian Tbk.,8 Desember 2021,61.953.555.600,Utama,Basic Materials
+78,BEI: AWAN,Era Digital Media Tbk.,18 April 2023,3.435.000.000,Pengembangan,Technology
+79,BEI: AXIO,Tera Data Indonusa Tbk.,20 Juli 2022,5.840.126.500,Utama,Technology
+80,BEI: AYAM,Janu Putra Sejahtera Tbk.,30 November 2023,4.000.000.000,Pengembangan,Consumer Non-Cyclicals
+81,BEI: AYLS,Agro Yasa Lestari Tbk.,12 Februari 2020,853.423.236,Pengembangan,Basic Materials
+82,BEI: PTBA,Bukit Asam Tbk.,23 Desember 2002,11.520.659.250,Utama,Energy
+83,BEI: BABP,Bank MNC Internasional Tbk.,15 Juli 2002,44.014.333.126,Pengembangan,Financials
+84,BEI: BABY,Multitrend Indo Tbk.,7 September 2023,2.616.226.706,Pengembangan,Consumer Cyclicals
+85,BEI: BACA,Bank Capital Indonesia Tbk.,4 Oktober 2007,19.753.494.636,Utama,Financials
+86,BEI: BAIK,Bersama Mencapai Puncak Tbk.,15 Februari 2024,1.125.000.000,Pengembangan,Consumer Cyclicals
+87,BEI: BAJA,Saranacentral Bajatama Tbk.,21 Desember 2011,1.800.000.000,Pengembangan,Basic Materials
+88,BEI: BALI,Bali Towerindo Sentra Tbk.,13 Maret 2014,3.934.592.500,Utama,Infrastructure
+89,BEI: BANK,Bank Aladin Syariah Tbk.,1 Februari 2021,14.621.940.588,Utama,Financials
+90,BEI: BAPA,Bekasi Asri Pemula Tbk.,14 Januari 2008,661.784.520,Pengembangan,Properties & Real Estate
+91,BEI: BAPI,Bhakti Agung Propertindo Tbk.,16 September 2019,5.591.980.103,Pemantauan Khusus,Properties & Real Estate
+92,BEI: BATA,Sepatu Bata Tbk.,24 Maret 1982,1.300.000.000,Pengembangan,Consumer Cyclicals
+93,BEI: BATR,Benteng Api Technic Tbk.,10 Juni 2024,3.025.000.000,Pengembangan,Basic Materials
+94,BEI: BAUT,Mitra Angkasa Sejahtera Tbk.,28 Januari 2022,4.800.139.307,Pemantauan Khusus,Consumer Cyclicals
+95,BEI: BAYU,Bayu Buana Tbk,30 Oktober 1989,353.220.780,Pengembangan,Consumer Cyclicals
+96,BEI: BBCA,Bank Central Asia Tbk.,31 Mei 2000,122.042.299.500,Utama,Financials
+97,BEI: BBHI,Allo Bank Indonesia Tbk.,12 Agustus 2015,21.512.953.877,Utama,Financials
+98,BEI: BBKP,Bank KB Bukopin Tbk.,10 Juli 2006,185.819.884.852,Utama,Financials
+99,BEI: BBLD,Buana Finance Tbk.,7 Mei 1990,1.645.796.054,Pengembangan,Financials
+100,BEI: BBMD,Bank Mestika Dharma Tbk.,8 Juli 2013,4.049.189.100,Pengembangan,Financials
+101,BEI: BBNI,Bank Negara Indonesia (Persero) Tbk.,25 November 1996,36.924.339.786,Utama,Financials
+102,BEI: BBRI,Bank Rakyat Indonesia (Persero) Tbk.,10 November 2003,150.043.411.587,Utama,Financials
+103,BEI: BBRM,Pelayaran Nasional Bina Buana,9 Januari 2013,8.479.490.328,Pengembangan,Energy
+104,BEI: BBSI,Krom Bank Indonesia Tbk.,7 September 2020,3.637.976.068,Pengembangan,Financials
+105,BEI: BBSS,Bumi Benowo Sukses Sejahtera T,15 April 2020,4.800.016.020,Pengembangan,Properties & Real Estate
+106,BEI: BBTN,Bank Tabungan Negara (Persero),17 Desember 2009,13.894.099.969,Utama,Financials
+107,BEI: BBYB,Bank Neo Commerce Tbk.,13 Januari 2015,13.216.977.523,Utama,Financials
+108,BEI: BCAP,MNC Kapital Indonesia Tbk.,8 Juni 2001,42.618.850.927,Utama,Financials
+109,BEI: BCIC,Bank JTrust Indonesia Tbk.,25 Juni 1997,17.926.071.041,Pengembangan,Financials
+110,BEI: BCIP,Bumi Citra Permai Tbk.,11 Desember 2009,1.429.915.525,Pengembangan,Properties & Real Estate
+111,BEI: BDKR,Berdikari Pondasi Perkasa Tbk.,3 Maret 2023,4.725.101.522,Utama,Infrastructure
+112,BEI: BDMN,Bank Danamon Indonesia Tbk.,6 Desember 1989,9.675.817.341,Utama,Financials
+113,BEI: BEBS,Berkah Beton Sadaya Tbk.,10 Maret 2021,45.000.000.000,Pemantauan Khusus,Basic Materials
+114,BEI: BEEF,Estika Tata Tiara Tbk.,10 Januari 2019,7.186.061.591,Pengembangan,Consumer Non-Cyclicals
+115,BEI: BEER,Jobubu Jarum Minahasa Tbk.,6 Januari 2023,4.000.000.000,Pengembangan,Consumer Non-Cyclicals
+116,BEI: BEKS,Bank Pembangunan Daerah Banten,13 Juli 2001,51.351.733.883,Pemantauan Khusus,Financials
+117,BEI: BELI,Global Digital Niaga Tbk.,8 November 2022,128.110.737.143,Ekonomi Baru,Technology
+118,BEI: BELL,Trisula Textile Industries Tbk,3 Oktober 2017,7.250.000.000,Pengembangan,Consumer Cyclicals
+119,BEI: BESS,Batulicin Nusantara Maritim Tb,9 Maret 2020,3.440.455.528,Pengembangan,Energy
+120,BEI: BEST,Bekasi Fajar Industrial Estate,10 April 2012,9.647.311.150,Utama,Properties & Real Estate
+121,BEI: BFIN,BFI Finance Indonesia Tbk.,16 Mei 1990,15.967.115.620,Utama,Financials
+122,BEI: BGTG,Bank Ganesha Tbk.,12 Mei 2016,23.731.287.132,Pengembangan,Financials
+123,BEI: BHAT,Bhakti Multi Artha Tbk.,15 April 2020,5.000.000.000,Pengembangan,Financials
+124,BEI: BHIT,MNC Asia Holding Tbk.,24 November 1997,86.068.156.705,Pemantauan Khusus,Industrials
+125,BEI: BIKA,Binakarya Jaya Abadi Tbk.,14 Juli 2015,592.280.000,Pemantauan Khusus,Properties & Real Estate
+126,BEI: BIKE,Sepeda Bersama Indonesia Tbk.,21 Maret 2022,1.293.916.404,Pengembangan,Consumer Cyclicals
+127,BEI: BIMA,Primarindo Asia Infrastructure,30 Agustus 1994,608.175.716,Pengembangan,Consumer Cyclicals
+128,BEI: BINA,Bank Ina Perdana Tbk.,16 Januari 2014,6.073.369.498,Utama,Financials
+129,BEI: BINO,Perma Plasindo Tbk.,25 November 2021,2.275.316.111,Pengembangan,Industrials
+130,BEI: BIPI,Astrindo Nusantara Infrastrukt,11 Februari 2010,63.710.196.917,Pengembangan,Energy
+131,BEI: BIPP,Bhuwanatala Indah Permai Tbk.,23 Oktober 1995,5.028.669.376,Pemantauan Khusus,Properties & Real Estate
+132,BEI: BIRD,Blue Bird Tbk.,5 November 2014,2.502.100.000,Utama,Transportation & Logistics
+133,BEI: BISI,BISI International Tbk.,28 Mei 2007,3.000.000.000,Utama,Consumer Non-Cyclicals
+134,BEI: BJBR,Bank Pembangunan Daerah Jawa B,8 Juli 2010,10.416.229.249,Utama,Financials
+135,BEI: BJTM,Bank Pembangunan Daerah Jawa T,12 Juli 2012,14.865.343.101,Utama,Financials
+136,BEI: BKDP,Bukit Darmo Property Tbk.,15 Juni 2007,7.513.992.252,Pemantauan Khusus,Properties & Real Estate
+137,BEI: BKSL,Sentul City Tbk.,28 Juli 1997,167.708.902.705,Pemantauan Khusus,Properties & Real Estate
+138,BEI: BKSW,Bank QNB Indonesia Tbk.,21 November 2002,34.806.467.881,Pengembangan,Financials
+139,BEI: BLES,Superior Prima Sukses Tbk.,8 Juli 2024,8.890.206.400,Utama,Basic Materials
+140,BEI: BLTA,Berlian Laju Tanker Tbk,26 Maret 1990,25.940.187.103,Pemantauan Khusus,Transportation & Logistics
+141,BEI: BLTZ,Graha Layar Prima Tbk.,10 April 2014,873.937.142,Pemantauan Khusus,Consumer Cyclicals
+142,BEI: BLUE,Berkah Prima Perkasa Tbk.,8 Juli 2019,418.000.000,Pengembangan,Industrials
+143,BEI: BMAS,Bank Maspion Indonesia Tbk.,11 Juli 2013,17.921.635.680,Pemantauan Khusus,Financials
+144,BEI: BMBL,Lavender Bina Cendikia Tbk.,11 Januari 2023,1.030.080.995,Akselerasi,Consumer Cyclicals
+145,BEI: BMHS,Bundamedik Tbk.,6 Juli 2021,8.603.416.176,Utama,Healthcare
+146,BEI: BMRI,Bank Mandiri (Persero) Tbk.,14 Juli 2003,92.399.999.996,Utama,Financials
+147,BEI: BMSR,Bintang Mitra Semestaraya Tbk,29 Desember 1999,1.159.200.024,Pengembangan,Basic Materials
+148,BEI: BMTR,Global Mediacom Tbk.,17 Juli 1995,16.583.997.586,Utama,Consumer Cyclicals
+149,BEI: BNBA,Bank Bumi Arta Tbk.,1 Juni 2006,3.354.120.000,Pengembangan,Financials
+150,BEI: BNBR,Bakrie & Brothers Tbk,28 Agustus 1989,160.057.457.509,Pemantauan Khusus,Industrials
+151,BEI: BNGA,Bank CIMB Niaga Tbk.,29 November 1989,24.890.783.784,Utama,Financials
+152,BEI: BNII,Bank Maybank Indonesia Tbk.,21 November 1989,75.357.433.911,Utama,Financials
+153,BEI: BNLI,Bank Permata Tbk.,15 Januari 1990,35.819.545.925,Pengembangan,Financials
+154,BEI: BOAT,Newport Marine Services Tbk.,12 November 2024,3.501.680.000,Pengembangan,Energy
+155,BEI: BOBA,Formosa Ingredient Factory Tbk,1 November 2021,1.155.750.000,Pengembangan,Consumer Non-Cyclicals
+156,BEI: BOGA,Bintang Oto Global Tbk.,19 Desember 2016,3.803.526.210,Pengembangan,Consumer Cyclicals
+157,BEI: BOLA,Bali Bintang Sejahtera Tbk.,17 Juni 2019,6.000.000.000,Utama,Consumer Cyclicals
+158,BEI: BOLT,Garuda Metalindo Tbk.,7 Juli 2015,2.343.750.000,Pengembangan,Consumer Cyclicals
+159,BEI: BOSS,Borneo Olah Sarana Sukses Tbk.,15 Februari 2018,1.400.000.000,Pemantauan Khusus,Energy
+160,BEI: BPFI,Woori Finance Indonesia Tbk.,1 Juni 2009,2.673.995.362,Pengembangan,Financials
+161,BEI: BPII,Batavia Prosperindo Internasio,8 Juli 2014,10.309.973.240,Pengembangan,Financials
+162,BEI: BPTR,Batavia Prosperindo Trans Tbk.,9 Juli 2018,3.534.000.000,Pengembangan,Transportation & Logistics
+163,BEI: BRPT,Barito Pacific Tbk.,1 Oktober 1993,93.747.218.044,Utama,Basic Materials
+164,BEI: BRAM,Indo Kordsa Tbk.,5 September 1990,450.056.980,Pengembangan,Consumer Cyclicals
+165,BEI: BREN,Barito Renewables Energy Tbk.,9 Oktober 2023,133.786.220.000,Utama,Infrastructure
+166,BEI: BRIS,Bank Syariah Indonesia Tbk.,9 Mei 2018,45.667.877.639,Utama,Financials
+167,BEI: BRMS,Bumi Resources Minerals Tbk.,9 Desember 2010,141.784.040.338,Utama,Basic Materials
+168,BEI: BRNA,Berlina Tbk.,6 November 1989,979.110.000,Pemantauan Khusus,Basic Materials
+169,BEI: BSBK,Wulandari Bangun Laksana Tbk.,8 November 2022,25.091.882.375,Utama,Properties & Real Estate
+170,BEI: BSDE,Bumi Serpong Damai Tbk.,6 Juni 2008,21.171.365.812,Utama,Properties & Real Estate
+171,BEI: BSIM,Bank Sinarmas Tbk.,13 Desember 2010,19.517.921.842,Utama,Financials
+172,BEI: BSML,Bintang Samudera Mandiri Lines,16 Desember 2021,1.850.225.000,Pengembangan,Energy
+173,BEI: BSSR,Baramulti Suksessarana Tbk.,8 November 2012,2.616.500.000,Pengembangan,Energy
+174,BEI: BSWD,Bank Of India Indonesia Tbk.,1 Mei 2002,3.651.978.177,Pemantauan Khusus,Financials
+175,BEI: BTEK,Bumi Teknokultura Unggul Tbk,14 Mei 2004,46.277.496.376,Pemantauan Khusus,Consumer Non-Cyclicals
+176,BEI: BTEL,Bakrie Telecom Tbk.,3 Februari 2006,36.822.665.755,Pemantauan Khusus,Infrastructure
+177,BEI: BTON,Betonjaya Manunggal Tbk.,18 Juli 2001,720.000.000,Pengembangan,Basic Materials
+178,BEI: BTPN,Bank SMBC Indonesia Tbk.,12 Maret 2008,10.536.203.690,Utama,Financials
+179,BEI: BTPS,Bank BTPN Syariah Tbk.,8 Mei 2018,7.626.663.000,Utama,Financials
+180,BEI: BUAH,Segar Kumala Indonesia Tbk.,9 Agustus 2022,1.000.000.000,Pengembangan,Consumer Non-Cyclicals
+181,BEI: BUDI,Budi Starch & Sweetener Tbk.,8 Mei 1995,4.498.997.362,Utama,Consumer Non-Cyclicals
+182,BEI: BUKA,Bukalapak.com Tbk.,6 Agustus 2021,103.121.636.167,Ekonomi Baru,Technology
+183,BEI: BUKK,Bukaka Teknik Utama Tbk.,29 Juni 2015,2.640.452.000,Pengembangan,Infrastructure
+184,BEI: BULL,Buana Lintas Lautan Tbk.,23 Mei 2011,14.117.801.449,Pengembangan,Energy
+185,BEI: BUMI,Bumi Resources Tbk.,30 Juli 1990,371.322.136.553,Utama,Energy
+186,BEI: BUVA,Bukit Uluwatu Villa Tbk.,12 Juli 2010,20.590.473.213,Pengembangan,Consumer Cyclicals
+187,BEI: BVIC,Bank Victoria International Tb,30 Juni 1999,15.690.050.343,Utama,Financials
+188,BEI: BWPT,Eagle High Plantations Tbk.,27 Oktober 2009,31.525.291.000,Utama,Consumer Non-Cyclicals
+189,BEI: BYAN,Bayan Resources Tbk.,12 Agustus 2008,33.333.335.000,Utama,Energy
+190,BEI: CAKK,Cahayaputra Asa Keramik Tbk.,31 Oktober 2018,1.203.300.219,Pengembangan,Industrials
+191,BEI: CAMP,Campina Ice Cream Industry Tbk,19 Desember 2017,5.885.000.000,Pengembangan,Consumer Non-Cyclicals
+192,BEI: CANI,Capitol Nusantara Indonesia Tb,16 Januari 2014,833.440.000,Pemantauan Khusus,Energy
+193,BEI: CARE,Metro Healthcare Indonesia Tbk,13 Maret 2020,33.250.000.000,Pengembangan,Healthcare
+194,BEI: CARS,Industri dan Perdagangan Bintr,10 April 2017,15.000.000.000,Utama,Consumer Cyclicals
+195,BEI: CASA,Capital Financial Indonesia Tb,19 Juli 2016,54.476.269.803,Pengembangan,Financials
+196,BEI: CASH,Cashlez Worldwide Indonesia Tb,4 Mei 2020,1.431.125.517,Akselerasi,Technology
+197,BEI: CASS,Cardig Aero Services Tbk.,5 Desember 2011,2.086.950.000,Utama,Infrastructure
+198,BEI: CBMF,Cahaya Bintang Medan Tbk.,9 April 2020,1.875.000.000,Pemantauan Khusus,Consumer Cyclicals
+199,BEI: CBPE,Citra Buana Prasida Tbk.,6 Januari 2023,1.356.250.000,Pengembangan,Properties & Real Estate
+200,BEI: CBRE,Cakra Buana Resources Energi T,9 Januari 2023,4.538.057.561,Pemantauan Khusus,Energy
+201,BEI: CBUT,Citra Borneo Utama Tbk.,8 November 2022,3.125.000.000,Utama,Consumer Non-Cyclicals
+202,BEI: CCSI,Communication Cable Systems In,18 Juni 2019,1.199.999.998,Pengembangan,Industrials
+203,BEI: CEKA,Wilmar Cahaya Indonesia Tbk.,9 Juli 1996,595.000.000,Pengembangan,Consumer Non-Cyclicals
+204,BEI: CENT,Centratama Telekomunikasi Indo,1 November 2001,31.183.464.900,Pemantauan Khusus,Infrastructure
+205,BEI: CFIN,Clipan Finance Indonesia Tbk.,27 Agustus 1990,3.984.520.457,Utama,Financials
+206,BEI: CGAS,Citra Nusantara Gemilang Tbk.,8 Januari 2024,1.771.485.574,Pengembangan,Energy
+207,BEI: CHEM,Chemstar Indonesia Tbk.,8 Juli 2022,1.700.014.594,Pengembangan,Basic Materials
+208,BEI: CHIP,Pelita Teknologi Global Tbk.,8 Februari 2023,806.000.000,Akselerasi,Technology
+209,BEI: CINT,Chitose Internasional Tbk.,27 Juni 2014,1.000.000.000,Pengembangan,Consumer Cyclicals
+210,BEI: CITA,Cita Mineral Investindo Tbk.,20 Maret 2002,3.960.361.250,Pengembangan,Basic Materials
+211,BEI: CITY,Natura City Developments Tbk.,28 September 2018,5.405.188.966,Pengembangan,Properties & Real Estate
+212,BEI: CLAY,Citra Putra Realty Tbk.,18 Januari 2019,2.570.000.000,Pemantauan Khusus,Consumer Cyclicals
+213,BEI: CLEO,Sariguna Primatirta Tbk.,5 Mei 2017,12.000.000.000,Utama,Consumer Non-Cyclicals
+214,BEI: CLPI,Colorpak Indonesia Tbk.,30 November 2001,306.338.500,Pengembangan,Basic Materials
+215,BEI: CMNP,Citra Marga Nusaphala Persada,10 Januari 1995,5.437.498.079,Utama,Infrastructure
+216,BEI: CMNT,Cemindo Gemilang Tbk.,8 September 2021,17.125.504.000,Utama,Basic Materials
+217,BEI: CMPP,AirAsia Indonesia Tbk.,8 Desember 1994,10.685.124.441,Pemantauan Khusus,Transportation & Logistics
+218,BEI: CMRY,Cisarua Mountain Dairy Tbk.,6 Desember 2021,7.934.683.000,Utama,Consumer Non-Cyclicals
+219,BEI: CNKO,Exploitasi Energi Indonesia Tb,20 November 2001,8.956.361.206,Pemantauan Khusus,Energy
+220,BEI: CNMA,Nusantara Sejahtera Raya Tbk.,2 Agustus 2023,83.345.000.000,Utama,Consumer Cyclicals
+221,BEI: CNTX,Century Textile Industry Tbk.,22 Mei 1979,70.000.000,Pemantauan Khusus,Consumer Cyclicals
+222,BEI: COAL,Black Diamond Resources Tbk.,7 September 2022,6.250.000.000,Pemantauan Khusus,Energy
+223,BEI: COCO,Wahana Interfood Nusantara Tbk,20 Maret 2019,889.863.981,Pengembangan,Consumer Non-Cyclicals
+224,BEI: COWL,Cowell Development Tbk.,19 Desember 2007,4.871.214.021,Pemantauan Khusus,Properties & Real Estate
+225,BEI: CPIN,Charoen Pokphand Indonesia Tbk,18 Maret 1991,16.398.000.000,Utama,Consumer Non-Cyclicals
+226,BEI: CPRI,Capri Nusa Satu Properti Tbk.,11 April 2019,2.433.379.958,Pemantauan Khusus,Properties & Real Estate
+227,BEI: CPRO,Central Proteina Prima Tbk.,28 November 2006,59.572.382.787,Pengembangan,Consumer Non-Cyclicals
+228,BEI: CRAB,Toba Surimi Industries Tbk.,10 Agustus 2022,1.950.000.000,Pengembangan,Consumer Non-Cyclicals
+229,BEI: CRSN,Carsurin Tbk.,10 Juli 2023,2.892.000.000,Pengembangan,Industrials
+230,BEI: CSAP,Catur Sentosa Adiprana Tbk.,12 Desember 2007,5.683.175.151,Pengembangan,Consumer Cyclicals
+231,BEI: CSIS,Cahayasakti Investindo Sukses,10 Mei 2017,1.307.000.000,Pemantauan Khusus,Properties & Real Estate
+232,BEI: CSMI,Cia Selera Murni Tbk.,9 April 2020,816.061.500,Pemantauan Khusus,Consumer Cyclicals
+233,BEI: CSRA,Cisadane Sawit Raya Tbk.,9 Januari 2020,2.050.000.000,Pengembangan,Consumer Non-Cyclicals
+234,BEI: CTBN,Citra Tubindo Tbk.,28 November 1989,800.371.500,Pemantauan Khusus,Basic Materials
+235,BEI: CTRA,Ciputra Development Tbk.,28 Maret 1994,18.535.695.255,Utama,Properties & Real Estate
+236,BEI: CTTH,Citatah Tbk.,3 Juli 1996,1.230.839.821,Pemantauan Khusus,Industrials
+237,BEI: CUAN,Petrindo Jaya Kreasi Tbk.,8 Maret 2023,11.241.890.000,Utama,Energy
+238,BEI: CYBR,ITSEC Asia Tbk.,8 Agustus 2023,6.449.584.143,Pengembangan,Technology
+239,BEI: DAAZ,Daaz Bara Lestari Tbk.,11 November 2024,1.997.000.000,Utama,Basic Materials
+240,BEI: DADA,Diamond Citra Propertindo Tbk.,14 Februari 2020,7.431.530.800,Pemantauan Khusus,Properties & Real Estate
+241,BEI: DART,Duta Anggada Realty Tbk.,8 Mei 1990,3.141.390.962,Pengembangan,Properties & Real Estate
+242,BEI: DATA,Remala Abadi Tbk.,7 Mei 2024,1.375.000.000,Pengembangan,Infrastructure
+243,BEI: DAYA,Duta Intidaya Tbk.,28 Juni 2016,2.420.547.025,Pengembangan,Consumer Non-Cyclicals
+244,BEI: DCII,DCI Indonesia Tbk.,6 Januari 2021,2.383.745.900,Pengembangan,Technology
+245,BEI: DEAL,Dewata Freightinternational Tb,11 November 2018,1.146.170.959,Pemantauan Khusus,Transportation & Logistics
+246,BEI: DEFI,Danasupra Erapacific Tbk.,6 Juli 2001,687.266.666,Pemantauan Khusus,Financials
+247,BEI: DEPO,Caturkarda Depo Bangunan Tbk.,25 November 2021,6.790.000.000,Pengembangan,Consumer Cyclicals
+248,BEI: DEWA,Darma Henwa Tbk,26 September 2007,21.853.733.792,Utama,Energy
+249,BEI: DEWI,Dewi Shri Farmindo Tbk.,18 Juli 2022,2.000.000.000,Pengembangan,Consumer Non-Cyclicals
+250,BEI: DFAM,Dafam Property Indonesia Tbk.,27 April 2018,1.899.852.850,Pengembangan,Consumer Cyclicals
+251,BEI: DGIK,Nusa Konstruksi Enjiniring Tbk,19 Desember 2007,5.541.165.000,Pengembangan,Infrastructure
+252,BEI: DGNS,Diagnos Laboratorium Utama Tbk,15 Januari 2021,1.250.000.000,Pengembangan,Healthcare
+253,BEI: DIGI,Arkadia Digital Media Tbk.,18 September 2018,1.625.000.000,Pemantauan Khusus,Consumer Cyclicals
+254,BEI: DILD,Intiland Development Tbk.,4 September 1991,10.365.854.185,Utama,Properties & Real Estate
+255,BEI: DIVA,Distribusi Voucher Nusantara T,27 November 2018,1.428.571.400,Pengembangan,Technology
+256,BEI: DKFT,Central Omega Resources Tbk.,21 November 1997,5.638.246.600,Pengembangan,Basic Materials
+257,BEI: DLTA,Delta Djakarta Tbk.,27 Februari 1984,800.659.050,Utama,Consumer Non-Cyclicals
+258,BEI: DMAS,Puradelta Lestari Tbk.,29 Mei 2015,48.198.111.100,Utama,Properties & Real Estate
+259,BEI: DMMX,Digital Mediatama Maxima Tbk.,21 Oktober 2019,7.692.307.700,Pengembangan,Technology
+260,BEI: DMND,Diamond Food Indonesia Tbk.,22 Januari 2020,9.468.359.000,Pemantauan Khusus,Consumer Non-Cyclicals
+261,BEI: DNAR,Bank Oke Indonesia Tbk.,11 Juli 2014,16.867.292.274,Pengembangan,Financials
+262,BEI: DNET,Indoritel Makmur Internasional,11 Desember 2000,14.184.000.000,Pengembangan,Financials
+263,BEI: DOID,Delta Dunia Makmur Tbk.,15 Juni 2001,7.651.007.132,Utama,Energy
+264,BEI: DOOH,Era Media Sejahtera Tbk.,8 Mei 2023,7.737.562.251,Pengembangan,Consumer Cyclicals
+265,BEI: DOSS,Global Sukses Digital Tbk.,7 Agustus 2024,1.725.000.000,Pengembangan,Consumer Cyclicals
+266,BEI: DPNS,Duta Pertiwi Nusantara Tbk.,8 Agustus 1990,331.129.952,Pengembangan,Basic Materials
+267,BEI: DPUM,Dua Putra Utama Makmur Tbk.,8 Desember 2015,4.175.000.000,Pemantauan Khusus,Consumer Non-Cyclicals
+268,BEI: DRMA,Dharma Polimetal Tbk.,20 Desember 2021,4.705.882.300,Utama,Consumer Cyclicals
+269,BEI: DSFI,Dharma Samudera Fishing Indust,24 Maret 2000,1.857.135.500,Pengembangan,Consumer Non-Cyclicals
+270,BEI: DSNG,Dharma Satya Nusantara Tbk.,14 Juni 2013,10.599.842.400,Utama,Consumer Non-Cyclicals
+271,BEI: DSSA,Dian Swastatika Sentosa Tbk,10 Desember 2009,7.705.523.200,Utama,Energy
+272,BEI: PTDU,Djasa Ubersakti Tbk.,8 Desember 2020,1.500.000.000,Pemantauan Khusus,Infrastructure
+273,BEI: DUCK,Jaya Bersama Indo Tbk.,10 Oktober 2018,1.283.330.000,Pemantauan Khusus,Consumer Cyclicals
+274,BEI: DUTI,Duta Pertiwi Tbk,2 November 1994,1.850.000.000,Pemantauan Khusus,Properties & Real Estate
+275,BEI: DVLA,Darya-Varia Laboratoria Tbk.,11 November 1994,1.120.000.000,Pengembangan,Healthcare
+276,BEI: DWGL,Dwi Guna Laksana Tbk.,13 Desember 2017,9.252.820.991,Pengembangan,Energy
+277,BEI: DYAN,Dyandra Media International Tb,25 Maret 2013,4.272.964.279,Pengembangan,Industrials
+278,BEI: EAST,Eastparc Hotel Tbk.,9 Juli 2019,4.126.405.336,Pengembangan,Consumer Cyclicals
+279,BEI: ECII,Electronic City Indonesia Tbk.,3 Juli 2013,1.334.333.000,Pengembangan,Consumer Cyclicals
+280,BEI: EDGE,Indointernet Tbk.,8 Februari 2021,2.020.250.000,Pengembangan,Technology
+281,BEI: EKAD,Ekadharma International Tbk.,14 Agustus 1990,3.493.875.000,Pengembangan,Basic Materials
+282,BEI: ELIT,Data Sinergitama Jaya Tbk.,6 Januari 2023,2.031.643.057,Pengembangan,Technology
+283,BEI: ELPI,Pelayaran Nasional Ekalya Purn,8 Agustus 2022,7.412.000.000,Utama,Transportation & Logistics
+284,BEI: ELSA,Elnusa Tbk.,6 Februari 2008,7.298.500.000,Utama,Energy
+285,BEI: ELTY,Bakrieland Development Tbk.,30 Oktober 1995,43.521.913.019,Pemantauan Khusus,Properties & Real Estate
+286,BEI: EMDE,Megapolitan Developments Tbk.,12 Januari 2011,3.350.000.000,Pengembangan,Properties & Real Estate
+287,BEI: EMTK,Elang Mahkota Teknologi Tbk.,12 Januari 2010,61.316.751.483,Utama,Technology
+288,BEI: ENAK,Champ Resto Indonesia Tbk.,8 Februari 2022,2.166.666.800,Pengembangan,Consumer Cyclicals
+289,BEI: ENRG,Energi Mega Persada Tbk.,7 Juni 2004,24.821.230.250,Utama,Energy
+290,BEI: ENVY,Envy Technologies Indonesia Tb,8 Juli 2019,1.800.000.000,Pemantauan Khusus,Technology
+291,BEI: ENZO,Morenzo Abadi Perkasa Tbk.,14 September 2020,2.162.547.122,Pemantauan Khusus,Consumer Non-Cyclicals
+292,BEI: EPAC,Megalestari Epack Sentosaraya,1 Juli 2020,3.303.400.000,Pemantauan Khusus,Basic Materials
+293,BEI: EPMT,Enseval Putera Megatrading Tbk,1 Agustus 1994,2.708.640.000,Pengembangan,Consumer Non-Cyclicals
+294,BEI: ERAA,Erajaya Swasembada Tbk.,14 Desember 2011,15.950.000.000,Utama,Consumer Cyclicals
+295,BEI: ERAL,Sinar Eka Selaras Tbk.,8 Agustus 2023,5.187.500.000,Utama,Consumer Cyclicals
+296,BEI: ERTX,Eratex Djaja Tbk.,21 Agustus 1990,1.286.539.792,Pengembangan,Consumer Cyclicals
+297,BEI: ESIP,Sinergi Inti Plastindo Tbk.,14 November 2019,1.109.953.847,Pemantauan Khusus,Basic Materials
+298,BEI: ESSA,ESSA Industries Indonesia Tbk.,1 Februari 2012,17.226.975.700,Utama,Basic Materials
+299,BEI: ESTA,Esta Multi Usaha Tbk.,9 Maret 2020,2.425.354.179,Pengembangan,Consumer Cyclicals
+300,BEI: ESTI,Ever Shine Tex Tbk.,13 Oktober 1992,2.015.208.720,Pemantauan Khusus,Consumer Cyclicals
+301,BEI: ETWA,Eterindo Wahanatama Tbk,16 Mei 1997,4.668.671.400,Pemantauan Khusus,Basic Materials
+302,BEI: EURO,Estee Gold Feet Tbk.,8 Agustus 2022,2.548.826.428,Akselerasi,Consumer Non-Cyclicals
+303,BEI: EXCL,XL Axiata Tbk.,29 September 2005,13.128.430.665,Utama,Infrastructure
+304,BEI: FAPA,FAP Agri Tbk.,4 Januari 2021,3.629.411.800,Pengembangan,Consumer Non-Cyclicals
+305,BEI: FAST,Fast Food Indonesia Tbk.,11 Mei 1993,3.990.277.158,Pengembangan,Consumer Cyclicals
+306,BEI: FASW,Fajar Surya Wisesa Tbk.,19 Desember 1994,2.477.888.787,Pemantauan Khusus,Basic Materials
+307,BEI: FILM,MD Entertainment Tbk.,7 Agustus 2018,9.897.787.962,Utama,Consumer Cyclicals
+308,BEI: FIMP,Fimperkasa Utama Tbk.,9 April 2021,400.000.975,Pemantauan Khusus,Infrastructure
+309,BEI: FIRE,Alfa Energi Investama Tbk.,9 Juni 2017,1.475.363.179,Pengembangan,Energy
+310,BEI: FISH,FKS Multi Agro Tbk.,18 Januari 2002,480.000.000,Pemantauan Khusus,Consumer Non-Cyclicals
+311,BEI: FITT,Hotel Fitra International Tbk.,11 Juni 2019,1.304.272.051,Pengembangan,Consumer Cyclicals
+312,BEI: FLMC,Falmaco Nonwoven Industri Tbk.,8 Juli 2021,781.250.000,Akselerasi,Consumer Non-Cyclicals
+313,BEI: FMII,Fortune Mate Indonesia Tbk,30 Juni 2000,6.400.000.000,Pengembangan,Properties & Real Estate
+314,BEI: FOLK,Multi Garam Utama Tbk.,7 Agustus 2023,3.948.141.464,Pengembangan,Industrials
+315,BEI: FOOD,Sentra Food Indonesia Tbk.,8 Januari 2019,650.000.000,Pengembangan,Consumer Non-Cyclicals
+316,BEI: FORU,Fortune Indonesia Tbk,17 Januari 2002,465.224.000,Pengembangan,Consumer Cyclicals
+317,BEI: FORZ,Forza Land Indonesia Tbk.,28 April 2017,1.984.009.887,Pemantauan Khusus,Properties & Real Estate
+318,BEI: FPNI,Lotte Chemical Titan Tbk.,21 Maret 2002,5.566.414.000,Pengembangan,Basic Materials
+319,BEI: FREN,Smartfren Telecom Tbk.,29 November 2006,476.703.804.464,Pemantauan Khusus,Infrastructure
+320,BEI: FUJI,Fuji Finance Indonesia Tbk.,9 Juli 2019,1.300.000.000,Pengembangan,Financials
+321,BEI: FUTR,Lini Imaji Kreasi Ekosistem Tb,27 Februari 2023,6.390.108.330,Pemantauan Khusus,Consumer Cyclicals
+322,BEI: FWCT,Wijaya Cahaya Timber Tbk.,1 Februari 2023,1.875.000.000,Pengembangan,Basic Materials
+323,BEI: GAMA,Aksara Global Development Tbk.,11 Juli 2012,10.011.027.656,Pemantauan Khusus,Properties & Real Estate
+324,BEI: GDST,Gunawan Dianjaya Steel Tbk.,23 Desember 2009,9.242.500.000,Pengembangan,Basic Materials
+325,BEI: GDYR,Goodyear Indonesia Tbk.,22 Desember 1980,410.000.000,Pengembangan,Consumer Cyclicals
+326,BEI: GEMA,Gema Grahasarana Tbk.,12 Agustus 2002,1.600.000.000,Pengembangan,Consumer Cyclicals
+327,BEI: GEMS,Golden Energy Mines Tbk.,17 November 2011,5.882.353.000,Utama,Energy
+328,BEI: GGRM,Gudang Garam Tbk.,27 Agustus 1990,1.924.088.000,Utama,Consumer Non-Cyclicals
+329,BEI: GGRP,Gunung Raja Paksi Tbk.,19 September 2019,12.111.376.157,Pemantauan Khusus,Basic Materials
+330,BEI: GHON,Gihon Telekomunikasi Indonesia,9 April 2018,550.000.000,Pengembangan,Infrastructure
+331,BEI: GIAA,Garuda Indonesia (Persero) Tbk,11 Februari 2011,91.480.783.837,Pemantauan Khusus,Transportation & Logistics
+332,BEI: GJTL,Gajah Tunggal Tbk.,8 Mei 1990,3.484.800.000,Utama,Consumer Cyclicals
+333,BEI: GLOB,Globe Kita Terang Tbk.,10 Juli 2012,1.111.112.000,Pemantauan Khusus,Consumer Cyclicals
+334,BEI: GLVA,Galva Technologies Tbk.,23 Desember 2019,1.500.000.000,Pengembangan,Technology
+335,BEI: GMFI,Garuda Maintenance Facility Ae,10 Oktober 2017,28.233.511.500,Pemantauan Khusus,Infrastructure
+336,BEI: GMTD,Gowa Makassar Tourism Developm,11 Desember 2000,1.015.380.000,Pengembangan,Properties & Real Estate
+337,BEI: GOLD,Visi Telekomunikasi Infrastruk,7 Juli 2010,1.277.276.000,Pengembangan,Infrastructure
+338,BEI: GOLF,Intra Golflink Resorts Tbk.,8 Juli 2024,19.486.760.000,Utama,Consumer Cyclicals
+339,BEI: GOLL,Golden Plantation Tbk.,23 Desember 2014,3.665.000.759,Pemantauan Khusus,Consumer Non-Cyclicals
+340,BEI: GOOD,Garudafood Putra Putri Jaya Tb,10 Oktober 2018,36.897.901.455,Utama,Consumer Non-Cyclicals
+341,BEI: GOTO,GoTo Gojek Tokopedia Tbk.,11 April 2022,1.140.573.267.220,Ekonomi Baru,Technology
+342,BEI: GPRA,Perdana Gapuraprima Tbk.,10 Oktober 2007,4.276.655.336,Pengembangan,Properties & Real Estate
+343,BEI: GPSO,Geoprima Solusi Tbk.,6 September 2021,666.741.103,Pengembangan,Industrials
+344,BEI: GRIA,Ingria Pratama Capitalindo Tbk,8 Agustus 2023,7.375.720.674,Pengembangan,Properties & Real Estate
+345,BEI: GRPH,Griha Putra Persada Tbk.,17 Januari 2024,1.000.000.000,Pengembangan,Consumer Cyclicals
+346,BEI: GRPM,Graha Prima Mentari Tbk.,10 Juli 2023,1.545.059.559,Akselerasi,Consumer Non-Cyclicals
+347,BEI: GSMF,Equity Development Investment,23 Oktober 1989,14.230.399.705,Pengembangan,Financials
+348,BEI: GTBO,Garda Tujuh Buana Tbk,9 Juli 2009,2.500.000.000,Pengembangan,Energy
+349,BEI: GTRA,Grahaprima Suksesmandiri Tbk.,30 Maret 2023,1.894.375.000,Pengembangan,Transportation & Logistics
+350,BEI: GTSI,GTS Internasional Tbk.,8 September 2021,15.819.142.767,Pemantauan Khusus,Energy
+351,BEI: GULA,Aman Agrindo Tbk.,3 Agustus 2022,1.070.362.500,Pengembangan,Consumer Non-Cyclicals
+352,BEI: GUNA,Gunanusa Eramandiri Tbk.,9 Juli 2024,2.500.000.000,Pengembangan,Consumer Non-Cyclicals
+353,BEI: GWSA,Greenwood Sejahtera Tbk.,23 Desember 2011,7.800.760.000,Utama,Consumer Cyclicals
+354,BEI: GZCO,Gozco Plantations Tbk.,15 Mei 2008,6.000.000.000,Pengembangan,Consumer Non-Cyclicals
+355,BEI: HADE,Himalaya Energi Perkasa Tbk.,12 April 2004,2.120.000.000,Pemantauan Khusus,Infrastructure
+356,BEI: HAIS,Hasnur Internasional Shipping,1 September 2021,2.626.250.000,Pengembangan,Transportation & Logistics
+357,BEI: HAJJ,Arsy Buana Travelindo Tbk.,5 April 2023,2.290.526.380,Akselerasi,Consumer Cyclicals
+358,BEI: HALO,Haloni Jane Tbk.,8 Februari 2023,5.650.014.381,Pengembangan,Healthcare
+359,BEI: HATM,Habco Trans Maritima Tbk.,26 Juli 2022,7.000.000.000,Utama,Transportation & Logistics
+360,BEI: HBAT,Minahasa Membangun Hebat Tbk.,7 Agustus 2023,1.040.740.800,Akselerasi,Properties & Real Estate
+361,BEI: HDFA,Radana Bhaskara Finance Tbk.,10 Mei 2011,6.542.445.783,Pengembangan,Financials
+362,BEI: HDIT,Hensel Davest Indonesia Tbk.,12 Juli 2019,1.524.680.000,Pemantauan Khusus,Technology
+363,BEI: HDTX,Panasia Indo Resources Tbk.,6 Juni 1990,3.601.462.800,Pemantauan Khusus,Consumer Cyclicals
+364,BEI: HEAL,Medikaloka Hermina Tbk.,16 Mei 2018,15.365.950.000,Utama,Healthcare
+365,BEI: HELI,Jaya Trishindo Tbk.,27 Maret 2018,832.862.387,Pengembangan,Transportation & Logistics
+366,BEI: HERO,Hero Supermarket Tbk.,21 Agustus 1989,4.183.634.000,Pengembangan,Consumer Non-Cyclicals
+367,BEI: HEXA,Hexindo Adiperkasa Tbk.,13 Februari 1995,840.000.000,Utama,Industrials
+368,BEI: HILL,Hillcon Tbk.,1 Maret 2023,2.948.300.000,Utama,Energy
+369,BEI: HITS,Humpuss Intermoda Transportasi,15 Desember 1997,7.101.084.801,Utama,Energy
+370,BEI: HKMU,HK Metals Utama Tbk.,9 Oktober 2018,3.221.750.000,Pemantauan Khusus,Basic Materials
+371,BEI: HMSP,H.M. Sampoerna Tbk.,15 Agustus 1990,116.318.076.900,Pengembangan,Consumer Non-Cyclicals
+372,BEI: HOKI,Buyung Poetra Sembada Tbk.,22 Juni 2017,9.677.752.680,Utama,Consumer Non-Cyclicals
+373,BEI: HOME,Hotel Mandarine Regency Tbk.,17 Juli 2008,22.212.194.782,Pemantauan Khusus,Consumer Cyclicals
+374,BEI: HOMI,Grand House Mulia Tbk.,10 September 2020,1.575.000.000,Pengembangan,Properties & Real Estate
+375,BEI: HOPE,Harapan Duta Pertiwi Tbk.,24 Mei 2021,2.130.360.203,Pemantauan Khusus,Industrials
+376,BEI: HOTL,Saraswati Griya Lestari Tbk.,10 Januari 2013,3.550.001.452,Pemantauan Khusus,Consumer Cyclicals
+377,BEI: HRME,Menteng Heritage Realty Tbk.,12 April 2019,5.958.750.000,Pemantauan Khusus,Consumer Cyclicals
+378,BEI: HRTA,Hartadinata Abadi Tbk.,21 Juni 2017,4.605.262.400,Utama,Consumer Cyclicals
+379,BEI: HRUM,Harum Energy Tbk.,6 Oktober 2010,13.518.100.000,Utama,Energy
+380,BEI: HUMI,Humpuss Maritim Internasional,9 Agustus 2023,18.046.497.883,Utama,Energy
+381,BEI: HYGN,Ecocare Indo Pasifik Tbk.,13 Februari 2024,2.525.000.000,Pengembangan,Industrials
+382,BEI: IATA,MNC Energy Investments Tbk.,13 September 2006,25.238.245.486,Pemantauan Khusus,Energy
+383,BEI: IBFN,Intan Baru Prana Tbk.,22 Desember 2014,1.517.332.349,Pemantauan Khusus,Industrials
+384,BEI: IBOS,Indo Boga Sukses Tbk.,25 April 2022,8.065.789.529,Akselerasi,Consumer Non-Cyclicals
+385,BEI: IBST,Inti Bangun Sejahtera Tbk.,31 Agustus 2012,1.350.904.927,Pemantauan Khusus,Infrastructure
+386,BEI: ICBP,Indofood CBP Sukses Makmur Tbk,7 Oktober 2010,11.661.908.000,Utama,Consumer Non-Cyclicals
+387,BEI: ICON,Island Conces Indonesia Tbk.,8 Juli 2005,1.089.750.000,Pemantauan Khusus,Industrials
+388,BEI: IDEA,Idea Indonesia Akademi Tbk.,9 September 2021,1.062.437.500,Akselerasi,Consumer Cyclicals
+389,BEI: IDPR,Indonesia Pondasi Raya Tbk.,10 Desember 2015,2.003.000.000,Pengembangan,Infrastructure
+390,BEI: IFII,Indonesia Fibreboard Industry,10 Desember 2019,9.412.000.000,Pengembangan,Basic Materials
+391,BEI: IFSH,Ifishdeco Tbk.,5 Desember 2019,2.125.000.000,Pengembangan,Basic Materials
+392,BEI: IGAR,Champion Pacific Indonesia Tbk,5 November 1990,972.204.500,Pengembangan,Basic Materials
+393,BEI: IIKP,Inti Agri Resources Tbk,14 Oktober 2002,33.600.000.000,Pemantauan Khusus,Consumer Cyclicals
+394,BEI: IKAI,Intikeramik Alamasri Industri,4 Juni 1997,13.305.799.387,Pemantauan Khusus,Industrials
+395,BEI: IKAN,Era Mandiri Cemerlang Tbk.,12 Februari 2020,833.333.000,Pemantauan Khusus,Consumer Non-Cyclicals
+396,BEI: IKBI,Sumi Indo Kabel Tbk.,21 Januari 1991,1.224.000.000,Pengembangan,Industrials
+397,BEI: IKPM,Ikapharmindo Putramas Tbk.,8 November 2023,1.684.662.500,Pengembangan,Healthcare
+398,BEI: IMAS,Indomobil Sukses Internasional,15 November 1993,3.994.291.039,Utama,Consumer Cyclicals
+399,BEI: IMJS,Indomobil Multi Jasa Tbk.,10 Desember 2013,8.654.325.000,Pengembangan,Transportation & Logistics
+400,BEI: IMPC,Impack Pratama Industri Tbk.,17 Desember 2014,54.268.500.000,Utama,Industrials
+401,BEI: INAF,Indofarma Tbk.,17 April 2001,3.099.267.500,Pemantauan Khusus,Healthcare
+402,BEI: INAI,Indal Aluminium Industry Tbk.,5 Desember 1994,633.600.000,Pengembangan,Basic Materials
+403,BEI: INCF,Indo Komoditi Korpora Tbk.,6 September 2016,1.438.370.465,Pemantauan Khusus,Basic Materials
+404,BEI: INCI,Intanwijaya Internasional Tbk,24 Juli 1990,207.656.617,Pengembangan,Basic Materials
+405,BEI: INCO,Vale Indonesia Tbk.,16 Mei 1990,10.539.784.534,Utama,Basic Materials
+406,BEI: INDF,Indofood Sukses Makmur Tbk.,14 Juli 1994,8.780.426.500,Utama,Consumer Non-Cyclicals
+407,BEI: INDO,Royalindo Investa Wijaya Tbk.,13 Januari 2020,4.382.904.690,Pengembangan,Properties & Real Estate
+408,BEI: INDR,Indo-Rama Synthetics Tbk.,3 Agustus 1990,654.351.707,Pengembangan,Consumer Cyclicals
+409,BEI: INDS,Indospring Tbk.,10 Agustus 1990,6.562.497.100,Pengembangan,Consumer Cyclicals
+410,BEI: INDX,Tanah Laut Tbk,17 Mei 2001,437.913.588,Pengembangan,Industrials
+411,BEI: INDY,Indika Energy Tbk.,11 Juni 2008,5.210.192.000,Utama,Energy
+412,BEI: INET,Sinergi Inti Andalan Prima Tbk,24 Juli 2023,7.500.065.093,Pengembangan,Infrastructure
+413,BEI: INKP,Indah Kiat Pulp & Paper Tbk.,16 Juli 1990,5.470.982.941,Utama,Basic Materials
+414,BEI: INOV,Inocycle Technology Group Tbk.,10 Juli 2019,1.808.221.900,Pengembangan,Consumer Cyclicals
+415,BEI: INPC,Bank Artha Graha Internasional,23 Agustus 1990,20.021.178.779,Utama,Financials
+416,BEI: INPP,Indonesian Paradise Property T,12 Januari 2004,11.181.971.732,Pengembangan,Properties & Real Estate
+417,BEI: INPS,Indah Prakasa Sentosa Tbk.,6 April 2018,650.000.000,Pengembangan,Energy
+418,BEI: INRU,Toba Pulp Lestari Tbk.,18 Juni 1990,1.388.883.283,Pengembangan,Basic Materials
+419,BEI: INTA,Intraco Penta Tbk.,23 Agustus 1993,3.343.935.022,Pemantauan Khusus,Industrials
+420,BEI: INTD,Inter Delta Tbk,18 Desember 1989,591.828.000,Pengembangan,Basic Materials
+421,BEI: INTP,Indocement Tunggal Prakarsa Tb,5 Desember 1989,3.681.231.699,Utama,Basic Materials
+422,BEI: IOTF,Sumber Sinergi Makmur Tbk.,6 Oktober 2023,5.290.298.067,Pengembangan,Technology
+423,BEI: IPAC,Era Graharealty Tbk.,30 Juni 2021,949.868.500,Akselerasi,Properties & Real Estate
+424,BEI: IPCC,Indonesia Kendaraan Terminal T,9 Juli 2018,1.818.384.820,Utama,Infrastructure
+425,BEI: IPCM,Jasa Armada Indonesia Tbk.,22 Desember 2017,5.284.811.100,Pengembangan,Infrastructure
+426,BEI: IPOL,Indopoly Swakarsa Industry Tbk,9 Juli 2010,6.443.379.509,Pengembangan,Basic Materials
+427,BEI: IPPE,Indo Pureco Pratama Tbk.,9 Desember 2021,4.600.000.000,Pemantauan Khusus,Consumer Non-Cyclicals
+428,BEI: IRRA,Itama Ranoraya Tbk.,15 Oktober 2019,1.600.000.000,Pengembangan,Healthcare
+429,BEI: IRSX,Aviana Sinar Abadi Tbk.,7 Februari 2023,5.000.351.992,Pemantauan Khusus,Technology
+430,BEI: PTIS,Indo Straits Tbk.,12 Juli 2011,550.165.300,Pengembangan,Energy
+431,BEI: ISAP,Isra Presisi Indonesia Tbk.,9 Desember 2022,4.020.080.927,Akselerasi,Consumer Cyclicals
+432,BEI: ISAT,Indosat Tbk.,19 Oktober 1994,32.250.810.957,Utama,Infrastructure
+433,BEI: ISEA,Indo American Seafoods Tbk.,8 Juli 2024,1.390.000.000,Pengembangan,Consumer Non-Cyclicals
+434,BEI: ISSP,Steel Pipe Industry of Indones,22 Februari 2013,7.185.992.035,Utama,Basic Materials
+435,BEI: ITIC,Indonesian Tobacco Tbk.,4 Juli 2019,940.720.000,Pengembangan,Consumer Non-Cyclicals
+436,BEI: ITMA,Sumber Energi Andalan Tbk.,10 Desember 1990,999.053.167,Pengembangan,Energy
+437,BEI: ITMG,Indo Tambangraya Megah Tbk.,18 Desember 2007,1.129.925.000,Utama,Energy
+438,BEI: IPTV,MNC Vision Networks Tbk.,8 Juli 2019,42.197.950.841,Pemantauan Khusus,Consumer Cyclicals
+439,BEI: JARR,Jhonlin Agro Raya Tbk.,4 Agustus 2022,9.230.665.050,Utama,Consumer Non-Cyclicals
+440,BEI: JAST,Jasnita Telekomindo Tbk.,16 Mei 2019,1.082.575.738,Pemantauan Khusus,Infrastructure
+441,BEI: JATI,Informasi Teknologi Indonesia,8 Mei 2023,3.262.520.106,Pengembangan,Technology
+442,BEI: JAWA,Jaya Agra Wattie Tbk.,30 Mei 2011,16.232.951.842,Pengembangan,Consumer Non-Cyclicals
+443,BEI: JAYA,Armada Berjaya Trans Tbk.,21 Februari 2019,798.499.394,Pengembangan,Transportation & Logistics
+444,BEI: JECC,Jembo Cable Company Tbk.,18 November 1992,756.000.000,Pengembangan,Industrials
+445,BEI: JGLE,Graha Andrasentra Propertindo,29 Juni 2016,22.581.909.405,Pemantauan Khusus,Consumer Cyclicals
+446,BEI: JIHD,Jakarta International Hotels &,29 Februari 1984,2.329.040.482,Pemantauan Khusus,Consumer Cyclicals
+447,BEI: JKON,Jaya Konstruksi Manggala Prata,4 Desember 2007,16.308.519.860,Utama,Infrastructure
+448,BEI: JKSW,Jakarta Kyoei Steel Works Tbk.,6 Agustus 1997,150.000.000,Pemantauan Khusus,Basic Materials
+449,BEI: JMAS,Asuransi Jiwa Syariah Jasa Mit,18 Desember 2017,1.000.000.000,Pengembangan,Financials
+450,BEI: JPFA,Japfa Comfeed Indonesia Tbk.,23 Oktober 1989,11.726.575.201,Utama,Consumer Non-Cyclicals
+451,BEI: JRPT,Jaya Real Property Tbk.,29 Juni 1994,13.750.000.000,Pengembangan,Properties & Real Estate
+452,BEI: JSPT,Jakarta Setiabudi Internasiona,12 Januari 1998,2.318.736.000,Pengembangan,Consumer Cyclicals
+453,BEI: JSKY,Sky Energy Indonesia Tbk.,28 Maret 2018,2.032.540.000,Pemantauan Khusus,Energy
+454,BEI: JSMR,Jasa Marga (Persero) Tbk.,12 November 2007,7.257.871.200,Utama,Infrastructure
+455,BEI: JTPE,Jasuindo Tiga Perkasa Tbk.,16 April 2002,6.852.050.000,Utama,Industrials
+456,BEI: KAEF,Kimia Farma Tbk.,4 Juli 2001,5.566.584.590,Pengembangan,Healthcare
+457,BEI: KARW,Meratus Jasa Prima Tbk.,20 Desember 1994,587.152.700,Pemantauan Khusus,Infrastructure
+458,BEI: KAYU,Darmi Bersaudara Tbk.,4 Juli 2019,665.000.000,Pemantauan Khusus,Basic Materials
+459,BEI: KBAG,Karya Bersama Anugerah Tbk.,8 April 2020,7.150.002.603,Pemantauan Khusus,Properties & Real Estate
+460,BEI: KBLI,KMI Wire & Cable Tbk.,6 Juli 1992,4.007.235.107,Utama,Industrials
+461,BEI: KBLM,Kabelindo Murni Tbk.,1 Juni 1992,1.120.000.000,Pengembangan,Industrials
+462,BEI: KBLV,First Media Tbk.,25 Februari 2000,1.742.167.907,Pemantauan Khusus,Infrastructure
+463,BEI: KBRI,Kertas Basuki Rachmat Indonesi,11 Juli 2008,8.687.995.734,Pemantauan Khusus,Basic Materials
+464,BEI: KDSI,Kedawung Setia Industrial Tbk.,29 Juli 1996,1.620.000.000,Pengembangan,Basic Materials
+465,BEI: KDTN,Puri Sentul Permai Tbk.,9 November 2022,1.250.023.298,Pengembangan,Consumer Cyclicals
+466,BEI: KEEN,Kencana Energi Lestari Tbk.,2 September 2019,3.666.312.500,Utama,Infrastructure
+467,BEI: KEJU,Mulia Boga Raya Tbk.,25 November 2019,1.500.000.000,Pengembangan,Consumer Non-Cyclicals
+468,BEI: KETR,Ketrosden Triasmitra Tbk.,11 Januari 2021,2.841.262.838,Pengembangan,Infrastructure
+469,BEI: KIAS,Keramika Indonesia Assosiasi T,8 Desember 1994,14.929.100.000,Pemantauan Khusus,Industrials
+470,BEI: KICI,Kedaung Indah Can Tbk,28 Oktober 1993,276.000.000,Pengembangan,Consumer Cyclicals
+471,BEI: KIJA,Kawasan Industri Jababeka Tbk.,10 Januari 1995,20.824.888.369,Utama,Properties & Real Estate
+472,BEI: KING,Hoffmen Cleanindo Tbk.,16 Februari 2023,2.600.207.425,Akselerasi,Industrials
+473,BEI: KINO,Kino Indonesia Tbk.,11 Desember 2015,1.428.571.500,Pengembangan,Consumer Non-Cyclicals
+474,BEI: KIOS,Kioson Komersial Indonesia Tbk,5 Oktober 2017,1.075.862.960,Pengembangan,Technology
+475,BEI: KJEN,Krida Jaringan Nusantara Tbk.,1 Juli 2019,500.000.000,Pengembangan,Transportation & Logistics
+476,BEI: KKES,Kusuma Kemindo Sentosa Tbk.,8 Agustus 2022,1.500.000.000,Pemantauan Khusus,Basic Materials
+477,BEI: KKGI,Resource Alam Indonesia Tbk.,1 Juli 1991,5.000.000.000,Utama,Energy
+478,BEI: KLAS,Pelayaran Kurnia Lautan Semest,12 Juni 2023,3.644.415.975,Pengembangan,Transportation & Logistics
+479,BEI: KLBF,Kalbe Farma Tbk.,30 Juli 1991,46.875.122.110,Utama,Healthcare
+480,BEI: KLIN,Klinko Karya Imaji Tbk.,9 Agustus 2022,1.307.530.330,Pemantauan Khusus,Consumer Cyclicals
+481,BEI: KMDS,Kurniamitra Duta Sentosa Tbk.,7 September 2020,800.000.000,Pengembangan,Consumer Non-Cyclicals
+482,BEI: KMTR,Kirana Megatara Tbk.,19 Juni 2017,8.215.366.379,Pengembangan,Basic Materials
+483,BEI: KOBX,Kobexindo Tractors Tbk.,5 Juli 2012,2.272.500.000,Pengembangan,Industrials
+484,BEI: KOCI,Kokoh Exa Nusantara Tbk.,7 Oktober 2023,4.415.591.800,Pengembangan,Properties & Real Estate
+485,BEI: KOIN,Kokoh Inti Arebama Tbk,9 April 2008,980.843.732,Pemantauan Khusus,Industrials
+486,BEI: KOKA,Koka Indonesia Tbk.,11 Oktober 2023,2.861.333.000,Pengembangan,Infrastructure
+487,BEI: KONI,Perdana Bangun Pusaka Tbk,22 Agustus 1995,312.000.000,Pemantauan Khusus,Industrials
+488,BEI: KOPI,Mitra Energi Persada Tbk.,4 Mei 2015,697.266.668,Pengembangan,Energy
+489,BEI: KOTA,DMS Propertindo Tbk.,9 Juli 2019,10.546.185.701,Pemantauan Khusus,Consumer Cyclicals
+490,BEI: KPAL,Steadfast Marine Tbk.,8 Juni 2018,1.069.009.400,Pemantauan Khusus,Industrials
+491,BEI: KPAS,Cottonindo Ariesta Tbk.,5 Oktober 2018,768.043.253,Pemantauan Khusus,Consumer Non-Cyclicals
+492,BEI: KPIG,MNC Land Tbk.,30 Maret 2000,97.557.129.263,Pengembangan,Consumer Cyclicals
+493,BEI: KRAH,Grand Kartech Tbk.,8 November 2013,971.190.000,Pemantauan Khusus,Industrials
+494,BEI: KRAS,Krakatau Steel (Persero) Tbk.,10 November 2010,19.346.396.900,Pengembangan,Basic Materials
+495,BEI: KREN,Quantum Clovera Investama Tbk.,28 Juni 2002,18.208.470.100,Pemantauan Khusus,Technology
+496,BEI: KRYA,Bangun Karya Perkasa Jaya Tbk.,25 Juli 2022,1.663.943.474,Pengembangan,Infrastructure
+497,BEI: KUAS,Ace Oldfields Tbk.,25 Oktober 2021,1.292.808.150,Pengembangan,Industrials
+498,BEI: LABA,Green Power Group Tbk.,10 Juni 2021,1.103.402.553,Pengembangan,Industrials
+499,BEI: LABS,UBC Medical Indonesia Tbk.,10 Juli 2024,3.950.000.000,Pengembangan,Healthcare
+500,BEI: LAJU,Jasa Berdikari Logistics Tbk.,27 Januari 2023,2.149.942.974,Pengembangan,Transportation & Logistics
+501,BEI: LAND,Trimitra Propertindo Tbk.,23 Agustus 2018,2.792.620.000,Pemantauan Khusus,Properties & Real Estate
+502,BEI: LAPD,Leyand International Tbk.,17 Juli 2001,3.966.350.139,Pemantauan Khusus,Consumer Non-Cyclicals
+503,BEI: LCGP,Eureka Prima Jakarta Tbk.,13 Juli 2007,5.630.000.914,Pemantauan Khusus,Properties & Real Estate
+504,BEI: LCKM,LCK Global Kedaton Tbk.,16 Januari 2018,1.000.000.000,Pengembangan,Infrastructure
+505,BEI: LEAD,Logindo Samudramakmur Tbk.,11 Desember 2013,5.799.616.328,Pengembangan,Energy
+506,BEI: LFLO,Imago Mulia Persada Tbk.,7 April 2021,1.307.734.937,Akselerasi,Consumer Cyclicals
+507,BEI: LIFE,MSIG Life Insurance Indonesia,9 Juli 2019,2.100.000.000,Pengembangan,Financials
+508,BEI: LINK,Link Net Tbk.,2 Juni 2014,2.863.195.484,Pengembangan,Infrastructure
+509,BEI: LION,Lion Metal Works Tbk.,20 Agustus 1993,520.160.000,Pemantauan Khusus,Industrials
+510,BEI: LIVE,Homeco Victoria Makmur Tbk.,12 Februari 2024,4.593.005.014,Pengembangan,Consumer Cyclicals
+511,BEI: LMAS,Limas Indonesia Makmur Tbk,28 Desember 2001,787.851.525,Pemantauan Khusus,Technology
+512,BEI: LMAX,Lupromax Pelumas Indonesia Tbk,9 Agustus 2023,650.008.775,Akselerasi,Consumer Cyclicals
+513,BEI: LMPI,Langgeng Makmur Industri Tbk.,17 Oktober 1994,1.008.517.669,Pengembangan,Consumer Cyclicals
+514,BEI: LMSH,Lionmesh Prima Tbk.,4 Juni 1990,96.000.000,Pemantauan Khusus,Basic Materials
+515,BEI: LOPI,Logisticsplus International Tb,11 Oktober 2023,1.100.011.289,Akselerasi,Transportation & Logistics
+516,BEI: LPCK,Lippo Cikarang Tbk,24 Juli 1997,2.679.600.000,Utama,Properties & Real Estate
+517,BEI: LPGI,Lippo General Insurance Tbk.,22 Juli 1997,3.000.000.000,Pemantauan Khusus,Financials
+518,BEI: LPIN,Multi Prima Sejahtera Tbk,5 Februari 1990,425.000.000,Pengembangan,Consumer Cyclicals
+519,BEI: LPKR,Lippo Karawaci Tbk.,28 Juni 1996,70.898.018.369,Utama,Properties & Real Estate
+520,BEI: LPLI,Star Pacific Tbk,23 Oktober 1989,1.170.432.803,Pengembangan,Properties & Real Estate
+521,BEI: LPPF,Matahari Department Store Tbk.,9 Oktober 1989,2.259.292.880,Utama,Consumer Cyclicals
+522,BEI: LPPS,Lenox Pasifik Investama Tbk.,28 Maret 1994,2.588.250.000,Pengembangan,Financials
+523,BEI: LRNA,Eka Sari Lorena Transport Tbk.,15 April 2014,350.000.022,Pengembangan,Transportation & Logistics
+524,BEI: LSIP,PP London Sumatra Indonesia Tb,5 Juli 1996,6.819.963.965,Utama,Consumer Non-Cyclicals
+525,BEI: LTLS,Lautan Luas Tbk.,21 Juli 1997,1.560.000.000,Utama,Basic Materials
+526,BEI: LUCK,Sentral Mitra Informatika Tbk.,28 November 2018,715.749.640,Pengembangan,Technology
+527,BEI: LUCY,Lima Dua Lima Tiga Tbk.,5 Mei 2021,1.514.773.893,Akselerasi,Consumer Cyclicals
+528,BEI: MABA,Marga Abhinaya Abadi Tbk.,22 Juni 2017,15.365.229.912,Pemantauan Khusus,Consumer Cyclicals
+529,BEI: MAGP,Multi Agro Gemilang Plantation,16 Januari 2013,9.000.000.004,Pemantauan Khusus,Consumer Non-Cyclicals
+530,BEI: MAHA,Mandiri Herindo Adiperkasa Tbk,25 Juli 2023,16.666.000.000,Utama,Energy
+531,BEI: MAIN,Malindo Feedmill Tbk.,10 Februari 2006,2.238.750.000,Utama,Consumer Non-Cyclicals
+532,BEI: MAMI,Mas Murni Indonesia Tbk,9 Februari 1994,12.299.317.590,Pemantauan Khusus,Consumer Cyclicals
+533,BEI: MANG,Manggung Polahraya Tbk.,11 Januari 2024,3.812.500.000,Akselerasi,Infrastructure
+534,BEI: MAPA,Map Aktif Adiperkasa Tbk.,5 Juli 2018,28.504.000.000,Utama,Consumer Cyclicals
+535,BEI: MAPB,MAP Boga Adiperkasa Tbk.,21 Juni 2017,2.387.922.900,Pemantauan Khusus,Consumer Cyclicals
+536,BEI: MAPI,Mitra Adiperkasa Tbk.,10 November 2004,16.600.000.000,Utama,Consumer Cyclicals
+537,BEI: MARI,Mahaka Radio Integra Tbk.,11 Februari 2016,5.252.644.000,Pengembangan,Consumer Cyclicals
+538,BEI: MARK,Mark Dynamics Indonesia Tbk.,12 Juli 2017,3.800.000.310,Utama,Industrials
+539,BEI: MASA,Multistrada Arah Sarana Tbk.,9 Juni 2005,9.182.946.945,Utama,Consumer Cyclicals
+540,BEI: MASB,Bank Multiarta Sentosa Tbk.,30 Juni 2021,1.387.737.233,Pengembangan,Financials
+541,BEI: MAXI,Maxindo Karya Anugerah Tbk.,12 Juni 2023,9.610.063.102,Pengembangan,Consumer Non-Cyclicals
+542,BEI: MAYA,Bank Mayapada Internasional Tb,29 Agustus 1997,25.906.179.152,Utama,Financials
+543,BEI: MBAP,Mitrabara Adiperdana Tbk.,10 Juli 2014,1.227.271.952,Pengembangan,Energy
+544,BEI: MBMA,Merdeka Battery Materials Tbk.,18 April 2023,107.995.419.900,Pengembangan,Basic Materials
+545,BEI: MBSS,Mitrabahtera Segara Sejati Tbk,6 April 2011,1.750.026.639,Utama,Energy
+546,BEI: MBTO,Martina Berto Tbk.,13 Januari 2011,1.070.000.000,Pengembangan,Consumer Non-Cyclicals
+547,BEI: MCAS,M Cash Integrasi Tbk.,1 November 2017,867.933.300,Utama,Technology
+548,BEI: MCOL,Prima Andalan Mandiri Tbk.,7 September 2021,3.555.560.000,Utama,Energy
+549,BEI: MCOR,Bank China Construction Bank I,3 Juli 2007,37.540.533.209,Utama,Financials
+550,BEI: MDIA,Intermedia Capital Tbk.,11 April 2014,39.215.538.400,Pemantauan Khusus,Consumer Cyclicals
+551,BEI: MDKA,Merdeka Copper Gold Tbk.,19 Juni 2015,24.472.983.771,Utama,Basic Materials
+552,BEI: MDKI,Emdeki Utama Tbk.,25 September 2017,2.530.150.002,Pengembangan,Basic Materials
+553,BEI: MDLN,Modernland Realty Tbk.,18 Januari 1993,12.533.067.322,Utama,Properties & Real Estate
+554,BEI: MDRN,Modern Internasional Tbk.,16 Juli 1991,7.632.167.798,Pemantauan Khusus,Industrials
+555,BEI: MEDC,Medco Energi Internasional Tbk,12 Oktober 1994,25.136.231.252,Utama,Energy
+556,BEI: MEDS,Hetzer Medical Indonesia Tbk.,10 Agustus 2022,1.562.500.000,Pengembangan,Healthcare
+557,BEI: MEGA,Bank Mega Tbk.,17 April 2000,11.623.514.905,Utama,Financials
+558,BEI: MEJA,Harta Djaya Karya Tbk.,12 Februari 2024,1.917.500.000,Akselerasi,Consumer Cyclicals
+559,BEI: MENN,Menn Teknologi Indonesia Tbk.,18 April 2023,1.434.052.006,Akselerasi,Technology
+560,BEI: MERK,Merck Tbk.,23 Juli 1981,448.000.000,Pengembangan,Healthcare
+561,BEI: META,Nusantara Infrastructure Tbk.,18 Juli 2001,17.710.708.194,Pemantauan Khusus,Infrastructure
+562,BEI: MFIN,Mandala Multifinance Tbk.,6 September 2005,2.650.000.000,Utama,Financials
+563,BEI: MFMI,Multifiling Mitra Indonesia Tb,29 Desember 2010,757.581.000,Pemantauan Khusus,Industrials
+564,BEI: MGLV,Panca Anugrah Wisesa Tbk.,8 Juni 2021,1.904.883.411,Akselerasi,Consumer Cyclicals
+565,BEI: MGNA,Magna Investama Mandiri Tbk.,8 Juli 2014,3.410.477.164,Pemantauan Khusus,Consumer Cyclicals
+566,BEI: MGRO,Mahkota Group Tbk.,12 Juli 2018,3.554.445.700,Pengembangan,Consumer Non-Cyclicals
+567,BEI: MHKI,Multi Hanna Kreasindo Tbk.,16 April 2024,3.750.000.000,Pengembangan,Industrials
+568,BEI: MICE,Multi Indocitra Tbk.,21 Desember 2005,600.000.000,Pengembangan,Consumer Cyclicals
+569,BEI: MIDI,Midi Utama Indonesia Tbk.,30 November 2010,33.435.294.800,Utama,Consumer Non-Cyclicals
+570,BEI: MIKA,Mitra Keluarga Karyasehat Tbk.,24 Maret 2015,13.907.481.500,Utama,Healthcare
+571,BEI: MINA,Sanurhasta Mitra Tbk.,28 April 2017,6.562.500.000,Pemantauan Khusus,Consumer Cyclicals
+572,BEI: MIRA,Mitra International Resources,30 Januari 1997,3.961.452.039,Pemantauan Khusus,Transportation & Logistics
+573,BEI: MITI,Mitra Investindo Tbk.,16 Juli 1997,3.540.735.503,Pengembangan,Transportation & Logistics
+574,BEI: MKAP,Multikarya Asia Pasifik Raya T,12 Februari 2024,3.250.000.000,Pengembangan,Energy
+575,BEI: MKNT,Mitra Komunikasi Nusantara Tbk,26 Oktober 2015,5.500.000.000,Pemantauan Khusus,Consumer Cyclicals
+576,BEI: MKPI,Metropolitan Kentjana Tbk.,10 Juli 2009,948.194.000,Pengembangan,Properties & Real Estate
+577,BEI: MKTR,Menthobi Karyatama Raya Tbk.,8 November 2022,12.052.390.422,Utama,Consumer Non-Cyclicals
+578,BEI: MLPT,Multipolar Technology Tbk.,8 Juli 2013,1.875.000.000,Pengembangan,Technology
+579,BEI: MLBI,Multi Bintang Indonesia Tbk.,15 Desember 1981,2.107.000.000,Utama,Consumer Non-Cyclicals
+580,BEI: MLIA,Mulia Industrindo Tbk,17 Januari 1994,6.615.000.000,Utama,Industrials
+581,BEI: MLPL,Multipolar Tbk.,6 November 1989,15.682.323.987,Utama,Consumer Non-Cyclicals
+582,BEI: MMIX,Multi Medika Internasional Tbk,6 Desember 2022,2.400.206.168,Pengembangan,Healthcare
+583,BEI: MMLP,Mega Manunggal Property Tbk.,12 Juni 2015,6.889.134.608,Utama,Properties & Real Estate
+584,BEI: MNCN,Media Nusantara Citra Tbk.,22 Juni 2007,15.049.787.710,Utama,Consumer Cyclicals
+585,BEI: MOLI,Madusari Murni Indah Tbk.,30 Agustus 2018,2.724.036.581,Pengembangan,Basic Materials
+586,BEI: MORA,Mora Telematika Indonesia Tbk.,8 Agustus 2022,23.646.668.691,Utama,Infrastructure
+587,BEI: PTMP,Mitra Pack Tbk.,6 Maret 2023,3.169.200.000,Pengembangan,Industrials
+588,BEI: MPIX,Mitra Pedagang Indonesia Tbk.,7 Februari 2024,1.562.500.000,Pengembangan,Technology
+589,BEI: MPMX,Mitra Pinasthika Mustika Tbk.,29 Mei 2013,4.462.963.276,Utama,Consumer Cyclicals
+590,BEI: MPOW,Megapower Makmur Tbk.,5 Juli 2017,816.997.053,Pengembangan,Infrastructure
+591,BEI: MPPA,Matahari Putra Prima Tbk.,21 Desember 1992,12.966.640.084,Utama,Consumer Non-Cyclicals
+592,BEI: MPRO,Maha Properti Indonesia Tbk.,9 Oktober 2018,9.942.500.000,Pengembangan,Properties & Real Estate
+593,BEI: MPXL,MPX Logistics International Tb,9 Mei 2023,2.000.014.587,Pengembangan,Transportation & Logistics
+594,BEI: PTMR,Master Print Tbk.,8 Oktober 2024,1.907.000.000,Pengembangan,Basic Materials
+595,BEI: MRAT,Mustika Ratu Tbk.,27 Juli 1995,428.000.000,Pengembangan,Consumer Non-Cyclicals
+596,BEI: MREI,Maskapai Reasuransi Indonesia,4 September 1989,517.791.681,Pengembangan,Financials
+597,BEI: MSIE,Multisarana Intan Eduka Tbk.,10 Agustus 2023,1.460.007.754,Akselerasi,Properties & Real Estate
+598,BEI: MSIN,MNC Digital Entertainment Tbk.,8 Juni 2018,60.676.178.205,Utama,Consumer Cyclicals
+599,BEI: MSJA,Multi Spunindo Jaya Tbk.,10 Januari 2024,5.882.352.900,Utama,Consumer Non-Cyclicals
+600,BEI: MSKY,MNC Sky Vision Tbk.,9 Juli 2012,1.994.370.480,Pengembangan,Consumer Cyclicals
+601,BEI: MSTI,Mastersystem Infotama Tbk.,8 November 2023,3.138.878.900,Utama,Technology
+602,BEI: MTDL,Metrodata Electronics Tbk.,9 April 1990,12.276.884.585,Utama,Technology
+603,BEI: MTEL,Dayamitra Telekomunikasi Tbk.,22 November 2021,83.555.225.944,Utama,Infrastructure
+604,BEI: MTFN,Capitalinc Investment Tbk.,16 April 1990,31.842.082.852,Pemantauan Khusus,Energy
+605,BEI: MTLA,Metropolitan Land Tbk.,20 Juni 2011,7.655.126.330,Utama,Properties & Real Estate
+606,BEI: MTMH,Murni Sadar Tbk.,20 April 2022,2.068.526.950,Utama,Healthcare
+607,BEI: MTPS,Meta Epsi Tbk.,10 April 2019,2.084.850.829,Pemantauan Khusus,Infrastructure
+608,BEI: MTRA,Mitra Pemuda Tbk.,10 Februari 2016,770.000.000,Pemantauan Khusus,Infrastructure
+609,BEI: MTSM,Metro Realty Tbk.,8 Januari 1992,232.848.000,Pemantauan Khusus,Properties & Real Estate
+610,BEI: MTWI,Malacca Trust Wuwungan Insuran,12 Oktober 2017,2.924.486.639,Pengembangan,Financials
+611,BEI: MUTU,Mutuagung Lestari Tbk.,9 Agustus 2023,3.142.881.188,Pengembangan,Industrials
+612,BEI: MYOH,Samindo Resources Tbk.,27 Juli 2000,2.206.312.500,Utama,Energy
+613,BEI: MYOR,Mayora Indah Tbk.,4 Juli 1990,22.358.699.725,Utama,Consumer Non-Cyclicals
+614,BEI: MYRX,Hanson International Tbk.,31 Oktober 1990,86.703.220.792,Pemantauan Khusus,Properties & Real Estate
+615,BEI: MYTX,Asia Pacific Investama Tbk.,10 Oktober 1989,7.747.281.949,Pemantauan Khusus,Consumer Cyclicals
+616,BEI: NAIK,Adiwarna Anugerah Abadi Tbk.,13 November 2024,3.250.000.000,Pengembangan,Industrials
+617,BEI: NANO,Nanotech Indonesia Global Tbk.,10 Maret 2022,4.285.228.063,Akselerasi,Consumer Non-Cyclicals
+618,BEI: NASA,Andalan Perkasa Abadi Tbk.,7 Agustus 2017,11.004.929.322,Pemantauan Khusus,Properties & Real Estate
+619,BEI: NASI,Wahana Inti Makmur Tbk.,13 Desember 2021,807.400.000,Pengembangan,Consumer Non-Cyclicals
+620,BEI: NATO,Surya Permata Andalan Tbk.,18 Januari 2019,8.001.111.504,Pengembangan,Consumer Cyclicals
+621,BEI: NAYZ,Hassana Boga Sejahtera Tbk.,6 Februari 2023,2.550.011.472,Akselerasi,Consumer Non-Cyclicals
+622,BEI: NCKL,Trimegah Bangun Persada Tbk.,12 April 2023,63.098.600.000,Utama,Basic Materials
+623,BEI: NELY,Pelayaran Nelly Dwi Putri Tbk.,11 Oktober 2012,2.350.000.000,Pengembangan,Transportation & Logistics
+624,BEI: NEST,Esta Indonesia Tbk.,8 Agustus 2024,4.112.500.000,Pengembangan,Consumer Non-Cyclicals
+625,BEI: NETV,Net Visi Media Tbk.,26 Januari 2022,41.360.517.722,Pemantauan Khusus,Consumer Cyclicals
+626,BEI: NFCX,NFC Indonesia Tbk.,12 Juli 2018,666.667.500,Pengembangan,Technology
+627,BEI: NICE,Adhi Kartiko Pratama Tbk.,9 Januari 2024,6.082.020.000,Pengembangan,Basic Materials
+628,BEI: NICK,Charnic Capital Tbk.,2 Mei 2018,651.150.000,Pengembangan,Financials
+629,BEI: NICL,PAM Mineral Tbk.,9 Juli 2021,10.635.644.907,Pengembangan,Basic Materials
+630,BEI: NIKL,Pelat Timah Nusantara Tbk.,14 Desember 2009,2.523.350.000,Pengembangan,Basic Materials
+631,BEI: NINE,Techno9 Indonesia Tbk.,5 Desember 2022,2.157.000.000,Akselerasi,Technology
+632,BEI: NIPS,Nipress Tbk.,24 Juli 1991,1.635.333.332,Pemantauan Khusus,Consumer Cyclicals
+633,BEI: NIRO,City Retail Developments Tbk.,13 September 2012,22.198.871.804,Pengembangan,Properties & Real Estate
+634,BEI: NISP,Bank OCBC NISP Tbk.,20 Oktober 1994,22.715.776.032,Utama,Financials
+635,BEI: NOBU,Bank Nationalnobu Tbk.,20 Mei 2013,7.403.659.460,Pengembangan,Financials
+636,BEI: NPGF,Nusa Palapa Gemilang Tbk.,14 April 2021,3.240.235.840,Pemantauan Khusus,Basic Materials
+637,BEI: NRCA,Nusa Raya Cia Tbk.,27 Juni 2013,2.496.258.344,Pengembangan,Infrastructure
+638,BEI: NSSS,Nusantara Sawit Sejahtera Tbk.,10 Maret 2023,23.801.568.645,Pengembangan,Consumer Non-Cyclicals
+639,BEI: NTBK,Nusatama Berkah Tbk.,9 Februari 2022,2.700.064.877,Pengembangan,Industrials
+640,BEI: NUSA,Sinergi Megah Internusa Tbk.,12 Juli 2018,7.700.000.148,Pemantauan Khusus,Consumer Cyclicals
+641,BEI: NZIA,Nusantara Almazia Tbk.,25 September 2019,2.197.540.705,Pengembangan,Properties & Real Estate
+642,BEI: OASA,Maharaksa Biru Energi Tbk.,18 Juli 2016,6.347.220.000,Pengembangan,Infrastructure
+643,BEI: OBMD,OBM Drilchem Tbk.,8 Desember 2021,805.992.931,Pengembangan,Basic Materials
+644,BEI: OCAP,Onix Capital Tbk.,10 Oktober 2003,273.200.000,Pemantauan Khusus,Financials
+645,BEI: OILS,Indo Oil Perkasa Tbk.,6 September 2021,454.056.563,Pengembangan,Consumer Non-Cyclicals
+646,BEI: OKAS,Ancora Indonesia Resources Tbk,29 Maret 2006,2.373.449.165,Pengembangan,Basic Materials
+647,BEI: OLIV,Oscar Mitra Sukses Sejahtera T,17 Mei 2022,1.900.073.314,Akselerasi,Consumer Cyclicals
+648,BEI: OMED,Jayamas Medica Industri Tbk.,8 November 2022,27.058.850.000,Utama,Healthcare
+649,BEI: OMRE,Indonesia Prima Property Tbk,22 Agustus 1994,2.945.211.000,Pemantauan Khusus,Properties & Real Estate
+650,BEI: OPMS,Oima Prima Metal Sinergi Tbk,23 September 2019,1.000.000.000,Pengembangan,Basic Materials
+651,BEI: PACK,Solusi Kemasan Digital Tbk.,8 Februari 2023,1.539.143.058,Pemantauan Khusus,Basic Materials
+652,BEI: PADA,Personel Alih Daya Tbk.,8 Desember 2022,3.150.000.000,Pemantauan Khusus,Industrials
+653,BEI: PADI,Minna Padi Investama Sekuritas,9 Januari 2012,11.307.246.524,Pemantauan Khusus,Financials
+654,BEI: PALM,Provident Investasi Bersama Tb,8 Oktober 2012,15.773.797.158,Pengembangan,Financials
+655,BEI: PAMG,Bima Sakti Pertiwi Tbk.,5 Juli 2019,3.125.000.000,Pengembangan,Properties & Real Estate
+656,BEI: PANI,Pantai Indah Kapuk Dua Tbk.,18 September 2018,16.883.595.500,Pengembangan,Properties & Real Estate
+657,BEI: PANR,Panorama Sentrawisata Tbk.,18 September 2001,1.387.500.000,Utama,Consumer Cyclicals
+658,BEI: PANS,Panin Sekuritas Tbk.,31 Mei 2000,720.000.000,Utama,Financials
+659,BEI: PART,Cipta Perdana Lancar Tbk.,5 Juli 2024,2.720.000.000,Pengembangan,Consumer Cyclicals
+660,BEI: PBID,Panca Budi Idaman Tbk.,13 Desember 2017,7.500.000.000,Utama,Basic Materials
+661,BEI: PBRX,Pan Brothers Tbk.,16 Agustus 1990,21.482.028.246,Pemantauan Khusus,Consumer Cyclicals
+662,BEI: PBSA,Paramita Bangun Sarana Tbk.,28 September 2016,3.000.000.000,Pengembangan,Infrastructure
+663,BEI: PCAR,Prima Cakrawala Abadi Tbk.,29 Desember 2017,1.166.666.700,Pengembangan,Consumer Non-Cyclicals
+664,BEI: PDES,Destinasi Tirta Nusantara Tbk,8 Juli 2008,715.000.000,Pengembangan,Consumer Cyclicals
+665,BEI: PDPP,Primadaya Plastisindo Tbk.,9 November 2022,3.061.341.438,Pengembangan,Basic Materials
+666,BEI: PEGE,Panca Global Kapital Tbk.,24 Juni 2005,2.833.417.056,Pengembangan,Financials
+667,BEI: PEHA,Phapros Tbk.,26 Desember 2018,840.000.000,Pengembangan,Healthcare
+668,BEI: PEVE,Penta Valent Tbk.,24 Januari 2023,1.765.625.000,Pengembangan,Healthcare
+669,BEI: PGAS,Perusahaan Gas Negara Tbk.,15 Desember 2003,24.241.508.196,Utama,Energy
+670,BEI: PGEO,Pertamina Geothermal Energy Tb,24 Februari 2023,41.508.024.149,Utama,Infrastructure
+671,BEI: PGJO,Tourindo Guide Indonesia Tbk.,8 Januari 2020,772.459.095,Akselerasi,Technology
+672,BEI: PGLI,Pembangunan Graha Lestari Inda,5 April 2000,488.000.000,Pengembangan,Consumer Cyclicals
+673,BEI: PGUN,Pradiksi Gunatama Tbk.,7 Juli 2020,5.737.848.882,Pemantauan Khusus,Consumer Non-Cyclicals
+674,BEI: PICO,Pelangi Indah Canindo Tbk,23 September 1996,568.375.000,Pengembangan,Basic Materials
+675,BEI: PIPA,Multi Makmur Lemindo Tbk.,10 April 2023,3.425.031.863,Pemantauan Khusus,Industrials
+676,BEI: PJAA,Pembangunan Jaya Ancol Tbk.,2 Juli 2004,1.599.999.996,Pengembangan,Consumer Cyclicals
+677,BEI: PKPK,Perdana Karya Perkasa Tbk,11 Juli 2007,1.200.000.000,Pengembangan,Energy
+678,BEI: PLAN,Planet Properindo Jaya Tbk.,15 September 2020,896.709.596,Akselerasi,Consumer Cyclicals
+679,BEI: PLAS,Polaris Investama Tbk,16 Maret 2001,1.184.200.000,Pemantauan Khusus,Financials
+680,BEI: PLIN,Plaza Indonesia Realty Tbk.,15 Juni 1992,3.550.000.000,Pemantauan Khusus,Properties & Real Estate
+681,BEI: PMJS,Putra Mandiri Jembar Tbk.,18 Desember 2019,13.755.600.000,Pengembangan,Consumer Cyclicals
+682,BEI: PMMP,Panca Mitra Multiperdana Tbk.,18 Desember 2020,2.588.300.000,Pengembangan,Consumer Non-Cyclicals
+683,BEI: PNBN,Bank Pan Indonesia Tbk,29 Desember 1982,23.837.645.998,Utama,Financials
+684,BEI: PNBS,Bank Panin Dubai Syariah Tbk.,15 Januari 2014,38.425.504.906,Pengembangan,Financials
+685,BEI: PNGO,Pinago Utama Tbk.,31 Agustus 2020,781.250.000,Pengembangan,Consumer Non-Cyclicals
+686,BEI: PNIN,Paninvest Tbk.,20 September 1983,4.068.323.920,Utama,Financials
+687,BEI: PNLF,Panin Financial Tbk.,14 Juni 1983,32.022.073.293,Utama,Financials
+688,BEI: PNSE,Pudjiadi & Sons Tbk.,1 Mei 1990,797.813.496,Pengembangan,Consumer Cyclicals
+689,BEI: POLA,Pool Advista Finance Tbk.,16 November 2018,3.351.075.600,Pemantauan Khusus,Financials
+690,BEI: POLI,Pollux Hotels Group Tbk.,10 Januari 2019,2.010.526.400,Pemantauan Khusus,Properties & Real Estate
+691,BEI: POLL,Pollux Properties Indonesia Tb,11 Juli 2018,8.318.823.600,Pengembangan,Properties & Real Estate
+692,BEI: POLU,Golden Flower Tbk.,26 Juni 2019,750.000.000,Pengembangan,Consumer Cyclicals
+693,BEI: POLY,Asia Pacific Fibers Tbk,12 Maret 1991,2.495.753.334,Pemantauan Khusus,Consumer Cyclicals
+694,BEI: POOL,Pool Advista Indonesia Tbk.,20 Mei 1991,2.341.366.264,Pemantauan Khusus,Financials
+695,BEI: PORT,Nusantara Pelabuhan Handal Tbk,16 Maret 2017,2.813.941.985,Pengembangan,Infrastructure
+696,BEI: POSA,Bliss Properti Indonesia Tbk.,10 Mei 2019,8.388.870.206,Pemantauan Khusus,Properties & Real Estate
+697,BEI: POWR,Cikarang Listrindo Tbk.,14 Juni 2016,16.087.156.000,Utama,Infrastructure
+698,BEI: PTPP,PP (Persero) Tbk.,9 Februari 2010,6.199.897.354,Utama,Infrastructure
+699,BEI: PPGL,Prima Globalindo Logistik Tbk.,20 Juli 2020,771.178.020,Akselerasi,Transportation & Logistics
+700,BEI: PPRE,PP Presisi Tbk.,24 November 2017,10.224.271.000,Pengembangan,Infrastructure
+701,BEI: PPRI,Paperocks Indonesia Tbk.,8 Agustus 2023,1.075.027.288,Pengembangan,Basic Materials
+702,BEI: PPRO,PP Properti Tbk.,19 Mei 2015,61.675.671.883,Pemantauan Khusus,Properties & Real Estate
+703,BEI: PRAS,Prima Alloy Steel Universal Tb,12 Juli 1990,701.043.478,Pemantauan Khusus,Consumer Cyclicals
+704,BEI: PRAY,Famon Awal Bros Sedaya Tbk.,8 November 2022,13.959.422.300,Pengembangan,Healthcare
+705,BEI: PRDA,Prodia Widyahusada Tbk.,7 Desember 2016,937.500.000,Utama,Healthcare
+706,BEI: PRIM,Royal Prima Tbk.,15 Mei 2018,3.393.434.905,Pengembangan,Healthcare
+707,BEI: PTPS,Pulau Subur Tbk.,9 Oktober 2023,2.167.514.856,Pengembangan,Consumer Non-Cyclicals
+708,BEI: PSAB,J Resources Asia Pasifik Tbk.,22 April 2003,26.460.000.000,Pengembangan,Basic Materials
+709,BEI: PSDN,Prasidha Aneka Niaga Tbk,18 Oktober 1994,1.440.000.000,Pengembangan,Consumer Non-Cyclicals
+710,BEI: PSGO,Palma Serasih Tbk.,25 November 2019,18.850.000.000,Utama,Consumer Non-Cyclicals
+711,BEI: PSKT,Red Planet Indonesia Tbk.,19 September 1995,10.351.231.636,Pemantauan Khusus,Consumer Cyclicals
+712,BEI: PSSI,IMC Pelita Logistik Tbk.,5 Desember 2017,5.417.063.153,Utama,Energy
+713,BEI: PUDP,Pudjiadi Prestige Tbk.,18 November 1994,659.120.000,Utama,Properties & Real Estate
+714,BEI: PURA,Putra Rajawali Kencana Tbk.,29 Januari 2020,6.301.930.902,Pemantauan Khusus,Transportation & Logistics
+715,BEI: PURE,Trinitan Metals and Minerals T,9 Oktober 2019,1.375.181.505,Pemantauan Khusus,Basic Materials
+716,BEI: PURI,Puri Global Sukses Tbk.,8 September 2020,1.000.000.000,Pengembangan,Properties & Real Estate
+717,BEI: PTPW,Pratama Widya Tbk.,7 Februari 2020,878.187.500,Pengembangan,Infrastructure
+718,BEI: PWON,Pakuwon Jati Tbk.,9 Oktober 1989,48.159.602.400,Utama,Properties & Real Estate
+719,BEI: PYFA,Pyridam Farma Tbk,16 Oktober 2001,11.236.680.171,Pengembangan,Healthcare
+720,BEI: PZZA,Sarimelati Kencana Tbk.,23 Mei 2018,3.021.875.000,Pengembangan,Consumer Cyclicals
+721,BEI: RAAM,Tripar Multivision Plus Tbk.,8 Mei 2023,6.813.620.000,Utama,Consumer Cyclicals
+722,BEI: RAFI,Sari Kreasi Boga Tbk.,5 Agustus 2022,3.128.140.475,Pemantauan Khusus,Consumer Cyclicals
+723,BEI: RAJA,Rukun Raharja Tbk.,19 April 2006,4.227.082.500,Utama,Energy
+724,BEI: RALS,Ramayana Lestari Sentosa Tbk.,24 Juli 1996,7.096.000.000,Utama,Consumer Cyclicals
+725,BEI: RANC,Supra Boga Lestari Tbk.,7 Juni 2012,1.564.487.500,Pengembangan,Consumer Non-Cyclicals
+726,BEI: RBMS,Ristia Bintang Mahkotasejati T,19 Desember 1997,2.656.212.826,Pemantauan Khusus,Properties & Real Estate
+727,BEI: RCCC,Utama Radar Cahaya Tbk.,2 Agustus 2022,787.500.000,Akselerasi,Transportation & Logistics
+728,BEI: RDTX,Roda Vivatex Tbk,14 Mei 1990,268.800.000,Pemantauan Khusus,Properties & Real Estate
+729,BEI: REAL,Repower Asia Indonesia Tbk.,6 Desember 2019,6.633.610.151,Pemantauan Khusus,Properties & Real Estate
+730,BEI: RELF,Graha Mitra Asia Tbk.,22 Juni 2023,5.727.832.195,Akselerasi,Properties & Real Estate
+731,BEI: RELI,Reliance Sekuritas Indonesia T,13 Juli 2005,1.800.000.000,Pengembangan,Financials
+732,BEI: RGAS,Kian Santang Muliatama Tbk.,8 November 2023,1.459.234.110,Pengembangan,Energy
+733,BEI: RICY,Ricky Putra Globalindo Tbk,22 Januari 1998,641.717.510,Pengembangan,Consumer Cyclicals
+734,BEI: RIGS,Rig Tenders Indonesia Tbk.,5 Maret 1990,609.130.000,Pengembangan,Energy
+735,BEI: RIMO,Rimo International Lestari Tbk,10 November 2000,45.080.600.000,Pemantauan Khusus,Properties & Real Estate
+736,BEI: RISE,Jaya Sukses Makmur Sentosa Tbk,9 Juli 2018,10.945.000.000,Pengembangan,Properties & Real Estate
+737,BEI: RMKE,RMK Energy Tbk.,7 Desember 2021,4.375.000.000,Utama,Energy
+738,BEI: RMKO,Royaltama Mulia Kontraktorindo,31 Juli 2023,1.250.000.000,Pengembangan,Energy
+739,BEI: PTRO,Petrosea Tbk.,21 Mei 1990,1.008.605.000,Utama,Energy
+740,BEI: ROCK,Rockfields Properti Indonesia,10 September 2020,1.435.185.100,Pemantauan Khusus,Properties & Real Estate
+741,BEI: RODA,Pikko Land Development Tbk.,22 Oktober 2001,13.592.128.209,Pemantauan Khusus,Properties & Real Estate
+742,BEI: RONY,Aesler Grup Internasional Tbk.,9 April 2020,1.250.000.000,Pemantauan Khusus,Infrastructure
+743,BEI: ROTI,Nippon Indosari Corpindo Tbk.,28 Juni 2010,6.186.488.888,Pengembangan,Consumer Non-Cyclicals
+744,BEI: RSCH,Charlie Hospital Semarang Tbk.,28 Agustus 2023,2.650.000.000,Pengembangan,Healthcare
+745,BEI: RSGK,Kedoya Adyaraya Tbk.,8 September 2021,929.675.000,Utama,Healthcare
+746,BEI: RUIS,Radiant Utama Interinsco Tbk.,12 Juli 2006,770.000.000,Pengembangan,Energy
+747,BEI: RUNS,Global Sukses Solusi Tbk.,8 September 2021,983.557.875,Akselerasi,Technology
+748,BEI: SAFE,Steady Safe Tbk,15 Agustus 1994,615.145.012,Pengembangan,Transportation & Logistics
+749,BEI: SAGE,Saausaha Gemilangindah Tbk.,8 Maret 2023,8.033.267.616,Pemantauan Khusus,Properties & Real Estate
+750,BEI: SAME,Sarana Meditama Metropolitan T,11 Januari 2013,17.147.132.545,Utama,Healthcare
+751,BEI: SAMF,Saraswanti Anugerah Makmur Tbk,31 Maret 2020,5.125.000.000,Utama,Basic Materials
+752,BEI: SAPX,Satria Antaran Prima Tbk.,3 Oktober 2018,833.333.300,Pengembangan,Transportation & Logistics
+753,BEI: SATU,Kota Satu Properti Tbk.,5 November 2018,1.375.000.000,Pengembangan,Properties & Real Estate
+754,BEI: SBAT,Sejahtera Bintang Abadi Textil,8 April 2020,4.752.982.378,Pemantauan Khusus,Consumer Cyclicals
+755,BEI: SBMA,Surya Biru Murni Acetylene Tbk,8 September 2021,929.926.282,Pengembangan,Basic Materials
+756,BEI: SCCO,Supreme Cable Manufacturing &,20 Juli 1982,822.333.600,Pengembangan,Industrials
+757,BEI: SCMA,Surya Citra Media Tbk.,16 Juli 2002,73.970.569.505,Utama,Consumer Cyclicals
+758,BEI: SCNP,Selaras Citra Nusantara Perkas,7 September 2020,2.500.000.000,Pengembangan,Consumer Cyclicals
+759,BEI: SCPI,Organon Pharma Indonesia Tbk.,8 Juni 1990,3.600.000,Pengembangan,Healthcare
+760,BEI: SDMU,Sidomulyo Selaras Tbk.,12 Juli 2011,1.135.225.000,Pemantauan Khusus,Transportation & Logistics
+761,BEI: SDPC,Millennium Pharmacon Internati,7 Mei 1990,1.274.000.000,Pengembangan,Consumer Non-Cyclicals
+762,BEI: SDRA,Bank Woori Saudara Indonesia 1,15 Desember 2006,14.545.267.990,Utama,Financials
+763,BEI: SEMA,Semacom Integrated Tbk.,10 Januari 2022,1.347.258.842,Pengembangan,Energy
+764,BEI: SFAN,Surya Fajar Capital Tbk.,19 Juni 2019,1.359.934.021,Pengembangan,Financials
+765,BEI: SGER,Sumber Global Energy Tbk.,10 Agustus 2020,15.586.909.438,Pengembangan,Energy
+766,BEI: SGRO,Sampoerna Agro Tbk.,18 Juni 2007,1.818.622.000,Utama,Consumer Non-Cyclicals
+767,BEI: SHID,Hotel Sahid Jaya International,8 Mei 1990,1.119.326.168,Pengembangan,Consumer Cyclicals
+768,BEI: SHIP,Sillo Maritime Perdana Tbk.,16 Juni 2016,2.719.790.000,Utama,Energy
+769,BEI: SICO,Sigma Energy Compressindo Tbk.,8 April 2022,910.052.814,Pengembangan,Energy
+770,BEI: SIDO,Industri Jamu dan Farmasi Sido,18 Desember 2013,30.000.000.000,Utama,Healthcare
+771,BEI: SILO,Siloam International Hospitals,12 September 2013,13.006.125.000,Utama,Healthcare
+772,BEI: SIMA,Siwani Makmur Tbk,3 Juni 1994,442.589.871,Pemantauan Khusus,Basic Materials
+773,BEI: SIMP,Salim Ivomas Pratama Tbk.,9 Juni 2011,15.501.310.000,Utama,Consumer Non-Cyclicals
+774,BEI: SINI,Singaraja Putra Tbk.,8 November 2019,481.000.000,Pemantauan Khusus,Industrials
+775,BEI: SIPD,Sreeya Sewu Indonesia Tbk.,27 Desember 1996,1.839.102.056,Pengembangan,Consumer Non-Cyclicals
+776,BEI: SKBM,Sekar Bumi Tbk.,28 September 2012,1.730.103.217,Pengembangan,Consumer Non-Cyclicals
+777,BEI: SKLT,Sekar Laut Tbk.,8 September 1993,6.907.405.000,Pengembangan,Consumer Non-Cyclicals
+778,BEI: SKRN,Superkrane Mitra Utama Tbk.,11 Oktober 2018,7.500.000.000,Pengembangan,Industrials
+779,BEI: SKYB,Northcliff Citranusa Indonesia,7 Juli 2010,585.000.000,Pemantauan Khusus,Technology
+780,BEI: SLIS,Gaya Abadi Sempurna Tbk.,7 Oktober 2019,2.463.335.910,Pengembangan,Consumer Cyclicals
+781,BEI: SMAR,Smart Tbk.,20 November 1992,2.872.193.366,Pengembangan,Consumer Non-Cyclicals
+782,BEI: SMBR,Semen Baturaja Tbk.,28 Juni 2013,9.932.534.336,Utama,Basic Materials
+783,BEI: SMCB,Solusi Bangun Indonesia Tbk.,10 Agustus 1977,9.019.381.973,Pemantauan Khusus,Basic Materials
+784,BEI: SMDM,Suryamas Dutamakmur Tbk.,12 Oktober 1995,4.772.138.237,Pengembangan,Properties & Real Estate
+785,BEI: SMDR,Samudera Indonesia Tbk.,5 Juli 1999,16.375.600.000,Utama,Transportation & Logistics
+786,BEI: SMGA,Sumber Mineral Global Abadi Tb,30 Januari 2024,8.750.000.000,Pengembangan,Basic Materials
+787,BEI: SMGR,Semen Indonesia (Persero) Tbk.,8 Juli 1991,6.751.540.089,Utama,Basic Materials
+788,BEI: SMIL,Sarana Mitra Luas Tbk.,12 Mei 2023,8.750.159.119,Utama,Industrials
+789,BEI: SMKL,Satyamitra Kemas Lestari Tbk.,11 Juli 2019,3.418.085.290,Pengembangan,Basic Materials
+790,BEI: SMKM,Sumber Mas Konstruksi Tbk.,9 Maret 2022,1.253.000.000,Akselerasi,Infrastructure
+791,BEI: SMLE,Sinergi Multi Lestarindo Tbk.,10 Januari 2024,2.328.136.763,Pengembangan,Basic Materials
+792,BEI: SMMA,Sinarmas Multiartha Tbk.,5 Juli 1995,6.367.664.717,Utama,Financials
+793,BEI: SMMT,Golden Eagle Energy Tbk.,1 Desember 1997,3.150.000.000,Pemantauan Khusus,Energy
+794,BEI: SMRA,Summarecon Agung Tbk.,7 Mei 1990,16.508.568.358,Utama,Properties & Real Estate
+795,BEI: SMRU,SMR Utama Tbk.,10 Oktober 2011,12.499.385.782,Pemantauan Khusus,Energy
+796,BEI: SMSM,Selamat Sempurna Tbk.,9 September 1996,5.758.675.440,Utama,Consumer Cyclicals
+797,BEI: PTSN,Sat Nusapersada Tbk,8 November 2007,5.314.344.000,Pengembangan,Technology
+798,BEI: SNLK,Sunter Lakeside Hotel Tbk.,29 Maret 2021,450.000.000,Pengembangan,Consumer Cyclicals
+799,BEI: SPTO,Surya Pertiwi Tbk.,14 Mei 2018,2.700.000.000,Utama,Industrials
+800,BEI: SOCI,Soechi Lines Tbk.,3 Desember 2014,7.059.000.000,Utama,Energy
+801,BEI: SOFA,Boston Furniture Industries Tb,7 Juli 2020,1.653.574.499,Akselerasi,Consumer Cyclicals
+802,BEI: SOHO,Soho Global Health Tbk.,8 September 2020,12.691.682.390,Pengembangan,Healthcare
+803,BEI: SOLA,Xolare RCR Energy Tbk.,8 Mei 2024,3.281.250.000,Pengembangan,Basic Materials
+804,BEI: SONA,Sona Topas Tourism Industry Tb,21 Juli 1992,662.400.000,Pengembangan,Consumer Cyclicals
+805,BEI: SOSS,Shield On Service Tbk.,6 November 2018,799.414.231,Pemantauan Khusus,Industrials
+806,BEI: SOTS,Satria Mega Kencana Tbk.,10 Desember 2018,1.000.003.979,Pengembangan,Consumer Cyclicals
+807,BEI: SOUL,Mitra Tirta Buwana Tbk.,6 Januari 2023,1.082.526.223,Akselerasi,Consumer Non-Cyclicals
+808,BEI: PTSP,Pioneerindo Gourmet Internatio,30 Mei 1994,220.808.000,Pengembangan,Consumer Cyclicals
+809,BEI: SPMA,Suparma Tbk.,16 November 1994,3.154.092.216,Pengembangan,Basic Materials
+810,BEI: SPRE,Soraya Berjaya Indonesia Tbk.,3 Juli 2024,800.000.000,Akselerasi,Consumer Cyclicals
+811,BEI: SQMI,Wilton Makmur Indonesia Tbk.,15 Juli 2004,15.537.591.429,Pemantauan Khusus,Basic Materials
+812,BEI: SRAJ,Sejahteraraya Anugrahjaya Tbk.,11 April 2011,12.000.705.445,Utama,Healthcare
+813,BEI: SRIL,Sri Rejeki Isman Tbk.,17 Juni 2013,20.452.176.844,Pemantauan Khusus,Consumer Cyclicals
+814,BEI: SRSN,Indo Acidatama Tbk,11 Januari 1993,6.020.000.000,Pengembangan,Basic Materials
+815,BEI: SRTG,Saratoga Investama Sedaya Tbk.,26 Juni 2013,13.564.835.000,Utama,Financials
+816,BEI: SSIA,Surya Semesta Internusa Tbk.,27 Maret 1997,4.705.249.440,Utama,Infrastructure
+817,BEI: SSMS,Sawit Sumbermas Sarana Tbk.,12 Desember 2013,9.525.000.000,Utama,Consumer Non-Cyclicals
+818,BEI: SSTM,Sunson Textile Manufacture Tbk,20 Agustus 1997,1.170.909.181,Pemantauan Khusus,Consumer Cyclicals
+819,BEI: STAA,Sumber Tani Agung Resources Tb,10 Maret 2022,10.903.372.600,Utama,Consumer Non-Cyclicals
+820,BEI: STAR,Buana Artha Anugerah Tbk.,13 Juli 2011,4.800.000.602,Pengembangan,Financials
+821,BEI: STRK,Lovina Beach Brewery Tbk.,10 Oktober 2023,10.721.835.562,Pengembangan,Consumer Non-Cyclicals
+822,BEI: STTP,Siantar Top Tbk.,16 Desember 1996,1.310.000.000,Pengembangan,Consumer Non-Cyclicals
+823,BEI: SUGI,Sugih Energy Tbk.,19 Juni 2002,24.811.541.414,Pemantauan Khusus,Energy
+824,BEI: SULI,SLJ Global Tbk.,21 Maret 1994,5.920.776.836,Pengembangan,Basic Materials
+825,BEI: SUNI,Sunindo Pratama Tbk.,9 Januari 2023,2.500.000.000,Utama,Energy
+826,BEI: SUPR,Solusi Tunas Pratama Tbk.,11 Oktober 2011,1.137.579.698,Pemantauan Khusus,Infrastructure
+827,BEI: SURE,Super Energy Tbk.,5 Oktober 2018,1.497.576.771,Pengembangan,Energy
+828,BEI: SURI,Maja Agung Latexindo Tbk.,7 Desember 2023,6.334.375.000,Pengembangan,Healthcare
+829,BEI: SWAT,Sriwahana Adityakarta Tbk.,8 Juni 2018,3.019.200.000,Pemantauan Khusus,Basic Materials
+830,BEI: SWID,Saraswanti Indoland Developmen,7 Juli 2022,5.385.019.201,Pengembangan,Consumer Cyclicals
+831,BEI: TALF,Tunas Alfin Tbk.,17 Januari 2014,1.353.435.000,Pengembangan,Basic Materials
+832,BEI: TAMA,Lancartama Sejati Tbk.,10 Februari 2020,1.200.000.696,Pemantauan Khusus,Infrastructure
+833,BEI: TAMU,Pelayaran Tamarin Samudra Tbk.,10 Mei 2017,37.500.000.000,Pemantauan Khusus,Energy
+834,BEI: TAPG,Triputra Agro Persada Tbk.,12 April 2021,19.852.540.000,Utama,Consumer Non-Cyclicals
+835,BEI: TARA,Agung Semesta Sejahtera Tbk.,11 Juli 2014,10.069.645.750,Pemantauan Khusus,Properties & Real Estate
+836,BEI: TAXI,Express Transindo Utama Tbk.,2 November 2012,10.223.647.156,Pemantauan Khusus,Transportation & Logistics
+837,BEI: TAYS,Jaya Swarasa Agung Tbk.,6 Desember 2021,1.098.920.000,Pengembangan,Consumer Non-Cyclicals
+838,BEI: TBIG,Tower Bersama Infrastructure T,26 Oktober 2010,22.656.999.445,Utama,Infrastructure
+839,BEI: TBLA,Tunas Baru Lampung Tbk.,14 Februari 2000,6.025.373.372,Utama,Consumer Non-Cyclicals
+840,BEI: TBMS,Tembaga Mulia Semanan Tbk.,23 Mei 1990,734.680.000,Pengembangan,Basic Materials
+841,BEI: TCID,Mandom Indonesia Tbk.,30 September 1993,402.133.334,Pengembangan,Consumer Non-Cyclicals
+842,BEI: TCPI,Transcoal Pacific Tbk.,6 Juli 2018,5.000.000.000,Pengembangan,Energy
+843,BEI: TDPM,Tianrong Chemicals Industry Tb,9 April 2018,10.485.050.500,Pemantauan Khusus,Basic Materials
+844,BEI: TEBE,Dana Brata Luhur Tbk.,18 November 2019,1.285.000.000,Utama,Energy
+845,BEI: TECH,Indosterling Technomedia Tbk.,4 Juni 2020,1.256.300.000,Pemantauan Khusus,Technology
+846,BEI: TELE,Omni Inovasi Indonesia Tbk.,12 Januari 2012,7.310.929.389,Pemantauan Khusus,Consumer Cyclicals
+847,BEI: TFAS,Telefast Indonesia Tbk.,17 September 2019,1.666.666.500,Pengembangan,Technology
+848,BEI: TFCO,Tifico Fiber Indonesia Tbk.,26 Februari 1980,4.823.076.400,Pemantauan Khusus,Consumer Cyclicals
+849,BEI: TGKA,Tigaraksa Satria Tbk.,11 Juni 1990,918.492.750,Pengembangan,Consumer Non-Cyclicals
+850,BEI: TGRA,Terregra Asia Energy Tbk.,16 Mei 2017,2.750.000.000,Pemantauan Khusus,Infrastructure
+851,BEI: TGUK,Platinum Wahab Nusantara Tbk.,10 Juli 2023,3.571.451.815,Pengembangan,Consumer Non-Cyclicals
+852,BEI: TIFA,KDB Tifa Finance Tbk.,8 Juli 2011,3.552.213.000,Pemantauan Khusus,Financials
+853,BEI: TINS,Timah Tbk.,19 Oktober 1995,7.447.753.454,Utama,Basic Materials
+854,BEI: TIRA,Tira Austenite Tbk,27 Juli 1993,588.000.000,Pengembangan,Industrials
+855,BEI: TIRT,Tirta Mahakam Resources Tbk,13 Desember 1999,1.011.774.750,Pemantauan Khusus,Basic Materials
+856,BEI: TKIM,Pabrik Kertas Tjiwi Kimia Tbk.,3 April 1990,3.113.223.570,Utama,Basic Materials
+857,BEI: TLDN,Teladan Prima Agro Tbk.,12 April 2022,12.946.530.200,Pengembangan,Consumer Non-Cyclicals
+858,BEI: TLKM,Telkom Indonesia (Persero) Tbk.,14 November 1995,99.062.216.600,Utama,Infrastructure
+859,BEI: TMAS,Temas Tbk.,9 Juli 2003,57.051.500.000,Utama,Transportation & Logistics
+860,BEI: TMPO,Tempo Intimedia Tbk.,8 Januari 2001,1.058.333.250,Pengembangan,Consumer Cyclicals
+861,BEI: TNCA,Trimuda Nuansa Citra Tbk.,28 Juni 2018,421.640.000,Pengembangan,Transportation & Logistics
+862,BEI: TOBA,TBS Energi Utama Tbk.,6 Juli 2012,8.167.826.970,Utama,Energy
+863,BEI: TOOL,Rohartindo Nusantara Luas Tbk.,9 Agustus 2022,2.050.020.320,Pengembangan,Consumer Cyclicals
+864,BEI: TOPS,Totalindo Eka Persada Tbk.,16 Juni 2017,33.330.000.000,Pemantauan Khusus,Infrastructure
+865,BEI: TOSK,Topindo Solusi Komunika Tbk.,7 Februari 2024,4.375.199.253,Pengembangan,Technology
+866,BEI: TOTL,Total Bangun Persada Tbk.,25 Juli 2006,3.410.000.000,Utama,Infrastructure
+867,BEI: TOTO,Surya Toto Indonesia Tbk.,30 Oktober 1990,10.320.000.000,Pengembangan,Industrials
+868,BEI: TOWR,Sarana Menara Nusantara Tbk.,8 Maret 2010,51.014.625.000,Utama,Infrastructure
+869,BEI: TOYS,Sunindo Adipersada Tbk.,6 Agustus 2020,1.435.000.712,Pemantauan Khusus,Consumer Cyclicals
+870,BEI: TPIA,Chandra Asri Pacific Tbk.,26 Mei 2008,86.511.545.092,Pengembangan,Basic Materials
+871,BEI: TPMA,Trans Power Marine Tbk.,20 Februari 2013,3.507.420.034,Utama,Energy
+872,BEI: TRAM,Trada Alam Minera Tbk.,10 September 2008,49.643.627.934,Pemantauan Khusus,Energy
+873,BEI: TRGU,Cerestar Indonesia Tbk.,8 Juli 2022,7.945.412.700,Utama,Consumer Non-Cyclicals
+874,BEI: TRIL,Triwira Insanlestari Tbk.,28 Januari 2008,1.200.000.000,Pemantauan Khusus,Industrials
+875,BEI: TRIM,Trimegah Sekuritas Indonesia T,31 Januari 2000,7.109.300.000,Utama,Financials
+876,BEI: TRIN,Perintis Triniti Properti Tbk.,15 Januari 2020,4.551.457.346,Pengembangan,Properties & Real Estate
+877,BEI: TRIO,Trikomsel Oke Tbk.,14 April 2009,26.007.494.645,Pemantauan Khusus,Consumer Cyclicals
+878,BEI: TRIS,Trisula International Tbk.,28 Juni 2012,3.141.443.831,Pengembangan,Consumer Cyclicals
+879,BEI: TRJA,Transkon Jaya Tbk.,27 Agustus 2020,1.510.200.000,Pengembangan,Transportation & Logistics
+880,BEI: TRON,Teknologi Karya Digital Nusa T,8 Maret 2023,2.951.293.160,Pengembangan,Technology
+881,BEI: TRST,Trias Sentosa Tbk.,2 Juli 1990,2.808.000.000,Pengembangan,Basic Materials
+882,BEI: TRUE,Triniti Dinamik Tbk.,10 Juni 2021,7.571.107.860,Pemantauan Khusus,Properties & Real Estate
+883,BEI: TRUK,Guna Timur Raya Tbk.,23 Mei 2018,435.000.000,Pengembangan,Transportation & Logistics
+884,BEI: TRUS,Trust Finance Indonesia Tbk,28 November 2002,800.000.000,Pengembangan,Financials
+885,BEI: TSPC,Tempo Scan Pacific Tbk.,17 Juni 1994,4.509.864.300,Utama,Healthcare
+886,BEI: TUGU,Asuransi Tugu Pratama Indonesi,28 Mei 2018,3.555.575.600,Utama,Financials
+887,BEI: TYRE,King Tire Indonesia Tbk.,8 Mei 2023,3.478.044.988,Pengembangan,Consumer Cyclicals
+888,BEI: UANG,Pakuan Tbk.,6 Juli 2020,1.210.000.000,Pengembangan,Properties & Real Estate
+889,BEI: UCID,Uni-Charm Indonesia Tbk.,20 Desember 2019,4.156.572.300,Utama,Consumer Non-Cyclicals
+890,BEI: UDNG,Agro Bahari Nusantara Tbk.,31 Oktober 2023,1.750.040.072,Akselerasi,Consumer Non-Cyclicals
+891,BEI: UFOE,Damai Sejahtera Abadi Tbk.,1 Februari 2021,2.287.500.000,Pengembangan,Consumer Cyclicals
+892,BEI: ULTJ,Ultrajaya Milk Industry & Trad,2 Juli 1990,11.553.528.000,Utama,Consumer Non-Cyclicals
+893,BEI: UNIC,Unggul Indah Cahaya Tbk.,6 November 1989,383.331.363,Utama,Basic Materials
+894,BEI: UNIQ,Ulima Nitra Tbk.,8 Maret 2021,3.138.983.000,Utama,Energy
+895,BEI: UNIT,Nusantara Inti Corpora Tbk,18 April 2002,75.422.200,Pemantauan Khusus,Consumer Cyclicals
+896,BEI: UNSP,Bakrie Sumatera Plantations Tbk.,6 Maret 1990,2.500.162.344,Pemantauan Khusus,Consumer Non-Cyclicals
+897,BEI: UNTD,Terang Dunia Internusa Tbk.,7 Februari 2024,6.666.666.700,Pengembangan,Consumer Cyclicals
+898,BEI: UNTR,United Tractors Tbk.,19 September 1989,3.730.135.136,Utama,Industrials
+899,BEI: UNVR,Unilever Indonesia Tbk.,11 Januari 1982,38.150.000.000,Utama,Consumer Non-Cyclicals
+900,BEI: URBN,Urban Jakarta Propertindo Tbk.,10 Desember 2018,3.232.122.640,Pengembangan,Properties & Real Estate
+901,BEI: UVCR,Trimegah Karya Pratama Tbk.,27 Juli 2021,2.000.144.838,Pengembangan,Technology
+902,BEI: VAST,Vastland Indonesia Tbk.,8 Februari 2023,3.055.712.543,Pengembangan,Properties & Real Estate
+903,BEI: VERN,Verona Indah Pictures Tbk.,8 Oktober 2024,4.765.525.000,Pengembangan,Consumer Cyclicals
+904,BEI: VICI,Victoria Care Indonesia Tbk.,17 Desember 2020,6.708.000.000,Utama,Consumer Non-Cyclicals
+905,BEI: VICO,Victoria Investama Tbk.,8 Juli 2013,15.217.075.658,Pengembangan,Financials
+906,BEI: VINS,Victoria Insurance Tbk.,28 September 2015,1.460.573.616,Pengembangan,Financials
+907,BEI: VISI,Satu Visi Putra Tbk.,27 Februari 2024,3.075.000.000,Pengembangan,Industrials
+908,BEI: VIVA,Visi Media Asia Tbk.,21 November 2011,16.464.270.400,Pemantauan Khusus,Consumer Cyclicals
+909,BEI: VKTR,VKTR Teknologi Mobilitas Tbk.,19 Juni 2023,43.750.000.000,Pengembangan,Consumer Cyclicals
+910,BEI: VOKS,Voksel Electric Tbk.,20 Desember 1990,4.155.602.595,Pengembangan,Industrials
+911,BEI: VRNA,Mizuho Leasing Indonesia Tbk.,25 Juni 2008,5.687.353.997,Pengembangan,Financials
+912,BEI: VTNY,Venteny Fortuna International,15 Desember 2022,6.265.193.445,Utama,Financials
+913,BEI: WAPO,Wahana Pronatural Tbk.,22 Juni 2001,1.240.923.111,Pengembangan,Consumer Non-Cyclicals
+914,BEI: WEGE,Wijaya Karya Bangunan Gedung T,30 November 2017,9.572.000.000,Utama,Infrastructure
+915,BEI: WEHA,WEHA Transportasi Indonesia Tbk.,31 Mei 2007,1.460.554.819,Pengembangan,Transportation & Logistics
+916,BEI: WGSH,Wira Global Solusi Tbk.,6 Desember 2021,1.042.500.000,Akselerasi,Technology
+917,BEI: WICO,Wicaksana Overseas International Tbk.,8 Agustus 1994,2.393.710.348,Pemantauan Khusus,Consumer Non-Cyclicals
+918,BEI: WIDI,Widiant Jaya Krenindo Tbk.,10 Juli 2023,1.600.031.683,Akselerasi,Industrials
+919,BEI: WIFI,Solusi Sinergi Digital Tbk.,30 Desember 2020,2.359.355.118,Pengembangan,Technology
+920,BEI: WIIM,Wismilak Inti Makmur Tbk.,18 Desember 2012,2.099.873.760,Utama,Consumer Non-Cyclicals
+921,BEI: WIKA,Wijaya Karya (Persero) Tbk.,29 Oktober 2007,39.873.063.858,Pengembangan,Infrastructure
+922,BEI: WINE,Hatten Bali Tbk.,10 Januari 2023,2.710.000.000,Pengembangan,Consumer Non-Cyclicals
+923,BEI: WINR,Winner Nusantara Jaya Tbk.,25 April 2022,5.235.293.038,Pemantauan Khusus,Properties & Real Estate
+924,BEI: WINS,Wintermar Offshore Marine Tbk.,29 November 2010,4.364.837.057,Utama,Energy
+925,BEI: WIRG,WIR ASIA Tbk.,4 April 2022,11.938.622.394,Pengembangan,Technology
+926,BEI: WMPP,Widodo Makmur Perkasa Tbk.,6 Desember 2021,29.419.000.000,Pemantauan Khusus,Consumer Non-Cyclicals
+927,BEI: WMUU,Widodo Makmur Unggas Tbk.,2 Februari 2021,12.941.176.500,Pemantauan Khusus,Consumer Non-Cyclicals
+928,BEI: WOMF,Wahana Ottomitra Multiartha Tb,13 Desember 2004,3.481.481.480,Pengembangan,Financials
+929,BEI: WOOD,Integra Indocabinet Tbk.,21 Juni 2017,6.437.500.000,Utama,Consumer Cyclicals
+930,BEI: WOWS,Ginting Jaya Energi Tbk.,8 November 2019,2.475.720.000,Pemantauan Khusus,Energy
+931,BEI: WSBP,Waskita Beton Precast Tbk.,20 September 2016,55.085.048.699,Pemantauan Khusus,Basic Materials
+932,BEI: WSKT,Waskita Karya (Persero) Tbk.,19 Desember 2012,28.806.807.016,Pemantauan Khusus,Infrastructure
+933,BEI: WTON,Wijaya Karya Beton Tbk.,8 April 2014,8.715.466.600,Utama,Basic Materials
+934,BEI: YELO,Yelooo Integra Datanet Tbk.,29 Oktober 2018,1.912.774.405,Pemantauan Khusus,Consumer Cyclicals
+935,BEI: YPAS,Yanaprima Hastapersada Tbk,5 Maret 2008,668.000.089,Pemantauan Khusus,Basic Materials
+936,BEI: YULE,Yulie Sekuritas Indonesia Tbk.,10 Desember 2004,1.785.000.000,Pengembangan,Financials
+937,BEI: ZATA,Bersama Zatta Jaya Tbk.,10 November 2022,8.496.000.000,Pemantauan Khusus,Consumer Cyclicals
+938,BEI: ZBRA,Dosni Roha Indonesia Tbk.,1 Agustus 1991,2.510.706.263,Pengembangan,Industrials
+939,BEI: ZINC,Kapuas Prima Coal Tbk.,16 Oktober 2017,25.250.000.000,Pemantauan Khusus,Basic Materials
+940,BEI: ZONE,Mega Perintis Tbk.,12 Desember 2018,870.171.478,Pengembangan,Consumer Cyclicals
+941,BEI: ZYRX,Zyrexindo Mandiri Buana Tbk.,30 Maret 2021,1.333.334.556,Pengembangan,Technology
