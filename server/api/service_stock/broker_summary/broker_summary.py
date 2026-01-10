@@ -6,7 +6,8 @@ from datetime import datetime
 def parse_xhr_response(json_data: Any) -> Dict[str, Any]:
     """
     Parse XHR intercepted response data for broker summary.
-    Returns array of broker summaries (one per XHR entry).
+    Groups entries by broker and period, merging stocks from multiple pages.
+    Returns array of broker summaries (one per unique broker+period combination).
     
     Args:
         json_data: Can be a single object or array of objects from XHR interception
@@ -26,11 +27,29 @@ def parse_xhr_response(json_data: Any) -> Dict[str, Any]:
     if not entries:
         raise ValueError("No data entries found.")
     
-    # Process each entry separately (each becomes a separate table)
-    broker_summaries = []
+    # Group entries by broker code and period
+    grouped_entries = {}
     
     for entry in entries:
-        broker_summary = process_single_entry(entry)
+        broker_code = entry.get('broker', 'Unknown')
+        periode = entry.get('periode', {})
+        date_from = periode.get('from', '')
+        date_to = periode.get('to', '')
+        
+        # Create unique key for grouping
+        group_key = f"{broker_code}_{date_from}_{date_to}"
+        
+        if group_key not in grouped_entries:
+            grouped_entries[group_key] = []
+        
+        grouped_entries[group_key].append(entry)
+    
+    # Process each group (merge multiple pages)
+    broker_summaries = []
+    
+    for group_key, group_entries in grouped_entries.items():
+        print(f"Processing group: {group_key} ({len(group_entries)} pages)")
+        broker_summary = process_grouped_entries(group_entries)
         if broker_summary:
             broker_summaries.append(broker_summary)
     
@@ -38,6 +57,107 @@ def parse_xhr_response(json_data: Any) -> Dict[str, Any]:
         'broker_summaries': broker_summaries,
         'total_entries': len(broker_summaries)
     }
+
+
+def process_grouped_entries(entries: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    """
+    Process multiple XHR entries (pages) for the same broker and period.
+    Merges all stocks from all pages into a single broker summary.
+    
+    Args:
+        entries: List of XHR entries with same broker and period
+        
+    Returns:
+        Single merged broker summary
+    """
+    if not entries:
+        return None
+    
+    try:
+        # Use first entry for broker info (all should be same)
+        first_entry = entries[0]
+        broker_code = first_entry.get('broker', 'Unknown')
+        periode = first_entry.get('periode', {})
+        
+        # Extract response data from first entry
+        response_data = first_entry.get('response', {}).get('data', {})
+        broker_name = response_data.get('broker_name', get_broker_name(broker_code))
+        
+        broker_info = {
+            'broker_code': broker_code,
+            'broker_name': broker_name,
+            'date_start': periode.get('from', ''),
+            'date_end': periode.get('to', ''),
+            'timestamp': first_entry.get('timestamp', ''),
+            'source': first_entry.get('source', 'XHR'),
+            'total_pages': len(entries)
+        }
+        
+        # Collect all stocks from all pages
+        all_stocks = []
+        
+        for entry in entries:
+            response_data = entry.get('response', {}).get('data', {})
+            broker_summary = response_data.get('broker_summary', {})
+            
+            # Process buy transactions
+            brokers_buy = broker_summary.get('brokers_buy', [])
+            for buy_item in brokers_buy:
+                stock = process_buy_transaction(buy_item)
+                if stock:
+                    all_stocks.append(stock)
+            
+            # Process sell transactions
+            brokers_sell = broker_summary.get('brokers_sell', [])
+            for sell_item in brokers_sell:
+                stock = process_sell_transaction(sell_item)
+                if stock:
+                    all_stocks.append(stock)
+        
+        print(f"  Collected {len(all_stocks)} transactions from {len(entries)} pages")
+        
+        # Merge stocks with same code
+        merged_stocks = merge_stock_data(all_stocks)
+        
+        print(f"  Merged into {len(merged_stocks)} unique stocks")
+        
+        # Sort by absolute value (highest first)
+        sorted_stocks = sorted(
+            merged_stocks, 
+            key=lambda x: abs(x.get('value_raw', 0)), 
+            reverse=True
+        )
+        
+        # Enrich with current prices from Yahoo Finance
+        try:
+            from api.service_stock.broker_summary.stock_price import enrich_stocks_with_prices
+            sorted_stocks = enrich_stocks_with_prices(sorted_stocks)
+        except Exception as e:
+            print(f"Warning: Could not fetch stock prices: {e}")
+            # Continue without prices if fetch fails
+        
+        # Calculate summary statistics
+        total_buy_value = sum(s['buy_value'] for s in sorted_stocks)
+        total_sell_value = sum(s['sell_value'] for s in sorted_stocks)
+        net_value = total_buy_value - total_sell_value
+        
+        return {
+            'broker_info': broker_info,
+            'stocks': sorted_stocks,
+            'total_stocks': len(sorted_stocks),
+            'summary': {
+                'total_buy_value': total_buy_value,
+                'total_sell_value': total_sell_value,
+                'net_value': net_value,
+                'total_buy_value_formatted': format_currency(total_buy_value),
+                'total_sell_value_formatted': format_currency(total_sell_value),
+                'net_value_formatted': format_currency(abs(net_value)),
+                'position': 'NET BUY' if net_value > 0 else 'NET SELL' if net_value < 0 else 'NEUTRAL'
+            }
+        }
+    except Exception as e:
+        print(f"Error processing grouped entries: {e}")
+        return None
 
 
 def process_single_entry(entry: Dict[str, Any]) -> Optional[Dict[str, Any]]:

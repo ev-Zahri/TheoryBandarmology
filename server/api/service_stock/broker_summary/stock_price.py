@@ -43,36 +43,20 @@ def get_stock_price(stock_code: str) -> Optional[float]:
 
 def get_multiple_stock_prices(stock_codes: List[str], max_workers: int = 10) -> Dict[str, Optional[float]]:
     """
-    Get current prices for multiple stocks concurrently.
+    Get current prices for multiple stocks using cache system.
+    This avoids rate limiting by using cached prices (15-minute TTL).
     
     Args:
         stock_codes: List of stock ticker codes
-        max_workers: Maximum number of concurrent requests
+        max_workers: Ignored (kept for backward compatibility)
         
     Returns:
         Dictionary mapping stock codes to their current prices
     """
-    prices = {}
+    from api.service_stock.broker_summary.price_cache import get_multiple_prices
     
-    # Use ThreadPoolExecutor for concurrent requests
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # Submit all tasks
-        future_to_stock = {
-            executor.submit(get_stock_price, code): code 
-            for code in stock_codes
-        }
-        
-        # Collect results as they complete
-        for future in as_completed(future_to_stock):
-            stock_code = future_to_stock[future]
-            try:
-                price = future.result()
-                prices[stock_code] = price
-            except Exception as e:
-                print(f"Error processing {stock_code}: {e}")
-                prices[stock_code] = None
-    
-    return prices
+    print(f"Getting prices for {len(stock_codes)} stocks from cache...")
+    return get_multiple_prices(stock_codes)
 
 
 def enrich_stocks_with_prices(stocks: List[Dict]) -> List[Dict]:

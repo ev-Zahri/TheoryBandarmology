@@ -35,7 +35,7 @@ const SummaryCard = ({ title, value, icon, trend, trendText, variant = 'default'
     return (
         <div className={`bg-white dark:bg-card-dark rounded-3xl p-6 border border-slate-200 dark:border-border-dark flex flex-col gap-2 shadow-sm group ${getBorderHover()} transition-colors`}>
             <div className="flex items-center justify-between">
-                <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">{title}</span>
+                <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">{title}&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;{trendText}</span>
                 <span className={`material-symbols-outlined text-slate-300 dark:text-slate-600 ${getVariantClasses()} transition-colors`}>
                     {icon}
                 </span>
@@ -48,7 +48,6 @@ const SummaryCard = ({ title, value, icon, trend, trendText, variant = 'default'
                             <span className="material-symbols-outlined text-[14px]">trending_up</span> {trend}
                         </span>
                     )}
-                    {trendText}
                 </div>
             )}
         </div>

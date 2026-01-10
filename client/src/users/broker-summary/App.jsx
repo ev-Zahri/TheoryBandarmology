@@ -130,8 +130,8 @@ function BrokerSummarySection({ summary, index, isLoading }) {
           title="Net Position Value"
           value={summaryStats?.net_value_formatted || 'Rp 0'}
           icon="payments"
-          variant={summaryStats?.position === 'NET BUY' ? 'profit' : summaryStats?.position === 'NET SELL' ? 'loss' : 'default'}
-          trendText={summaryStats?.position || 'NEUTRAL'}
+          variant={summaryStats.total_buy_value_formatted > summaryStats.total_sell_value_formatted ? 'profit' : 'loss'}
+          trendText={summaryStats?.total_buy_value_formatted > summaryStats.total_sell_value_formatted ? 'Profit' : 'Loss'}
         />
         <SummaryCard
           title="Total Buy Value"
