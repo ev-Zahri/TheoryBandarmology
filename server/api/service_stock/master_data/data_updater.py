@@ -215,7 +215,8 @@ def update_technical_data_batch(
     stock_codes: List[str],
     batch_size: int = 300,
     delay_between_batches: int = 30,
-    max_workers: int = 5
+    max_workers: int = 5,
+    progress_callback=None
 ) -> Dict[str, Any]:
     """
     Update technical data with anti-rate-limiting strategy
@@ -225,6 +226,7 @@ def update_technical_data_batch(
         batch_size: Number of stocks per batch
         delay_between_batches: Seconds to wait between batches
         max_workers: Max concurrent requests per batch
+        progress_callback: Optional callback function(current, total, status)
         
     Returns:
         Updated technical data dictionary
@@ -239,11 +241,15 @@ def update_technical_data_batch(
     successful = 0
     failed = 0
     
-    print(f"\n=== Starting Technical Data Update ===")
-    print(f"Total stocks: {total_stocks}")
-    print(f"Batch size: {batch_size}")
-    print(f"Delay between batches: {delay_between_batches}s")
-    print(f"Max workers per batch: {max_workers}\n")
+    print(f"\n=== Starting Technical Data Update ===", flush=True)
+    print(f"Total stocks: {total_stocks}", flush=True)
+    print(f"Batch size: {batch_size}", flush=True)
+    print(f"Delay between batches: {delay_between_batches}s", flush=True)
+    print(f"Max workers per batch: {max_workers}\n", flush=True)
+    
+    # Report initial progress
+    if progress_callback:
+        progress_callback(0, total_stocks, "starting", successful, failed)
     
     # Process in batches
     for i in range(0, total_stocks, batch_size):
@@ -251,7 +257,11 @@ def update_technical_data_batch(
         batch_num = (i // batch_size) + 1
         total_batches = (total_stocks + batch_size - 1) // batch_size
         
-        print(f"Batch {batch_num}/{total_batches}: Processing {len(batch)} stocks...")
+        print(f"Batch {batch_num}/{total_batches}: Processing {len(batch)} stocks...", flush=True)
+        
+        # Report batch start
+        if progress_callback:
+            progress_callback(processed, total_stocks, f"processing_batch_{batch_num}", successful, failed)
         
         # Fetch batch concurrently
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -268,25 +278,35 @@ def update_technical_data_batch(
                         failed += 1
                     processed += 1
                 except Exception as e:
-                    print(f"  Error processing {stock_code}: {e}")
+                    print(f"  Error processing {stock_code}: {e}", flush=True)
                     failed += 1
                     processed += 1
         
-        print(f"  Progress: {processed}/{total_stocks} ({successful} successful, {failed} failed)")
+        print(f"  Progress: {processed}/{total_stocks} ({successful} successful, {failed} failed)", flush=True)
         
         # Save intermediate results
         save_technical_data(data)
         
+        # Report progress after batch
+        if progress_callback:
+            progress_callback(processed, total_stocks, "batch_complete", successful, failed)
+        
         # Delay before next batch (except for last batch)
         if i + batch_size < total_stocks:
-            print(f"  Waiting {delay_between_batches}s before next batch...\n")
+            print(f"  Waiting {delay_between_batches}s before next batch...\n", flush=True)
+            if progress_callback:
+                progress_callback(processed, total_stocks, "waiting", successful, failed)
             time.sleep(delay_between_batches)
     
-    print(f"\n=== Technical Data Update Complete ===")
-    print(f"Total: {processed} stocks")
-    print(f"Successful: {successful}")
-    print(f"Failed: {failed}")
-    print(f"Success rate: {(successful/processed*100):.1f}%\n")
+    print(f"\n=== Technical Data Update Complete ===", flush=True)
+    print(f"Total: {processed} stocks", flush=True)
+    print(f"Successful: {successful}", flush=True)
+    print(f"Failed: {failed}", flush=True)
+    print(f"Success rate: {(successful/processed*100):.1f}%\n", flush=True)
+    
+    # Report completion
+    if progress_callback:
+        progress_callback(processed, total_stocks, "complete", successful, failed)
     
     return data
 
@@ -295,7 +315,8 @@ def update_fundamental_data_batch(
     stock_codes: List[str],
     batch_size: int = 50,
     delay_between_batches: int = 60,
-    max_workers: int = 5
+    max_workers: int = 5,
+    progress_callback=None
 ) -> Dict[str, Any]:
     """
     Update fundamental data with anti-rate-limiting strategy
@@ -311,11 +332,15 @@ def update_fundamental_data_batch(
     successful = 0
     failed = 0
     
-    print(f"\n=== Starting Fundamental Data Update ===")
-    print(f"Total stocks: {total_stocks}")
-    print(f"Batch size: {batch_size}")
-    print(f"Delay between batches: {delay_between_batches}s")
-    print(f"Max workers per batch: {max_workers}\n")
+    print(f"\n=== Starting Fundamental Data Update ===", flush=True)
+    print(f"Total stocks: {total_stocks}", flush=True)
+    print(f"Batch size: {batch_size}", flush=True)
+    print(f"Delay between batches: {delay_between_batches}s", flush=True)
+    print(f"Max workers per batch: {max_workers}\n", flush=True)
+    
+    # Report initial progress
+    if progress_callback:
+        progress_callback(0, total_stocks, "starting", successful, failed)
     
     # Process in batches
     for i in range(0, total_stocks, batch_size):
@@ -323,7 +348,10 @@ def update_fundamental_data_batch(
         batch_num = (i // batch_size) + 1
         total_batches = (total_stocks + batch_size - 1) // batch_size
         
-        print(f"Batch {batch_num}/{total_batches}: Processing {len(batch)} stocks...")
+        print(f"Batch {batch_num}/{total_batches}: Processing {len(batch)} stocks...", flush=True)
+        
+        if progress_callback:
+            progress_callback(processed, total_stocks, f"processing_batch_{batch_num}", successful, failed)
         
         # Fetch batch concurrently
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -340,25 +368,33 @@ def update_fundamental_data_batch(
                         failed += 1
                     processed += 1
                 except Exception as e:
-                    print(f"  Error processing {stock_code}: {e}")
+                    print(f"  Error processing {stock_code}: {e}", flush=True)
                     failed += 1
                     processed += 1
         
-        print(f"  Progress: {processed}/{total_stocks} ({successful} successful, {failed} failed)")
+        print(f"  Progress: {processed}/{total_stocks} ({successful} successful, {failed} failed)", flush=True)
         
         # Save intermediate results
         save_fundamental_data(data)
         
+        if progress_callback:
+            progress_callback(processed, total_stocks, "batch_complete", successful, failed)
+        
         # Delay before next batch (except for last batch)
         if i + batch_size < total_stocks:
-            print(f"  Waiting {delay_between_batches}s before next batch...\n")
+            print(f"  Waiting {delay_between_batches}s before next batch...\n", flush=True)
+            if progress_callback:
+                progress_callback(processed, total_stocks, "waiting", successful, failed)
             time.sleep(delay_between_batches)
     
-    print(f"\n=== Fundamental Data Update Complete ===")
-    print(f"Total: {processed} stocks")
-    print(f"Successful: {successful}")
-    print(f"Failed: {failed}")
-    print(f"Success rate: {(successful/processed*100):.1f}%\n")
+    print(f"\n=== Fundamental Data Update Complete ===", flush=True)
+    print(f"Total: {processed} stocks", flush=True)
+    print(f"Successful: {successful}", flush=True)
+    print(f"Failed: {failed}", flush=True)
+    print(f"Success rate: {(successful/processed*100):.1f}%\n", flush=True)
+    
+    if progress_callback:
+        progress_callback(processed, total_stocks, "complete", successful, failed)
     
     return data
 

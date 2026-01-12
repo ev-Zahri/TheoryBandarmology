@@ -1,29 +1,69 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { reloadTechnicalData, reloadFundamentalData, getMasterDataStats } from '../services/api';
 
 function MasterDataReload() {
     const [stats, setStats] = useState(null);
     const [loading, setLoading] = useState({ technical: false, fundamental: false });
+    const [progress, setProgress] = useState({ technical: null, fundamental: null });
     const [showPanel, setShowPanel] = useState(false);
+    const pollingIntervalRef = useRef(null);
 
     const fetchStats = async () => {
         try {
             const response = await getMasterDataStats();
-            setStats(response.data);
+            setStats(response);
         } catch (error) {
             console.error('Error fetching stats:', error);
         }
     };
 
+    const fetchProgress = async () => {
+        try {
+            const response = await fetch('http://localhost:8000/v1/master-data/reload/progress');
+            const data = await response.json();
+            setProgress({
+                technical: data.technical,
+                fundamental: data.fundamental
+            });
+
+            // If both are not running, stop polling and refresh stats
+            if (!data.technical.is_running && !data.fundamental.is_running) {
+                if (pollingIntervalRef.current) {
+                    clearInterval(pollingIntervalRef.current);
+                    pollingIntervalRef.current = null;
+                    fetchStats(); // Refresh stats after completion
+                }
+            }
+        } catch (error) {
+            console.error('Error fetching progress:', error);
+        }
+    };
+
+    const startPolling = () => {
+        if (!pollingIntervalRef.current) {
+            pollingIntervalRef.current = setInterval(fetchProgress, 2000); // Poll every 2 seconds
+        }
+    };
+
+    const stopPolling = () => {
+        if (pollingIntervalRef.current) {
+            clearInterval(pollingIntervalRef.current);
+            pollingIntervalRef.current = null;
+        }
+    };
+
     const handleReloadTechnical = async () => {
-        if (!confirm('Reload technical data? This will take approximately 15-20 minutes.')) return;
+        if (!confirm('Reload technical data? This will take approximately 3-5 minutes.')) return;
 
         setLoading({ ...loading, technical: true });
         try {
             const response = await reloadTechnicalData();
-            alert(`Technical data reload started! Estimated time: ${response.data.estimated_time_minutes} minutes`);
-            // Refresh stats after a delay
-            setTimeout(fetchStats, 2000);
+            if (response.status_code === 409) {
+                alert('Technical data reload already in progress!');
+            } else {
+                alert(`Technical data reload started! Estimated time: ${response.estimated_time_minutes} minutes`);
+                startPolling(); // Start polling for progress
+            }
         } catch (error) {
             alert(`Error: ${error.message}`);
         } finally {
@@ -37,9 +77,12 @@ function MasterDataReload() {
         setLoading({ ...loading, fundamental: true });
         try {
             const response = await reloadFundamentalData();
-            alert(`Fundamental data reload started! Estimated time: ${response.data.estimated_time_minutes} minutes`);
-            // Refresh stats after a delay
-            setTimeout(fetchStats, 2000);
+            if (response.status_code === 409) {
+                alert('Fundamental data reload already in progress!');
+            } else {
+                alert(`Fundamental data reload started! Estimated time: ${response.estimated_time_minutes} minutes`);
+                startPolling(); // Start polling for progress
+            }
         } catch (error) {
             alert(`Error: ${error.message}`);
         } finally {
@@ -47,11 +90,44 @@ function MasterDataReload() {
         }
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (showPanel) {
             fetchStats();
+            fetchProgress(); // Initial progress check
         }
     }, [showPanel]);
+
+    useEffect(() => {
+        // Cleanup on unmount
+        return () => stopPolling();
+    }, []);
+
+    const renderProgressBar = (progressData) => {
+        if (!progressData || !progressData.is_running) return null;
+
+        const percentage = progressData.total > 0
+            ? Math.round((progressData.current / progressData.total) * 100)
+            : 0;
+
+        return (
+            <div className="mt-3">
+                <div className="flex justify-between text-xs text-slate-600 dark:text-slate-400 mb-1">
+                    <span>{progressData.status.replace(/_/g, ' ')}</span>
+                    <span>{progressData.current}/{progressData.total} ({percentage}%)</span>
+                </div>
+                <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
+                    <div
+                        className="bg-primary h-2 rounded-full transition-all duration-300"
+                        style={{ width: `${percentage}%` }}
+                    />
+                </div>
+                <div className="flex justify-between text-xs text-slate-500 dark:text-slate-500 mt-1">
+                    <span>✓ {progressData.successful} successful</span>
+                    <span>✗ {progressData.failed} failed</span>
+                </div>
+            </div>
+        );
+    };
 
     return (
         <div className="relative">
@@ -69,7 +145,7 @@ function MasterDataReload() {
 
             {/* Panel */}
             {showPanel && (
-                <div className="absolute right-0 mt-2 w-[400px] bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xl z-50">
+                <div className="absolute right-0 mt-2 w-[450px] bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xl z-50">
                     <div className="p-4">
                         <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4">
                             Master Data Management
@@ -92,6 +168,7 @@ function MasterDataReload() {
                                         <div>Stocks: {stats.technical.total_stocks}</div>
                                         <div>Updated: {stats.technical.age || 'Never'}</div>
                                     </div>
+                                    {renderProgressBar(progress.technical)}
                                 </div>
 
                                 {/* Fundamental Data Stats */}
@@ -108,6 +185,7 @@ function MasterDataReload() {
                                         <div>Stocks: {stats.fundamental.total_stocks}</div>
                                         <div>Updated: {stats.fundamental.age || 'Never'}</div>
                                     </div>
+                                    {renderProgressBar(progress.fundamental)}
                                 </div>
                             </div>
                         )}
@@ -116,13 +194,13 @@ function MasterDataReload() {
                         <div className="space-y-2">
                             <button
                                 onClick={handleReloadTechnical}
-                                disabled={loading.technical}
+                                disabled={loading.technical || progress.technical?.is_running}
                                 className="w-full px-4 py-2.5 bg-primary hover:bg-[#3cd610] disabled:bg-slate-300 disabled:cursor-not-allowed text-slate-900 font-medium rounded-lg transition-all flex items-center justify-center gap-2"
                             >
-                                {loading.technical ? (
+                                {loading.technical || progress.technical?.is_running ? (
                                     <>
                                         <span className="material-symbols-outlined animate-spin text-[20px]">progress_activity</span>
-                                        Reloading Technical...
+                                        {progress.technical?.is_running ? 'Reloading...' : 'Starting...'}
                                     </>
                                 ) : (
                                     <>
@@ -134,13 +212,13 @@ function MasterDataReload() {
 
                             <button
                                 onClick={handleReloadFundamental}
-                                disabled={loading.fundamental}
+                                disabled={loading.fundamental || progress.fundamental?.is_running}
                                 className="w-full px-4 py-2.5 bg-blue-500 hover:bg-blue-600 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-medium rounded-lg transition-all flex items-center justify-center gap-2"
                             >
-                                {loading.fundamental ? (
+                                {loading.fundamental || progress.fundamental?.is_running ? (
                                     <>
                                         <span className="material-symbols-outlined animate-spin text-[20px]">progress_activity</span>
-                                        Reloading Fundamental...
+                                        {progress.fundamental?.is_running ? 'Reloading...' : 'Starting...'}
                                     </>
                                 ) : (
                                     <>
@@ -159,7 +237,7 @@ function MasterDataReload() {
                                     <p className="font-medium mb-1">About Reload:</p>
                                     <ul className="list-disc list-inside space-y-1">
                                         <li>Fetches latest data from yfinance</li>
-                                        <li>Takes 15-20 minutes (~900 stocks)</li>
+                                        <li>Progress updates every 2 seconds</li>
                                         <li>Runs in background</li>
                                         <li>Anti-rate-limiting enabled</li>
                                     </ul>

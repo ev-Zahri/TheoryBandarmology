@@ -21,8 +21,33 @@ from api.service_stock.master_data import (
 )
 from typing import Dict, List
 import json
+from datetime import datetime
 
 app = FastAPI()
+
+# In-memory progress tracker
+reload_progress = {
+    "technical": {
+        "is_running": False,
+        "current": 0,
+        "total": 0,
+        "status": "idle",
+        "successful": 0,
+        "failed": 0,
+        "started_at": None,
+        "completed_at": None
+    },
+    "fundamental": {
+        "is_running": False,
+        "current": 0,
+        "total": 0,
+        "status": "idle",
+        "successful": 0,
+        "failed": 0,
+        "started_at": None,
+        "completed_at": None
+    }
+}
 
 origin = [
     "http://localhost:5173",
@@ -252,31 +277,70 @@ async def get_master_data_stats():
 
 @app.post("/v1/master-data/reload/technical")
 async def reload_technical_data(
-    batch_size: int = 50,
-    delay: int = 60,
+    batch_size: int = 300,
+    delay: int = 30,
     max_workers: int = 5
 ):
     """
     Manually reload technical data from yfinance
     
     Args:
-        batch_size: Number of stocks per batch (default: 50)
-        delay: Seconds between batches (default: 60)
+        batch_size: Number of stocks per batch (default: 300)
+        delay: Seconds between batches (default: 30)
         max_workers: Concurrent requests per batch (default: 5)
     """
     try:
+        # Check if already running
+        if reload_progress["technical"]["is_running"]:
+            return {
+                "message": "Technical data reload already in progress",
+                "progress": reload_progress["technical"],
+                "status_code": 409  # Conflict
+            }
+        
         stock_codes = get_all_stock_codes()
+        
+        # Initialize progress
+        reload_progress["technical"] = {
+            "is_running": True,
+            "current": 0,
+            "total": len(stock_codes),
+            "status": "starting",
+            "successful": 0,
+            "failed": 0,
+            "started_at": datetime.now().isoformat(),
+            "completed_at": None
+        }
+        
+        # Progress callback function
+        def progress_callback(current, total, status, successful, failed):
+            reload_progress["technical"].update({
+                "current": current,
+                "total": total,
+                "status": status,
+                "successful": successful,
+                "failed": failed
+            })
+            if status == "complete":
+                reload_progress["technical"]["is_running"] = False
+                reload_progress["technical"]["completed_at"] = datetime.now().isoformat()
         
         # Run update in background (non-blocking)
         import threading
         
         def update_task():
-            update_technical_data_batch(
-                stock_codes,
-                batch_size=batch_size,
-                delay_between_batches=delay,
-                max_workers=max_workers
-            )
+            try:
+                update_technical_data_batch(
+                    stock_codes,
+                    batch_size=batch_size,
+                    delay_between_batches=delay,
+                    max_workers=max_workers,
+                    progress_callback=progress_callback
+                )
+            except Exception as e:
+                print(f"Error in background task: {e}")
+                reload_progress["technical"]["is_running"] = False
+                reload_progress["technical"]["status"] = f"error: {str(e)}"
         
         thread = threading.Thread(target=update_task, daemon=True)
         thread.start()
@@ -288,10 +352,23 @@ async def reload_technical_data(
             "status_code": 202  # Accepted
         }
     except Exception as e:
+        reload_progress["technical"]["is_running"] = False
         raise HTTPException(
             status_code=500,
             detail=f"Error starting reload: {str(e)}"
         )
+
+
+@app.get("/v1/master-data/reload/progress")
+async def get_reload_progress():
+    """
+    Get current progress of reload operations
+    """
+    return {
+        "technical": reload_progress["technical"],
+        "fundamental": reload_progress["fundamental"],
+        "status_code": 200
+    }
 
 
 @app.post("/v1/master-data/reload/fundamental")
@@ -309,18 +386,57 @@ async def reload_fundamental_data(
         max_workers: Concurrent requests per batch (default: 5)
     """
     try:
+        # Check if already running
+        if reload_progress["fundamental"]["is_running"]:
+            return {
+                "message": "Fundamental data reload already in progress",
+                "progress": reload_progress["fundamental"],
+                "status_code": 409  # Conflict
+            }
+        
         stock_codes = get_all_stock_codes()
+        
+        # Initialize progress
+        reload_progress["fundamental"] = {
+            "is_running": True,
+            "current": 0,
+            "total": len(stock_codes),
+            "status": "starting",
+            "successful": 0,
+            "failed": 0,
+            "started_at": datetime.now().isoformat(),
+            "completed_at": None
+        }
+        
+        # Progress callback function
+        def progress_callback(current, total, status, successful, failed):
+            reload_progress["fundamental"].update({
+                "current": current,
+                "total": total,
+                "status": status,
+                "successful": successful,
+                "failed": failed
+            })
+            if status == "complete":
+                reload_progress["fundamental"]["is_running"] = False
+                reload_progress["fundamental"]["completed_at"] = datetime.now().isoformat()
         
         # Run update in background (non-blocking)
         import threading
         
         def update_task():
-            update_fundamental_data_batch(
-                stock_codes,
-                batch_size=batch_size,
-                delay_between_batches=delay,
-                max_workers=max_workers
-            )
+            try:
+                update_fundamental_data_batch(
+                    stock_codes,
+                    batch_size=batch_size,
+                    delay_between_batches=delay,
+                    max_workers=max_workers,
+                    progress_callback=progress_callback
+                )
+            except Exception as e:
+                print(f"Error in background task: {e}")
+                reload_progress["fundamental"]["is_running"] = False
+                reload_progress["fundamental"]["status"] = f"error: {str(e)}"
         
         thread = threading.Thread(target=update_task, daemon=True)
         thread.start()
@@ -332,6 +448,7 @@ async def reload_fundamental_data(
             "status_code": 202  # Accepted
         }
     except Exception as e:
+        reload_progress["fundamental"]["is_running"] = False
         raise HTTPException(
             status_code=500,
             detail=f"Error starting reload: {str(e)}"
