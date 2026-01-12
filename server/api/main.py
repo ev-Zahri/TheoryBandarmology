@@ -19,6 +19,13 @@ from api.service_stock.master_data import (
     get_all_stock_codes,
     add_stocks_from_broker_data
 )
+from api.service_stock.accumulation import (
+    detect_accumulation,
+    get_all_accumulating_stocks,
+    get_broker_accumulation,
+    save_accumulation_data,
+    load_accumulation_data
+)
 from typing import Dict, List
 import json
 from datetime import datetime
@@ -237,9 +244,23 @@ async def upload_broker_summary(file: UploadFile = File(...)):
         # Process data
         result = parse_xhr_response(json_data)
         
+        # NEW: Detect accumulation patterns
+        accumulation_results = detect_accumulation(json_data)
+        save_accumulation_data(accumulation_results)
+        
         return {
             "message": "File broker summary berhasil diproses",
             "data": result,
+            "accumulation": {
+                "total_brokers": accumulation_results['total_brokers'],
+                "brokers": {
+                    broker_code: {
+                        'total_transactions': broker_data['total_transactions'],
+                        'accumulating_stocks_count': broker_data['accumulating_stocks_count']
+                    }
+                    for broker_code, broker_data in accumulation_results['brokers'].items()
+                }
+            },
             "status_code": 200
         }
         
@@ -249,6 +270,95 @@ async def upload_broker_summary(file: UploadFile = File(...)):
         raise HTTPException(
             status_code=500,
             detail=f"Server error: {str(e)}"
+        )
+
+
+# ==================== ACCUMULATION APIs ====================
+
+@app.get("/v1/accumulation/stocks")
+async def get_accumulating_stocks():
+    """
+    Get all accumulating stocks across all brokers
+    """
+    try:
+        data = load_accumulation_data()
+        all_stocks = get_all_accumulating_stocks(data)
+        
+        return {
+            "message": "Accumulating stocks retrieved successfully",
+            "total_stocks": len(all_stocks),
+            "last_updated": data.get('last_updated'),
+            "stocks": all_stocks,
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error retrieving accumulating stocks: {str(e)}"
+        )
+
+
+@app.get("/v1/accumulation/broker/{broker_code}")
+async def get_broker_accumulating_stocks(broker_code: str):
+    """
+    Get accumulating stocks for specific broker
+    """
+    try:
+        data = load_accumulation_data()
+        broker_data = get_broker_accumulation(data, broker_code)
+        
+        if not broker_data:
+            raise HTTPException(
+                status_code=404,
+                detail=f"No accumulation data found for broker: {broker_code}"
+            )
+        
+        return {
+            "message": f"Accumulating stocks for {broker_code} retrieved successfully",
+            "broker_code": broker_code,
+            "data": broker_data,
+            "status_code": 200
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error retrieving broker accumulation: {str(e)}"
+        )
+
+
+@app.get("/v1/accumulation/summary")
+async def get_accumulation_summary():
+    """
+    Get summary of accumulation data
+    """
+    try:
+        data = load_accumulation_data()
+        
+        summary = {
+            "last_updated": data.get('last_updated'),
+            "total_brokers": data.get('total_brokers', 0),
+            "brokers": []
+        }
+        
+        for broker_code, broker_data in data.get('brokers', {}).items():
+            summary['brokers'].append({
+                "broker_code": broker_code,
+                "total_transactions": broker_data.get('total_transactions', 0),
+                "total_stocks_analyzed": broker_data.get('total_stocks_analyzed', 0),
+                "accumulating_stocks_count": broker_data.get('accumulating_stocks_count', 0)
+            })
+        
+        return {
+            "message": "Accumulation summary retrieved successfully",
+            "data": summary,
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error retrieving accumulation summary: {str(e)}"
         )
 
 

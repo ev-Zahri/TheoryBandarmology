@@ -1,11 +1,14 @@
 import React, { useState, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Header, SummaryCard, InputSection, AnalysisTable } from './broker-summary';
 import SearchSection from '../../components/broker-summary/SearchSection';
 import MasterDataReload from '../../components/MasterDataReload';
 import { uploadBrokerSummary } from '../../services/api';
 
 function App() {
+  const navigate = useNavigate();
   const [analysisResult, setAnalysisResult] = useState(null);
+  const [accumulationResult, setAccumulationResult] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [universalSearch, setUniversalSearch] = useState('');
@@ -18,9 +21,11 @@ function App() {
     try {
       const result = await uploadBrokerSummary(file);
       setAnalysisResult(result.data || null);
+      setAccumulationResult(result.accumulation || null);
     } catch (err) {
       setError(err.message);
       setAnalysisResult(null);
+      setAccumulationResult(null);
     } finally {
       setIsLoading(false);
     }
@@ -94,6 +99,39 @@ function App() {
 
             {/* Input Section */}
             <InputSection onAnalyze={handleAnalyze} isLoading={isLoading} />
+
+            {/* Accumulation Alert - Show after upload */}
+            {accumulationResult && accumulationResult.total_brokers > 0 && (
+              <div className="bg-primary/10 border border-primary/30 rounded-2xl p-4">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex gap-3 flex-1">
+                    <span className="material-symbols-outlined text-primary text-[28px]">trending_up</span>
+                    <div>
+                      <h3 className="font-bold text-slate-900 dark:text-white mb-1">
+                        Accumulation Patterns Detected!
+                      </h3>
+                      <p className="text-sm text-slate-600 dark:text-slate-400 mb-3">
+                        Found accumulating stocks in {accumulationResult.total_brokers} broker(s).
+                        {Object.values(accumulationResult.brokers).reduce((sum, b) => sum + b.accumulating_stocks_count, 0)} stocks appearing in 100% of transactions.
+                      </p>
+                      <button
+                        onClick={() => navigate('/accumulation')}
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-primary hover:bg-[#3cd610] text-slate-900 font-medium rounded-lg transition-colors"
+                      >
+                        <span className="material-symbols-outlined text-[20px]">analytics</span>
+                        View Accumulation Analysis
+                      </button>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setAccumulationResult(null)}
+                    className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                  >
+                    <span className="material-symbols-outlined">close</span>
+                  </button>
+                </div>
+              </div>
+            )}
 
             {/* Universal Search - Only show if we have data */}
             {brokerSummaries.length > 0 && (
