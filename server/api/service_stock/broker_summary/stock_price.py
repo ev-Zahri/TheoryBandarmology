@@ -1,6 +1,7 @@
 import yfinance as yf
 from typing import Dict, List, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from api.service_stock.master_data import get_multiple_prices
 import time
 
 
@@ -53,7 +54,6 @@ def get_multiple_stock_prices(stock_codes: List[str], max_workers: int = 10) -> 
     Returns:
         Dictionary mapping stock codes to their current prices
     """
-    from api.service_stock.broker_summary.price_cache import get_multiple_prices
     
     print(f"Getting prices for {len(stock_codes)} stocks from cache...")
     return get_multiple_prices(stock_codes)

@@ -11,7 +11,7 @@ const AnalysisTable = ({ data = [], isLoading, totalValue = 0 }) => {
     const [showSearch, setShowSearch] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const [filters, setFilters] = useState({
-        position: 'all', // all, NET BUY, NET SELL, NEUTRAL
+        position: 'all', // all, NET BUY, NET SELL
         minValue: '',
         maxValue: '',
         minPnL: '',
@@ -222,119 +222,64 @@ const AnalysisTable = ({ data = [], isLoading, totalValue = 0 }) => {
                     >
                         <span className="material-symbols-outlined text-[20px]">filter_list</span>
                     </button>
-                    <button
-                        onClick={() => setShowSearch(!showSearch)}
-                        className={`p-2 rounded-full transition-colors ${showSearch
-                            ? 'bg-primary text-white'
-                            : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800'
-                            }`}
-                    >
-                        <span className="material-symbols-outlined text-[20px]">search</span>
-                    </button>
                 </div>
             </div>
 
-            {/* Search Bar */}
-            {showSearch && (
-                <div className="p-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30">
-                    <div className="relative">
-                        <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">
-                            search
-                        </span>
-                        <input
-                            type="text"
-                            placeholder="Search by stock code..."
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full pl-10 pr-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-900 dark:text-white placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-transparent"
-                        />
-                        {searchQuery && (
-                            <button
-                                onClick={() => setSearchQuery('')}
-                                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
-                            >
-                                <span className="material-symbols-outlined text-[20px]">close</span>
-                            </button>
-                        )}
-                    </div>
-                </div>
-            )}
-
-            {/* Filters Panel */}
+            {/* Combined Filters & Search Panel */}
             {showFilters && (
                 <div className="p-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        {/* Position Filter */}
-                        <div>
-                            <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-2">
-                                Position
-                            </label>
-                            <select
-                                value={filters.position}
-                                onChange={(e) => handleFilterChange('position', e.target.value)}
-                                className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent"
-                            >
-                                <option value="all">All Positions</option>
-                                <option value="NET BUY">NET BUY</option>
-                                <option value="NET SELL">NET SELL</option>
-                                <option value="NEUTRAL">NEUTRAL</option>
-                            </select>
-                        </div>
+                    <div className="space-y-4">
 
-                        {/* Value Range Filter */}
-                        <div>
-                            <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-2">
-                                Value Range (Bn)
-                            </label>
-                            <div className="flex gap-2">
-                                <input
-                                    type="number"
-                                    placeholder="Min"
-                                    value={filters.minValue}
-                                    onChange={(e) => handleFilterChange('minValue', e.target.value)}
-                                    className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent"
-                                />
-                                <input
-                                    type="number"
-                                    placeholder="Max"
-                                    value={filters.maxValue}
-                                    onChange={(e) => handleFilterChange('maxValue', e.target.value)}
-                                    className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent"
-                                />
+                        <div className="flex items-center gap-2 justify-between w-full">
+                            {/* Search */}
+                            <div className="w-[40%]">
+                                <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-2">
+                                    Search Stock
+                                </label>
+                                <div className="relative">
+                                    <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">
+                                        search
+                                    </span>
+                                    <input
+                                        type="text"
+                                        placeholder="Search by stock code..."
+                                        value={searchQuery}
+                                        onChange={(e) => setSearchQuery(e.target.value)}
+                                        className="w-full pl-10 pr-10 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-900 dark:text-white placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    />
+                                    {searchQuery && (
+                                        <button
+                                            onClick={() => setSearchQuery('')}
+                                            className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
+                                        >
+                                            <span className="material-symbols-outlined text-[20px]">close</span>
+                                        </button>
+                                    )}
+                                </div>
                             </div>
-                        </div>
-
-                        {/* PnL Range Filter */}
-                        <div>
-                            <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-2">
-                                Floating PnL Range
-                            </label>
-                            <div className="flex gap-2">
-                                <input
-                                    type="number"
-                                    placeholder="Min"
-                                    value={filters.minPnL}
-                                    onChange={(e) => handleFilterChange('minPnL', e.target.value)}
+                            {/* Position Filter */}
+                            <div className="w-[40%]">
+                                <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-2">
+                                    Position
+                                </label>
+                                <select
+                                    value={filters.position}
+                                    onChange={(e) => handleFilterChange('position', e.target.value)}
                                     className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent"
-                                />
-                                <input
-                                    type="number"
-                                    placeholder="Max"
-                                    value={filters.maxPnL}
-                                    onChange={(e) => handleFilterChange('maxPnL', e.target.value)}
-                                    className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent"
-                                />
+                                >
+                                    <option value="all">All Positions</option>
+                                    <option value="NET BUY">NET BUY</option>
+                                    <option value="NET SELL">NET SELL</option>
+                                </select>
                             </div>
-                        </div>
 
-                        {/* Clear Filters Button */}
-                        <div className="flex items-end">
+                            {/* Clear All Button */}
                             <button
                                 onClick={clearFilters}
-                                className="w-full px-4 py-2 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
+                                className="w-[20%] mt-6 px-4 py-2 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-900 dark:text-white rounded-lg transition-colors flex items-center justify-center gap-2 text-sm font-medium"
                             >
-                                <span className="material-symbols-outlined text-[18px]">filter_alt_off</span>
-                                Clear All
+                                <span className="material-symbols-outlined text-[20px]">clear_all</span>
+                                Clear All Filters
                             </button>
                         </div>
                     </div>

@@ -1,11 +1,15 @@
 import React, { useState, useMemo } from 'react';
 import { Header, SummaryCard, InputSection, AnalysisTable } from './broker-summary';
+import SearchSection from '../../components/broker-summary/SearchSection';
+import MasterDataReload from '../../components/MasterDataReload';
 import { uploadBrokerSummary } from '../../services/api';
 
 function App() {
   const [analysisResult, setAnalysisResult] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [universalSearch, setUniversalSearch] = useState('');
+  const [searchResults, setSearchResults] = useState(null);
 
   const handleAnalyze = async ({ file }) => {
     setIsLoading(true);
@@ -27,6 +31,40 @@ function App() {
     return analysisResult?.broker_summaries || [];
   }, [analysisResult]);
 
+  // Handle universal search
+  const handleUniversalSearch = (query) => {
+    setUniversalSearch(query);
+
+    if (!query || query.trim() === '') {
+      setSearchResults(null);
+      return;
+    }
+
+    // Search across all broker summaries
+    const results = {
+      query: query,
+      totalFound: 0,
+      brokers: []
+    };
+
+    brokerSummaries.forEach((summary) => {
+      const found = summary.stocks.some(stock =>
+        stock.stock_code.toUpperCase() === query.toUpperCase()
+      );
+
+      if (found) {
+        results.totalFound++;
+        results.brokers.push({
+          broker_code: summary.broker_info.broker_code,
+          broker_name: summary.broker_info.broker_name,
+          date_range: `${summary.broker_info.date_start} to ${summary.broker_info.date_end}`
+        });
+      }
+    });
+
+    setSearchResults(results);
+  };
+
   return (
     <div className="dark bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display min-h-screen">
       <div className="relative flex min-h-screen w-full flex-col">
@@ -44,6 +82,8 @@ function App() {
               </p>
             </div>
 
+            <MasterDataReload />
+
             {/* Error Message */}
             {error && (
               <div className="bg-loss/10 border border-loss/30 rounded-2xl p-4 flex items-center gap-3">
@@ -54,6 +94,15 @@ function App() {
 
             {/* Input Section */}
             <InputSection onAnalyze={handleAnalyze} isLoading={isLoading} />
+
+            {/* Universal Search - Only show if we have data */}
+            {brokerSummaries.length > 0 && (
+              <SearchSection
+                onSearch={handleUniversalSearch}
+                searchResults={searchResults}
+                isSearching={false}
+              />
+            )}
 
             {/* Display multiple broker summaries */}
             {brokerSummaries.length > 0 && (
@@ -76,7 +125,7 @@ function App() {
 }
 
 // Component for each broker summary section
-function BrokerSummarySection({ summary, index, isLoading }) {
+function BrokerSummarySection({ summary, index, isLoading, universalSearch }) {
   const { broker_info, stocks, summary: summaryStats } = summary;
 
   // Format currency for display

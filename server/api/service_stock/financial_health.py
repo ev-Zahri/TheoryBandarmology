@@ -2,45 +2,69 @@ import yfinance as yf
 import pandas as pd
 from datetime import datetime
 from ..helper.get_safe_info import get_safe_info
+from api.service_stock.master_data import get_financial_ratios, get_stock_fundamental_data
 
 
 def analyze_financial_health(stock_list: list):
+    """
+    Analyze financial health with master data integration.
+    Uses cached fundamental data when available, falls back to yfinance.
+    """
     results = []
-    # Tambahkan .JK
     
     for stock in stock_list:
         try:
-            ticker_obj = yf.Ticker(f"{stock}.JK")
-            info = ticker_obj.info
+            # Try to get from master data first
+            cached_ratios = get_financial_ratios(stock)
+            cached_fundamental = get_stock_fundamental_data(stock)
             
-            # 1. VALUATION (Murah/Mahal)
-            pe_ratio = get_safe_info(info, 'trailingPE', 0)
-            pb_ratio = get_safe_info(info, 'priceToBook', 0)
-            market_cap = get_safe_info(info, 'marketCap', 0)
-            market_cap_t = round(market_cap / 1_000_000_000_000, 2) # Triliun
-            
-            # 2. PROFITABILITY (Kemampuan Cetak Laba)
-            roe = get_safe_info(info, 'returnOnEquity', 0) * 100
-            npm = get_safe_info(info, 'profitMargins', 0) * 100 # Net Profit Margin
-            
-            # 3. SOLVENCY (Kesehatan Hutang) - SANGAT PENTING
-            der = get_safe_info(info, 'debtToEquity', 0) # Debt to Equity Ratio
-            # Di yfinance DER biasanya skala 0-100+, kadang 0-1. Kita asumsikan >100 itu hutang > equity
-            
-            # 4. GROWTH (Pertumbuhan)
-            rev_growth = get_safe_info(info, 'revenueGrowth', 0) * 100
-            earnings_growth = get_safe_info(info, 'earningsGrowth', 0) * 100
-
-            # 5. DIVIDEND
-            div_yield = get_safe_info(info, 'dividendYield', 0) * 100
+            # If we have cached data, use it
+            if cached_ratios and cached_fundamental:
+                pe_ratio = cached_ratios.get('pe_ratio', 0) or 0
+                pb_ratio = cached_ratios.get('pb_ratio', 0) or 0
+                roe = (cached_ratios.get('roe', 0) or 0) * 100
+                npm = (cached_fundamental.get('profit_margin', 0) or 0) * 100
+                der = cached_ratios.get('debt_to_equity', 0) or 0
+                div_yield = (cached_ratios.get('dividend_yield', 0) or 0) * 100
+                market_cap = cached_fundamental.get('market_cap', 0) or 0
+                market_cap_t = round(market_cap / 1_000_000_000_000, 2)
+                
+                # Growth data might not be in cache, try yfinance
+                try:
+                    ticker_obj = yf.Ticker(f"{stock}.JK")
+                    info = ticker_obj.info
+                    rev_growth = get_safe_info(info, 'revenueGrowth', 0) * 100
+                    earnings_growth = get_safe_info(info, 'earningsGrowth', 0) * 100
+                except:
+                    rev_growth = 0
+                    earnings_growth = 0
+            else:
+                # Fallback to yfinance entirely
+                ticker_obj = yf.Ticker(f"{stock}.JK")
+                info = ticker_obj.info
+                
+                pe_ratio = get_safe_info(info, 'trailingPE', 0)
+                pb_ratio = get_safe_info(info, 'priceToBook', 0)
+                market_cap = get_safe_info(info, 'marketCap', 0)
+                market_cap_t = round(market_cap / 1_000_000_000_000, 2)
+                
+                roe = get_safe_info(info, 'returnOnEquity', 0) * 100
+                npm = get_safe_info(info, 'profitMargins', 0) * 100
+                
+                der = get_safe_info(info, 'debtToEquity', 0)
+                
+                rev_growth = get_safe_info(info, 'revenueGrowth', 0) * 100
+                earnings_growth = get_safe_info(info, 'earningsGrowth', 0) * 100
+                
+                div_yield = get_safe_info(info, 'dividendYield', 0) * 100
 
             # --- SCORING & DIAGNOSA ---
             health_label = "Neutral"
             score = 0
-            flags = [] # Catatan merah/hijau
+            flags = []
 
             # Cek Utang (Safety First)
-            if der > 200: # Utang 2x Modal
+            if der > 200:
                 flags.append("⚠️ High Debt")
                 score -= 2
             elif der < 50:
@@ -79,7 +103,7 @@ def analyze_financial_health(stock_list: list):
                 "health": {
                     "roe": round(roe, 2),
                     "npm": round(npm, 2),
-                    "der": round(der, 2), # Hutang
+                    "der": round(der, 2),
                     "rev_growth": round(rev_growth, 2)
                 },
                 "summary": {

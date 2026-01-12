@@ -11,6 +11,14 @@ from api.service_comm_forex.complete_news_analyzer import CompleteNewsAnalyzer
 from api.service_comm_forex.tradingview_news_fetcher import TradingViewNewsFetcher
 from api.service_comm_forex.news_cache import news_cache
 from api.service_stock.broker_summary.broker_summary import parse_xhr_response, validate_json_structure
+from api.service_stock.master_data import (
+    get_technical_stats,
+    get_fundamental_stats,
+    update_technical_data_batch,
+    update_fundamental_data_batch,
+    get_all_stock_codes,
+    add_stocks_from_broker_data
+)
 from typing import Dict, List
 import json
 
@@ -216,6 +224,140 @@ async def upload_broker_summary(file: UploadFile = File(...)):
         raise HTTPException(
             status_code=500,
             detail=f"Server error: {str(e)}"
+        )
+
+
+# ==================== MASTER DATA ENDPOINTS ====================
+
+@app.get("/v1/master-data/stats")
+async def get_master_data_stats():
+    """
+    Get statistics about master data (technical and fundamental)
+    """
+    try:
+        technical_stats = get_technical_stats()
+        fundamental_stats = get_fundamental_stats()
+        
+        return {
+            "technical": technical_stats,
+            "fundamental": fundamental_stats,
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error getting stats: {str(e)}"
+        )
+
+
+@app.post("/v1/master-data/reload/technical")
+async def reload_technical_data(
+    batch_size: int = 50,
+    delay: int = 60,
+    max_workers: int = 5
+):
+    """
+    Manually reload technical data from yfinance
+    
+    Args:
+        batch_size: Number of stocks per batch (default: 50)
+        delay: Seconds between batches (default: 60)
+        max_workers: Concurrent requests per batch (default: 5)
+    """
+    try:
+        stock_codes = get_all_stock_codes()
+        
+        # Run update in background (non-blocking)
+        import threading
+        
+        def update_task():
+            update_technical_data_batch(
+                stock_codes,
+                batch_size=batch_size,
+                delay_between_batches=delay,
+                max_workers=max_workers
+            )
+        
+        thread = threading.Thread(target=update_task, daemon=True)
+        thread.start()
+        
+        return {
+            "message": "Technical data reload started",
+            "total_stocks": len(stock_codes),
+            "estimated_time_minutes": (len(stock_codes) // batch_size) * (delay // 60),
+            "status_code": 202  # Accepted
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error starting reload: {str(e)}"
+        )
+
+
+@app.post("/v1/master-data/reload/fundamental")
+async def reload_fundamental_data(
+    batch_size: int = 50,
+    delay: int = 60,
+    max_workers: int = 5
+):
+    """
+    Manually reload fundamental data from yfinance
+    
+    Args:
+        batch_size: Number of stocks per batch (default: 50)
+        delay: Seconds between batches (default: 60)
+        max_workers: Concurrent requests per batch (default: 5)
+    """
+    try:
+        stock_codes = get_all_stock_codes()
+        
+        # Run update in background (non-blocking)
+        import threading
+        
+        def update_task():
+            update_fundamental_data_batch(
+                stock_codes,
+                batch_size=batch_size,
+                delay_between_batches=delay,
+                max_workers=max_workers
+            )
+        
+        thread = threading.Thread(target=update_task, daemon=True)
+        thread.start()
+        
+        return {
+            "message": "Fundamental data reload started",
+            "total_stocks": len(stock_codes),
+            "estimated_time_minutes": (len(stock_codes) // batch_size) * (delay // 60),
+            "status_code": 202  # Accepted
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error starting reload: {str(e)}"
+        )
+
+
+@app.post("/v1/master-data/discover-stocks")
+async def discover_stocks_from_broker(stock_codes: List[str]):
+    """
+    Add new stocks discovered from broker data to master data
+    
+    Args:
+        stock_codes: List of stock codes from broker data
+    """
+    try:
+        add_stocks_from_broker_data(stock_codes)
+        
+        return {
+            "message": "Stock discovery completed",
+            "stocks_processed": len(stock_codes),
+            "status_code": 200
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error discovering stocks: {str(e)}"
         )
 
 

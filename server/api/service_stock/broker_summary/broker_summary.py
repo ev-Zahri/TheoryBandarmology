@@ -1,6 +1,7 @@
 from typing import List, Dict, Any, Optional
 import json
 from datetime import datetime
+from api.service_stock.broker_summary.stock_price import enrich_stocks_with_prices
 
 
 def parse_xhr_response(json_data: Any) -> Dict[str, Any]:
@@ -130,7 +131,6 @@ def process_grouped_entries(entries: List[Dict[str, Any]]) -> Optional[Dict[str,
         
         # Enrich with current prices from Yahoo Finance
         try:
-            from api.service_stock.broker_summary.stock_price import enrich_stocks_with_prices
             sorted_stocks = enrich_stocks_with_prices(sorted_stocks)
         except Exception as e:
             print(f"Warning: Could not fetch stock prices: {e}")
@@ -213,7 +213,6 @@ def process_single_entry(entry: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         
         # Enrich with current prices from Yahoo Finance
         try:
-            from api.service_stock.broker_summary.stock_price import enrich_stocks_with_prices
             sorted_stocks = enrich_stocks_with_prices(sorted_stocks)
         except Exception as e:
             print(f"Warning: Could not fetch stock prices: {e}")

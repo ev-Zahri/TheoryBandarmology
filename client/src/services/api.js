@@ -181,3 +181,59 @@ export const uploadBrokerSummary = async (file) => {
 
     return response.json();
 };
+
+// ==================== MASTER DATA APIs ====================
+
+export const getMasterDataStats = async () => {
+    const response = await fetch(`${API_BASE_URL}/v1/master-data/stats`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+
+    if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.detail || 'Failed to get master data stats');
+    }
+
+    return response.json();
+};
+
+export const reloadTechnicalData = async (batchSize = 300, delay = 30, maxWorkers = 5) => {
+    const response = await fetch(
+        `${API_BASE_URL}/v1/master-data/reload/technical?batch_size=${batchSize}&delay=${delay}&max_workers=${maxWorkers}`,
+        {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }
+    );
+
+    if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.detail || 'Failed to reload technical data');
+    }
+
+    return response.json();
+};
+
+export const reloadFundamentalData = async (batchSize = 300, delay = 30, maxWorkers = 5) => {
+    const response = await fetch(
+        `${API_BASE_URL}/v1/master-data/reload/fundamental?batch_size=${batchSize}&delay=${delay}&max_workers=${maxWorkers}`,
+        {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }
+    );
+
+    if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.detail || 'Failed to reload fundamental data');
+    }
+
+    return response.json();
+};
