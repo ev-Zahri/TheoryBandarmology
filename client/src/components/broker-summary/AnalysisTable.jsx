@@ -340,6 +340,7 @@ const AnalysisTable = ({ data = [], isLoading, totalValue = 0 }) => {
                                     status={item.position}
                                     weight_pct={item.weight_pct ?? 0}
                                     floating_pnl={item.value_raw ?? 0}
+                                    bandarmology={item.bandarmology}
                                     isDropdownOpen={activeDropdown === rowId}
                                     onToggleDropdown={(id) => setActiveDropdown(activeDropdown === id ? null : id)}
                                 />

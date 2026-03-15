@@ -2,6 +2,8 @@ from typing import List, Dict, Any, Optional
 import json
 from datetime import datetime
 from api.service_stock.broker_summary.stock_price import enrich_stocks_with_prices
+from api.service_stock.broker_summary.bandarmology_analyzer import analyze_stock_bandarmology
+from api.service_stock.broker_summary.anomaly_detector import analyze_anomalies
 
 
 def parse_xhr_response(json_data: Any) -> Dict[str, Any]:
@@ -71,6 +73,8 @@ def process_grouped_entries(entries: List[Dict[str, Any]]) -> Optional[Dict[str,
     Returns:
         Single merged broker summary
     """
+    print(f"\n🔵 ENTERING process_grouped_entries with {len(entries)} entries")
+    
     if not entries:
         return None
     
@@ -141,6 +145,62 @@ def process_grouped_entries(entries: List[Dict[str, Any]]) -> Optional[Dict[str,
         total_sell_value = sum(s['sell_value'] for s in sorted_stocks)
         net_value = total_buy_value - total_sell_value
         
+        # Calculate portfolio context for bandarmology analysis
+        total_value = total_buy_value + total_sell_value
+        weights = [abs(s.get('buy_value', 0) - s.get('sell_value', 0)) / total_value * 100 
+                   for s in sorted_stocks if total_value > 0]
+        avg_weight = sum(weights) / len(weights) if weights else 5.0
+        
+        portfolio_context = {
+            'avg_weight': avg_weight,
+            'total_stocks': len(sorted_stocks),
+            'total_value': total_value
+        }
+        
+        print(f"🟢 About to start bandarmology analysis. Total stocks: {len(sorted_stocks)}, Total value: {total_value}")
+        
+        # Add bandarmology analysis to each stock
+        print(f"\n=== Starting Bandarmology Analysis for {len(sorted_stocks)} stocks ===")
+        for stock in sorted_stocks:
+            try:
+                # Calculate weight percentage
+                stock_value = abs(stock.get('buy_value', 0) - stock.get('sell_value', 0))
+                stock['weight_pct'] = (stock_value / total_value * 100) if total_value > 0 else 0
+                
+                # Calculate diff_pct
+                avg_price = stock.get('avg_price', 0)
+                current_price = stock.get('current_price', 0)
+                if avg_price > 0:
+                    stock['diff_pct'] = ((current_price - avg_price) / avg_price) * 100
+                else:
+                    stock['diff_pct'] = 0
+                
+                print(f"  Analyzing {stock.get('stock_code', 'unknown')}: weight={stock['weight_pct']:.2f}%, diff={stock['diff_pct']:.2f}%")
+                
+                # Add bandarmology analysis
+                bandarmology = analyze_stock_bandarmology(stock, portfolio_context)
+                stock['bandarmology'] = bandarmology
+                print(f"  ✓ Bandarmology analysis added for {stock.get('stock_code', 'unknown')}")
+                
+            except Exception as e:
+                print(f"  ✗ ERROR analyzing {stock.get('stock_code', 'unknown')}: {e}")
+                import traceback
+                traceback.print_exc()
+                stock['bandarmology'] = None
+        
+        # Detect anomalies
+        try:
+            anomaly_analysis = analyze_anomalies(sorted_stocks, portfolio_context)
+        except Exception as e:
+            print(f"Warning: Could not detect anomalies: {e}")
+            anomaly_analysis = {
+                'total_anomalies': 0,
+                'severity_breakdown': {'high': 0, 'medium': 0, 'low': 0},
+                'stock_anomalies': [],
+                'portfolio_risks': [],
+                'recommendations': []
+            }
+        
         return {
             'broker_info': broker_info,
             'stocks': sorted_stocks,
@@ -153,12 +213,14 @@ def process_grouped_entries(entries: List[Dict[str, Any]]) -> Optional[Dict[str,
                 'total_sell_value_formatted': format_currency(total_sell_value),
                 'net_value_formatted': format_currency(abs(net_value)),
                 'position': 'NET BUY' if net_value > 0 else 'NET SELL' if net_value < 0 else 'NEUTRAL'
-            }
+            },
+            'anomaly_analysis': anomaly_analysis
         }
     except Exception as e:
         print(f"Error processing grouped entries: {e}")
+        import traceback
+        traceback.print_exc()
         return None
-
 
 def process_single_entry(entry: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     """Process a single XHR entry into a broker summary."""
@@ -223,6 +285,62 @@ def process_single_entry(entry: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         total_sell_value = sum(s['sell_value'] for s in sorted_stocks)
         net_value = total_buy_value - total_sell_value
         
+        # Calculate portfolio context for bandarmology analysis
+        total_value = total_buy_value + total_sell_value
+        weights = [abs(s.get('buy_value', 0) - s.get('sell_value', 0)) / total_value * 100 
+                   for s in sorted_stocks if total_value > 0]
+        avg_weight = sum(weights) / len(weights) if weights else 5.0
+        
+        portfolio_context = {
+            'avg_weight': avg_weight,
+            'total_stocks': len(sorted_stocks),
+            'total_value': total_value
+        }
+        
+        print(f"🟢 About to start bandarmology analysis. Total stocks: {len(sorted_stocks)}, Total value: {total_value}")
+        
+        # Add bandarmology analysis to each stock
+        print(f"\n=== Starting Bandarmology Analysis for {len(sorted_stocks)} stocks ===")
+        for stock in sorted_stocks:
+            try:
+                # Calculate weight percentage
+                stock_value = abs(stock.get('buy_value', 0) - stock.get('sell_value', 0))
+                stock['weight_pct'] = (stock_value / total_value * 100) if total_value > 0 else 0
+                
+                # Calculate diff_pct
+                avg_price = stock.get('avg_price', 0)
+                current_price = stock.get('current_price', 0)
+                if avg_price > 0:
+                    stock['diff_pct'] = ((current_price - avg_price) / avg_price) * 100
+                else:
+                    stock['diff_pct'] = 0
+                
+                print(f"  Analyzing {stock.get('stock_code', 'unknown')}: weight={stock['weight_pct']:.2f}%, diff={stock['diff_pct']:.2f}%")
+                
+                # Add bandarmology analysis
+                bandarmology = analyze_stock_bandarmology(stock, portfolio_context)
+                stock['bandarmology'] = bandarmology
+                print(f"  ✓ Bandarmology analysis added for {stock.get('stock_code', 'unknown')}")
+                
+            except Exception as e:
+                print(f"  ✗ ERROR analyzing {stock.get('stock_code', 'unknown')}: {e}")
+                import traceback
+                traceback.print_exc()
+                stock['bandarmology'] = None
+        
+        # Detect anomalies
+        try:
+            anomaly_analysis = analyze_anomalies(sorted_stocks, portfolio_context)
+        except Exception as e:
+            print(f"Warning: Could not detect anomalies: {e}")
+            anomaly_analysis = {
+                'total_anomalies': 0,
+                'severity_breakdown': {'high': 0, 'medium': 0, 'low': 0},
+                'stock_anomalies': [],
+                'portfolio_risks': [],
+                'recommendations': []
+            }
+        
         return {
             'broker_info': broker_info,
             'stocks': sorted_stocks,
@@ -235,10 +353,13 @@ def process_single_entry(entry: Dict[str, Any]) -> Optional[Dict[str, Any]]:
                 'total_sell_value_formatted': format_currency(total_sell_value),
                 'net_value_formatted': format_currency(abs(net_value)),
                 'position': 'NET BUY' if net_value > 0 else 'NET SELL' if net_value < 0 else 'NEUTRAL'
-            }
+            },
+            'anomaly_analysis': anomaly_analysis
         }
     except Exception as e:
         print(f"Error processing entry: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BandarmologyIndicators from './BandarmologyIndicators';
 
 const StockTableRow = ({
     rowId,
@@ -11,6 +12,7 @@ const StockTableRow = ({
     status,
     weight_pct,
     floating_pnl,
+    bandarmology,
     isDropdownOpen,
     onToggleDropdown
 }) => {
@@ -101,15 +103,29 @@ const StockTableRow = ({
                     <span className="material-symbols-outlined text-[20px]">more_vert</span>
                 </button>
                 {isDropdownOpen && (
-                    <div className="absolute right-6 top-12 z-20 w-44 text-left bg-white dark:bg-card-dark border rounded-md border-slate-200 dark:border-border-dark shadow-lg overflow-hidden">
-                        <button className="w-full py-2.5 px-3 text-left hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2">
-                            <span className="material-symbols-outlined text-[16px] text-primary">analytics</span>
-                            <Link to={`/deep-analyze/${stock}`}><span className="text-sm dark:text-white">Deep Analysis</span></Link>
-                        </button>
-                        <button className="w-full py-2.5 px-3 text-left hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2">
-                            <span className="material-symbols-outlined text-[16px] text-primary">lightbulb</span>
-                            <Link to={`/company-profile/${stock}`}><span className="text-sm dark:text-white">Get Insight</span></Link>
-                        </button>
+                    <div className="absolute right-6 top-12 z-20 w-80 text-left bg-white dark:bg-card-dark border rounded-lg border-slate-200 dark:border-border-dark shadow-xl overflow-hidden">
+                        {/* Bandarmology Section */}
+                        {bandarmology && (
+                            <div className="p-4 border-b border-slate-200 dark:border-slate-700">
+                                <h4 className="text-sm font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
+                                    <span className="material-symbols-outlined text-[18px] text-primary">analytics</span>
+                                    Bandarmology Analysis
+                                </h4>
+                                <BandarmologyIndicators bandarmology={bandarmology} />
+                            </div>
+                        )}
+
+                        {/* Action Buttons */}
+                        <div className="p-2">
+                            <button className="w-full py-2.5 px-3 text-left hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2 rounded-md">
+                                <span className="material-symbols-outlined text-[16px] text-primary">analytics</span>
+                                <Link to={`/deep-analyze/${stock}`}><span className="text-sm dark:text-white">Deep Analysis</span></Link>
+                            </button>
+                            <button className="w-full py-2.5 px-3 text-left hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2 rounded-md">
+                                <span className="material-symbols-outlined text-[16px] text-primary">lightbulb</span>
+                                <Link to={`/company-profile/${stock}`}><span className="text-sm dark:text-white">Get Insight</span></Link>
+                            </button>
+                        </div>
                     </div>
                 )}
             </td>

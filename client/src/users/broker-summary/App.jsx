@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Header, SummaryCard, InputSection, AnalysisTable } from './broker-summary';
 import SearchSection from '../../components/broker-summary/SearchSection';
 import MasterDataReload from '../../components/MasterDataReload';
+import AnomalyAlerts from '../../components/broker-summary/AnomalyAlerts';
 import { uploadBrokerSummary } from '../../services/api';
 
 function App() {
@@ -209,6 +210,11 @@ function BrokerSummarySection({ summary, index, isLoading, universalSearch }) {
             </div>
           )}
         </div>
+      )}
+
+      {/* Anomaly Alerts */}
+      {summary.anomaly_analysis && (
+        <AnomalyAlerts anomalyAnalysis={summary.anomaly_analysis} />
       )}
 
       {/* Summary Cards */}

@@ -7,9 +7,9 @@ from api.service_stock.quant_technical import calculate_quant_metrics
 from api.service_stock.financial_health import analyze_financial_health
 from api.service_stock.news_narrative import analyze_news_narrative
 from api.service_stock.company_profile import get_company_profile
-from api.service_comm_forex.complete_news_analyzer import CompleteNewsAnalyzer
-from api.service_comm_forex.tradingview_news_fetcher import TradingViewNewsFetcher
-from api.service_comm_forex.news_cache import news_cache
+from api.service_commodity_forex.complete_news_analyzer import CompleteNewsAnalyzer
+from api.service_commodity_forex.tradingview_news_fetcher import TradingViewNewsFetcher
+from api.service_commodity_forex.news_cache import news_cache
 from api.service_stock.broker_summary.broker_summary import parse_xhr_response, validate_json_structure
 from api.service_stock.master_data import (
     get_technical_stats,
@@ -653,7 +653,7 @@ async def get_news_sentiment(symbol: str, limit: int = 20, type: str = "forex"):
             analyzer = CompleteNewsAnalyzer()
             
             # Process cached news directly (skip fetching)
-            from api.service_comm_forex.news_model import NewsItem, NewsProvider, RelatedSymbol
+            from api.service_commodity_forex.news_model import NewsItem, NewsProvider, RelatedSymbol
             
             for item_data in cached_news:
                 # Create NewsItem from cached data
